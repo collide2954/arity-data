@@ -2,11 +2,13 @@
   "format": "arity-archive/1",
   "position": 14,
   "metadata": {
-    "title": "Synthesis, antimicrobial, anti-inflammatory, antioxidant and cytotoxicity of new pyrimidine and pyrimidopyrimidine derivatives.",
+    "title": "RETRACTED ARTICLE: Synthesis, antimicrobial, anti-inflammatory, antioxidant and cytotoxicity of new pyrimidine and pyrimidopyrimidine derivatives",
     "doi": "10.1038/s41598-025-92066-w",
     "pmid": "40102434",
     "pmcid": "PMC11920053",
-    "journal": "Scientific reports",
+    "article_type": "research-article",
+    "journal": "Scientific Reports",
+    "publisher": "Nature Publishing Group",
     "published": "2025-03-18",
     "year": 2025,
     "authors": [
@@ -27,19 +29,42 @@
         "name": "Doha Mohammad Beltagy"
       }
     ],
-    "license": "CC-BY"
+    "license": "CC-BY-4.0",
+    "license_statement": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.",
+    "copyright": "© The Author(s) 2025",
+    "keywords": [
+      "Medicinal chemistry",
+      "Organic chemistry"
+    ]
   },
   "added_at": "2026-11-14T07:55:34.2917486Z",
-  "updated_at": "2026-11-14T07:55:34.2917486Z",
+  "updated_at": "2026-11-14T23:29:21.6982349Z",
   "queue": {
-    "state": "queued",
+    "state": "read",
     "query": "doxorubicin AND \"MCF-7\" AND PUB_TYPE:\"Retracted Publication\"",
     "note": null,
     "added_at": "2026-11-14T07:55:34.2917486Z",
-    "updated_at": "2026-11-14T07:55:34.2917486Z"
+    "updated_at": "2026-11-14T23:53:42.1537335Z"
   },
-  "retrievals": [],
-  "texts": [],
+  "retrievals": [
+    {
+      "role": "full_text",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11920053.1/PMC11920053.1.xml",
+      "media_type": "application/xml",
+      "sha256": "79b195485cc9bb5b489bf7584fe4d88961de4e9d7765c2b9470c6a23a4037442",
+      "bytes": 200132,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T23:29:21.6982349Z"
+    }
+  ],
+  "texts": [
+    {
+      "sha256": "bba01c95f38f9c2ff4e930db2d76af009d84e676898c2efbb6d7136bcf6133c2",
+      "parser": "arity-jats 0.1.0",
+      "source": "79b195485cc9bb5b489bf7584fe4d88961de4e9d7765c2b9470c6a23a4037442"
+    }
+  ],
   "notices": [
     {
       "kind": "retraction",
@@ -66,5 +91,13 @@
       "retrieved_at": "2026-11-14T07:55:45.5197339Z"
     }
   ],
-  "runs": []
+  "runs": [
+    {
+      "sequence": 22,
+      "sha256": "2a7538e21bc5847f07e56486a077659c2977f3d5a0328eec15a1bb84f45ab54d",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-14T23:53:42.1537335Z",
+      "checks": []
+    }
+  ]
 }
