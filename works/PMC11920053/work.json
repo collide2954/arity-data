@@ -1,0 +1,70 @@
+{
+  "format": "arity-archive/1",
+  "position": 14,
+  "metadata": {
+    "title": "Synthesis, antimicrobial, anti-inflammatory, antioxidant and cytotoxicity of new pyrimidine and pyrimidopyrimidine derivatives.",
+    "doi": "10.1038/s41598-025-92066-w",
+    "pmid": "40102434",
+    "pmcid": "PMC11920053",
+    "journal": "Scientific reports",
+    "published": "2025-03-18",
+    "year": 2025,
+    "authors": [
+      {
+        "name": "Reda Mohammed Keshk",
+        "orcid": "0000-0002-9782-4334"
+      },
+      {
+        "name": "Zeinab Ahmed Salama"
+      },
+      {
+        "name": "Samir Kamel Elsaedany"
+      },
+      {
+        "name": "Elsayed Mahmoud Abed ElRehim"
+      },
+      {
+        "name": "Doha Mohammad Beltagy"
+      }
+    ],
+    "license": "CC-BY"
+  },
+  "added_at": "2026-11-14T07:55:34.2917486Z",
+  "updated_at": "2026-11-14T07:55:34.2917486Z",
+  "queue": {
+    "state": "queued",
+    "query": "doxorubicin AND \"MCF-7\" AND PUB_TYPE:\"Retracted Publication\"",
+    "note": null,
+    "added_at": "2026-11-14T07:55:34.2917486Z",
+    "updated_at": "2026-11-14T07:55:34.2917486Z"
+  },
+  "retrievals": [],
+  "texts": [],
+  "notices": [
+    {
+      "kind": "retraction",
+      "reported_type": "Retraction in",
+      "source": "europe_pmc",
+      "notice_doi": "10.1038/s41598-026-65328-4",
+      "notice_pmid": "42552338",
+      "notice_citation": "Sci Rep. 2026 Aug 4;16(1):24014. doi: 10.1038/s41598-026-65328-4.",
+      "retrieved_at": "2026-11-14T07:55:34.2917486Z"
+    },
+    {
+      "kind": "retraction",
+      "reported_type": "is_retracted",
+      "source": "pmc",
+      "source_record": "PMC11920053.1",
+      "retrieved_at": "2026-11-14T07:55:45.5197339Z"
+    },
+    {
+      "kind": "retraction",
+      "reported_type": "retraction",
+      "source": "crossref",
+      "notice_doi": "10.1038/s41598-026-65328-4",
+      "date": "2026-08-04",
+      "retrieved_at": "2026-11-14T07:55:45.5197339Z"
+    }
+  ],
+  "runs": []
+}

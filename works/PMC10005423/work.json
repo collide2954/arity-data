@@ -1,0 +1,102 @@
+{
+  "format": "arity-archive/1",
+  "position": 4,
+  "metadata": {
+    "title": "In Vitro Analysis of Cytotoxic Activities of Monotheca buxifolia Targeting WNT/β-Catenin Genes in Breast Cancer Cells",
+    "doi": "10.3390/plants12051147",
+    "pmid": "36904007",
+    "pmcid": "PMC10005423",
+    "article_type": "research-article",
+    "journal": "Plants",
+    "publisher": "Multidisciplinary Digital Publishing Institute (MDPI)",
+    "published": "2023-03-02",
+    "year": 2023,
+    "authors": [
+      {
+        "name": "Ambreen Sher"
+      },
+      {
+        "name": "Sobia Tabassum"
+      },
+      {
+        "name": "Heather Mann Wallace",
+        "orcid": "0000-0003-2804-3304"
+      },
+      {
+        "name": "Asifullah Khan",
+        "orcid": "0000-0003-2039-5305"
+      },
+      {
+        "name": "Asad Mustafa Karim",
+        "orcid": "0000-0001-8828-7090"
+      },
+      {
+        "name": "Sarah Gul"
+      },
+      {
+        "name": "Se Chan Kang",
+        "orcid": "0000-0003-0790-2237"
+      }
+    ],
+    "license": "CC-BY-4.0",
+    "license_statement": "Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).",
+    "copyright": "© 2023 by the authors.",
+    "keywords": [
+      "Monotheca buxifolia",
+      "natural products",
+      "cytotoxicity",
+      "anticancer",
+      "WNT signaling"
+    ]
+  },
+  "added_at": "2026-11-14T07:51:22.2164038Z",
+  "updated_at": "2026-11-14T07:51:24.5135769Z",
+  "queue": {
+    "state": "fetched",
+    "query": null,
+    "note": null,
+    "added_at": "2026-11-14T07:51:22.2164038Z",
+    "updated_at": "2026-11-14T07:51:24.5135769Z"
+  },
+  "retrievals": [
+    {
+      "role": "full_text",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10005423.1/PMC10005423.1.xml",
+      "media_type": "application/xml",
+      "sha256": "fbea4c80423511c5edbb0b45566f1a19feb977d214fa8080624fc999a9ab3081",
+      "bytes": 151534,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "pdf",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10005423.1/PMC10005423.1.pdf",
+      "media_type": "application/pdf",
+      "sha256": "23fe797a420c281dc4b68f1b40fdefa189d451536d479486c4c8e2589733c6e9",
+      "bytes": 5623226,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp1",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10005423.1/plants-12-01147-s001.zip",
+      "media_type": "binary/octet-stream",
+      "sha256": "2d847435bb36e5d53ada6586bedf907f37e4dbef4c823ee7992adf8901abd243",
+      "bytes": 528796,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    }
+  ],
+  "texts": [
+    {
+      "sha256": "f648c1dc9d42c375e9e357030348097ac8f69fedd2162bed3d28e5ebf51b0728",
+      "parser": "arity-jats 0.1.0",
+      "source": "fbea4c80423511c5edbb0b45566f1a19feb977d214fa8080624fc999a9ab3081"
+    }
+  ],
+  "notices": [],
+  "runs": []
+}

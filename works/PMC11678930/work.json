@@ -1,0 +1,94 @@
+{
+  "format": "arity-archive/1",
+  "position": 8,
+  "metadata": {
+    "title": "An Azomethine Derivative, BCS3, Targets XIAP and cIAP1/2 to Arrest Breast Cancer Progression Through MDM2-p53 and Bcl-2-Caspase Signaling Modulation",
+    "doi": "10.3390/ph17121645",
+    "pmid": "39770487",
+    "pmcid": "PMC11678930",
+    "article_type": "research-article",
+    "journal": "Pharmaceuticals",
+    "publisher": "Multidisciplinary Digital Publishing Institute (MDPI)",
+    "published": "2024-12-06",
+    "year": 2024,
+    "authors": [
+      {
+        "name": "Reetuparna Acharya",
+        "orcid": "0009-0008-3488-1092"
+      },
+      {
+        "name": "Pran Kishore Deb",
+        "orcid": "0000-0002-8650-2874"
+      },
+      {
+        "name": "Katharigatta N. Venugopala",
+        "orcid": "0000-0003-0680-1549"
+      },
+      {
+        "name": "Shakti Prasad Pattanayak",
+        "orcid": "0000-0002-1629-2648"
+      }
+    ],
+    "license": "CC-BY-4.0",
+    "license_statement": "Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).",
+    "copyright": "© 2024 by the authors.",
+    "keywords": [
+      "breast cancer",
+      "caspases",
+      "7,12-dimethylbenz(a)anthracene",
+      "apoptosis",
+      "inhibitors of apoptosis protein",
+      "molecular docking"
+    ]
+  },
+  "added_at": "2026-11-14T07:51:22.2164038Z",
+  "updated_at": "2026-11-14T07:51:24.5135769Z",
+  "queue": {
+    "state": "fetched",
+    "query": null,
+    "note": null,
+    "added_at": "2026-11-14T07:51:22.2164038Z",
+    "updated_at": "2026-11-14T07:51:24.5135769Z"
+  },
+  "retrievals": [
+    {
+      "role": "full_text",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11678930.1/PMC11678930.1.xml",
+      "media_type": "application/xml",
+      "sha256": "2cc15e61a7980627de00e7d6126aa793925a110eb72290d02f88b053b9d0e147",
+      "bytes": 226395,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "pdf",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11678930.1/PMC11678930.1.pdf",
+      "media_type": "application/pdf",
+      "sha256": "215cc45958297f963531c36165ee290d6efb5788a9a78f4489c134b735f7f8a6",
+      "bytes": 13387798,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp1",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11678930.1/pharmaceuticals-17-01645-s001.zip",
+      "media_type": "binary/octet-stream",
+      "sha256": "e603e8f24dffaa064d0c022944f3e3679c3e95beb24c198581c82a2954e2bdfa",
+      "bytes": 4368744,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    }
+  ],
+  "texts": [
+    {
+      "sha256": "337daa748a9e037eea3560ac437405bbf7008b73bba6fa1a7de00163143d1163",
+      "parser": "arity-jats 0.1.0",
+      "source": "2cc15e61a7980627de00e7d6126aa793925a110eb72290d02f88b053b9d0e147"
+    }
+  ],
+  "notices": [],
+  "runs": []
+}

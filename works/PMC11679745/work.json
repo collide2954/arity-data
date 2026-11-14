@@ -1,0 +1,62 @@
+{
+  "format": "arity-archive/1",
+  "position": 10,
+  "metadata": {
+    "title": "Enhancing Resistive Switching in AlN-Based Memristors Through Oxidative Al2O3 Layer Formation: A Study on Preparation Techniques and Performance Impact.",
+    "doi": "10.3390/mi15121499",
+    "pmid": "39770252",
+    "pmcid": "PMC11679745",
+    "journal": "Micromachines",
+    "published": "2024-12-16",
+    "year": 2024,
+    "authors": [
+      {
+        "name": "Hongxuan Guo",
+        "orcid": "0000-0002-8092-8057"
+      },
+      {
+        "name": "Jiahao Yao"
+      },
+      {
+        "name": "Siyuan Chen"
+      },
+      {
+        "name": "Chong Qian"
+      },
+      {
+        "name": "Xiangyu Pan"
+      },
+      {
+        "name": "Kuibo Yin",
+        "orcid": "0000-0001-5268-6807"
+      },
+      {
+        "name": "Hao Zhu"
+      },
+      {
+        "name": "Xu Gao"
+      },
+      {
+        "name": "Suidong Wang",
+        "orcid": "0000-0002-4761-4793"
+      },
+      {
+        "name": "Litao Sun"
+      }
+    ],
+    "license": "CC-BY"
+  },
+  "added_at": "2026-11-14T07:53:54.2480529Z",
+  "updated_at": "2026-11-14T07:53:54.2480529Z",
+  "queue": {
+    "state": "queued",
+    "query": "ABSTRACT:\"band gap\" AND ABSTRACT:eV AND ABSTRACT:\"thin films\" AND LICENSE:\"cc by\" AND PUB_YEAR:[2019 TO 2024]",
+    "note": null,
+    "added_at": "2026-11-14T07:53:54.2480529Z",
+    "updated_at": "2026-11-14T07:53:54.2480529Z"
+  },
+  "retrievals": [],
+  "texts": [],
+  "notices": [],
+  "runs": []
+}

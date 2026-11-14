@@ -1,0 +1,45 @@
+{
+  "format": "arity-submission/1",
+  "work": "PMC12630849",
+  "text": "7db94e8a727a7b31deeab888bd17cd1ab08fca4e17c3583e53dffbbcc3451dfd",
+  "reader": { "kind": "software", "name": "Claude (Anthropic)", "version": "claude-opus-5-5" },
+  "responsible": { "name": "Brett Gilio" },
+  "note": "Pilot reading of the MTT result in section 3.2.",
+  "entities": [
+    {
+      "id": "go",
+      "kind": "material",
+      "label": "graphene oxide (GO)",
+      "note": "Made by a modified Hummers method.",
+      "mentions": [{ "block": "s3.1/p1", "quote": "synthesized graphene oxide" }]
+    },
+    {
+      "id": "mcf7",
+      "kind": "cell_line",
+      "label": "MCF-7",
+      "xrefs": ["CELLOSAURUS:CVCL_0031"],
+      "mentions": [{ "block": "s3.2/p1", "quote": "MCF-7 breast cancer cells" }]
+    }
+  ],
+  "properties": [{ "id": "ic50_mass" }, { "id": "exposure_time" }],
+  "reports": [
+    {
+      "type": "value",
+      "id": "go_mcf7",
+      "subject": ["go"],
+      "property": "ic50_mass",
+      "value": { "number": "175", "unit": "ug/mL", "unit_text": "µg/mL" },
+      "conditions": [
+        { "role": "cell_line", "entity": "mcf7" },
+        { "property": "exposure_time", "value": { "number": "24", "unit": "h", "unit_text": "h" } }
+      ],
+      "method": { "label": "MTT assay" },
+      "note": "The source states that 52% of the cells were dead at this concentration, and that this concentration was fixed as the IC50 dose.",
+      "evidence": [
+        { "block": "s3.2/p1", "quote": "At a concentration of 175 µg/mL, 52% of the cells were dead in triplicate mode, and it was fixed as an IC50 dose for this research" },
+        { "block": "s3.2/p1", "quote": "The MTT assay result of GO-treated cytotoxicity effect in MCF-7 breast cancer cells" },
+        { "block": "s2.2.2/p1", "quote": "After 24 h, 20 µL of MTT solution was carefully mixed into all the GO-treated wells" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "format": "arity-submission/1",
+  "work": "PMC6274071",
+  "text": "7c4162ba9cbc1565128338fa4cf5ca6779d7423f0b09e38552898675a091744f",
+  "reader": { "kind": "software", "name": "Claude (Anthropic)", "version": "claude-opus-5-5" },
+  "responsible": { "name": "Brett Gilio" },
+  "note": "Pilot reading: the reference drug and two of the synthesized compounds from Table 1.",
+  "entities": [
+    {
+      "id": "dox",
+      "kind": "chemical",
+      "label": "doxorubicin",
+      "xrefs": ["CHEBI:28748"],
+      "mentions": [
+        { "block": "abstract/p1", "quote": "the reference drug, doxorubicin" },
+        { "block": "t1/r24c1", "quote": "Dox." }
+      ]
+    },
+    {
+      "id": "mcf7",
+      "kind": "cell_line",
+      "label": "MCF-7",
+      "xrefs": ["CELLOSAURUS:CVCL_0031"],
+      "mentions": [{ "block": "abstract/p1", "quote": "MCF-7 breast cancer" }]
+    },
+    {
+      "id": "pc3",
+      "kind": "cell_line",
+      "label": "PC-3",
+      "xrefs": ["CELLOSAURUS:CVCL_0035"],
+      "mentions": [{ "block": "abstract/p1", "quote": "PC-3 prostate cancer cells" }]
+    },
+    {
+      "id": "c5o",
+      "kind": "chemical",
+      "label": "compound 5o (biphenylurea-indolinone conjugate)",
+      "note": "In Table 1: R = 4-Cl, R1 = H.",
+      "mentions": [{ "block": "t1/r17c1", "quote": "5o" }]
+    },
+    {
+      "id": "c5p",
+      "kind": "chemical",
+      "label": "compound 5p (biphenylurea-indolinone conjugate)",
+      "note": "In Table 1: R = 4-Cl, R1 = F.",
+      "mentions": [{ "block": "t1/r18c1", "quote": "5p" }]
+    }
+  ],
+  "properties": [{ "id": "ic50" }, { "id": "exposure_time" }],
+  "reports": [
+    {
+      "type": "value",
+      "id": "dox_mcf7",
+      "subject": ["dox"],
+      "property": "ic50",
+      "value": {
+        "number": "7.30",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "uncertainty": { "kind": "sd", "number": "0.84" },
+        "statistic": "mean"
+      },
+      "conditions": [
+        { "role": "cell_line", "entity": "mcf7" },
+        { "property": "exposure_time", "value": { "number": "72", "unit": "h", "unit_text": "h" } }
+      ],
+      "method": { "label": "sulforhodamine B (SRB) colorimetric assay" },
+      "evidence": [
+        { "block": "t1/r24c5", "quote": "7.30 ± 0.84" },
+        { "block": "t1/r1c5", "quote": "IC50 (μM)" },
+        { "block": "t1/r2c5", "quote": "MCF-7" },
+        { "block": "t1/r24c1", "quote": "Dox." },
+        { "block": "t1/foot1", "quote": "IC50 values are presented as mean ± S.D. of three separate experiments" },
+        { "block": "s3.3.2/p1", "quote": "doxorubicin as a reference drug for further 72 h" },
+        { "block": "abstract/p1", "quote": "sulforhodamine B (SRB) colorimetric assay" }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dox_pc3",
+      "subject": ["dox"],
+      "property": "ic50",
+      "value": {
+        "number": "0.84",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "uncertainty": { "kind": "sd", "number": "0.079" },
+        "statistic": "mean"
+      },
+      "conditions": [
+        { "role": "cell_line", "entity": "pc3" },
+        { "property": "exposure_time", "value": { "number": "72", "unit": "h", "unit_text": "h" } }
+      ],
+      "method": { "label": "sulforhodamine B (SRB) colorimetric assay" },
+      "evidence": [
+        { "block": "t1/r24c6", "quote": "0.84 ± 0.079" },
+        { "block": "t1/r1c5", "quote": "IC50 (μM)" },
+        { "block": "t1/r2c6", "quote": "PC-3" },
+        { "block": "t1/r24c1", "quote": "Dox." },
+        { "block": "t1/foot1", "quote": "IC50 values are presented as mean ± S.D. of three separate experiments" },
+        { "block": "s3.3.2/p1", "quote": "doxorubicin as a reference drug for further 72 h" },
+        { "block": "abstract/p1", "quote": "sulforhodamine B (SRB) colorimetric assay" }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "c5o_mcf7",
+      "subject": ["c5o"],
+      "property": "ic50",
+      "value": {
+        "number": "1.04",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "uncertainty": { "kind": "sd", "number": "0.10" },
+        "statistic": "mean"
+      },
+      "conditions": [
+        { "role": "cell_line", "entity": "mcf7" },
+        { "property": "exposure_time", "value": { "number": "72", "unit": "h", "unit_text": "h" } }
+      ],
+      "method": { "label": "sulforhodamine B (SRB) colorimetric assay" },
+      "evidence": [
+        { "block": "t1/r17c5", "quote": "1.04 ± 0.10" },
+        { "block": "t1/r1c5", "quote": "IC50 (μM)" },
+        { "block": "t1/r2c5", "quote": "MCF-7" },
+        { "block": "t1/foot1", "quote": "IC50 values are presented as mean ± S.D. of three separate experiments" },
+        { "block": "s3.3.2/p1", "quote": "the compounds under investigation as well as doxorubicin as a reference drug for further 72 h" },
+        { "block": "abstract/p1", "quote": "sulforhodamine B (SRB) colorimetric assay" }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "c5p_pc3",
+      "subject": ["c5p"],
+      "property": "ic50",
+      "value": { "number": "100", "bound": "gt", "unit": "umol/L", "unit_text": "μM" },
+      "conditions": [
+        { "role": "cell_line", "entity": "pc3" },
+        { "property": "exposure_time", "value": { "number": "72", "unit": "h", "unit_text": "h" } }
+      ],
+      "method": { "label": "sulforhodamine B (SRB) colorimetric assay" },
+      "note": "The table gives \"NA\", and its footnote defines NA as an IC50 value of more than 100 μM.",
+      "evidence": [
+        { "block": "t1/r18c6", "quote": "NA b" },
+        { "block": "t1/foot1", "quote": "NA: Compounds having IC50 value > 100 μM" },
+        { "block": "t1/r2c6", "quote": "PC-3" },
+        { "block": "s3.3.2/p1", "quote": "the compounds under investigation as well as doxorubicin as a reference drug for further 72 h" },
+        { "block": "abstract/p1", "quote": "sulforhodamine B (SRB) colorimetric assay" }
+      ]
+    }
+  ]
+}

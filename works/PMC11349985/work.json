@@ -1,0 +1,96 @@
+{
+  "format": "arity-archive/1",
+  "position": 9,
+  "metadata": {
+    "title": "DFT electronic structure investigation of chromium ion-implanted cupric oxide thin films dedicated for photovoltaic absorber layers",
+    "doi": "10.1038/s41598-024-70442-2",
+    "pmid": "39191943",
+    "pmcid": "PMC11349985",
+    "article_type": "research-article",
+    "journal": "Scientific Reports",
+    "publisher": "Nature Publishing Group",
+    "published": "2024-08-27",
+    "year": 2024,
+    "authors": [
+      {
+        "name": "Katarzyna Ungeheuer"
+      },
+      {
+        "name": "Konstanty W. Marszalek"
+      },
+      {
+        "name": "Waldemar Tokarz"
+      },
+      {
+        "name": "Marcin Perzanowski"
+      },
+      {
+        "name": "Zbigniew Kąkol"
+      },
+      {
+        "name": "Marta Marszalek"
+      }
+    ],
+    "license": "CC-BY-4.0",
+    "license_statement": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.",
+    "copyright": "© The Author(s) 2024",
+    "keywords": [
+      "DFT",
+      "Ion implantation",
+      "Thin films",
+      "Electronic structure",
+      "Copper oxide CuO",
+      "Electronic structure",
+      "Solar cells",
+      "Two-dimensional materials"
+    ]
+  },
+  "added_at": "2026-11-14T07:53:54.2480529Z",
+  "updated_at": "2026-11-14T07:54:02.0458268Z",
+  "queue": {
+    "state": "read",
+    "query": "ABSTRACT:\"band gap\" AND ABSTRACT:eV AND ABSTRACT:\"thin films\" AND LICENSE:\"cc by\" AND PUB_YEAR:[2019 TO 2024]",
+    "note": null,
+    "added_at": "2026-11-14T07:53:54.2480529Z",
+    "updated_at": "2026-11-14T07:54:31.9555427Z"
+  },
+  "retrievals": [
+    {
+      "role": "full_text",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11349985.1/PMC11349985.1.xml",
+      "media_type": "application/xml",
+      "sha256": "53e8f3a6e424808b5158c6795426e5d7fd608ac1d7b372b8451c195953ae4ed1",
+      "bytes": 109965,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:54:02.0458268Z"
+    },
+    {
+      "role": "pdf",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11349985.1/PMC11349985.1.pdf",
+      "media_type": "application/pdf",
+      "sha256": "4222b981db83f132b4d354265d76f78084f8b881974b68e19a28d1bac701a937",
+      "bytes": 3301196,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:54:02.0458268Z"
+    }
+  ],
+  "texts": [
+    {
+      "sha256": "5edb2c38df33086b001b822809edb8e447efd26f5b91c5a1d4049c628866ad0f",
+      "parser": "arity-jats 0.1.0",
+      "source": "53e8f3a6e424808b5158c6795426e5d7fd608ac1d7b372b8451c195953ae4ed1"
+    }
+  ],
+  "notices": [],
+  "runs": [
+    {
+      "sequence": 5,
+      "sha256": "5b60697712eb975a30faf762f126ad9ac71701d1b02c629df72633bcca384c93",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-14T07:54:31.9555427Z",
+      "checks": []
+    }
+  ]
+}

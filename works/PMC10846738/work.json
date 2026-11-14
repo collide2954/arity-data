@@ -1,0 +1,108 @@
+{
+  "format": "arity-archive/1",
+  "position": 3,
+  "metadata": {
+    "title": "Cytotoxic metabolites from Sinularia levi supported by network pharmacology",
+    "doi": "10.1371/journal.pone.0294311",
+    "pmid": "38319945",
+    "pmcid": "PMC10846738",
+    "article_type": "research-article",
+    "journal": "PLOS ONE",
+    "publisher": "PLOS",
+    "published": "2024-02-06",
+    "year": 2024,
+    "authors": [
+      {
+        "name": "Mingna Sun"
+      },
+      {
+        "name": "Miada F. Abdelwahab"
+      },
+      {
+        "name": "Jianye Zhang"
+      },
+      {
+        "name": "Mamdouh Nabil Samy"
+      },
+      {
+        "name": "Nada M. Mohamed",
+        "orcid": "0000-0001-5954-668X"
+      },
+      {
+        "name": "Islam M. Abdel-Rahman",
+        "orcid": "0000-0003-0621-0677"
+      },
+      {
+        "name": "Faisal Alsenani"
+      },
+      {
+        "name": "Usama Ramadan Abdelmohsen",
+        "orcid": "0000-0002-1014-6922"
+      },
+      {
+        "name": "Basma Khalaf Mahmoud"
+      }
+    ],
+    "license": "CC-BY-4.0",
+    "license_statement": "This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+    "copyright": "© 2024 Sun et al"
+  },
+  "added_at": "2026-11-14T07:51:22.2164038Z",
+  "updated_at": "2026-11-14T07:51:24.5135769Z",
+  "queue": {
+    "state": "read",
+    "query": null,
+    "note": null,
+    "added_at": "2026-11-14T07:51:22.2164038Z",
+    "updated_at": "2026-11-14T07:53:31.0655402Z"
+  },
+  "retrievals": [
+    {
+      "role": "full_text",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10846738.1/PMC10846738.1.xml",
+      "media_type": "application/xml",
+      "sha256": "7a9aa23f597c52b499526cbba93b5ccf020d42fc53bd666af7f1d8d7e3102d59",
+      "bytes": 184640,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "pdf",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10846738.1/PMC10846738.1.pdf",
+      "media_type": "application/pdf",
+      "sha256": "4a745544f41d5c2a96b4e1caf42d4d81d27c0fc371278f61837513608ba910f7",
+      "bytes": 3316024,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp1",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10846738.1/pone.0294311.s001.docx",
+      "media_type": "binary/octet-stream",
+      "sha256": "40761b88a7749f43b130b0ad2360269b4fa83afde704b906589c6c67e5ffee85",
+      "bytes": 1570386,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    }
+  ],
+  "texts": [
+    {
+      "sha256": "23730591e456ca922a3f0c3b708c1dbc7f0fff9424ad8971de1d58d600bae63f",
+      "parser": "arity-jats 0.1.0",
+      "source": "7a9aa23f597c52b499526cbba93b5ccf020d42fc53bd666af7f1d8d7e3102d59"
+    }
+  ],
+  "notices": [],
+  "runs": [
+    {
+      "sequence": 3,
+      "sha256": "8712ccf5d9ae5eaa5f760f39400592382863b977ee1bce6fc5464a98e5e1f42d",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-14T07:53:31.0655402Z",
+      "checks": []
+    }
+  ]
+}

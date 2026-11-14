@@ -1,0 +1,132 @@
+{
+  "format": "arity-archive/1",
+  "position": 12,
+  "metadata": {
+    "title": "RETRACTED ARTICLE: Dual role of ROS-dependent anti-cancer activity and photocatalytic degradation of graphene oxide against MCF-7 breast cancer cells and organic dye",
+    "doi": "10.1038/s41598-025-24602-7",
+    "pmid": "41258010",
+    "pmcid": "PMC12630849",
+    "article_type": "research-article",
+    "journal": "Scientific Reports",
+    "publisher": "Nature Publishing Group",
+    "published": "2025-11-19",
+    "year": 2025,
+    "authors": [
+      {
+        "name": "Chenthis Kanisha Chelliah"
+      },
+      {
+        "name": "Govindan Rajivgandhi"
+      },
+      {
+        "name": "Muthuchamy Maruthupandy"
+      },
+      {
+        "name": "Gnanasekaran Chackaravarthi"
+      },
+      {
+        "name": "Govindan Ramachandran"
+      },
+      {
+        "name": "Yong-Hong Liu"
+      },
+      {
+        "name": "Osama Abdalla Abdelshafy Mohamad"
+      },
+      {
+        "name": "Shuai Li"
+      },
+      {
+        "name": "Wen-Jun Li"
+      },
+      {
+        "name": "Vijayabhaskara Rao Bhaviripudi"
+      },
+      {
+        "name": "S. Sathik Basha"
+      },
+      {
+        "name": "Kiran Shahapurkar"
+      },
+      {
+        "name": "Gezahgn Gebremaryam"
+      }
+    ],
+    "license": "CC-BY-NC-ND-4.0",
+    "license_statement": "Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.",
+    "copyright": "© The Author(s) 2025",
+    "keywords": [
+      "Graphene oxide",
+      "Anti-cancer properties",
+      "In vitro inhibition",
+      "Apoptotic cell death and mitochondrial damage",
+      "Breast cancer",
+      "Cancer",
+      "Drug discovery",
+      "Drug delivery"
+    ]
+  },
+  "added_at": "2026-11-14T07:55:34.2917486Z",
+  "updated_at": "2026-11-14T07:56:41.017513Z",
+  "queue": {
+    "state": "read",
+    "query": "doxorubicin AND \"MCF-7\" AND PUB_TYPE:\"Retracted Publication\"",
+    "note": null,
+    "added_at": "2026-11-14T07:55:34.2917486Z",
+    "updated_at": "2026-11-14T08:01:39.8080046Z"
+  },
+  "retrievals": [
+    {
+      "role": "full_text",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12630849.1/PMC12630849.1.xml",
+      "media_type": "application/xml",
+      "sha256": "23c1c1f943db41210be772dfa22efde8e0a89047facad0d017b4368c945c2669",
+      "bytes": 169348,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:56:41.017513Z"
+    }
+  ],
+  "texts": [
+    {
+      "sha256": "7db94e8a727a7b31deeab888bd17cd1ab08fca4e17c3583e53dffbbcc3451dfd",
+      "parser": "arity-jats 0.1.0",
+      "source": "23c1c1f943db41210be772dfa22efde8e0a89047facad0d017b4368c945c2669"
+    }
+  ],
+  "notices": [
+    {
+      "kind": "retraction",
+      "reported_type": "Retraction in",
+      "source": "europe_pmc",
+      "notice_doi": "10.1038/s41598-026-64542-4",
+      "notice_pmid": "42717226",
+      "notice_citation": "Sci Rep. 2026 Sep 9;16(1):28230. doi: 10.1038/s41598-026-64542-4.",
+      "retrieved_at": "2026-11-14T07:55:34.2917486Z"
+    },
+    {
+      "kind": "retraction",
+      "reported_type": "is_retracted",
+      "source": "pmc",
+      "source_record": "PMC12630849.1",
+      "retrieved_at": "2026-11-14T07:55:45.5197339Z"
+    },
+    {
+      "kind": "retraction",
+      "reported_type": "retraction",
+      "source": "crossref",
+      "notice_doi": "10.1038/s41598-026-64542-4",
+      "date": "2026-09-09",
+      "retrieved_at": "2026-11-14T07:55:45.5197339Z"
+    }
+  ],
+  "runs": [
+    {
+      "sequence": 7,
+      "sha256": "5dbc6a6216f049d6b3a5067f54260be334716729cd18cba2a72b20680e0cb194",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-14T08:01:39.8080046Z",
+      "checks": []
+    }
+  ]
+}

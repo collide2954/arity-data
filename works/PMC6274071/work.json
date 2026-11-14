@@ -1,0 +1,112 @@
+{
+  "format": "arity-archive/1",
+  "position": 2,
+  "metadata": {
+    "title": "Synthesis and Cytotoxic Activity of Biphenylurea Derivatives Containing Indolin-2-one Moieties",
+    "doi": "10.3390/molecules21060762",
+    "pmid": "27294903",
+    "pmcid": "PMC6274071",
+    "article_type": "research-article",
+    "journal": "Molecules",
+    "publisher": "Multidisciplinary Digital Publishing Institute (MDPI)",
+    "published": "2016-06-10",
+    "year": 2016,
+    "authors": [
+      {
+        "name": "Wagdy M. Eldehna"
+      },
+      {
+        "name": "Mohamed Fares"
+      },
+      {
+        "name": "Hany S. Ibrahim"
+      },
+      {
+        "name": "Muhammad A. Alsherbiny"
+      },
+      {
+        "name": "Mohamed H. Aly"
+      },
+      {
+        "name": "Hazem A. Ghabbour"
+      },
+      {
+        "name": "Hatem A. Abdel-Aziz"
+      }
+    ],
+    "license": "CC-BY-4.0",
+    "license_statement": "Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC-BY) license (http://creativecommons.org/licenses/by/4.0/).",
+    "copyright": "© 2016 by the authors.",
+    "keywords": [
+      "biphenylurea",
+      "cytotoxic activity",
+      "indolinone",
+      "ADME"
+    ]
+  },
+  "added_at": "2026-11-14T07:07:01.5106139Z",
+  "updated_at": "2026-11-14T07:07:02.5877096Z",
+  "queue": {
+    "state": "read",
+    "query": null,
+    "note": null,
+    "added_at": "2026-11-14T07:07:01.5106139Z",
+    "updated_at": "2026-11-14T07:55:18.8644913Z"
+  },
+  "retrievals": [
+    {
+      "role": "full_text",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6274071.1/PMC6274071.1.xml",
+      "media_type": "application/xml",
+      "sha256": "d3bce12f3d9ea60ed2e4470785a9e9afca9a23281b0065bd8f90080d94c3f3af",
+      "bytes": 117105,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:07:02.5877096Z"
+    },
+    {
+      "role": "pdf",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6274071.1/PMC6274071.1.pdf",
+      "media_type": "application/pdf",
+      "sha256": "5b721499d7644dcaed4708acdee956ca313c5fd86d404f4af6875d61fff59fa0",
+      "bytes": 1128282,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:07:02.5877096Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp1",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6274071.1/molecules-21-00762-s001.pdf",
+      "media_type": "binary/octet-stream",
+      "sha256": "3f9bbf4991a4d6b0265de16feff2bbcf5f2c51c859658d26b8e86e892af8f6dc",
+      "bytes": 1962455,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:07:02.5877096Z"
+    }
+  ],
+  "texts": [
+    {
+      "sha256": "7c4162ba9cbc1565128338fa4cf5ca6779d7423f0b09e38552898675a091744f",
+      "parser": "arity-jats 0.1.0",
+      "source": "d3bce12f3d9ea60ed2e4470785a9e9afca9a23281b0065bd8f90080d94c3f3af"
+    }
+  ],
+  "notices": [],
+  "runs": [
+    {
+      "sequence": 2,
+      "sha256": "559b364df66e270ca44f85b742d95946e00c488b3ae866c5acd430f484b11b3c",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-14T07:51:10.761908Z",
+      "checks": []
+    },
+    {
+      "sequence": 6,
+      "sha256": "33551142660daef10772275f677307515ab93eb5ce44f2595d7b8e5e00926c50",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-14T07:55:18.8644913Z",
+      "checks": []
+    }
+  ]
+}

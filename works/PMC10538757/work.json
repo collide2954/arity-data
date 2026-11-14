@@ -1,0 +1,90 @@
+{
+  "format": "arity-archive/1",
+  "position": 1,
+  "metadata": {
+    "title": "Synergistic combination of doxorubicin with hydralazine, and disulfiram against MCF-7 breast cancer cell line",
+    "doi": "10.1371/journal.pone.0291981",
+    "pmid": "37768997",
+    "pmcid": "PMC10538757",
+    "article_type": "research-article",
+    "journal": "PLOS ONE",
+    "publisher": "PLOS",
+    "published": "2023-09-28",
+    "year": 2023,
+    "authors": [
+      {
+        "name": "Zainab Lafi"
+      },
+      {
+        "name": "Walhan Alshaer",
+        "orcid": "0000-0003-2946-7328"
+      },
+      {
+        "name": "Lobna Gharaibeh"
+      },
+      {
+        "name": "Dana A. Alqudah"
+      },
+      {
+        "name": "Baidaa AlQuaissi"
+      },
+      {
+        "name": "Banan Bashaireh"
+      },
+      {
+        "name": "Abed Alqader Ibrahim"
+      }
+    ],
+    "license": "CC-BY-4.0",
+    "license_statement": "This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+    "copyright": "© 2023 Lafi et al"
+  },
+  "added_at": "2026-11-14T07:07:01.5106139Z",
+  "updated_at": "2026-11-14T07:07:02.5877096Z",
+  "queue": {
+    "state": "read",
+    "query": null,
+    "note": null,
+    "added_at": "2026-11-14T07:07:01.5106139Z",
+    "updated_at": "2026-11-14T07:45:15.5350889Z"
+  },
+  "retrievals": [
+    {
+      "role": "full_text",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10538757.1/PMC10538757.1.xml",
+      "media_type": "application/xml",
+      "sha256": "b909ab50328307e5448df8d28839d9ecd60b02c4cf1097761f99757be2a07c3f",
+      "bytes": 115094,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:07:02.5877096Z"
+    },
+    {
+      "role": "pdf",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10538757.1/PMC10538757.1.pdf",
+      "media_type": "application/pdf",
+      "sha256": "844fe2eb8a973b2ba3a9bf33f0376d50a29389a84847764d24da3a251f98ef93",
+      "bytes": 1868902,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:07:02.5877096Z"
+    }
+  ],
+  "texts": [
+    {
+      "sha256": "7b94dd3f7c8222542384925aa4ffdac94ca9a8470b03961d1eba0bbc553e79e7",
+      "parser": "arity-jats 0.1.0",
+      "source": "b909ab50328307e5448df8d28839d9ecd60b02c4cf1097761f99757be2a07c3f"
+    }
+  ],
+  "notices": [],
+  "runs": [
+    {
+      "sequence": 1,
+      "sha256": "1855b5e831db184f1a5f60d7f90a5a2f04112b178771f8d44f0def40e4eb945a",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-14T07:45:15.5350889Z",
+      "checks": []
+    }
+  ]
+}

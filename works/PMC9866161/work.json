@@ -1,0 +1,101 @@
+{
+  "format": "arity-archive/1",
+  "position": 5,
+  "metadata": {
+    "title": "Evaluation of Zamia floridana A. DC. Leaves and Its Isolated Secondary Metabolites as Natural Anti-Toxoplasma and Anti-Cancer Agents Using In Vitro and In Silico Studies",
+    "doi": "10.3390/metabo13010010",
+    "pmid": "36676935",
+    "pmcid": "PMC9866161",
+    "article_type": "research-article",
+    "journal": "Metabolites",
+    "publisher": "Multidisciplinary Digital Publishing Institute (MDPI)",
+    "published": "2022-12-21",
+    "year": 2022,
+    "authors": [
+      {
+        "name": "Hosam M. El-Seadawy",
+        "orcid": "0000-0001-7932-6967"
+      },
+      {
+        "name": "Kamilia A. Abo El-Seoud"
+      },
+      {
+        "name": "Mona El-Aasr",
+        "orcid": "0000-0002-3656-6423"
+      },
+      {
+        "name": "Haytham O. Tawfik",
+        "orcid": "0000-0001-6455-5716"
+      },
+      {
+        "name": "Wagdy M. Eldehna",
+        "orcid": "0000-0001-6996-4017"
+      },
+      {
+        "name": "Amany E. Ragab",
+        "orcid": "0000-0001-8276-5397"
+      }
+    ],
+    "license": "CC-BY-4.0",
+    "license_statement": "Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).",
+    "copyright": "© 2022 by the authors.",
+    "keywords": [
+      "Zamia floridana",
+      "toxoplasmosis",
+      "cytotoxicity",
+      "in silico docking",
+      "bioflavonoids",
+      "phenolic acid derivatives"
+    ]
+  },
+  "added_at": "2026-11-14T07:51:22.2164038Z",
+  "updated_at": "2026-11-14T07:51:24.5135769Z",
+  "queue": {
+    "state": "fetched",
+    "query": null,
+    "note": null,
+    "added_at": "2026-11-14T07:51:22.2164038Z",
+    "updated_at": "2026-11-14T07:51:24.5135769Z"
+  },
+  "retrievals": [
+    {
+      "role": "full_text",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9866161.1/PMC9866161.1.xml",
+      "media_type": "application/xml",
+      "sha256": "2c1919579b6f76f92f3e143e291de14d42b88132360827d05c86731c695cce1e",
+      "bytes": 170615,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "pdf",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9866161.1/PMC9866161.1.pdf",
+      "media_type": "application/pdf",
+      "sha256": "ccb7a132d4a569e450c6180e6f6dd49c48b241cd9d19f34f6d563a7d797994d7",
+      "bytes": 1454816,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp1",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9866161.1/metabolites-13-00010-s001.zip",
+      "media_type": "binary/octet-stream",
+      "sha256": "9ae41c45176a922431839b7a1a0567403306eab1633dc9078c7152d56f60164a",
+      "bytes": 3155898,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    }
+  ],
+  "texts": [
+    {
+      "sha256": "84daf8bc13002e72a92a1624b009c8aab525f33bfd9a45014491af1a87af21a5",
+      "parser": "arity-jats 0.1.0",
+      "source": "2c1919579b6f76f92f3e143e291de14d42b88132360827d05c86731c695cce1e"
+    }
+  ],
+  "notices": [],
+  "runs": []
+}

@@ -1,0 +1,72 @@
+{
+  "format": "arity-submission/1",
+  "work": "PMC11349985",
+  "text": "5edb2c38df33086b001b822809edb8e447efd26f5b91c5a1d4049c628866ad0f",
+  "reader": { "kind": "software", "name": "Claude (Anthropic)", "version": "claude-opus-5-5" },
+  "responsible": { "name": "Brett Gilio" },
+  "note": "Pilot reading of the conclusions: the optical band gap of CuO thin films.",
+  "entities": [
+    {
+      "id": "cuo_film",
+      "kind": "material",
+      "label": "cupric oxide (CuO) thin film",
+      "note": "Deposited by reactive magnetron sputtering on silicon and glass.",
+      "mentions": [{ "block": "abstract/p1", "quote": "cupric oxide (CuO) thin films" }]
+    },
+    {
+      "id": "cr_implant_anneal",
+      "kind": "procedure",
+      "label": "Cr+ ion implantation and annealing in air",
+      "mentions": [{ "block": "s4/p3", "quote": "Cr+ ion implantation and further annealing in air" }]
+    }
+  ],
+  "properties": [
+    {
+      "id": "band_gap",
+      "label": "optical band gap",
+      "value_type": "quantity",
+      "unit": "eV",
+      "description": "The energy gap between the valence band and the conduction band, from optical measurements."
+    }
+  ],
+  "reports": [
+    {
+      "type": "value",
+      "id": "cuo_gap",
+      "subject": ["cuo_film"],
+      "property": "band_gap",
+      "value": { "number": "1.10", "unit": "eV", "unit_text": "eV" },
+      "method": { "label": "Tauc's plot method" },
+      "note": "The band gap before the modifications.",
+      "evidence": [
+        { "block": "s4/p3", "quote": "increase the band gap of CuO from 1.10 eV to about 1.20 eV for implanted and annealed samples" },
+        { "block": "s4/p3", "quote": "optical energy band gap estimated using Tauc's plot method" }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "cuo_gap_modified",
+      "subject": ["cuo_film"],
+      "property": "band_gap",
+      "value": { "number": "1.20", "bound": "approx", "unit": "eV", "unit_text": "eV" },
+      "conditions": [{ "role": "other", "entity": "cr_implant_anneal" }],
+      "method": { "label": "Tauc's plot method" },
+      "evidence": [
+        { "block": "s4/p3", "quote": "increase the band gap of CuO from 1.10 eV to about 1.20 eV for implanted and annealed samples" },
+        { "block": "s4/p3", "quote": "optical energy band gap estimated using Tauc's plot method" }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "modification_on_gap",
+      "agents": [{ "entity": "cr_implant_anneal" }],
+      "target": { "entity": "cuo_film", "property": "band_gap" },
+      "direction": "increase",
+      "method": { "label": "Tauc's plot method" },
+      "evidence": [
+        { "block": "s4/p3", "quote": "used modifications increase the band gap of CuO from 1.10 eV to about 1.20 eV for implanted and annealed samples" },
+        { "block": "s4/p3", "quote": "optical energy band gap estimated using Tauc's plot method" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "format": "arity-archive/1",
+  "position": 7,
+  "metadata": {
+    "title": "Synthesis and Antiproliferative Activities of Benzimidazole-Based Sulfide and Sulfoxide Derivatives",
+    "doi": "10.3797/scipharm.1507-02",
+    "pmid": "27110495",
+    "pmcid": "PMC4839274",
+    "article_type": "research-article",
+    "journal": "Scientia Pharmaceutica",
+    "publisher": "Österreichische Apotheker-Verlagsgesellschaft, m. b. H.",
+    "published": "2015-08-18",
+    "year": 2015,
+    "authors": [
+      {
+        "name": "Samir T. Gaballah"
+      },
+      {
+        "name": "Ahmed O. H. El-Nezhawy"
+      },
+      {
+        "name": "Hassan Amer"
+      },
+      {
+        "name": "Mamdouh Moawad Ali"
+      },
+      {
+        "name": "Abeer Essam El-Din Mahmoud"
+      },
+      {
+        "name": "Andreas Hofinger-Horvath"
+      }
+    ],
+    "license": "CC-BY-3.0",
+    "license_statement": "This is an Open Access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.",
+    "copyright": "Copyright: © Gaballah et al.",
+    "keywords": [
+      "Benzimidazole",
+      "Sulfide",
+      "Sulfoxide",
+      "Chemoselective Oxidation",
+      "Antiproliferative Activity"
+    ]
+  },
+  "added_at": "2026-11-14T07:51:22.2164038Z",
+  "updated_at": "2026-11-14T07:51:24.5135769Z",
+  "queue": {
+    "state": "read",
+    "query": null,
+    "note": null,
+    "added_at": "2026-11-14T07:51:22.2164038Z",
+    "updated_at": "2026-11-14T07:53:31.2713509Z"
+  },
+  "retrievals": [
+    {
+      "role": "full_text",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC4839274.1/PMC4839274.1.xml",
+      "media_type": "application/xml",
+      "sha256": "5d4825153d981d9d5306f4251fb0c03181880fafc7c8544328f63d89a3f1cfcf",
+      "bytes": 117355,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "pdf",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC4839274.1/PMC4839274.1.pdf",
+      "media_type": "application/pdf",
+      "sha256": "45a43f94b730da1810806a03c1b25617c4acb58508a7cd623ca5dd8e71185819",
+      "bytes": 192953,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    }
+  ],
+  "texts": [
+    {
+      "sha256": "3776b4a7090d21c088936e26ca6d4bb63e49bccfcfd39a6fb732f857a0c4bb23",
+      "parser": "arity-jats 0.1.0",
+      "source": "5d4825153d981d9d5306f4251fb0c03181880fafc7c8544328f63d89a3f1cfcf"
+    }
+  ],
+  "notices": [],
+  "runs": [
+    {
+      "sequence": 4,
+      "sha256": "eb527b5f8e274cb689da07e27a7198c6936348a34be96787f3907f31404d8cbe",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-14T07:53:31.2713509Z",
+      "checks": []
+    }
+  ]
+}

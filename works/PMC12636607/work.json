@@ -1,0 +1,73 @@
+{
+  "format": "arity-archive/1",
+  "position": 13,
+  "metadata": {
+    "title": "Recent progress in the exploitation of anti-cancer small molecules targeting angiogenesis.",
+    "doi": "10.1080/14756366.2025.2584811",
+    "pmid": "41263406",
+    "pmcid": "PMC12636607",
+    "journal": "Journal of enzyme inhibition and medicinal chemistry",
+    "published": "2025-11-20",
+    "year": 2025,
+    "authors": [
+      {
+        "name": "Ying Zheng"
+      },
+      {
+        "name": "Hao Qiu"
+      },
+      {
+        "name": "Ke Zhang"
+      },
+      {
+        "name": "Xiang Ji"
+      },
+      {
+        "name": "Mingxia Song",
+        "orcid": "0009-0006-8337-5191"
+      },
+      {
+        "name": "Xianqing Deng"
+      }
+    ],
+    "license": "CC-BY-NC"
+  },
+  "added_at": "2026-11-14T07:55:34.2917486Z",
+  "updated_at": "2026-11-14T07:55:34.2917486Z",
+  "queue": {
+    "state": "queued",
+    "query": "doxorubicin AND \"MCF-7\" AND PUB_TYPE:\"Retracted Publication\"",
+    "note": null,
+    "added_at": "2026-11-14T07:55:34.2917486Z",
+    "updated_at": "2026-11-14T07:55:34.2917486Z"
+  },
+  "retrievals": [],
+  "texts": [],
+  "notices": [
+    {
+      "kind": "retraction",
+      "reported_type": "Retraction in",
+      "source": "europe_pmc",
+      "notice_doi": "10.1080/14756366.2026.2732491",
+      "notice_pmid": "42745398",
+      "notice_citation": "J Enzyme Inhib Med Chem. 2026 Dec;41(1):2732491. doi: 10.1080/14756366.2026.2732491.",
+      "retrieved_at": "2026-11-14T07:55:34.2917486Z"
+    },
+    {
+      "kind": "retraction",
+      "reported_type": "is_retracted",
+      "source": "pmc",
+      "source_record": "PMC12636607.1",
+      "retrieved_at": "2026-11-14T07:55:45.5197339Z"
+    },
+    {
+      "kind": "retraction",
+      "reported_type": "retraction",
+      "source": "crossref",
+      "notice_doi": "10.1080/14756366.2026.2732491",
+      "date": "2026-09-15",
+      "retrieved_at": "2026-11-14T07:55:45.5197339Z"
+    }
+  ],
+  "runs": []
+}

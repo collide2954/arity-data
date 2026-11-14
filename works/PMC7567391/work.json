@@ -1,0 +1,225 @@
+{
+  "format": "arity-archive/1",
+  "position": 6,
+  "metadata": {
+    "title": "Aldose reductase inhibitor form Cassia glauca: A comparative study of cytotoxic activity with Ag nanoparticles (NPs) and molecular docking evaluation",
+    "doi": "10.1371/journal.pone.0240856",
+    "pmid": "33064762",
+    "pmcid": "PMC7567391",
+    "article_type": "research-article",
+    "journal": "PLoS ONE",
+    "publisher": "PLOS",
+    "published": "2020-10-16",
+    "year": 2020,
+    "authors": [
+      {
+        "name": "Samir M. Osman"
+      },
+      {
+        "name": "Nahla A. Ayoub"
+      },
+      {
+        "name": "Safaa A. Hafez"
+      },
+      {
+        "name": "Haitham A. Ibrahim"
+      },
+      {
+        "name": "Mohamed A. El Raey"
+      },
+      {
+        "name": "Soad Z. El-Emam"
+      },
+      {
+        "name": "Ahmed A. Seada"
+      },
+      {
+        "name": "Amr M. Saadeldeen",
+        "orcid": "0000-0001-5272-0630"
+      }
+    ],
+    "license": "CC-BY-4.0",
+    "license_statement": "This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+    "copyright": "© 2020 Osman et al"
+  },
+  "added_at": "2026-11-14T07:51:22.2164038Z",
+  "updated_at": "2026-11-14T07:51:24.5135769Z",
+  "queue": {
+    "state": "fetched",
+    "query": null,
+    "note": null,
+    "added_at": "2026-11-14T07:51:22.2164038Z",
+    "updated_at": "2026-11-14T07:51:24.5135769Z"
+  },
+  "retrievals": [
+    {
+      "role": "full_text",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7567391.1/PMC7567391.1.xml",
+      "media_type": "application/xml",
+      "sha256": "cfb33d58df810a320154380d6127064ba310e78f45b399fbcf17db1922a6c3d2",
+      "bytes": 143522,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "pdf",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7567391.1/PMC7567391.1.pdf",
+      "media_type": "application/pdf",
+      "sha256": "030aa66d3ff52d45ad7317ef00ca2eafdb7b67b273f9983edbbab5a661a3a5c9",
+      "bytes": 4373740,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp1",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7567391.1/pone.0240856.s001.tif",
+      "media_type": "binary/octet-stream",
+      "sha256": "ded9e1ace5b687515969ac57fc8904f38e18fd9acdd79c82ba27a1d9a5e1b044",
+      "bytes": 89992,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp2",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7567391.1/pone.0240856.s002.tif",
+      "media_type": "binary/octet-stream",
+      "sha256": "cc00ea9402039a4c7a8165154dccca7bbf8a4c584256a8968edfbdb0486fae00",
+      "bytes": 94310,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp3",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7567391.1/pone.0240856.s003.tif",
+      "media_type": "binary/octet-stream",
+      "sha256": "9a30d69a5241efb005bed35a88283db61d2a50deb1ae9ff7fcb3c141e88611e1",
+      "bytes": 87372,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp4",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7567391.1/pone.0240856.s004.tif",
+      "media_type": "binary/octet-stream",
+      "sha256": "9d6d7b5dc7d9c176a6776b1fbd3b383c8d85079d95f306e59de5c1d99a9f5fdc",
+      "bytes": 85574,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp5",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7567391.1/pone.0240856.s005.tif",
+      "media_type": "binary/octet-stream",
+      "sha256": "e456dcb87990b7f2ce993e241d2362ae0f77ef74f27677b269fac2479e8427dd",
+      "bytes": 42316,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp6",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7567391.1/pone.0240856.s006.tif",
+      "media_type": "binary/octet-stream",
+      "sha256": "0cc46077f0e305d9f6f0f6bd006e2e5df57efbda44bf07845b5e26130b797f61",
+      "bytes": 43244,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp7",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7567391.1/pone.0240856.s007.tif",
+      "media_type": "binary/octet-stream",
+      "sha256": "c3a6c76fb655df3bdb6f67b4a17d90b9cd551382266adb3438860ae0a3ffae82",
+      "bytes": 216944,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp8",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7567391.1/pone.0240856.s008.tif",
+      "media_type": "binary/octet-stream",
+      "sha256": "ac17cd0ab136d782d88180221f752f00c28f15c7fcf1b0a6c6ef221abac7e0be",
+      "bytes": 216392,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp9",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7567391.1/pone.0240856.s009.tif",
+      "media_type": "binary/octet-stream",
+      "sha256": "260387000e8e40c090c2538e46f00904a5eca0b7f4dcb5f39e53e9b119ff21c4",
+      "bytes": 68718,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp10",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7567391.1/pone.0240856.s010.tif",
+      "media_type": "binary/octet-stream",
+      "sha256": "2315dc7b647a40a99fb78c515f27acbafc8c5547167335f3904d79ef18f9a4a9",
+      "bytes": 67762,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp11",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7567391.1/pone.0240856.s011.tif",
+      "media_type": "binary/octet-stream",
+      "sha256": "2cc3fc50b3e828b7181267451c0407bff2f2765b06fd0605aa8d1ec345b0e5b8",
+      "bytes": 210504,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp12",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7567391.1/pone.0240856.s012.tif",
+      "media_type": "binary/octet-stream",
+      "sha256": "29ecd130e4b642650d5dfa1e8112fd02f2c924f339c326eef02fecd9e14201dd",
+      "bytes": 176046,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp13",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7567391.1/pone.0240856.s013.pdf",
+      "media_type": "binary/octet-stream",
+      "sha256": "c699cfe8ee1486a88cd2da0c38573d2fe2d19b021e65a37b4625325e7480fec2",
+      "bytes": 214924,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp14",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7567391.1/pone.0240856.s014.pdf",
+      "media_type": "binary/octet-stream",
+      "sha256": "d8d386a142f00bfd2edb5c44263774e5f5a51ccd6b24e6b714a754841c88945a",
+      "bytes": 201124,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T07:51:24.5135769Z"
+    }
+  ],
+  "texts": [
+    {
+      "sha256": "b451545f6eef13a2c1a3b682ddeaa2a54b6797ee80989beb0f7589db40a49082",
+      "parser": "arity-jats 0.1.0",
+      "source": "cfb33d58df810a320154380d6127064ba310e78f45b399fbcf17db1922a6c3d2"
+    }
+  ],
+  "notices": [],
+  "runs": []
+}
