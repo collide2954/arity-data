@@ -45,11 +45,11 @@
   "added_at": "2026-11-14T07:51:22.2164038Z",
   "updated_at": "2026-11-14T07:51:24.5135769Z",
   "queue": {
-    "state": "fetched",
+    "state": "read",
     "query": null,
     "note": null,
     "added_at": "2026-11-14T07:51:22.2164038Z",
-    "updated_at": "2026-11-14T07:51:24.5135769Z"
+    "updated_at": "2026-11-14T23:04:37.5079952Z"
   },
   "retrievals": [
     {
@@ -221,5 +221,13 @@
     }
   ],
   "notices": [],
-  "runs": []
+  "runs": [
+    {
+      "sequence": 17,
+      "sha256": "93a07ea9e6387b77f0020dec3fca478759d3b1069647efb02bd77797fc5753d9",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-14T23:04:37.5079952Z",
+      "checks": []
+    }
+  ]
 }
