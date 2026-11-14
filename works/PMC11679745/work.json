@@ -2,11 +2,13 @@
   "format": "arity-archive/1",
   "position": 10,
   "metadata": {
-    "title": "Enhancing Resistive Switching in AlN-Based Memristors Through Oxidative Al2O3 Layer Formation: A Study on Preparation Techniques and Performance Impact.",
+    "title": "Enhancing Resistive Switching in AlN-Based Memristors Through Oxidative Al2O3 Layer Formation: A Study on Preparation Techniques and Performance Impact",
     "doi": "10.3390/mi15121499",
     "pmid": "39770252",
     "pmcid": "PMC11679745",
+    "article_type": "research-article",
     "journal": "Micromachines",
+    "publisher": "Multidisciplinary Digital Publishing Institute (MDPI)",
     "published": "2024-12-16",
     "year": 2024,
     "authors": [
@@ -44,19 +46,64 @@
         "name": "Litao Sun"
       }
     ],
-    "license": "CC-BY"
+    "license": "CC-BY-4.0",
+    "license_statement": "Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).",
+    "copyright": "© 2024 by the authors.",
+    "keywords": [
+      "aluminum nitride (AlN)",
+      "sputtering",
+      "aluminum oxide (Al2O3)",
+      "memristor",
+      "resistive random access memory (RRAM)",
+      "conductive filaments (CFs)"
+    ]
   },
   "added_at": "2026-11-14T07:53:54.2480529Z",
-  "updated_at": "2026-11-14T07:53:54.2480529Z",
+  "updated_at": "2026-11-14T23:29:21.6982349Z",
   "queue": {
-    "state": "queued",
+    "state": "read",
     "query": "ABSTRACT:\"band gap\" AND ABSTRACT:eV AND ABSTRACT:\"thin films\" AND LICENSE:\"cc by\" AND PUB_YEAR:[2019 TO 2024]",
     "note": null,
     "added_at": "2026-11-14T07:53:54.2480529Z",
-    "updated_at": "2026-11-14T07:53:54.2480529Z"
+    "updated_at": "2026-11-14T23:33:30.4788034Z"
   },
-  "retrievals": [],
-  "texts": [],
+  "retrievals": [
+    {
+      "role": "full_text",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11679745.1/PMC11679745.1.xml",
+      "media_type": "application/xml",
+      "sha256": "2d9022ec2ef3b1626e3e17be187f577764a9a16b3f66249f4be60f29ceec35ef",
+      "bytes": 71744,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T23:29:21.6982349Z"
+    },
+    {
+      "role": "pdf",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11679745.1/PMC11679745.1.pdf",
+      "media_type": "application/pdf",
+      "sha256": "e2124b270ba4b963074de07496636d9f65bc2e401d73c7a6102a5cbd95b66935",
+      "bytes": 3194890,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T23:29:21.6982349Z"
+    }
+  ],
+  "texts": [
+    {
+      "sha256": "e45b19c02043f0934ca75dfe2ce5b9986027c52e2710b42f12838f425965c856",
+      "parser": "arity-jats 0.1.0",
+      "source": "2d9022ec2ef3b1626e3e17be187f577764a9a16b3f66249f4be60f29ceec35ef"
+    }
+  ],
   "notices": [],
-  "runs": []
+  "runs": [
+    {
+      "sequence": 19,
+      "sha256": "e1f9667c10ac1ca6763fefd95d5d54c26283fca90f7359eda6083ead6d231f49",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-14T23:33:30.4788034Z",
+      "checks": []
+    }
+  ]
 }

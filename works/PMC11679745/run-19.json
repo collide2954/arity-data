@@ -1,0 +1,2472 @@
+{
+  "format": "arity-submission/1",
+  "work": "PMC11679745",
+  "text": "e45b19c02043f0934ca75dfe2ce5b9986027c52e2710b42f12838f425965c856",
+  "reader": {
+    "kind": "software",
+    "name": "Claude (Anthropic)",
+    "version": "claude-opus-5-5"
+  },
+  "responsible": {
+    "name": "Brett Gilio"
+  },
+  "note": "A complete reading: the AFM roughness of the AlN film, and the forming, set, and reset voltages, the switching windows, and the cycle endurance of the two memristors, with the sputtering conditions of Table 1 as conditions. The retention time of 10^4 s is not reported, because the text loses its superscript. The other devices of Table 2 come from other works.",
+  "entities": [
+    {
+      "id": "aln_film",
+      "kind": "material",
+      "label": "AlN thin film made by RF magnetron sputtering",
+      "mentions": [
+        {
+          "block": "abstract/p1",
+          "quote": "AlN thin films",
+          "occurrence": 1
+        }
+      ]
+    },
+    {
+      "id": "dev_aln",
+      "kind": "device",
+      "label": "Au/Al/AlN/ITO memristor",
+      "mentions": [
+        {
+          "block": "s3/p1",
+          "quote": "An Au/Al/AlN/ITO device"
+        }
+      ]
+    },
+    {
+      "id": "dev_al2o3",
+      "kind": "device",
+      "label": "Au/Al/Al2O3/AlN/ITO memristor",
+      "note": "The AlN film of this device has a thin Al2O3 layer on its surface, which oxygen in the sputtering chamber forms.",
+      "mentions": [
+        {
+          "block": "s3/p4",
+          "quote": "Au/Al/Al2O3/AlN/ITO device",
+          "occurrence": 1
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "id": "deposition_power"
+    },
+    {
+      "id": "rms_roughness",
+      "label": "root mean square roughness",
+      "value_type": "quantity",
+      "unit": "nm",
+      "description": "The root mean square roughness of a surface."
+    },
+    {
+      "id": "set_voltage",
+      "label": "set voltage",
+      "value_type": "quantity",
+      "unit": "V",
+      "description": "The voltage at which a resistive switching device changes from its high-resistance state to its low-resistance state."
+    },
+    {
+      "id": "reset_voltage",
+      "label": "reset voltage",
+      "value_type": "quantity",
+      "unit": "V",
+      "description": "The voltage at which a resistive switching device changes from its low-resistance state to its high-resistance state."
+    },
+    {
+      "id": "forming_voltage",
+      "label": "forming voltage",
+      "value_type": "quantity",
+      "unit": "V",
+      "description": "The voltage of the first electroforming step that activates a resistive switching device."
+    },
+    {
+      "id": "on_off_ratio",
+      "label": "on/off ratio",
+      "value_type": "quantity",
+      "unit": "1",
+      "description": "The ratio of the resistances of the high-resistance state and the low-resistance state of a switching device."
+    },
+    {
+      "id": "cycle_endurance",
+      "label": "cycle endurance",
+      "value_type": "quantity",
+      "unit": "1",
+      "description": "The number of switching cycles that a device completes."
+    },
+    {
+      "id": "read_voltage",
+      "label": "read voltage",
+      "value_type": "quantity",
+      "unit": "V",
+      "description": "The voltage at which a device reads its state."
+    },
+    {
+      "id": "oxidation_time",
+      "label": "oxidation time",
+      "value_type": "quantity",
+      "unit": "min",
+      "description": "The time for which a sample is exposed to oxygen to oxidize its surface."
+    }
+  ],
+  "reports": [
+    {
+      "type": "value",
+      "id": "aln_film_roughness_0_430",
+      "subject": [
+        "aln_film"
+      ],
+      "property": "rms_roughness",
+      "value": {
+        "number": "0.430",
+        "unit": "nm",
+        "unit_text": "nm"
+      },
+      "conditions": [
+        {
+          "role": "sample",
+          "text": "AlN film deposited on the silicon substrate"
+        },
+        {
+          "role": "other",
+          "text": "5 × 5 µm2"
+        }
+      ],
+      "method": {
+        "label": "atomic force microscopy (AFM)"
+      },
+      "note": "The roughness over an area of 5 × 5 µm2.",
+      "evidence": [
+        {
+          "block": "s3/p2",
+          "quote": "The surface morphology of the AlN film deposited on the silicon substrate was observed using atomic force microscopy (AFM) shown in Figure 2a,b"
+        },
+        {
+          "block": "s3/p2",
+          "quote": "The AFM micrograph shows that the root mean square roughness of AlN films over 5 × 5 µm2 and 1 × 1 µm2 is 0.430 nm and 0.677 nm, respectively"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "AFM images of AlN films with areas of (a) 5 × 5 µm2 and (b) 1 × 1 µm2"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "Their root mean square roughnesses are 0.430 nm and 0.677 nm, respectively"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "aln_film_roughness_0_677",
+      "subject": [
+        "aln_film"
+      ],
+      "property": "rms_roughness",
+      "value": {
+        "number": "0.677",
+        "unit": "nm",
+        "unit_text": "nm"
+      },
+      "conditions": [
+        {
+          "role": "sample",
+          "text": "AlN film deposited on the silicon substrate"
+        },
+        {
+          "role": "other",
+          "text": "1 × 1 µm2"
+        }
+      ],
+      "method": {
+        "label": "atomic force microscopy (AFM)"
+      },
+      "note": "The roughness over an area of 1 × 1 µm2.",
+      "evidence": [
+        {
+          "block": "s3/p2",
+          "quote": "The surface morphology of the AlN film deposited on the silicon substrate was observed using atomic force microscopy (AFM) shown in Figure 2a,b"
+        },
+        {
+          "block": "s3/p2",
+          "quote": "The AFM micrograph shows that the root mean square roughness of AlN films over 5 × 5 µm2 and 1 × 1 µm2 is 0.430 nm and 0.677 nm, respectively"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "AFM images of AlN films with areas of (a) 5 × 5 µm2 and (b) 1 × 1 µm2"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "Their root mean square roughnesses are 0.430 nm and 0.677 nm, respectively"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dev_aln_set",
+      "subject": [
+        "dev_aln"
+      ],
+      "property": "set_voltage",
+      "value": {
+        "number": "4",
+        "bound": "approx",
+        "unit": "V",
+        "unit_text": "V"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "2 cm × 2 cm ITO substrate"
+        },
+        {
+          "role": "other",
+          "text": "Ar = 40 sccm and N2 = 10 sccm"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "250",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "role": "other",
+          "text": "the working pressure was about 5 mTorr"
+        },
+        {
+          "role": "device",
+          "text": "Keithley 4200"
+        },
+        {
+          "role": "other",
+          "text": "circular with diameters of 400 μm and 200 μm"
+        }
+      ],
+      "method": {
+        "label": "I-V measurements"
+      },
+      "evidence": [
+        {
+          "block": "s3/p3",
+          "quote": "Figure 4a illustrates the electroforming process of this device"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Notably, our device exhibits excellent consistency in the bipolar resistive switching (BRS) curve"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "The set voltage is approximately 4 V, and the reset voltage is around −2.5 V. The retention test shown in Figure 4b follows the conventional method for non-volatile memory technologies"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "AlN films were grown on a 2 cm × 2 cm ITO substrate using an RF magnetron sputtering system (NANO36, the FUNSOM experimental platform of Soochow University) from a pure Al (99.999%) target at room temperature"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The sputtering conditions of the AlN films were as follows: At a flow rate of Ar = 40 sccm and N2 = 10 sccm in the chamber, the aluminum target was sputtered with the mixed gas at a power of 250 W, and the working pressure was about 5 mTorr"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The targets for top electrode sputtering were pure Al (99.999%) and pure Au (99.999%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "I-V measurements were performed using a semiconductor parameter analysis system (Keithley 4200, the FUNSOM experimental platform of Soochow University) to confirm resistive switching"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The top electrodes were circular with diameters of 400 μm and 200 μm, deposited from a stainless steel mask"
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Detail conditions of the sputtering process."
+        },
+        {
+          "block": "t1/r2c1",
+          "quote": "Target"
+        },
+        {
+          "block": "t1/r2c2",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c3",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c4",
+          "quote": "Au (99.999%)"
+        },
+        {
+          "block": "t1/r3c1",
+          "quote": "Substrate temperature (°C)"
+        },
+        {
+          "block": "t1/r3c2",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c3",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c4",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r4c1",
+          "quote": "Base pressure (Torr)"
+        },
+        {
+          "block": "t1/r4c2",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c3",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c4",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r5c1",
+          "quote": "Working pressure (mTorr)"
+        },
+        {
+          "block": "t1/r5c2",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c3",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c4",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r6c1",
+          "quote": "RF power (Watt)"
+        },
+        {
+          "block": "t1/r6c2",
+          "quote": "AC250"
+        },
+        {
+          "block": "t1/r6c3",
+          "quote": "DC50"
+        },
+        {
+          "block": "t1/r6c4",
+          "quote": "DC100"
+        },
+        {
+          "block": "t1/r7c1",
+          "quote": "Ar flow/N2 flow"
+        },
+        {
+          "block": "t1/r7c2",
+          "quote": "40 sccm/10 sccm"
+        },
+        {
+          "block": "t1/r7c3",
+          "quote": "43 sccm/0 sccm"
+        },
+        {
+          "block": "t1/r7c4",
+          "quote": "43 sccm/0 sccm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dev_aln_reset",
+      "subject": [
+        "dev_aln"
+      ],
+      "property": "reset_voltage",
+      "value": {
+        "number": "-2.5",
+        "bound": "approx",
+        "unit": "V",
+        "unit_text": "V"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "2 cm × 2 cm ITO substrate"
+        },
+        {
+          "role": "other",
+          "text": "Ar = 40 sccm and N2 = 10 sccm"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "250",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "role": "other",
+          "text": "the working pressure was about 5 mTorr"
+        },
+        {
+          "role": "device",
+          "text": "Keithley 4200"
+        },
+        {
+          "role": "other",
+          "text": "circular with diameters of 400 μm and 200 μm"
+        }
+      ],
+      "method": {
+        "label": "I-V measurements"
+      },
+      "evidence": [
+        {
+          "block": "s3/p3",
+          "quote": "Figure 4a illustrates the electroforming process of this device"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Notably, our device exhibits excellent consistency in the bipolar resistive switching (BRS) curve"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "The set voltage is approximately 4 V, and the reset voltage is around −2.5 V. The retention test shown in Figure 4b follows the conventional method for non-volatile memory technologies"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "AlN films were grown on a 2 cm × 2 cm ITO substrate using an RF magnetron sputtering system (NANO36, the FUNSOM experimental platform of Soochow University) from a pure Al (99.999%) target at room temperature"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The sputtering conditions of the AlN films were as follows: At a flow rate of Ar = 40 sccm and N2 = 10 sccm in the chamber, the aluminum target was sputtered with the mixed gas at a power of 250 W, and the working pressure was about 5 mTorr"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The targets for top electrode sputtering were pure Al (99.999%) and pure Au (99.999%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "I-V measurements were performed using a semiconductor parameter analysis system (Keithley 4200, the FUNSOM experimental platform of Soochow University) to confirm resistive switching"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The top electrodes were circular with diameters of 400 μm and 200 μm, deposited from a stainless steel mask"
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Detail conditions of the sputtering process."
+        },
+        {
+          "block": "t1/r2c1",
+          "quote": "Target"
+        },
+        {
+          "block": "t1/r2c2",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c3",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c4",
+          "quote": "Au (99.999%)"
+        },
+        {
+          "block": "t1/r3c1",
+          "quote": "Substrate temperature (°C)"
+        },
+        {
+          "block": "t1/r3c2",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c3",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c4",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r4c1",
+          "quote": "Base pressure (Torr)"
+        },
+        {
+          "block": "t1/r4c2",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c3",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c4",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r5c1",
+          "quote": "Working pressure (mTorr)"
+        },
+        {
+          "block": "t1/r5c2",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c3",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c4",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r6c1",
+          "quote": "RF power (Watt)"
+        },
+        {
+          "block": "t1/r6c2",
+          "quote": "AC250"
+        },
+        {
+          "block": "t1/r6c3",
+          "quote": "DC50"
+        },
+        {
+          "block": "t1/r6c4",
+          "quote": "DC100"
+        },
+        {
+          "block": "t1/r7c1",
+          "quote": "Ar flow/N2 flow"
+        },
+        {
+          "block": "t1/r7c2",
+          "quote": "40 sccm/10 sccm"
+        },
+        {
+          "block": "t1/r7c3",
+          "quote": "43 sccm/0 sccm"
+        },
+        {
+          "block": "t1/r7c4",
+          "quote": "43 sccm/0 sccm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dev_aln_ratio",
+      "subject": [
+        "dev_aln"
+      ],
+      "property": "on_off_ratio",
+      "value": {
+        "number": "200",
+        "bound": "approx",
+        "unit": "1"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "2 cm × 2 cm ITO substrate"
+        },
+        {
+          "role": "other",
+          "text": "Ar = 40 sccm and N2 = 10 sccm"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "250",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "role": "other",
+          "text": "the working pressure was about 5 mTorr"
+        },
+        {
+          "role": "device",
+          "text": "Keithley 4200"
+        },
+        {
+          "role": "other",
+          "text": "circular with diameters of 400 μm and 200 μm"
+        },
+        {
+          "property": "read_voltage",
+          "value": {
+            "number": "0.1",
+            "unit": "V",
+            "unit_text": "V"
+          }
+        }
+      ],
+      "method": {
+        "label": "I-V measurements"
+      },
+      "note": "The source calls it the switching window and writes it as 2 × 10^2.",
+      "evidence": [
+        {
+          "block": "s3/p3",
+          "quote": "The set voltage is approximately 4 V, and the reset voltage is around −2.5 V. The retention test shown in Figure 4b follows the conventional method for non-volatile memory technologies"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Then, the resistance values of HRS and LRS are measured every 2.5 s using a 0.1 V reading voltage"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Additionally, as shown in Figure 4b, the switching window of the device is approximately 2 × 102"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "AlN films were grown on a 2 cm × 2 cm ITO substrate using an RF magnetron sputtering system (NANO36, the FUNSOM experimental platform of Soochow University) from a pure Al (99.999%) target at room temperature"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The sputtering conditions of the AlN films were as follows: At a flow rate of Ar = 40 sccm and N2 = 10 sccm in the chamber, the aluminum target was sputtered with the mixed gas at a power of 250 W, and the working pressure was about 5 mTorr"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The targets for top electrode sputtering were pure Al (99.999%) and pure Au (99.999%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "I-V measurements were performed using a semiconductor parameter analysis system (Keithley 4200, the FUNSOM experimental platform of Soochow University) to confirm resistive switching"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The top electrodes were circular with diameters of 400 μm and 200 μm, deposited from a stainless steel mask"
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Detail conditions of the sputtering process."
+        },
+        {
+          "block": "t1/r2c1",
+          "quote": "Target"
+        },
+        {
+          "block": "t1/r2c2",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c3",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c4",
+          "quote": "Au (99.999%)"
+        },
+        {
+          "block": "t1/r3c1",
+          "quote": "Substrate temperature (°C)"
+        },
+        {
+          "block": "t1/r3c2",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c3",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c4",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r4c1",
+          "quote": "Base pressure (Torr)"
+        },
+        {
+          "block": "t1/r4c2",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c3",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c4",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r5c1",
+          "quote": "Working pressure (mTorr)"
+        },
+        {
+          "block": "t1/r5c2",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c3",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c4",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r6c1",
+          "quote": "RF power (Watt)"
+        },
+        {
+          "block": "t1/r6c2",
+          "quote": "AC250"
+        },
+        {
+          "block": "t1/r6c3",
+          "quote": "DC50"
+        },
+        {
+          "block": "t1/r6c4",
+          "quote": "DC100"
+        },
+        {
+          "block": "t1/r7c1",
+          "quote": "Ar flow/N2 flow"
+        },
+        {
+          "block": "t1/r7c2",
+          "quote": "40 sccm/10 sccm"
+        },
+        {
+          "block": "t1/r7c3",
+          "quote": "43 sccm/0 sccm"
+        },
+        {
+          "block": "t1/r7c4",
+          "quote": "43 sccm/0 sccm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dev_al2o3_forming",
+      "subject": [
+        "dev_al2o3"
+      ],
+      "property": "forming_voltage",
+      "value": {
+        "number": "5.0",
+        "bound": "approx",
+        "unit": "V",
+        "unit_text": "V"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "2 cm × 2 cm ITO substrate"
+        },
+        {
+          "role": "other",
+          "text": "Ar = 40 sccm and N2 = 10 sccm"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "250",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "role": "other",
+          "text": "the working pressure was about 5 mTorr"
+        },
+        {
+          "role": "device",
+          "text": "Keithley 4200"
+        },
+        {
+          "role": "other",
+          "text": "circular with diameters of 400 μm and 200 μm"
+        },
+        {
+          "property": "oxidation_time",
+          "value": {
+            "number": "5",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        }
+      ],
+      "method": {
+        "label": "I-V measurements"
+      },
+      "evidence": [
+        {
+          "block": "s3/p4",
+          "quote": "Specifically, the forming voltage for the Au/Al/Al2O3/AlN/ITO device is approximately 5.0 V. Figure 4c shows the BRS curve for the Au/Al/Al2O3/AlN/ITO device"
+        },
+        {
+          "block": "s3/p4",
+          "quote": "Next, a new device was fabricated under the same conditions"
+        },
+        {
+          "block": "s3/p4",
+          "quote": "The only difference was that after the growth of the AlN film, 5 min of oxygen was introduced into the sputtering chamber, resulting in the oxidation of the AlN film surface to form a thin Al2O3 layer"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "AlN films were grown on a 2 cm × 2 cm ITO substrate using an RF magnetron sputtering system (NANO36, the FUNSOM experimental platform of Soochow University) from a pure Al (99.999%) target at room temperature"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The sputtering conditions of the AlN films were as follows: At a flow rate of Ar = 40 sccm and N2 = 10 sccm in the chamber, the aluminum target was sputtered with the mixed gas at a power of 250 W, and the working pressure was about 5 mTorr"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The targets for top electrode sputtering were pure Al (99.999%) and pure Au (99.999%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "I-V measurements were performed using a semiconductor parameter analysis system (Keithley 4200, the FUNSOM experimental platform of Soochow University) to confirm resistive switching"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The top electrodes were circular with diameters of 400 μm and 200 μm, deposited from a stainless steel mask"
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Detail conditions of the sputtering process."
+        },
+        {
+          "block": "t1/r2c1",
+          "quote": "Target"
+        },
+        {
+          "block": "t1/r2c2",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c3",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c4",
+          "quote": "Au (99.999%)"
+        },
+        {
+          "block": "t1/r3c1",
+          "quote": "Substrate temperature (°C)"
+        },
+        {
+          "block": "t1/r3c2",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c3",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c4",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r4c1",
+          "quote": "Base pressure (Torr)"
+        },
+        {
+          "block": "t1/r4c2",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c3",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c4",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r5c1",
+          "quote": "Working pressure (mTorr)"
+        },
+        {
+          "block": "t1/r5c2",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c3",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c4",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r6c1",
+          "quote": "RF power (Watt)"
+        },
+        {
+          "block": "t1/r6c2",
+          "quote": "AC250"
+        },
+        {
+          "block": "t1/r6c3",
+          "quote": "DC50"
+        },
+        {
+          "block": "t1/r6c4",
+          "quote": "DC100"
+        },
+        {
+          "block": "t1/r7c1",
+          "quote": "Ar flow/N2 flow"
+        },
+        {
+          "block": "t1/r7c2",
+          "quote": "40 sccm/10 sccm"
+        },
+        {
+          "block": "t1/r7c3",
+          "quote": "43 sccm/0 sccm"
+        },
+        {
+          "block": "t1/r7c4",
+          "quote": "43 sccm/0 sccm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dev_al2o3_set",
+      "subject": [
+        "dev_al2o3"
+      ],
+      "property": "set_voltage",
+      "value": {
+        "number": "4",
+        "bound": "approx",
+        "unit": "V",
+        "unit_text": "V"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "2 cm × 2 cm ITO substrate"
+        },
+        {
+          "role": "other",
+          "text": "Ar = 40 sccm and N2 = 10 sccm"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "250",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "role": "other",
+          "text": "the working pressure was about 5 mTorr"
+        },
+        {
+          "role": "device",
+          "text": "Keithley 4200"
+        },
+        {
+          "role": "other",
+          "text": "circular with diameters of 400 μm and 200 μm"
+        },
+        {
+          "property": "oxidation_time",
+          "value": {
+            "number": "5",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "0 V → 5 V → 0 V → −3 V → 0 V"
+        }
+      ],
+      "method": {
+        "label": "I-V measurements"
+      },
+      "evidence": [
+        {
+          "block": "s3/p4",
+          "quote": "Next, a new device was fabricated under the same conditions"
+        },
+        {
+          "block": "s3/p4",
+          "quote": "The only difference was that after the growth of the AlN film, 5 min of oxygen was introduced into the sputtering chamber, resulting in the oxidation of the AlN film surface to form a thin Al2O3 layer"
+        },
+        {
+          "block": "s3/p5",
+          "quote": "It is noteworthy that our new device exhibits excellent consistency in the BRS curve"
+        },
+        {
+          "block": "s3/p5",
+          "quote": "The set voltage is approximately 4 V, and the reset voltage is about −2.0 V. The retention test shown in Figure 4d follows the standard procedure for non-volatile memory technology"
+        },
+        {
+          "block": "s3/p4",
+          "quote": "In this case, the voltage sweep in the BRS curve follows the pattern: 0 V → 5 V → 0 V → −3 V → 0 V"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "AlN films were grown on a 2 cm × 2 cm ITO substrate using an RF magnetron sputtering system (NANO36, the FUNSOM experimental platform of Soochow University) from a pure Al (99.999%) target at room temperature"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The sputtering conditions of the AlN films were as follows: At a flow rate of Ar = 40 sccm and N2 = 10 sccm in the chamber, the aluminum target was sputtered with the mixed gas at a power of 250 W, and the working pressure was about 5 mTorr"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The targets for top electrode sputtering were pure Al (99.999%) and pure Au (99.999%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "I-V measurements were performed using a semiconductor parameter analysis system (Keithley 4200, the FUNSOM experimental platform of Soochow University) to confirm resistive switching"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The top electrodes were circular with diameters of 400 μm and 200 μm, deposited from a stainless steel mask"
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Detail conditions of the sputtering process."
+        },
+        {
+          "block": "t1/r2c1",
+          "quote": "Target"
+        },
+        {
+          "block": "t1/r2c2",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c3",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c4",
+          "quote": "Au (99.999%)"
+        },
+        {
+          "block": "t1/r3c1",
+          "quote": "Substrate temperature (°C)"
+        },
+        {
+          "block": "t1/r3c2",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c3",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c4",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r4c1",
+          "quote": "Base pressure (Torr)"
+        },
+        {
+          "block": "t1/r4c2",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c3",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c4",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r5c1",
+          "quote": "Working pressure (mTorr)"
+        },
+        {
+          "block": "t1/r5c2",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c3",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c4",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r6c1",
+          "quote": "RF power (Watt)"
+        },
+        {
+          "block": "t1/r6c2",
+          "quote": "AC250"
+        },
+        {
+          "block": "t1/r6c3",
+          "quote": "DC50"
+        },
+        {
+          "block": "t1/r6c4",
+          "quote": "DC100"
+        },
+        {
+          "block": "t1/r7c1",
+          "quote": "Ar flow/N2 flow"
+        },
+        {
+          "block": "t1/r7c2",
+          "quote": "40 sccm/10 sccm"
+        },
+        {
+          "block": "t1/r7c3",
+          "quote": "43 sccm/0 sccm"
+        },
+        {
+          "block": "t1/r7c4",
+          "quote": "43 sccm/0 sccm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dev_al2o3_reset",
+      "subject": [
+        "dev_al2o3"
+      ],
+      "property": "reset_voltage",
+      "value": {
+        "number": "-2.0",
+        "bound": "approx",
+        "unit": "V",
+        "unit_text": "V"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "2 cm × 2 cm ITO substrate"
+        },
+        {
+          "role": "other",
+          "text": "Ar = 40 sccm and N2 = 10 sccm"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "250",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "role": "other",
+          "text": "the working pressure was about 5 mTorr"
+        },
+        {
+          "role": "device",
+          "text": "Keithley 4200"
+        },
+        {
+          "role": "other",
+          "text": "circular with diameters of 400 μm and 200 μm"
+        },
+        {
+          "property": "oxidation_time",
+          "value": {
+            "number": "5",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "0 V → 5 V → 0 V → −3 V → 0 V"
+        }
+      ],
+      "method": {
+        "label": "I-V measurements"
+      },
+      "evidence": [
+        {
+          "block": "s3/p4",
+          "quote": "Next, a new device was fabricated under the same conditions"
+        },
+        {
+          "block": "s3/p4",
+          "quote": "The only difference was that after the growth of the AlN film, 5 min of oxygen was introduced into the sputtering chamber, resulting in the oxidation of the AlN film surface to form a thin Al2O3 layer"
+        },
+        {
+          "block": "s3/p5",
+          "quote": "It is noteworthy that our new device exhibits excellent consistency in the BRS curve"
+        },
+        {
+          "block": "s3/p5",
+          "quote": "The set voltage is approximately 4 V, and the reset voltage is about −2.0 V. The retention test shown in Figure 4d follows the standard procedure for non-volatile memory technology"
+        },
+        {
+          "block": "s3/p4",
+          "quote": "In this case, the voltage sweep in the BRS curve follows the pattern: 0 V → 5 V → 0 V → −3 V → 0 V"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "AlN films were grown on a 2 cm × 2 cm ITO substrate using an RF magnetron sputtering system (NANO36, the FUNSOM experimental platform of Soochow University) from a pure Al (99.999%) target at room temperature"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The sputtering conditions of the AlN films were as follows: At a flow rate of Ar = 40 sccm and N2 = 10 sccm in the chamber, the aluminum target was sputtered with the mixed gas at a power of 250 W, and the working pressure was about 5 mTorr"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The targets for top electrode sputtering were pure Al (99.999%) and pure Au (99.999%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "I-V measurements were performed using a semiconductor parameter analysis system (Keithley 4200, the FUNSOM experimental platform of Soochow University) to confirm resistive switching"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The top electrodes were circular with diameters of 400 μm and 200 μm, deposited from a stainless steel mask"
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Detail conditions of the sputtering process."
+        },
+        {
+          "block": "t1/r2c1",
+          "quote": "Target"
+        },
+        {
+          "block": "t1/r2c2",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c3",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c4",
+          "quote": "Au (99.999%)"
+        },
+        {
+          "block": "t1/r3c1",
+          "quote": "Substrate temperature (°C)"
+        },
+        {
+          "block": "t1/r3c2",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c3",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c4",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r4c1",
+          "quote": "Base pressure (Torr)"
+        },
+        {
+          "block": "t1/r4c2",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c3",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c4",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r5c1",
+          "quote": "Working pressure (mTorr)"
+        },
+        {
+          "block": "t1/r5c2",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c3",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c4",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r6c1",
+          "quote": "RF power (Watt)"
+        },
+        {
+          "block": "t1/r6c2",
+          "quote": "AC250"
+        },
+        {
+          "block": "t1/r6c3",
+          "quote": "DC50"
+        },
+        {
+          "block": "t1/r6c4",
+          "quote": "DC100"
+        },
+        {
+          "block": "t1/r7c1",
+          "quote": "Ar flow/N2 flow"
+        },
+        {
+          "block": "t1/r7c2",
+          "quote": "40 sccm/10 sccm"
+        },
+        {
+          "block": "t1/r7c3",
+          "quote": "43 sccm/0 sccm"
+        },
+        {
+          "block": "t1/r7c4",
+          "quote": "43 sccm/0 sccm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dev_al2o3_ratio",
+      "subject": [
+        "dev_al2o3"
+      ],
+      "property": "on_off_ratio",
+      "value": {
+        "number": "2000",
+        "bound": "approx",
+        "unit": "1"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "2 cm × 2 cm ITO substrate"
+        },
+        {
+          "role": "other",
+          "text": "Ar = 40 sccm and N2 = 10 sccm"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "250",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "role": "other",
+          "text": "the working pressure was about 5 mTorr"
+        },
+        {
+          "role": "device",
+          "text": "Keithley 4200"
+        },
+        {
+          "role": "other",
+          "text": "circular with diameters of 400 μm and 200 μm"
+        },
+        {
+          "property": "oxidation_time",
+          "value": {
+            "number": "5",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "read_voltage",
+          "value": {
+            "number": "0.1",
+            "unit": "V",
+            "unit_text": "V"
+          }
+        }
+      ],
+      "method": {
+        "label": "I-V measurements"
+      },
+      "note": "The source calls it the switching window and writes it as 2 × 10^3.",
+      "evidence": [
+        {
+          "block": "s3/p4",
+          "quote": "Next, a new device was fabricated under the same conditions"
+        },
+        {
+          "block": "s3/p4",
+          "quote": "The only difference was that after the growth of the AlN film, 5 min of oxygen was introduced into the sputtering chamber, resulting in the oxidation of the AlN film surface to form a thin Al2O3 layer"
+        },
+        {
+          "block": "s3/p5",
+          "quote": "The set voltage is approximately 4 V, and the reset voltage is about −2.0 V. The retention test shown in Figure 4d follows the standard procedure for non-volatile memory technology"
+        },
+        {
+          "block": "s3/p5",
+          "quote": "The memristor is first switched to either LRS or HRS, and its resistance is repeatedly measured by applying a 0.1 V reading voltage at room temperature"
+        },
+        {
+          "block": "s3/p5",
+          "quote": "According to Figure 4d, the switching window of the device is approximately 2 × 103"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "AlN films were grown on a 2 cm × 2 cm ITO substrate using an RF magnetron sputtering system (NANO36, the FUNSOM experimental platform of Soochow University) from a pure Al (99.999%) target at room temperature"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The sputtering conditions of the AlN films were as follows: At a flow rate of Ar = 40 sccm and N2 = 10 sccm in the chamber, the aluminum target was sputtered with the mixed gas at a power of 250 W, and the working pressure was about 5 mTorr"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The targets for top electrode sputtering were pure Al (99.999%) and pure Au (99.999%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "I-V measurements were performed using a semiconductor parameter analysis system (Keithley 4200, the FUNSOM experimental platform of Soochow University) to confirm resistive switching"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The top electrodes were circular with diameters of 400 μm and 200 μm, deposited from a stainless steel mask"
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Detail conditions of the sputtering process."
+        },
+        {
+          "block": "t1/r2c1",
+          "quote": "Target"
+        },
+        {
+          "block": "t1/r2c2",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c3",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c4",
+          "quote": "Au (99.999%)"
+        },
+        {
+          "block": "t1/r3c1",
+          "quote": "Substrate temperature (°C)"
+        },
+        {
+          "block": "t1/r3c2",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c3",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c4",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r4c1",
+          "quote": "Base pressure (Torr)"
+        },
+        {
+          "block": "t1/r4c2",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c3",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c4",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r5c1",
+          "quote": "Working pressure (mTorr)"
+        },
+        {
+          "block": "t1/r5c2",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c3",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c4",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r6c1",
+          "quote": "RF power (Watt)"
+        },
+        {
+          "block": "t1/r6c2",
+          "quote": "AC250"
+        },
+        {
+          "block": "t1/r6c3",
+          "quote": "DC50"
+        },
+        {
+          "block": "t1/r6c4",
+          "quote": "DC100"
+        },
+        {
+          "block": "t1/r7c1",
+          "quote": "Ar flow/N2 flow"
+        },
+        {
+          "block": "t1/r7c2",
+          "quote": "40 sccm/10 sccm"
+        },
+        {
+          "block": "t1/r7c3",
+          "quote": "43 sccm/0 sccm"
+        },
+        {
+          "block": "t1/r7c4",
+          "quote": "43 sccm/0 sccm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dev_aln_set_sclc",
+      "subject": [
+        "dev_aln"
+      ],
+      "property": "set_voltage",
+      "value": {
+        "number": "3.5",
+        "unit": "V",
+        "unit_text": "V"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "2 cm × 2 cm ITO substrate"
+        },
+        {
+          "role": "other",
+          "text": "Ar = 40 sccm and N2 = 10 sccm"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "250",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "role": "other",
+          "text": "the working pressure was about 5 mTorr"
+        },
+        {
+          "role": "device",
+          "text": "Keithley 4200"
+        },
+        {
+          "role": "other",
+          "text": "circular with diameters of 400 μm and 200 μm"
+        }
+      ],
+      "method": {
+        "label": "logI–logV"
+      },
+      "note": "From the double logarithmic I–V curve. The source states it for both devices of Figure 5a,b together. In this curve the current is ohmic below 0.5 V and quadratic near 3.0 V.",
+      "evidence": [
+        {
+          "block": "s3/p7",
+          "quote": "As shown in Figure 5, the resistance switching mechanism is studied by analyzing the current transmission in step 1 and step 2 of the double logarithmic graph of the typical I-V curve"
+        },
+        {
+          "block": "s3/p7",
+          "quote": "As shown in Figure 5a,b, during the voltage scanning in step 1, it is observed that the current voltage is in a linear ohmic relationship at low to a medium bias voltage (<0.5 V), that is, I∝V"
+        },
+        {
+          "block": "s3/p7",
+          "quote": "Then, when the voltage sweep is close to 3.0 V, the current voltage relationship is quadratic, that is, I∝V2"
+        },
+        {
+          "block": "s3/p7",
+          "quote": "A sharp increase in current was observed at 3.5 V (VSET), and then the secondary current voltage behavior reappeared until the current was clamped by the compliance setting"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "logI–logV plot of the HRS and LRS at positive bias. (a) The Au/Al/AlN/ITO device and (b) the Au/Al/Al2O3/AlN/ITO device."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "AlN films were grown on a 2 cm × 2 cm ITO substrate using an RF magnetron sputtering system (NANO36, the FUNSOM experimental platform of Soochow University) from a pure Al (99.999%) target at room temperature"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The sputtering conditions of the AlN films were as follows: At a flow rate of Ar = 40 sccm and N2 = 10 sccm in the chamber, the aluminum target was sputtered with the mixed gas at a power of 250 W, and the working pressure was about 5 mTorr"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The targets for top electrode sputtering were pure Al (99.999%) and pure Au (99.999%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "I-V measurements were performed using a semiconductor parameter analysis system (Keithley 4200, the FUNSOM experimental platform of Soochow University) to confirm resistive switching"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The top electrodes were circular with diameters of 400 μm and 200 μm, deposited from a stainless steel mask"
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Detail conditions of the sputtering process."
+        },
+        {
+          "block": "t1/r2c1",
+          "quote": "Target"
+        },
+        {
+          "block": "t1/r2c2",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c3",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c4",
+          "quote": "Au (99.999%)"
+        },
+        {
+          "block": "t1/r3c1",
+          "quote": "Substrate temperature (°C)"
+        },
+        {
+          "block": "t1/r3c2",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c3",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c4",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r4c1",
+          "quote": "Base pressure (Torr)"
+        },
+        {
+          "block": "t1/r4c2",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c3",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c4",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r5c1",
+          "quote": "Working pressure (mTorr)"
+        },
+        {
+          "block": "t1/r5c2",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c3",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c4",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r6c1",
+          "quote": "RF power (Watt)"
+        },
+        {
+          "block": "t1/r6c2",
+          "quote": "AC250"
+        },
+        {
+          "block": "t1/r6c3",
+          "quote": "DC50"
+        },
+        {
+          "block": "t1/r6c4",
+          "quote": "DC100"
+        },
+        {
+          "block": "t1/r7c1",
+          "quote": "Ar flow/N2 flow"
+        },
+        {
+          "block": "t1/r7c2",
+          "quote": "40 sccm/10 sccm"
+        },
+        {
+          "block": "t1/r7c3",
+          "quote": "43 sccm/0 sccm"
+        },
+        {
+          "block": "t1/r7c4",
+          "quote": "43 sccm/0 sccm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dev_al2o3_set_sclc",
+      "subject": [
+        "dev_al2o3"
+      ],
+      "property": "set_voltage",
+      "value": {
+        "number": "3.5",
+        "unit": "V",
+        "unit_text": "V"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "2 cm × 2 cm ITO substrate"
+        },
+        {
+          "role": "other",
+          "text": "Ar = 40 sccm and N2 = 10 sccm"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "250",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "role": "other",
+          "text": "the working pressure was about 5 mTorr"
+        },
+        {
+          "role": "device",
+          "text": "Keithley 4200"
+        },
+        {
+          "role": "other",
+          "text": "circular with diameters of 400 μm and 200 μm"
+        },
+        {
+          "property": "oxidation_time",
+          "value": {
+            "number": "5",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        }
+      ],
+      "method": {
+        "label": "logI–logV"
+      },
+      "note": "From the double logarithmic I–V curve. The source states it for both devices of Figure 5a,b together. In this curve the current is ohmic below 0.5 V and quadratic near 3.0 V.",
+      "evidence": [
+        {
+          "block": "s3/p7",
+          "quote": "As shown in Figure 5, the resistance switching mechanism is studied by analyzing the current transmission in step 1 and step 2 of the double logarithmic graph of the typical I-V curve"
+        },
+        {
+          "block": "s3/p7",
+          "quote": "As shown in Figure 5a,b, during the voltage scanning in step 1, it is observed that the current voltage is in a linear ohmic relationship at low to a medium bias voltage (<0.5 V), that is, I∝V"
+        },
+        {
+          "block": "s3/p7",
+          "quote": "Then, when the voltage sweep is close to 3.0 V, the current voltage relationship is quadratic, that is, I∝V2"
+        },
+        {
+          "block": "s3/p7",
+          "quote": "A sharp increase in current was observed at 3.5 V (VSET), and then the secondary current voltage behavior reappeared until the current was clamped by the compliance setting"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "logI–logV plot of the HRS and LRS at positive bias. (a) The Au/Al/AlN/ITO device and (b) the Au/Al/Al2O3/AlN/ITO device."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "AlN films were grown on a 2 cm × 2 cm ITO substrate using an RF magnetron sputtering system (NANO36, the FUNSOM experimental platform of Soochow University) from a pure Al (99.999%) target at room temperature"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The sputtering conditions of the AlN films were as follows: At a flow rate of Ar = 40 sccm and N2 = 10 sccm in the chamber, the aluminum target was sputtered with the mixed gas at a power of 250 W, and the working pressure was about 5 mTorr"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The targets for top electrode sputtering were pure Al (99.999%) and pure Au (99.999%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "I-V measurements were performed using a semiconductor parameter analysis system (Keithley 4200, the FUNSOM experimental platform of Soochow University) to confirm resistive switching"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The top electrodes were circular with diameters of 400 μm and 200 μm, deposited from a stainless steel mask"
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Detail conditions of the sputtering process."
+        },
+        {
+          "block": "t1/r2c1",
+          "quote": "Target"
+        },
+        {
+          "block": "t1/r2c2",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c3",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c4",
+          "quote": "Au (99.999%)"
+        },
+        {
+          "block": "t1/r3c1",
+          "quote": "Substrate temperature (°C)"
+        },
+        {
+          "block": "t1/r3c2",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c3",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c4",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r4c1",
+          "quote": "Base pressure (Torr)"
+        },
+        {
+          "block": "t1/r4c2",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c3",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c4",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r5c1",
+          "quote": "Working pressure (mTorr)"
+        },
+        {
+          "block": "t1/r5c2",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c3",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c4",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r6c1",
+          "quote": "RF power (Watt)"
+        },
+        {
+          "block": "t1/r6c2",
+          "quote": "AC250"
+        },
+        {
+          "block": "t1/r6c3",
+          "quote": "DC50"
+        },
+        {
+          "block": "t1/r6c4",
+          "quote": "DC100"
+        },
+        {
+          "block": "t1/r7c1",
+          "quote": "Ar flow/N2 flow"
+        },
+        {
+          "block": "t1/r7c2",
+          "quote": "40 sccm/10 sccm"
+        },
+        {
+          "block": "t1/r7c3",
+          "quote": "43 sccm/0 sccm"
+        },
+        {
+          "block": "t1/r7c4",
+          "quote": "43 sccm/0 sccm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dev_aln_cycles",
+      "subject": [
+        "dev_aln"
+      ],
+      "property": "cycle_endurance",
+      "value": {
+        "number": "100",
+        "unit": "1"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "2 cm × 2 cm ITO substrate"
+        },
+        {
+          "role": "other",
+          "text": "Ar = 40 sccm and N2 = 10 sccm"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "250",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "role": "other",
+          "text": "the working pressure was about 5 mTorr"
+        },
+        {
+          "role": "device",
+          "text": "Keithley 4200"
+        },
+        {
+          "role": "other",
+          "text": "circular with diameters of 400 μm and 200 μm"
+        }
+      ],
+      "method": {
+        "label": "I-V measurements"
+      },
+      "evidence": [
+        {
+          "block": "t2/r6c3",
+          "quote": "100"
+        },
+        {
+          "block": "t2/r6c1",
+          "quote": "Au/Al/AlN/ITO (this work)"
+        },
+        {
+          "block": "t2/caption",
+          "quote": "Memristor material performance comparison."
+        },
+        {
+          "block": "t2/r1c3",
+          "quote": "Cycle"
+        },
+        {
+          "block": "s3/p10",
+          "quote": "Table 2 compares the devices in our study with those from other studies in the literature, focusing on three key performance metrics: the switching ratio, cycle endurance, and retention time"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "AlN films were grown on a 2 cm × 2 cm ITO substrate using an RF magnetron sputtering system (NANO36, the FUNSOM experimental platform of Soochow University) from a pure Al (99.999%) target at room temperature"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The sputtering conditions of the AlN films were as follows: At a flow rate of Ar = 40 sccm and N2 = 10 sccm in the chamber, the aluminum target was sputtered with the mixed gas at a power of 250 W, and the working pressure was about 5 mTorr"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The targets for top electrode sputtering were pure Al (99.999%) and pure Au (99.999%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "I-V measurements were performed using a semiconductor parameter analysis system (Keithley 4200, the FUNSOM experimental platform of Soochow University) to confirm resistive switching"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The top electrodes were circular with diameters of 400 μm and 200 μm, deposited from a stainless steel mask"
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Detail conditions of the sputtering process."
+        },
+        {
+          "block": "t1/r2c1",
+          "quote": "Target"
+        },
+        {
+          "block": "t1/r2c2",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c3",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c4",
+          "quote": "Au (99.999%)"
+        },
+        {
+          "block": "t1/r3c1",
+          "quote": "Substrate temperature (°C)"
+        },
+        {
+          "block": "t1/r3c2",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c3",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c4",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r4c1",
+          "quote": "Base pressure (Torr)"
+        },
+        {
+          "block": "t1/r4c2",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c3",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c4",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r5c1",
+          "quote": "Working pressure (mTorr)"
+        },
+        {
+          "block": "t1/r5c2",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c3",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c4",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r6c1",
+          "quote": "RF power (Watt)"
+        },
+        {
+          "block": "t1/r6c2",
+          "quote": "AC250"
+        },
+        {
+          "block": "t1/r6c3",
+          "quote": "DC50"
+        },
+        {
+          "block": "t1/r6c4",
+          "quote": "DC100"
+        },
+        {
+          "block": "t1/r7c1",
+          "quote": "Ar flow/N2 flow"
+        },
+        {
+          "block": "t1/r7c2",
+          "quote": "40 sccm/10 sccm"
+        },
+        {
+          "block": "t1/r7c3",
+          "quote": "43 sccm/0 sccm"
+        },
+        {
+          "block": "t1/r7c4",
+          "quote": "43 sccm/0 sccm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dev_al2o3_cycles",
+      "subject": [
+        "dev_al2o3"
+      ],
+      "property": "cycle_endurance",
+      "value": {
+        "number": "20",
+        "bound": "gt",
+        "unit": "1"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "2 cm × 2 cm ITO substrate"
+        },
+        {
+          "role": "other",
+          "text": "Ar = 40 sccm and N2 = 10 sccm"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "250",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "role": "other",
+          "text": "the working pressure was about 5 mTorr"
+        },
+        {
+          "role": "device",
+          "text": "Keithley 4200"
+        },
+        {
+          "role": "other",
+          "text": "circular with diameters of 400 μm and 200 μm"
+        },
+        {
+          "property": "oxidation_time",
+          "value": {
+            "number": "5",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        }
+      ],
+      "method": {
+        "label": "I-V measurements"
+      },
+      "evidence": [
+        {
+          "block": "t2/r7c3",
+          "quote": ">20"
+        },
+        {
+          "block": "t2/r7c1",
+          "quote": "Au/Al/Al2O3/AlN/ITO (this work)"
+        },
+        {
+          "block": "t2/caption",
+          "quote": "Memristor material performance comparison."
+        },
+        {
+          "block": "t2/r1c3",
+          "quote": "Cycle"
+        },
+        {
+          "block": "s3/p10",
+          "quote": "Table 2 compares the devices in our study with those from other studies in the literature, focusing on three key performance metrics: the switching ratio, cycle endurance, and retention time"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "AlN films were grown on a 2 cm × 2 cm ITO substrate using an RF magnetron sputtering system (NANO36, the FUNSOM experimental platform of Soochow University) from a pure Al (99.999%) target at room temperature"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The sputtering conditions of the AlN films were as follows: At a flow rate of Ar = 40 sccm and N2 = 10 sccm in the chamber, the aluminum target was sputtered with the mixed gas at a power of 250 W, and the working pressure was about 5 mTorr"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The targets for top electrode sputtering were pure Al (99.999%) and pure Au (99.999%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "I-V measurements were performed using a semiconductor parameter analysis system (Keithley 4200, the FUNSOM experimental platform of Soochow University) to confirm resistive switching"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The top electrodes were circular with diameters of 400 μm and 200 μm, deposited from a stainless steel mask"
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Detail conditions of the sputtering process."
+        },
+        {
+          "block": "t1/r2c1",
+          "quote": "Target"
+        },
+        {
+          "block": "t1/r2c2",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c3",
+          "quote": "Al (99.999%)"
+        },
+        {
+          "block": "t1/r2c4",
+          "quote": "Au (99.999%)"
+        },
+        {
+          "block": "t1/r3c1",
+          "quote": "Substrate temperature (°C)"
+        },
+        {
+          "block": "t1/r3c2",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c3",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r3c4",
+          "quote": "No heating"
+        },
+        {
+          "block": "t1/r4c1",
+          "quote": "Base pressure (Torr)"
+        },
+        {
+          "block": "t1/r4c2",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c3",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r4c4",
+          "quote": "<8.0 × 10−6"
+        },
+        {
+          "block": "t1/r5c1",
+          "quote": "Working pressure (mTorr)"
+        },
+        {
+          "block": "t1/r5c2",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c3",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r5c4",
+          "quote": "5.0"
+        },
+        {
+          "block": "t1/r6c1",
+          "quote": "RF power (Watt)"
+        },
+        {
+          "block": "t1/r6c2",
+          "quote": "AC250"
+        },
+        {
+          "block": "t1/r6c3",
+          "quote": "DC50"
+        },
+        {
+          "block": "t1/r6c4",
+          "quote": "DC100"
+        },
+        {
+          "block": "t1/r7c1",
+          "quote": "Ar flow/N2 flow"
+        },
+        {
+          "block": "t1/r7c2",
+          "quote": "40 sccm/10 sccm"
+        },
+        {
+          "block": "t1/r7c3",
+          "quote": "43 sccm/0 sccm"
+        },
+        {
+          "block": "t1/r7c4",
+          "quote": "43 sccm/0 sccm"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "block": "s3/p3",
+      "quote": "After 104 s, no significant degradation in the HRS and LRS resistance is observed",
+      "reason": "other",
+      "note": "The source gives the retention time as 10^4 s, but the text loses the superscript and reads 104. arity cannot check 10^4 against the text, so this reading does not report it."
+    },
+    {
+      "block": "s4/p1",
+      "quote": "Retention tests confirm excellent non-volatility, with stable resistance states over 104 seconds",
+      "reason": "other",
+      "note": "The source gives the retention time as 10^4 s, but the text loses the superscript and reads 104. arity cannot check 10^4 against the text, so this reading does not report it."
+    },
+    {
+      "block": "f4/caption",
+      "quote": "(b) Data retention features of the Au/Al/AlN/ITO device at 0.1 V for 104 s",
+      "reason": "other",
+      "note": "The source gives the retention time as 10^4 s, but the text loses the superscript and reads 104. arity cannot check 10^4 against the text, so this reading does not report it."
+    },
+    {
+      "block": "f4/caption",
+      "quote": "(d) Data retention features of the Au/Al/Al2O3/AlN/ITO device at 0.1 V for 104 s",
+      "reason": "other",
+      "note": "The source gives the retention time as 10^4 s, but the text loses the superscript and reads 104. arity cannot check 10^4 against the text, so this reading does not report it."
+    },
+    {
+      "block": "t2/r6c4",
+      "quote": "104",
+      "reason": "other",
+      "note": "The source gives the retention time as 10^4 s, but the text loses the superscript and reads 104. arity cannot check 10^4 against the text, so this reading does not report it."
+    },
+    {
+      "block": "t2/r7c4",
+      "quote": "104",
+      "reason": "other",
+      "note": "The source gives the retention time as 10^4 s, but the text loses the superscript and reads 104. arity cannot check 10^4 against the text, so this reading does not report it."
+    },
+    {
+      "block": "t2/r6c2",
+      "quote": "~102",
+      "reason": "restated"
+    },
+    {
+      "block": "t2/r7c2",
+      "quote": "103",
+      "reason": "restated"
+    },
+    {
+      "block": "t2/r2c1",
+      "quote": "Al/Ta2O5/ITO [27]",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r2c2",
+      "quote": "~102",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r2c3",
+      "quote": ">50",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r2c4",
+      "quote": "~102",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r3c1",
+      "quote": "ITO/Ta2O5/ITO [27]",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r3c2",
+      "quote": "~10",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r3c3",
+      "quote": ">50",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r3c4",
+      "quote": "~102",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r4c1",
+      "quote": "Al/ZnO/ITO [28]",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r4c2",
+      "quote": "104",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r4c3",
+      "quote": "100",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r4c4",
+      "quote": "104",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r5c1",
+      "quote": "Pt/aTa2O5/TiN [29]",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r5c2",
+      "quote": "102",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r5c4",
+      "quote": "104",
+      "reason": "cited"
+    },
+    {
+      "block": "s3/p6",
+      "quote": "Furthermore, we performed both oxygen and non-oxygen tests under the condition of AlN magnetron sputtering for 30 min",
+      "reason": "other",
+      "note": "A comparison of I–V curves in figures, which states no value."
+    },
+    {
+      "block": "s3/p6",
+      "quote": "However, the device’s performance under non-oxygen conditions is poorer compared to the device with 5 min of oxygen exposure",
+      "reason": "other",
+      "note": "A comparison of I–V curves in figures, which states no value."
+    },
+    {
+      "block": "f4/caption",
+      "quote": "(e) The typical I-V of AlN with a 30 min RF magnetron sputtering time and no oxygen gas and (f) the typical I-V of AlN with a 30 min RF magnetron sputtering time and oxygen gas",
+      "reason": "other",
+      "note": "A comparison of I–V curves in figures, which states no value."
+    },
+    {
+      "block": "s3/p6",
+      "quote": "Therefore, the subsequent discussion will focus on the device with 5 min of oxygen exposure",
+      "reason": "restated"
+    },
+    {
+      "block": "abstract/p1",
+      "quote": "Aluminum nitride (AlN) with a wide band gap (approximately 6.2 eV) has attractive characteristics, including high thermal conductivity, a high dielectric constant, and good insulating properties, which are suitable for the field of resistive random access memory",
+      "reason": "cited"
+    }
+  ]
+}
