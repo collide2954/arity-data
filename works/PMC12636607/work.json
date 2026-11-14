@@ -2,11 +2,13 @@
   "format": "arity-archive/1",
   "position": 13,
   "metadata": {
-    "title": "Recent progress in the exploitation of anti-cancer small molecules targeting angiogenesis.",
+    "title": "Recent progress in the exploitation of anti-cancer small molecules targeting angiogenesis",
     "doi": "10.1080/14756366.2025.2584811",
     "pmid": "41263406",
     "pmcid": "PMC12636607",
-    "journal": "Journal of enzyme inhibition and medicinal chemistry",
+    "article_type": "review-article",
+    "journal": "Journal of Enzyme Inhibition and Medicinal Chemistry",
+    "publisher": "Taylor & Francis",
     "published": "2025-11-20",
     "year": 2025,
     "authors": [
@@ -23,26 +25,51 @@
         "name": "Xiang Ji"
       },
       {
-        "name": "Mingxia Song",
-        "orcid": "0009-0006-8337-5191"
+        "name": "Mingxia Song"
       },
       {
         "name": "Xianqing Deng"
       }
     ],
-    "license": "CC-BY-NC"
+    "license": "CC-BY-NC-4.0",
+    "license_statement": "This is an Open Access article distributed under the terms of the Creative Commons Attribution-NonCommercial License (http://creativecommons.org/licenses/by-nc/4.0/), which permits unrestricted non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited. The terms on which this article has been published allow the posting of the Accepted Manuscript in a repository by the author(s) or with their consent.",
+    "copyright": "© 2025 The Author(s). Published by Informa UK Limited, trading as Taylor & Francis Group.",
+    "keywords": [
+      "Anti-cancer",
+      "angiogenesis",
+      "VEGFR-2",
+      "FGFR",
+      "HDAC"
+    ]
   },
   "added_at": "2026-11-14T07:55:34.2917486Z",
-  "updated_at": "2026-11-14T07:55:34.2917486Z",
+  "updated_at": "2026-11-14T23:29:21.6982349Z",
   "queue": {
-    "state": "queued",
+    "state": "read",
     "query": "doxorubicin AND \"MCF-7\" AND PUB_TYPE:\"Retracted Publication\"",
     "note": null,
     "added_at": "2026-11-14T07:55:34.2917486Z",
-    "updated_at": "2026-11-14T07:55:34.2917486Z"
+    "updated_at": "2026-11-14T23:39:58.2470526Z"
   },
-  "retrievals": [],
-  "texts": [],
+  "retrievals": [
+    {
+      "role": "full_text",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12636607.1/PMC12636607.1.xml",
+      "media_type": "application/xml",
+      "sha256": "8990a8270144107208fa8332d492ee045d312ececa3e8d91ef465eb8c8099e19",
+      "bytes": 385813,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T23:29:21.6982349Z"
+    }
+  ],
+  "texts": [
+    {
+      "sha256": "24afff9872b1be6b9cb78b1ca860835e5bcfde81fee26de81aac9a336480e1ed",
+      "parser": "arity-jats 0.1.0",
+      "source": "8990a8270144107208fa8332d492ee045d312ececa3e8d91ef465eb8c8099e19"
+    }
+  ],
   "notices": [
     {
       "kind": "retraction",
@@ -69,5 +96,13 @@
       "retrieved_at": "2026-11-14T07:55:45.5197339Z"
     }
   ],
-  "runs": []
+  "runs": [
+    {
+      "sequence": 21,
+      "sha256": "33c123ffd4cf37dd15181d2f2ecc96c290ba1072f75bf0f2f95dbd2739630de1",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-14T23:39:58.2470526Z",
+      "checks": []
+    }
+  ]
 }

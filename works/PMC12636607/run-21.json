@@ -1,0 +1,1474 @@
+{
+  "format": "arity-submission/1",
+  "work": "PMC12636607",
+  "text": "24afff9872b1be6b9cb78b1ca860835e5bcfde81fee26de81aac9a336480e1ed",
+  "reader": {
+    "kind": "software",
+    "name": "Claude (Anthropic)",
+    "version": "claude-opus-5-5"
+  },
+  "responsible": {
+    "name": "Brett Gilio"
+  },
+  "note": "A review of other works. It reports no measurements of its own, so this reading skips each number that it states as cited, and records the value in the work that measured it. The review's own count of the articles that it cites is not a measurement and is not reported.",
+  "entities": [],
+  "properties": [],
+  "reports": [],
+  "skipped": [
+    {
+      "block": "s1/p1",
+      "quote": "Approximately, three-fifths of the global population are affected by cancer, diabetes, cardiovascular diseases, or chronic respiratory disorders, among which cancer ranks as one of the leading causes of death1",
+      "reason": "cited"
+    },
+    {
+      "block": "s1/p1",
+      "quote": "The World Health Organisation estimates that cancer accounts for nearly 10 million deaths annually, making it the second leading cause of mortality globally worldwide2",
+      "reason": "cited"
+    },
+    {
+      "block": "s1/p1",
+      "quote": "In 2022, there were an estimated 20 million new cancer cases and 9.7 million deaths",
+      "reason": "cited"
+    },
+    {
+      "block": "s1/p1",
+      "quote": "The estimated number of people who have been alive within 5 years following a cancer diagnosis was 53.5 million",
+      "reason": "cited"
+    },
+    {
+      "block": "s1/p1",
+      "quote": "About one in five people develop cancer in their lifetime; approximately one in nine men and one in 12 women die from the disease3",
+      "reason": "cited"
+    },
+    {
+      "block": "s1/p1",
+      "quote": "While new drugs have offered hope and improved survival rates for many patients, cancer continues to adapt and evolve, often finding ways to resist treatment4",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p2",
+      "quote": "When the thioether linker (S-linker) is combined with meta-positioned aryl ureas, it exhibits a superior binding geometry with an optimal bond angle of 100.4° – a value close to the ideal 90° configuration",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p2",
+      "quote": "Based on this design idea, Machado et al. systematically synthesised a series of thieno[3,2-b]pyridin-7-ylthio-phenyl]urea derivatives containing thioether linkers26",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p2",
+      "quote": "The meta-substituted series (compounds 1a–1e, Figure 3) exhibited exceptional VEGFR-2 inhibition (IC50 = 10–28 nM), surpassing the reference drug Sorafenib (Figure 2) (IC50 = 90 nM)",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p2",
+      "quote": "These compounds effectively suppressed HUVEC proliferation and migration, induced apoptosis, and significantly inhibited VEGFR-2 phosphorylation, demonstrating potent antiangiogenic activity",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p3",
+      "quote": "Between 2016 and 2019, three independent research teams – Ramaa, Negmeldin, and Reddy – developed structurally distinct thiazole-based VEGFR-2 inhibitors, each employing unique design strategies and demonstrating promising biological activities",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p3",
+      "quote": "Ramaa and coworkers pioneered this effort by designing thiazolidinedione derivatives, which were synthesised via Knoevenagel condensation27",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p3",
+      "quote": "Their lead compound 2 (Figure 3) exhibited a VEGFR-2 inhibitory IC50 of 0.5 μM, showing slightly reduced potency compared to Sorafenib (2.07 μM) but demonstrating significant antiangiogenic effects in both chick chorioallantoic membrane and zebrafish assays",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p4",
+      "quote": "Negmeldin and coworkers’ advanced the field by employing microwave-assisted synthesis to develop o-aminothiophenecarboxamide derivatives28",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p4",
+      "quote": "These compounds displayed dual mechanisms of action, simultaneously inhibiting VEGFR-2 and disrupting microtubule dynamics",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p4",
+      "quote": "The most promising candidate compound 3 (Figure 3) achieved a VEGFR-2 IC50 of 0.59 μM while remarkably inhibiting β-tubulin polymerisation by 86%",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p4",
+      "quote": "Notably, these derivatives exhibited 2.3-fold greater cytotoxicity against HepG-2 cells than Sorafenib, effectively inducing apoptosis and cell cycle arrest",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p5",
+      "quote": "Reddy’s team further expanded the structural diversity through the development of pyrazole-benzothiazole hybrids via multi-step synthesis29",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p5",
+      "quote": "Their optimised compound 4 (Figure 3) demonstrated exceptional VEGFR-2 inhibition at nanomolar levels, with an IC50 of 97 nM, surpassing the activity of axitinib",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p5",
+      "quote": "This compound also displayed superior cancer cell selectivity, with IC50 values ranging from 3.17 to 6.77 μM across various cell lines, while maintaining significant antiangiogenic activity in zebrafish models and high selectivity towards normal cells",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p6",
+      "quote": "Liu and coworkers contributed to this evolving field by designing novel thiophene-3-carboxamide derivatives through bioisosteric replacement and structural optimisation of PAN-9080630",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p6",
+      "quote": "The resulting compound 5 (Figure 3) exhibited remarkable VEGFR-2 inhibitory activity with an IC50 of 191.1 nM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p6",
+      "quote": "It demonstrated potent antiproliferative effects against multiple cell lines, including HCT116, MCF7, PC3, and A549, with IC50 values ranging from 2.22 to 7.39 μM – outperforming Sunitinib",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.2/p6",
+      "quote": "Importantly, it showed minimal cytotoxicity against normal HEK293T cells, with an IC50 of 91.27 μM, indicating excellent selectivity",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p2",
+      "quote": "Three research groups – Xu, Zhu, and Verma’s team – have independently developed nitrogen-containing heterocyclic compounds targeting VEGFR-2 for antitumor applications, employing condensation reactions for core structure construction and strategic substitutions for activity optimisation",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p2",
+      "quote": "Xu and coworkers synthesised a series of quinazolin-4-amine derivatives incorporating benzimidazole moieties through condensation, hydrogenation, and substitution reactions35",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p2",
+      "quote": "This dual-targeting design leveraged the synergistic roles of c-Met and VEGFR-2 in tumour progression",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p2",
+      "quote": "Their lead compound 6 (Figure 4) demonstrated IC50 values of 0.05 μM for c-Met and 0.02 μM for VEGFR-2, comparable to Golvatinib which exhibited IC50 values of 0.02 μM for c-Met and 0.04 μM for VEGFR-2",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p2",
+      "quote": "Additionally, compound 6 displayed superior cytotoxicity against MCF-7 at 1.5 μM and Hep-G2 at 8.7 μM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p2",
+      "quote": "Similarly, Zhu and coworkers developed 4-alkoxyquinazoline derivatives via condensation, hydrazinolysis, and reactions with substituted benzaldehydes36",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p2",
+      "quote": "Their approach focused on optimising the quinazoline core for VEGFR-2 binding while incorporating Schiff bases to enhance activity",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p2",
+      "quote": "The optimal compound 7 (Figure 4) exhibited exceptional VEGFR-2 inhibition with an IC50 of 2.32 nM, surpassing Tivozanib (Figure 4) which had an IC50 of 3.40 nM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p2",
+      "quote": "Compound 7a also demonstrated strong cytotoxicity against HeLa at 0.22 μg/mL, A549 at 0.15 μg/mL, and MCF-7 at 0.24 μg/mL, while maintaining high selectivity over EGFR with minimal cytotoxicity at an IC50 of 299.13 μM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p2",
+      "quote": "Further advancing this field, Verma and coworkers synthesised quinazoline-1,3,5-triazine derivatives through multi-step organic reactions, combining the antitumor properties of quinazoline and 1,3,5-triazine scaffolds to enhance VEGFR2 inhibition37",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p2",
+      "quote": "Among these, compounds 8a, 8b, and 8c (Figure 4) showed comparable potency to Vandetanib",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p2",
+      "quote": "These compounds exhibited IC50 values against HeLa ranging from 7.08 to 7.52 μM, closely matching Vandetanib’s 7.31 μM, and against MCF-7 ranging from 7.16 to 9.54 μM, compared to Vandetanib’s 10.42 μM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p2",
+      "quote": "These studies collectively underscore the efficacy of nitrogen-containing heterocycles, particularly quinazoline derivatives, in the rational design of potent and selective VEGFR-2 inhibitors",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p3",
+      "quote": "Recent advances in VEGFR-2-targeted anticancer drug development have been achieved by three research groups through rational design of nitrogen-containing heterocyclic compounds, each employing distinct molecular scaffolds and synthetic strategies while demonstrating promising biological activities",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p3",
+      "quote": "The Li laboratory developed tetrahydroisoquinoline-based diarylurea derivatives through nucleophilic aromatic substitution, reduction, and condensation reactions, combining the antitumor properties of tetrahydroisoquinoline with VEGFR-2 inhibitory effects of diarylureas38",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p3",
+      "quote": "Their lead compounds 9a and 9b (Figure 5) demonstrated potent activity with IC50 values of 3.24 μM and 2.81 μM against A549 cells, and 16.64 μM and 7.95 μM against MCF-7 cells, surpassing the efficacy of Gefitinib",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p3",
+      "quote": "These compounds effectively downregulated VEGFR-2 expression and phosphorylation while inhibiting HUVEC tube formation, with normal cell toxicity profiles comparable to Gefitinib",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p3",
+      "quote": "Xiang and coworkers designed 3-arylquinoline derivatives via Vilsmeier–Haack reactions and C–N coupling, adopting a dual-targeting strategy to simultaneously target ERα and VEGFR-239",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p3",
+      "quote": "Their optimised compound 10 (Figure 5) exhibited balanced potency with IC50 values of 1.78 μM against ERα similar to Tamoxifen, and 86 nM against VEGFR-2",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p3",
+      "quote": "The compound demonstrated superior cytotoxicity against MCF-7 at 1.8 μM and HUVEC at 7.4 μM compared to reference drugs tamoxifen and Raloxifene",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p3",
+      "quote": "Al-Salahi and coworkers expanded the structural diversity by developing 2-mercaptobenzol[g]quinazoline derivatives through sequential reactions involving isothiocyanate and 3-amino-2-naphthoic acid40",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p3",
+      "quote": "Their compounds 11a–11c (Figure 5) showed broad-spectrum activity with IC50 values of 27.5 μM, 27.7 μM, and 26.0 μM against HepG2 cells, and 10.1 μM, 9.6 μM, and 9.4 μM against MCF-7 cells, comparable to Doxorubicin",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p3",
+      "quote": "Notably, these compounds achieved VEGFR-2 inhibition with IC50 values of 46.6 nM, 63.0 nM, and 44.4 nM, approaching the potency of Sorafenib at 31.1 nM, while effectively inducing apoptosis and cell cycle arrest",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p3",
+      "quote": "These studies collectively highlight the therapeutic potential of nitrogen-containing heterocycles in VEGFR-2-targeted cancer therapy",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p4",
+      "quote": "Abdelmonsef and coworkers synthesised 3-substituted quinazoline dione derivatives through azide-amine reactions followed by hydrazinolysis and condensation41",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p4",
+      "quote": "Their compounds 12a, 13a, and 13b (Figure 6) demonstrated potent dual inhibition against c-Met with IC50 values of 0.084, 0.063, and 0.069 μM, and against VEGFR-2 with IC50 values of 0.052, 0.035, and 0.082 μM, respectively",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p4",
+      "quote": "Notably, compound 13a surpassed Cabozantinib in activity while showing superior cytotoxicity against HCT-116 cells and maintaining low toxicity towards normal cells",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p4",
+      "quote": "Ismail and coworkers contributed to this field by designing quinoxaline-3-propionamide and 3-furoquinoxaline carboxamide derivatives via cyclocondensation, aminolysis42",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p4",
+      "quote": "Their lead compound 14 (Figure 6) exhibited VEGFR-2 inhibition with IC50 of 0.076 μM, comparable to Sorafenib, along with superior cytotoxicity against HCT-116 at 5.81 μM and MCF-7 at 4.61 μM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p4",
+      "quote": "Mokale and coworkers developed dimethoxyquinazolin dicarboxamide derivatives through amide coupling and substitution reactions43",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p4",
+      "quote": "Their compound 15a (Figure 6) demonstrated exceptional VEGFR-2 inhibition with IC50 of 0.014 μM and superior activity against HT-29 at 3.38 μM and COLO-205 at 10.55 μM cell lines compared to Cabozantinib",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p4",
+      "quote": "The most recent contributions come from Mabrouk and El-Zahabi who synthesised triazoloquinazoline derivatives via condensation, acylation, and substitution reactions44",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p4",
+      "quote": "Their compound 16 (Figure 6) showed VEGFR-2 inhibition with IC50 of 0.509 μM and potent activity against MCF-7 cells with IC50 of 7.48 μM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p4",
+      "quote": "El-Zahabi et al. further developed triazoloquinazoline derivatives 17a, 17b, and 17c (Figure 6), with compound 17c emerging as the most potent against MCF-7 with IC50 of 7.48 μM, outperforming Doxorubicin45",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p4",
+      "quote": "These compounds demonstrated VEGFR-2 inhibitory activity with IC50 values of 0.470 and 0.509 μM for compounds 17b and 17c, respectively, though slightly weaker than Sorafenib at 0.118 μM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p4",
+      "quote": "These studies collectively demonstrate the continued evolution of nitrogen-containing heterocycles as promising VEGFR-2 inhibitors",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.3/p4",
+      "quote": "The structural diversity ranges from quinazoline-diones to triazoloquinazolines, with IC50 values consistently in the nanomolar to low micromolar range",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p1",
+      "quote": "Imidazole-based compounds have emerged as crucial scaffolds for developing antiangiogenic agents targeting VEGFR-2 due to their unique electronic properties and hydrogen-bonding capabilities46",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p1",
+      "quote": "The five-membered nitrogen-containing heterocyclic structure is capable of mimicking the adenine moiety of ATP, competitively binding to the ATP-binding pocket in the VEGFR-2 kinase domain (key residues including Cys919 and Glu885), thereby effectively blocking receptor autophosphorylation and subsequent activation of downstream PI3K/Akt and MAPK signalling pathways47",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p1",
+      "quote": "Representative compounds such as crizotinib derivatives, which utilise the imidazole core to interact with the hinge region of VEGFR-2, have demonstrated inhibitory activity at the nanomolar level (IC50 < 10 nM)48",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p2",
+      "quote": "In recent years, considerable progress has been made in the research and development of imidazole derivative-based anticancer drugs that target VEGFR-2 and possess antiangiogenic properties",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p2",
+      "quote": "Abdel-Mohsen and coworkers pioneered this field by synthesising 2-furan benzimidazole derivatives designed to mimic the ATP adenine moiety48",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p2",
+      "quote": "Their compounds 18b and 19b (Figure 7) exhibited superior activity against MCF-7 with IC50 values of 21.25–21.35 μM compared to tamoxifen at 21.57 μM, while compounds 18a, 18b, 19b, and 20 (Figure 7) demonstrated better efficacy against HepG2 than cisplatin",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p2",
+      "quote": "These compounds achieved remarkable VEGFR-2 inhibition rates of 92–96%, comparable to reference drugs, with IC50 values of 0.64 μM for compound 18a, 1.26 μM for compound 18b, and 1.41 μM for compound 19b",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p2",
+      "quote": "Mostafa et al. developed 2-phenylbenzimidazole derivatives that leveraged structural similarity to purines49",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p2",
+      "quote": "Their compounds 22b, 22c, and 23 (Figure 7) displayed strong activity against MCF-7 with IC50 values of 3.37–6.30 μM, outperforming doxorubicin at 4.17 μM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p2",
+      "quote": "These compounds achieved nanomolar-range VEGFR-2 inhibition with IC50 values of 6.7–8.9 nM, matching Sorafenib (Figure 2) at 7.6 nM, while compounds 21 and 22 (Figure 7) showed IC50 values of 11.1 and 9.7 nM, respectively",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p2",
+      "quote": "Jin and coworkers further expanded the structural diversity by synthesising 37 6-amido-2-aryl benzoxazole/benzimidazole derivatives50",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p2",
+      "quote": "Their lead compound 24 (Figure 7) demonstrated potent VEGFR-2 inhibition with IC50 of 51 nM, rivalling Sorafenib at 37.8 nM and Sunitinib at 29.2 nM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p2",
+      "quote": "This compound showed broad activity with IC50 values of 1.47–2.57 μM against HUVEC and HepG2 cells, along with 79% antiangiogenic efficacy in egg assays and moderate toxicity to normal LO2 cells",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p2",
+      "quote": "The most recent contribution came from Elbastawesy and coworkers who reported Schiff base-benzimidazole hybrids51",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p2",
+      "quote": "Their compounds 25a and 25b (Figure 7) exhibited IC50 values of 1.71–3.58 μM against A549 and NCI-H460 cell lines, surpassing Sorafenib (Figure 2) at 3.49–4.84 μM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p2",
+      "quote": "These compounds maintained strong VEGFR-2 inhibition at 86.23–89.89%, comparable to Sorafenib at 88.17%, while demonstrating caspase-9-mediated apoptosis with high selectivity",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p2",
+      "quote": "These studies collectively demonstrated the evolution of benzimidazole-based VEGFR-2 inhibitors of research",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p2",
+      "quote": "The consistent improvement in potency, with IC50 values progressing from micromolar to nanomolar range, highlights the success of rational drug design approaches",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "Significant progress has been made in the development of pyrimidine-based VEGFR-2 inhibitors through strategic molecular design by multiple research teams",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "Abouzid and coworkers synthesised a series of furo[2,3-d]pyrimidine and thieno[2,3-d]pyrimidine derivatives via cyclisation, chlorination, and coupling reactions54",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "Among these, compounds 26a–26b (Figure 8), displayed potent VEGFR-2 inhibition with IC50 values of 33.4 nM, 47.0 nM, and 21 nM, respectively",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "Notably, compound 26b exhibited superior activity compared to Sorafenib, which showed an IC50 of 90 nM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "These derivatives demonstrated significant antitumor efficacy in EAC solid tumour models by suppressing VEGFR-2 phosphorylation and angiogenesis while promoting apoptosis, all while maintaining minimal toxicity towards normal cells",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "Abouzid and Adel’s laboratory expanded their research by developing pyrrolo[2,3-d]pyrimidine derivatives using analogous synthetic strategies21",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "Compounds 27 and 28a (Figure 8), emerged as particularly potent inhibitors, exhibiting IC50 values of 11.9 nM and 13.6 nM against VEGFR-2, respectively",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "Additionally, these compounds demonstrated strong activity against HUVEC cells, with IC50 values of 0.31 μM and 3.74 μM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "Molecular docking studies further validated their stable binding interactions with key amino acid residues within the VEGFR-2 active site",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "In the same year, You et al. explored a different structural approach by designing 2,4-disubstituted pyrimidine derivatives capable of dual inhibition of ERα and VEGFR-255",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "Their lead compound 29 (Figure 8), exhibited IC50 values of 1.64 μM against ERα and 0.085 μM against VEGFR-2",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "Moreover, it displayed superior cytotoxicity against MCF-7 cells, with an IC50 of 0.81 μM, outperforming tamoxifen",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "Mechanistic investigations revealed that this compound induced apoptosis and suppressed the Raf-1/MAPK/ERK signalling pathway",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "Further diversifying the structural scaffold, Ismail, Abouzid and coworkers developed thieno[2,3-d]pyrimidine derivatives",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "Among these, compounds 30, 31a, and 31b (Figure 8), demonstrated VEGFR-2 inhibition with IC50 values of 2.5 μM, 5.48 μM, and 2.27 μM, respectively",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "These compounds also exhibited broad-spectrum anticancer activity, with particularly strong inhibition of T47D breast cancer cells at 85.5%",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "Further studies indicated that their mechanism of action involved G0–G1 phase cell cycle arrest and activation of caspase-3, mediated by targeted interactions with critical amino acid residues",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "The comprehensive evaluation of these studies demonstrates that the heterocyclic fusion pattern exerts a significant influence on biological activity, wherein furo[2,3-d]pyrimidine and pyrrolo[2,3-d]pyrimidine scaffolds consistently exhibit enhanced potency relative to their thieno[2,3-d]pyrimidine counterparts",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p2",
+      "quote": "Substantial improvement in inhibitory activity has been observed upon introduction of hydrophobic aromatic moieties or nitrogen-containing heterocycles at the 2- and 4-positions of the pyrimidine core",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p3",
+      "quote": "Recent advances in pyrimidine-based VEGFR-2 inhibitor development were further demonstrated by two independent research groups in 2023",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p3",
+      "quote": "Mokale and coworkers’ laboratory designed and synthesised a novel series of N-(4-((2-aminopyrimidin-5-yl)oxy)phenyl)-N-phenylcyclopropane-1,1-dicarboxamide derivatives through amide coupling and substitution reactions, strategically incorporating cyclopropane dicarboxamide groups to enhance binding affinity56",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p3",
+      "quote": "Among these, compound 32 (Figure 9), emerged as the most promising candidate, displaying a VEGFR-2 IC50 of 6.82 μM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p3",
+      "quote": "While this activity was slightly weaker than the reference drug Cabozantinib at 0.045 μM, the compound demonstrated superior antiproliferative effects against HT-29 and COLO-205 cell lines with IC50 values of 4.07 μM and 4.98 μM, respectively",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p3",
+      "quote": "Mechanistic studies revealed its ability to induce G1 phase cell cycle arrest and apoptosis, supported by molecular docking confirmation of stable interactions with key amino acid residues",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p3",
+      "quote": "In a complementary approach, Metwaly and coworkers focused on structural optimisation of thieno[2,3-d]pyrimidine derivatives through condensation, cyclisation, and substitution reactions, incorporating 1,3,4-oxadiazole moieties to enhance target interactions57",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p3",
+      "quote": "Their lead compound 33 (Figure 9), exhibited potent VEGFR-2 inhibition with an IC50 of 0.32 μM, approaching the activity of Sorafenib at 0.12 μM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.5/p3",
+      "quote": "The compound showed moderate cytotoxicity against MCF-7 cells with an IC50 of 15.07 μM, while demonstrating a distinct mechanism involving S-phase cell cycle arrest and apoptosis induction through modulation of BAX/BCL-2 expression",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p2",
+      "quote": "El-Gazzar and coworkers synthesised a series of fused pyrazole derivatives63",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p2",
+      "quote": "Given the significance of EGFR and VEGFR-2 in tumour progression, dual-target inhibition was proposed to exert synergistic anticancer effects",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p2",
+      "quote": "Compound 34 was found to exhibit 10-fold higher activity against HepG2 cells compared to Erlotinib",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p2",
+      "quote": "Compound 35 was identified as the most potent EGFR inhibitor (IC50 = 0.06 μM), surpassing Erlotinib in efficacy",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p2",
+      "quote": "Meanwhile, compound 36 demonstrated the strongest VEGFR-2 inhibitory activity (IC50 = 0.22 μM), showing comparable potency to Erlotinib",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p2",
+      "quote": "Additionally, compounds 36 and 37 were confirmed to possess dual inhibitory effects",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p2",
+      "quote": "These results demonstrate that the bromophenyl moiety at the C-4 position was shown to significantly enhance EGFR inhibitory activity through strengthened hydrophobic interactions, while the nitrile group at the C-5 position was found to optimise selectivity towards VEGFR-2",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p2",
+      "quote": "Dawood et al. employed 3-(3-nitrophenyl)-1-phenyl-1H-pyrazole-4-carbaldehyde as a starting material to synthesise a series of pyrazole derivatives conjugated with pyrazoline, triazolopyrimidine, and pyrazolone through Claisen–Schmidt condensation and Michael addition reactions64",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p2",
+      "quote": "The design was based on the established role of the pyrazole scaffold in anticancer activity and VEGFR-2 inhibition, enabling targeted therapy against breast cancer via VEGFR-2 blockade",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p2",
+      "quote": "Compound 38a exhibited potent inhibitory activity with an IC50 value of 225.17 nM, demonstrating near-equivalent efficacy to Sorafenib at 186.54 nM, while compounds 39a and 40a showed slightly weaker effects",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p2",
+      "quote": "Further biological evaluation revealed that compound 40a induced G2/M phase cell cycle arrest and apoptosis, accompanied by caspase-3 activation",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p2",
+      "quote": "Molecular docking studies confirmed its favourable binding interactions within the active site of VEGFR-2 (Figure 10)",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p3",
+      "quote": "Nafie and coworkers synthesised a series of pyrazole derivatives through condensation and diazotisation-coupling reactions64",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p3",
+      "quote": "The design was based on the VEGFR-2 inhibitory potential of the pyrazole scaffold, with various substituents being introduced to enhance antitumor activity",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p3",
+      "quote": "Among the synthesised compounds 41a and 41b (Figure 11) demonstrated superior activity, exhibiting IC50 values of 1.22 μM and 1.24 μM respectively against PC-3 cells, comparable to Doxorubicin (0.93 μM) and Sorafenib (1.13 μM)",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p3",
+      "quote": "Compound 40b showed particularly potent VEGFR-2 inhibition with an IC50 of 8.93 nM, outperforming Sorafenib (30 nM)",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p3",
+      "quote": "In vivo studies revealed 49.8% tumour growth inhibition, and molecular docking confirmed its binding with key amino acid residues",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p3",
+      "quote": "These findings indicate that the introduction of a sterically demanding aromatic group (e.g. bromophenyl) at the C-4 position is demonstrated to enhance binding to the VEGFR-2 active pocket through hydrophobic interactions, while the cyano group at the C-3 position is shown to improve selectivity via hydrogen bond formation",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p3",
+      "quote": "Osmaniye and coworkers developed a series of pyrazole-thiadiazole hybrid derivatives through condensation, cyclisation, and substitution reactions65",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p3",
+      "quote": "The design strategy capitalised on the pharmacological properties of both pyrazole and 1,3,4-thiadiazole moieties to enhance VEGFR-2 inhibition",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p3",
+      "quote": "Compound 42 (Figure 11) emerged as the most active derivative, demonstrating IC50 values of 9.673 ± 0.399 μM against HT-29 cells and 23.081 ± 0.400 μM against NIH3T3 cells, with a selectivity index exceeding 2",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.6/p3",
+      "quote": "Molecular docking studies revealed the formation of hydrogen bonds and π–π stacking interactions with key amino acids in VEGFR-2, while molecular dynamics simulations confirmed the stability of these binding interactions",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p2",
+      "quote": "Eldehna et al. synthesised a series of oxoindolin arylurea derivatives through condensation, hydrogenation, and coupling reactions67",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p2",
+      "quote": "The design was based on combining the pharmacological properties of indolinone and diphenylurea to enhance VEGFR-2 inhibition",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p2",
+      "quote": "Compound 43a (Figure 12) exhibited superior activity against HepG2 cells (IC50 = 1.81 ± 0.14 μM) compared to Doxorubicin (2.90 ± 0.36 μM) and Sorafenib (3.40 ± 0.25 μM)",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p2",
+      "quote": "Compound 43b (Figure 12) showed potent VEGFR-2 inhibition (IC50 = 0.31 ± 0.04 μM), slightly weaker than Sorafenib (0.10 ± 0.02 μM), with molecular docking confirming hydrogen bond formation with key amino acids",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p2",
+      "quote": "Xiang and coworkers developed a series of derivatives with indole as the core skeleton through cyclisation, substitution, and demethylation reactions74",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p2",
+      "quote": "The design aimed to create dual-target ERα/VEGFR-2 inhibitors for enhanced anti-breast cancer activity by integrating the indenoisoquinoline scaffold with basic side chains",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p2",
+      "quote": "Compound 44 (Figure 12) demonstrated optimal activity, with IC50 values of 7.2 μM against ERα and 0.099 μM against VEGFR-2 (superior to Sunitinib’s 0.14 μM)",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p2",
+      "quote": "It showed remarkable potency against MDA-MB-231 cells (IC50 = 0.5 μM vs. Tamoxifen’s 13.9 μM), and was found to inhibit the Raf-1/MAPK/ERK pathway, with molecular docking revealing binding to key amino acids",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p2",
+      "quote": "Abouzid and coworkers’ laboratory prepared three classes of indazole-pyrimidine derivatives through diazotisation, reduction, and substitution reactions75",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p2",
+      "quote": "The Pazopanib structure was optimised using 2-aminopyrimidine as the hinge-binding group, with indazole rings and various substituted anilines introduced to enhance VEGFR-2 inhibition",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p2",
+      "quote": "Compound 45 (Figure 12) exhibited potent VEGFR-2 inhibition (IC50 = 24.5 nM), comparable to Pazopanib (30 nM), and inhibited HUVEC cells (IC50 = 1.37 μM) while suppressing VEGF and TGF-β1 secretion",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p2",
+      "quote": "Nanomolar-level anti-proliferative activity was observed against multiple cell lines (GI50 as low as 525 nM), with additional inhibitory effects on CDK-2 and c-Kit kinases",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p2",
+      "quote": "Enhanced binding affinity and selectivity towards VEGFR-2 were achieved by introducing diverse substituents, incorporating multi-target pharmacophores, or optimising linker moieties",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p3",
+      "quote": "Multiple research teams have investigated indole and related heterocyclic derivatives as VEGFR-2 inhibitors through condensation, cyclisation, and substitution reactions, with molecular docking employed to elucidate binding mechanisms",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p3",
+      "quote": "Comparative analyses were performed using reference inhibitors like Sorafenib and SU11248",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p3",
+      "quote": "Kang and coworkers designed indole-benzimidazole and indole-benzothiazole hybrids, leveraging the indole scaffold’s VEGFR-2 affinity76",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p3",
+      "quote": "Compound 46 (Figure 13) achieved 66.7% inhibition at 10 μM, though less potent than SU11248 at 98.1%",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p3",
+      "quote": "Docking revealed hydrogen bonding with Cys1045",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p3",
+      "quote": "Ghannam and coworkers developed 2-phenylindoles, indole-thiazolinones, and indole-imidazolones77, with compound 47a (Figure 13) showing exceptional potency at 0.07 μM against VEGFR-2, surpassing Sorafenib’s 0.09 μM, and broad-spectrum anticancer activity",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p3",
+      "quote": "Compound 47b (Figure 13) inhibited 85% of VEGFR-2 in MCF-7 cells, with docking confirming key residue interactions",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p3",
+      "quote": "Zhang et al. synthesised indole-2-carbohydrazide derivatives via virtual screening-guided design78, compound 48 (Figure 13) exhibited GI50 values of 8.1 μM and 7.9 μM against HCT116 and SW480 cells, respectively, with no toxicity to MRC-5 cells",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p3",
+      "quote": "It suppressed VEGFR-2 phosphorylation and angiogenesis in CAM assays",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p3",
+      "quote": "Barakat, Abouzid and coworkers employed conformational restriction to create NH-linked and non-linked indolizines79",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p3",
+      "quote": "Compounds 49a, 49b, and 49c (Figure 13) demonstrated remarkable IC50 values of 5.4 nM, 5.6 nM, and 7 nM against VEGFR-2, far exceeding Sorafenib’s 90 nM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p3",
+      "quote": "Compound 49c additionally inhibited HUVECs at 87.7 nM versus Sorafenib’s 160 nM, while modulating Akt and caspase-3 pathways",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p4",
+      "quote": "Recent studies have demonstrated significant progress in developing VEGFR-2 inhibitors through strategic scaffold hybridisation and structure-based design",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p4",
+      "quote": "Eldehna and coworkers designed 1,2,4-triazole-linked indolinone derivatives inspired by Sunitinib’s structure80",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p4",
+      "quote": "Among these, compound 50 (Figure 14) emerged as the most potent, exhibiting exceptional VEGFR-2 inhibition with an IC50 of 16.3 nM, surpassing Sorafenib’s 29.7 nM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p4",
+      "quote": "It also showed strong activity against HepG2 cells at 0.73 μM while maintaining low toxicity in normal Vero cells",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p4",
+      "quote": "Concurrently, Shankaraiah, Godugu and coworkers developed 3-indolyl-substituted phenylpyrazole carboxamide hybrids mimicking Sorafenib’s type II inhibition mode81",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p4",
+      "quote": "Their lead compound 51 (Figure 14) demonstrated a VEGFR-2 IC50 of 2.83 ± 0.86 μM and superior activity against MCF-7 cells at 2.12 ± 0.19 μM, along with apoptosis induction and migration inhibition capabilities",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p4",
+      "quote": "In parallel, Girija and coworkers adopted computational approaches to screen oxindole derivatives82, identifying compounds 52, 53, and 54 (Figure 14) with exceptional docking scores reaching −8.33 kcal/mol, significantly better than Sunitinib’s −4.93 kcal/mol",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.7/p4",
+      "quote": "Compound 52 showed particularly strong binding affinity at −57.473 ± 22.48 kJ/mol in MM/PBSA analysis, with molecular dynamics confirming its stability",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.8/p2",
+      "quote": "Several research groups have developed phthalazine-based VEGFR-2 inhibitors through condensation, cyclisation, and substitution reactions, with molecular docking consistently employed to validate target interactions",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.8/p2",
+      "quote": "Eldehna et al. designed 1-substituted-4-(4-methoxybenzyl)phthalazine derivatives featuring ureido-linked phenyl groups to enhance hydrophobic interactions with the VEGFR-2 binding pocket86",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.8/p2",
+      "quote": "Compounds 55a, 55b, and 55c (Figure 15) demonstrated exceptional potency with IC50 values of 0.086 μM, 0.083 μM, and 0.086 μM, respectively, outperforming Sorafenib at 0.090 μM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.8/p2",
+      "quote": "El-Adl and coworkers adopted a triazole-phthalazine hybrid approach, incorporating structural elements from Sorafenib to optimise hydrogen bonding and hydrophobic contacts87",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.8/p2",
+      "quote": "Their lead compound 56a (Figure 15) achieved an IC50 of 0.11 ± 0.01 μM against VEGFR-2, comparable to Sorafenib’s 0.10 ± 0.02 μM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.8/p2",
+      "quote": "Against HCT116 and MCF-7 cells, 56a exhibited IC50 values of 6.04 ± 0.30 μM and 8.8 ± 0.45 μM, respectively, with compounds 56b, 57a, and 57b (Figure 15) showing secondary activity",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.8/p2",
+      "quote": "Abouzid and coworkers developed biarylurea-containing phthalazine derivatives combining features of Sorafenib and vatalanib88",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.8/p2",
+      "quote": "While compound 59 (Figure 15) showed moderate VEGFR-2 inhibition at 2.5 μM, and compounds 58b and 58a (Figure 15) at 2.7 μM and 4.4 μM, respectively, all were less potent than Sorafenib’s 0.09 μM",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.8/p2",
+      "quote": "However, at 10 μM concentration, these compounds demonstrated notable HUVEC inhibition rates of 79.83%, 72.58%, and 71.6%, respectively",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.9/p2",
+      "quote": "Sun and coworkers focused on modifying 3-amido-4,5-diarylisoxazole derivatives based on the Hsp90 inhibitor AUY922 structure, incorporating amino acid derivatives to optimise polar and hydrophobic interactions92",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.9/p2",
+      "quote": "Their lead compound 60 (Figure 16) demonstrated exceptional activity with an IC50 of 14 nM against Hsp90, surpassing AUY922’s 22 nM, along with potent inhibition of H3122 and BT-474 cancer cells at 42 nM and 57 nM, respectively, while effectively degrading ALK protein",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.9/p2",
+      "quote": "Elkaeed and coworkers adopted a different approach by designing 1,3,4-thiadiazole derivatives that mimic VEGFR-2 inhibitor pharmacophores93",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.9/p2",
+      "quote": "Compound 61 (Figure 16) emerged as the most active, showing a VEGFR-2 IC50 of 103 nM compared to Sorafenib’s 41 nM, yet exhibiting superior cellular potency against MCF-7 and HepG2 cells at 0.04 μM and 0.18 μM, respectively",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.9/p2",
+      "quote": "Long and coworkers pursued a scaffold-hopping strategy from ponatinib to develop naphthoimidazo[1,2-b]pyridazine hybrids94",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.9/p2",
+      "quote": "Compound 62 (Figure 16) stood out with remarkable VEGFR-2 inhibition at 8.4 nM, significantly better than Sunitinib’s 33.6 nM, while maintaining high selectivity across 70 kinases",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.9/p2",
+      "quote": "It showed potent HT-29 cell inhibition at 0.47 μM, along with strong antiangiogenic effects, apoptosis induction, and favourable pharmacokinetic properties",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.1/p2",
+      "quote": "Recent studies have demonstrated significant advances in FGFR-targeted drug discovery through strategic scaffold modifications and structure-based design approaches110–112",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.1/p2",
+      "quote": "Duan et al. employed condensation and acylation reactions to develop 1H-pyrazolo[3,4-b]pyridine derivatives using a scaffold-hopping strategy from AZD4547110",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.1/p2",
+      "quote": "Their lead compound 63 (Figure 17) showed exceptional FGFR1–3 inhibition with IC50 values of 0.3 nM, 0.7 nM, and 2.0 nM, respectively, while maintaining 422.7 nM activity against VEGFR2, demonstrating superior selectivity over AZD4547",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.1/p2",
+      "quote": "The compound exhibited potent anti-proliferative effects against FGFR-dependent cell lines at sub-nanomolar concentrations and showed promising in vivo efficacy in H1581 xenograft models with favourable pharmacokinetics",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.1/p2",
+      "quote": "Xiong et al. adopted a different approach by designing 5H-pyrrolo[2,3-b]pyrazine derivatives through Suzuki coupling and substitution reactions, guided by FGFR1 co-crystal structures111",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.1/p2",
+      "quote": "The design was based on c-Met inhibitor structures, optimised using the FGFR1 compound 64 (Figure 17) co-crystal structure, where pyrazine nitrogen atoms were utilised to form hydrogen bonds with the FGFR1 hinge region, and imidazole groups were incorporated to enhance binding through stacking interactions with Phe489",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.1/p2",
+      "quote": "Compound 65 (Figure 17) emerged as the most potent inhibitor with 0.6 nM activity against FGFR1 and 29.1 nM potency against KG1 cells, showing improved selectivity over reference drugs and minimal c-Met inhibition",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.1/p2",
+      "quote": "The design strategically utilised pyrazine nitrogens for hinge region binding and imidazole groups for Phe489 stacking interactions",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.1/p2",
+      "quote": "The team’s prior work on pyrazolino-pyridine derivatives as c-Met inhibitors provided valuable structural insights for this optimisation112",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.2/p2",
+      "quote": "Recent advances in FGFR inhibitor development have demonstrated the versatility of indazole-core scaffolds through various synthetic and design strategies115–118",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.2/p2",
+      "quote": "Li et al. designed indazole-core FGFR inhibitors inspired by AZD4547 and NVP-BGJ398 structures115",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.2/p2",
+      "quote": "Their lead compound 66a (Figure 18) showed potent activity with 2.9 nM IC50 against FGFR1 and 40.5 nM against SNU-16 cells, approaching AZD4547’s potency, while compound 66b (Figure 18) demonstrated 15.0 nM activity against FGFR1",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.2/p2",
+      "quote": "Ai et al. developed benzimidazole–indazole hybrids through etherification and cyclisation reactions116, with compounds 67 and 68 (Figure 18) exhibiting exceptional pan-FGFR inhibition at 0.9–6.1 nM across FGFR1-4 and sub-nanomolar cellular potency, along with 96.9% tumour suppression in xenograft models at 10 mg/kg",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.2/p2",
+      "quote": "Xiong et al. focused on C4-modified indazole derivatives117, where compound 69 (Figure 18) achieved 30.2 ± 1.9 nM activity against FGFR1, though less potent than AZD4547’s 1.8 ± 0.1 nM",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.2/p2",
+      "quote": "Li et al.’s laboratory pioneered dual FGFR1/HDAC inhibitors by combining indazol-3-amine with benzohydroxamic acid scaffolds118, with compound 70 (Figure 18) showing 34 nM activity against HDAC6 and significant FGFR1 inhibition",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.3/p1",
+      "quote": "Wang and coworkers designed C-8 substituted guanine derivatives, where compound 71 (Figure 19) emerged as the most active with 1.56 μM IC50 against FGFR1 and selective cytotoxicity against A549/B16-F10 cells at 8.28/6.59 μM, showing improved safety over AZD4547114",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.3/p1",
+      "quote": "Duan and coworkers produced pyrazolylaminoquinazoline derivatives through scaffold hopping, with compound 72 (Figure 19) displaying exceptional pan-FGFR inhibition at 1.0, 0.2, and 5.0 nM against FGFR1-3 and sub-nanomolar activity in SNU16 cells115",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.3/p1",
+      "quote": "Wu, Li, and Liang and coworkers adopted a distinct approach by modifying nordihydroguaiaretic acid to create ATP-independent inhibitors, where compound 73 (Figure 19) showed 14 μM activity against FGFR1 and 1.5–1.6 μM potency in gastric cancer cells, representing significant improvement over the parent NDGA compound119",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.3/p1",
+      "quote": "Ye and coworkers developed 4-bromo-N-(3,5-dimethoxyphenyl)benzamide derivatives, with compound 74 (Figure 19) demonstrating 84.3% FGFR1 inhibition and broad activity against NSCLC cell lines at 1.25–2.31 μM while maintaining excellent kinase selectivity118",
+      "reason": "cited"
+    },
+    {
+      "block": "s4/p2",
+      "quote": "Zhang and coworkers synthesised oxazolo[4,5-g]quinazolin-2(1H)-one derivatives via nitration, reduction, and cyclisation reactions, with compounds 75a–c (Figure 20) showing exceptional EGFR inhibition at 0.026 μM, 0.0073 μM, and 0.0087 μM, respectively, surpassing Erlotinib’s 0.035 μM123",
+      "reason": "cited"
+    },
+    {
+      "block": "s4/p2",
+      "quote": "Compound 75a showed significantly better tumour suppression than Erlotinib in LLC xenograft models and prolonged survival in tumour-bearing mice",
+      "reason": "cited"
+    },
+    {
+      "block": "s4/p2",
+      "quote": "Abdelgawad et al. employed esterification and condensation reactions to create pyrazolopyrimidine–Schiff base hybrids, where compound 76a (Figure 20) achieved 4.18 μM activity against EGFR with improved selectivity over related kinases124",
+      "reason": "cited"
+    },
+    {
+      "block": "s4/p2",
+      "quote": "Zou and coworkers adopted a biomass-based approach, converting shikimic acid to benzofuro[2,3-d]pyrimidin-4-amine derivatives, with compound 77a (Figure 20) exhibiting near-equivalent potency to Gefitinib at 1.7 nM125",
+      "reason": "cited"
+    },
+    {
+      "block": "s4/p2",
+      "quote": "Xie and coworkers focused on mutation-selective inhibition through pyrimido[4,5-d]pyrimidine-2,4(1H,3H)-diones, yielding compound 78 with 0.3 nM activity against EGFR L858R/T790M and remarkable 263-fold wild-type selectivity126",
+      "reason": "cited"
+    },
+    {
+      "block": "s4/p2",
+      "quote": "This compound showed potent efficacy in H1975 models with 73.2% tumour suppression",
+      "reason": "cited"
+    },
+    {
+      "block": "s4/p3",
+      "quote": "Recent advances in multi-target anticancer agents have yielded several promising hybrid scaffolds through strategic molecular design127–129",
+      "reason": "cited"
+    },
+    {
+      "block": "s4/p3",
+      "quote": "Rimac and coworkers developed quinazoline-1,3,5-triazine hybrids via acetylation and condensation reactions, with compounds 79a–c (Figure 21) demonstrating potent EGFR inhibition at 36.6–41.0 nM, comparable to Erlotinib’s 31.1 nM, while showing selective cytotoxicity against MCF-7 cells at 14.3–17.8 μM127",
+      "reason": "cited"
+    },
+    {
+      "block": "s4/p3",
+      "quote": "Ahmed and coworkers employed nucleophilic substitution to create naphthothiazolopyrimidine hybrids, where compound 80a (Figure 21) emerged as a dual topoisomerase IIα/EGFR inhibitor with 16.03 nM EGFR activity and 71.5% topoisomerase inhibition128",
+      "reason": "cited"
+    },
+    {
+      "block": "s4/p3",
+      "quote": "The same research group further designed 1,2,3-triazole-Schiff base derivatives through multi-target pharmacophore integration, with compound 81b (Figure 21) showing broad-spectrum activity at 12.62–31.19 μM against various cancer lines while maintaining 3.45 ng/mL EGFR inhibition and excellent safety profile129",
+      "reason": "cited"
+    },
+    {
+      "block": "s5/p2",
+      "quote": "Recent advances in Trk inhibitor development have demonstrated remarkable progress through diverse molecular design strategies134–137",
+      "reason": "cited"
+    },
+    {
+      "block": "s5/p2",
+      "quote": "Compound 82a (Figure 22) showed exceptional 0.005 μM potency against TrkA, and compound 82b (Figure 22) show 0.047 μM, all exhibiting greater than 500-fold selectivity over related kinases134",
+      "reason": "cited"
+    },
+    {
+      "block": "s5/p2",
+      "quote": "Schirrmacher and coworkers developed fluorinated quinazoline derivatives through condensation and substitution reactions, where compound 83 (Figure 22) exhibited balanced inhibition of Trk isoforms with 650 nM against TrkA, 118 nM against TrkB, and 85.2 nM against TrkC, while incorporating a fluoroethyl moiety for potential radiolabeling applications135",
+      "reason": "cited"
+    },
+    {
+      "block": "s5/p2",
+      "quote": "Zhou and coworkers achieved breakthrough results through structural optimisation of bicyclic carboxamide derivatives, with compounds 84a and 84b (Figure 22) demonstrating 1.1–1.3 nM activity against wild-type TrkA and 5.3–6.1 nM against G595R mutants, representing a significant improvement over LOXO-101’s 237.4 nM against the mutant form136",
+      "reason": "cited"
+    },
+    {
+      "block": "s5/p2",
+      "quote": "Tang et al.’s laboratory further advanced the field by developing pyrazolo[1,5-a]pyrimidine derivatives showing pan-Trk inhibition below 5 nM",
+      "reason": "cited"
+    },
+    {
+      "block": "s5/p2",
+      "quote": "The series compounds 85a–e (Figure 22) all demonstrated sub-5 nM IC50 values against all Trk isoforms, with compound 85e showing outstanding activity at 1.4 nM against TrkA, 2.4 nM against TrkB, and 1.9 nM against TrkC, comparable to larotrectinib’s 1.2–2.1 nM range137",
+      "reason": "cited"
+    },
+    {
+      "block": "s6/p2",
+      "quote": "Zhu and coworkers synthesised 2-styryl-5-nitroimidazole derivatives containing 1,4-benzodioxane moieties via condensation and substitution reactions, leveraging nitroimidazole’s tumour-targeting properties and benzodioxane’s anticancer potential142",
+      "reason": "cited"
+    },
+    {
+      "block": "s6/p2",
+      "quote": "Among these, compound 86 (Figure 23) demonstrated optimal FAK inhibition with an IC50 of 0.45 μM and potent cytotoxicity against A549 and Hela cells at 3.11 μM and 2.54 μM, respectively, also inducing apoptosis",
+      "reason": "cited"
+    },
+    {
+      "block": "s6/p2",
+      "quote": "Similarly, Chen and coworkers utilised bromination, chlorination, and substitution reactions to develop 1,2,4-triazine-based inhibitors, where structural optimisation through a 6-chloro substituent enhanced interactions143",
+      "reason": "cited"
+    },
+    {
+      "block": "s6/p2",
+      "quote": "Compound 87 (Figure 23) emerged as the most potent with a FAK IC50 of 0.23 μM, while derivative compound 88 showed activity against U-87MG cells at 2.4 μM",
+      "reason": "cited"
+    },
+    {
+      "block": "s6/p2",
+      "quote": "Shu and coworkers’ laboratory incorporated sulphonamide groups via substitution, reduction, and coupling reactions to create diphenylpyrimidine derivatives, with compound 89 (Figure 23) exhibiting exceptional FAK inhibition at 86.7 nM and strong cytotoxicity against pancreatic cancer lines AsPC-1 and Panc-1 at 3.92 μM and 0.53 μM, respectively144",
+      "reason": "cited"
+    },
+    {
+      "block": "s6/p2",
+      "quote": "Meanwhile, Wu and coworkers utilised the 7H-pyrrolo[2,3-d]pyrimidine core as a hinge-binding scaffold, synthesising derivatives through substitution, coupling, and deprotection reactions145",
+      "reason": "cited"
+    },
+    {
+      "block": "s6/p2",
+      "quote": "Compound 90 (Figure 23) displayed superior activity with a FAK IC50 of 19.1 nM and potent effects against multiple cell lines, also inducing apoptosis and cell cycle arrest",
+      "reason": "cited"
+    },
+    {
+      "block": "s6/p2",
+      "quote": "Zhang and coworkers took two distinct approaches: first, cyclised pyrazole aminopyridine/pyrimidine derivatives prepared via palladium-catalysed coupling and substitution reactions, where compounds 91a, 91b, and 92 (Figure 23) achieved remarkable FAK inhibition at 0.09 nM, 0.11 nM, and 0.61 nM146; second, 2,4-diaminopyrimidine inhibitors synthesised through nucleophilic substitution and reduction reactions, with compound 93 showing excellent activity at 5.0 nM and potential as a PET imaging agent147",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.1/p1",
+      "quote": "Small-molecule HDAC inhibitors containing thiazole or thiophene core structures have been demonstrated to specifically target HDAC isoforms (e.g. HDAC1/2/3/6) through their zinc-binding groups (ZBGs)",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.1/p1",
+      "quote": "The inhibition of deacetylase activity has been shown to induce hyperacetylation of both histone and non-histone proteins (including HIF-1α and p53), thereby modulating multiple pro-angiogenic signalling pathways153,154",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.1/p1",
+      "quote": "Furthermore, these inhibitors have been found to suppress angiogenesis through three coordinated mechanisms: HIF-1α degradation leading to reduced VEGF secretion, PTEN upregulation resulting in PI3K/AKT/mTOR pathway blockade, and Notch signalling modulation",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.1/p1",
+      "quote": "These effects have been collectively shown to synergistically inhibit endothelial cell proliferation, migration, and sprouting152,155",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.1/p2",
+      "quote": "In one study led by Nan and coworkers, bisthiazolyl trifluoromethyl ketone derivatives were synthesised via substitution, condensation, and deprotection reactions, where the trifluoromethyl ketone ZBG was key to enhancing potency156",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.1/p2",
+      "quote": "Compound 94 (Figure 24) emerged as the most active, exhibiting IC50 values of 26.28 nM, 25.84 nM, 31.54 nM, and 20.81 nM against HDAC1, 3, 4, and 6, surpassing SAHA and CFH367-C",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.1/p2",
+      "quote": "It also demonstrated strong cytotoxicity against RPMI 8226 and JeKo-1 cells at 0.085 μM and 0.064 μM, while inducing histone/tubulin acetylation and apoptosis",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.1/p2",
+      "quote": "Another team, led by Liu and coworkers, utilised nitration, chlorination, reduction, and coupling reactions to prepare thienopyrimidine hydroxamic acid derivatives, incorporating thienopyrimidine as the cap group and hydroxamic acid as the ZBG157",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.1/p2",
+      "quote": "Compound 95 (Figure 24) showed optimal inhibition with IC50 values of 29.81 nM, 24.71 nM, and 21.29 nM against HDAC1, 3, and 6, significantly outperforming SAHA",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.1/p2",
+      "quote": "It also displayed cellular activity against RPMI 8226 and HCT 116 cells at 0.97 μM and 1.01 μM, along with upregulated histone H3 acetylation",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.1/p2",
+      "quote": "Most recently, Luan and coworkers designed tetrahydrobenzothiazole-based inhibitors via amidation, deprotection, and substitution reactions, using hydroxamic acid as the ZBG to strengthen HDAC binding158",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.1/p2",
+      "quote": "Compound 96 (Figure 24) exhibited exceptional potency with IC50 values of 1.4 nM, 12.1 nM, 5.6 nM, and 4.6 nM against HDAC1, 2, 3, and 6, surpassing SAHA",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.1/p2",
+      "quote": "It demonstrated broad antitumor activity (1.22–5.35 μM across multiple cancer lines), inducing apoptosis, G2/M arrest, migration inhibition, and significant in vivo efficacy in zebrafish models",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.2/p1",
+      "quote": "Li et al. utilised amidation and hydrolysis reactions to develop benzamide-type inhibitors featuring bicyclic heterocycles as surface recognition groups, with compounds 97a and 97b (Figure 25) exhibiting HDAC1 IC50 values of 0.118 μM and 0.120 μM, respectively, along with improved cellular activity against A549 cells at 0.723 μM and 0.649 μM159",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.2/p1",
+      "quote": "Li and coworkers employed Sandmeyer reaction, condensation, and hydrolysis to synthesise indole-2,3-dione derivatives, where compound 98 (Figure 25) showed exceptional potency with 10.13 nM inhibition against HeLa nuclear HDACs and superior in vivo efficacy compared to SAHA161",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.2/p1",
+      "quote": "Hansen and coworkers leveraged Ugi four-component reactions to develop peptidic cap-containing inhibitors, with compound 99 (Figure 25) displaying IC50 values of 25.0 nM, 6.5 nM, and 281 nM against HDAC1/3/6, respectively, along with potent activity against A2780 and Cal27 cells at 0.47 μM and 0.44 μM162",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.2/p1",
+      "quote": "Seo and coworkers employed cyclisation, alkylation, and hydroxylamination to create BBB-permeable benzofused heterocyclic inhibitors, with compound 100 (Figure 25) exhibiting 84.9 nM and 95.9 nM inhibition against HDAC1/6 and 2.01 μM GI50 in SH-SY5Y cells163",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.2/p1",
+      "quote": "The benzamide-related structures have been successfully modified through diverse synthetic strategies, where the introduction of bicyclic heterocycles as recognition motifs has been demonstrated to significantly enhance HDAC1 inhibitory activity",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.2/p1",
+      "quote": "Furthermore, the construction of benzannulated heterocycles via cyclisation reactions has been shown to critically influence both HDAC1/6 interactions and cellular potency",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.3/p1",
+      "quote": "Katoh and coworkers employed amide coupling, macrolactonisation, and disulphide bond formation to synthesise bicyclic depsipeptide inhibitors (burkholderia A, B, and 5,6,20-tri-epi-burkholdac A), achieving exceptional HDAC1 inhibition with IC50 values of 1.2 nM for compound 101a (Figure 26) and 1.0 nM for compound 101b (Figure 26), along with remarkable HDAC6 selectivity indices of 1645 and 992, respectively164",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.3/p1",
+      "quote": "These compounds showed sub-nanomolar to nanomolar GI50 values across 39 cancer cell lines, outperforming FK228",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.3/p1",
+      "quote": "Concurrently, Fang and coworkers laboratory prepared quinoline hydroxamate derivatives through amidation, oxidation, reduction, and substitution, with compound 102a (Figure 26) demonstrating 85 nM HDAC inhibition and 0.90 μM activity against MDA-MB-231 cells160",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.3/p1",
+      "quote": "Most recently, Ghodsi and coworkers designed indolin-2-one derivatives combining Sunitinib’s core with hydroxamic acid, where compound 103 (Figure 25) showed dual HDAC/VEGFR inhibition with 1.07 μM HDAC1 IC50, 1.78/2.59 μM activity against HT-29/HCT-116 cells, and significant antiangiogenic effects165",
+      "reason": "cited"
+    },
+    {
+      "block": "s7.3/p1",
+      "quote": "The rigid architecture of bicyclic depsipeptides, formed through amide coupling and macrocyclisation, has been demonstrated to enhance HDAC1 binding affinity, while their thioether linkage and cyclic backbone are shown to confer high selectivity towards HDAC6",
+      "reason": "cited"
+    },
+    {
+      "block": "s8.1/p1",
+      "quote": "Kamal et al. designed imidazo[1,5-a]pyridine-benzimidazole hybrids via amidation, cyclisation, formylation, and condensation reactions, integrating dual pharmacophores to simultaneously inhibit both pathways171",
+      "reason": "cited"
+    },
+    {
+      "block": "s8.1/p1",
+      "quote": "The most potent derivatives, compounds 104a and 104b (Figure 27), demonstrated broad-spectrum activity with GI50 values of 1.06–14.9 μM and 0.43–7.73 μM across 60 cancer cell lines, along with microtubule polymerisation inhibition at 3.25 μM and 1.71 μM, respectively, while showing minimal toxicity to normal HEK-293 cells",
+      "reason": "cited"
+    },
+    {
+      "block": "s8.2/p1",
+      "quote": "Zhou and coworkers employed Suzuki coupling, halogenation, hydrolysis, and condensation reactions to create conformationally restricted pyrazole–furan carboxamide analogues, where rigid piperidine structures enhanced Akt1 inhibition172",
+      "reason": "cited"
+    },
+    {
+      "block": "s8.2/p1",
+      "quote": "The lead compound 105 (Figure 27) exhibited exceptional Akt1 inhibition at 0.061 μM, approaching the potency of clinical references, with cellular IC50 values of 9.76 μM against OVCAR-8 and 7.76 μM against HCT116 cells, while effectively suppressing downstream phosphorylation events",
+      "reason": "cited"
+    },
+    {
+      "block": "s8.3/p1",
+      "quote": "Altıntop et al.’s laboratory synthesised thiazole derivatives via condensation and cyclisation reactions, creating thiazole-hydrazone hybrids that selectively targeted Akt174",
+      "reason": "cited"
+    },
+    {
+      "block": "s8.3/p1",
+      "quote": "The most active compound 106 (Figure 27) displayed IC50 values of 12.0 μg/mL against A549 and 3.83 μg/mL against C6 cells, inducing 71.66% Akt inhibition and 32.8% apoptosis in C6 cells, with molecular modelling revealing important π–π stacking interactions",
+      "reason": "cited"
+    },
+    {
+      "block": "s8.4/p1",
+      "quote": "Prathima et al. developed 3-hydroxy-3-alkynyl indolin-2-one derivatives through metal-free TBAF-catalysed alkynylation, emphasising green synthetic approaches173",
+      "reason": "cited"
+    },
+    {
+      "block": "s8.4/p1",
+      "quote": "While compounds 107a–c (Figure 27) showed moderate Akt inhibition at 9.8 μM, 7.7 μM, and 8.1 μM, respectively, they demonstrated improved cellular activity against DU145 and HeLa cells with IC50 values of 4.8–7.2 μM, supported by molecular docking studies identifying key interactions with Akt-1",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.1/p1",
+      "quote": "VEGFR-2 is one of the most popular targets for anti-tumour therapy by inhibiting angiogenesis",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.1/p1",
+      "quote": "Several research groups have developed innovative dual-target inhibitors through strategic molecular hybridisation approaches, which combine VEGFR-2 inhibition with other therapeutic mechanisms",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.1/p1",
+      "quote": "Peng et al. pioneered this strategy by designing quinazoline-4-amine/hydroxamic acid hybrids as dual VEGFR-2/HDAC inhibitors, with compound 108 (Figure 28) demonstrating exceptional potency at 2.2 nM against HDAC and 74 nM against VEGFR-2, along with 0.85 μM activity in MCF-7 cells177",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.1/p1",
+      "quote": "Qiang et al. subsequently engineered aminopyrimidine-formaldehyde oxime hybrids targeting c-Met/VEGFR-2, where compound 109 (Figure 28) emerged as a promising lead through molecular docking studies178, building upon established quinazoline scaffolds in approved drugs like Cabozantinib",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.1/p1",
+      "quote": "Li et al. advanced the field by developing thienylpyrimidine derivatives as dual c-Met/VEGFR-2 inhibitors, with compound 110 (Figure 28) showing remarkable IC50 values of 0.048 μM for VEGFR-2 and 0.025 μM for c-Met179",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.1/p1",
+      "quote": "Xu et al. expanded the therapeutic scope through 4-aniline-quinazoline derivatives, where compound 111 (Figure 28) exhibited broad-spectrum activity across five cancer cell lines and triple kinase inhibition (46.4 nM VEGFR-2, 673.6 nM PDGFR-β, 384.8 nM EGFR)180",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.1/p1",
+      "quote": "Most recently, Bai et al. introduced novel thiourea derivatives, with compound 112 (Figure 28) displaying exceptional cytotoxicity (89.2–97.3% inhibition across seven cancer lines at 10 μM) and superior antiangiogenic activity compared to Sorafenib and regorafenib, while maintaining moderate RTK inhibition181",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.1/p1",
+      "quote": "The heterocyclic core structures (e.g. quinazoline/pyrimidine) are demonstrated to provide a rigid scaffold for VEGFR-2 binding, with their aromatic rings being capable of penetrating the kinase hydrophobic pocket through π–π stacking interactions",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.1/p1",
+      "quote": "The linker length (2–3 atoms) has been shown to influence dual-target synergistic effects, while polar groups (e.g. amino, hydroxyl) can be utilised to modulate both water solubility and target selectivity",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.2/p1",
+      "quote": "In addition to the frequently investigated VEGFR-2 target, HDAC has gained significant research attention and thus will be introduced as a distinct category in our discussion",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.2/p1",
+      "quote": "Liu and coworkers pioneered this approach by synthesising macrocyclic compounds via Suzuki coupling, ring-closing metathesis, and amidation, combining HDAC, FLT3, and JAK2 inhibitory pharmacophores182",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.2/p1",
+      "quote": "Their lead compound 113 (Figure 29) demonstrated potent activity with IC50 values of 87 nM against HDAC, 87 nM against FLT3, and 686 nM against JAK2, along with remarkable cellular potency in FLT3-ITD-mutant MV4-11 and JAK2V617F-mutant HEL cells at 0.27 μM and 0.34 μM, respectively",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.2/p1",
+      "quote": "Hu and coworkers employed coupling, Suzuki reactions, and amidation to create indazol-3-amine/benzohydroxamic acid hybrids, achieving dual FGFR1/HDAC inhibition113",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.2/p1",
+      "quote": "Compound 114 (Figure 29) showed exceptional HDAC6 inhibition at 34 nM and moderate FGFR1 activity",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.2/p1",
+      "quote": "Liu and coworkers similarly utilised coupling, alkylation, and amidation to develop indole derivatives fusing HDAC and BRD4 inhibitory motifs, with compound 115 (Figure 29) exhibiting 5 nM HDAC3 inhibition and 88% BRD4 inhibition at 10 μM183",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.2/p1",
+      "quote": "Zheng and coworkers adopted nucleophilic substitution, condensation, and ammonolysis to create Bcl-2/HDAC dual inhibitors, where compounds 116a–c (Figure 29) displayed IC50 values of 19–28 nM against HDAC6 and 0.23–0.25 μM against Bcl-2184",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.2/p1",
+      "quote": "Grewal and coworkers synthesised quinazolin-4-one-based derivatives via coupling, cyclisation, and ammonolysis, achieving nM-level inhibition against PI3Kγ, PI3Kδ, and HDAC6 with compound 117 (Figure 29)185",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.2/p1",
+      "quote": "Zhao and coworkers designed 4-phenoxyquinoline derivatives through condensation, cyclisation, and ammonolysis, with compound 118 (Figure 29) showing IC50 values of 21.44 nM against c-Met and 45.22 nM against HDAC1186",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.2/p1",
+      "quote": "Duan and coworkers developed cis-stilbene/benzophenone hybrids via coupling, cyclisation, and amidation, where compound 119 (Figure 29) demonstrated exceptional tubulin polymerisation inhibition at 1.2 μM and HDAC7 inhibition at 0.05 μM187",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.3/p1",
+      "quote": "Building on the previously mentioned VEGFR-2 and HDAC targets, we further observe that most multi-target compounds developed by several research groups through strategic molecular modifications to create diverse kinase inhibitors contain EGFR",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.3/p1",
+      "quote": "Roh and coworkers optimised 4-anilinoquinazoline hybrids via substitution, reduction, and condensation reactions, focusing on C-4 anilino and C-6 substituents for selective EGFR/HER2 inhibition188",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.3/p1",
+      "quote": "Their lead compound 120 (Figure 30) demonstrated exceptional potency with IC50 values of 0.003 μM against EGFR and 0.016 μM against HER2, surpassing lapatinib, while showing a GI50 of 2.70 μM in BT-474 cells with minimal toxicity to normal L132 cells",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.3/p1",
+      "quote": "Similarly, Zhu, Jiang, Gong and coworkers employed condensation, cyclisation, and substitution to create dihydropyridine-containing thiazolinone derivatives targeting EGFR and HER2189",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.3/p1",
+      "quote": "Compound 121 (Figure 30) exhibited IC50 values of 0.099 μM against EGFR and 3.26 μM against HER2, with potent cellular activity in B16-F10 and HeLa cells at 0.09–0.56 μM while maintaining low toxicity in normal 293T cells",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.3/p1",
+      "quote": "Li, Ma and coworkers utilised condensation, substitution, and reduction reactions to develop diphenylpyrimidine derivatives combining TAE-226 and Mor-DPPY pharmacophores for dual FAK/EGFR T790M inhibition190",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.3/p1",
+      "quote": "Compounds 122a–b (Figure 30) showed remarkable IC50 values of 1.03 and 3.05 nM against FAK and 3.89/7.13 nM against EGFR T790M, with 0.333 μM activity in AsPC-1 cells and in vivo efficacy",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.3/p1",
+      "quote": "Kumar, Kamal, Pal-Bhadra and coworkers adopted Claisen–Schmidt condensation to synthesise indeno[1,2-c]pyrazole chalcone derivatives targeting EGFR and Akt pathways191",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.3/p1",
+      "quote": "Top compounds 123a–c (Figure 30) demonstrated IC50 values of 3.82–5.33 μM in A549 cells, superior to Erlotinib, with confirmed suppression of EGFR/Akt expression and cell cycle arrest",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.3/p1",
+      "quote": "Abdu-Allah, Youssif and coworkers developed 2,3-dihydropyrazino[1,2-a]indole-1,4-dione derivatives via amide coupling and cyclisation to overcome resistance through dual EGFR/BRAF V600E inhibition192",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.3/p1",
+      "quote": "Lead compounds 124a–b (Figure 30) exhibited IC50 values of 0.08–0.09 μM against EGFR and 0.15–0.29 μM against BRAF V600E, with panc-1 cell activity matching doxorubicin while inducing apoptosis and G2/M arrest",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.4/p1",
+      "quote": "Pandey, Kurenova, Cance and coworkers designed chloropyramine hydrochloride analogues to disrupt FAK-VEGFR3 interaction, with compound 125 (Figure 31) binding the FAK FAT domain at 1.8 × 10−8 M and inducing caspase-mediated apoptosis193",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.4/p1",
+      "quote": "Mooberry, Gangjee and coworkers employed conformational restriction to create furo[2,3-d]pyrimidine derivatives, where lead compound 126 (Figure 31) demonstrated triple inhibition of EGFR, VEGFR2, and PDGFR-β at 3.4 nM, 33.2 nM, and 58.2 nM, respectively, while maintaining 1.1 μM microtubule polymerisation inhibition194",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.4/p1",
+      "quote": "Kamble et al. developed multiple series through distinct synthetic approaches: pyridazin-3(2H)-one derivatives via methanesulfonic acid-catalysed reactions, where compounds 127b and 127d (Figure 31) showed cytokine inhibition comparable to methotrexate195; indazole-4-carboxamide derivatives through bromination and amidation, with compound 128 and compound 129 (Figure 31) matching methotrexate’s cytotoxicity196; and trifluoromethylphenylisobutylamides via reduction and condensation, where compound 130a and compound 130b (Figure 31) exceeded methotrexate’s activity in HL60 cells197",
+      "reason": "cited"
+    },
+    {
+      "block": "s9.4/p1",
+      "quote": "Zhang et al.’s recent work incorporated HDAC pharmacophores through scaffold hopping, yielding compounds 131a and 131b (Figure 31) with exceptional VEGFR-2 inhibition at 0.097 μM and 0.068 μM, respectively, while maintaining low normal cell toxicity198",
+      "reason": "cited"
+    },
+    {
+      "block": "s10/p2",
+      "quote": "Ruiz and coworkers pioneered this approach by synthesising cycloplatinated compounds via cyclometalation, where DMSO-coordinated compound 132 (Figure 32) exhibited potent activity with IC50 values of 0.63 μM in A2780 cells and 1.97 μM in cisplatin-resistant A2780cisR cells, while showing high selectivity (SF = 17.25) and significant antiangiogenic effects205",
+      "reason": "cited"
+    },
+    {
+      "block": "s10/p2",
+      "quote": "The same group later developed C,N-cyclometalated benzimidazole Ru(II) and Ir(III) complexes, with Ru complexes 133a and 133b (Figure 32) demonstrating IC50 values of 1.07 μM and 0.96 μM respectively in cisplatin-resistant cells, alongside caspase-3 mediated apoptosis induction206",
+      "reason": "cited"
+    },
+    {
+      "block": "s10/p2",
+      "quote": "Pavic and coworkers employed substitution and coordination reactions to create Re(I) complexes containing fac-[Re(CO)3]+ cores, where lead compounds 134a–b (Figure 32) showed IC50 values of 5.0–6.2 μM in HCT-116 cells with selectivity indices of 6.8 and 3.2, while demonstrating superior antiangiogenic efficacy to Sunitinib in zebrafish models207",
+      "reason": "cited"
+    },
+    {
+      "block": "s10/p2",
+      "quote": "Concurrently, Rajković, Janjić, Pavić and coworkers designed binuclear Pt(II) complexes with novel DNA-binding modes, where compound 135 (Figure 32) exhibited IC50 values of 55 μM in A375 cells and 3.19 μM in angiogenesis assays, achieving a therapeutic window of 14.93208",
+      "reason": "cited"
+    },
+    {
+      "block": "s10/p2",
+      "quote": "Mirzadeh and coworkers utilised cyclometalation to synthesise stabilised Au(III) complexes targeting TrxR, with compound 136 (Figure 32) showing exceptional potency at 0.26 μM in HT1080 cells and 0.42 μM in HeLa cells, while inducing ROS accumulation and achieving 55% tumour growth inhibition in vivo209",
+      "reason": "cited"
+    }
+  ]
+}
