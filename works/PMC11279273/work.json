@@ -2,11 +2,13 @@
   "format": "arity-archive/1",
   "position": 11,
   "metadata": {
-    "title": "Structural and Optical Characterization of Porous NiV2O6 Films Synthesized by Nebulizer Spray Pyrolysis for Photodetector Applications.",
+    "title": "Structural and Optical Characterization of Porous NiV2O6 Films Synthesized by Nebulizer Spray Pyrolysis for Photodetector Applications",
     "doi": "10.3390/mi15070839",
     "pmid": "39064350",
     "pmcid": "PMC11279273",
+    "article_type": "research-article",
     "journal": "Micromachines",
+    "publisher": "Multidisciplinary Digital Publishing Institute (MDPI)",
     "published": "2024-06-28",
     "year": 2024,
     "authors": [
@@ -15,7 +17,7 @@
         "orcid": "0000-0003-0999-8439"
       },
       {
-        "name": "Islam M El Radaf"
+        "name": "Islam M. El Radaf"
       },
       {
         "name": "Ilham Hamdi Alaoui",
@@ -33,19 +35,63 @@
         "orcid": "0000-0003-1586-1893"
       }
     ],
-    "license": "CC-BY"
+    "license": "CC-BY-4.0",
+    "license_statement": "Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).",
+    "copyright": "© 2024 by the authors.",
+    "keywords": [
+      "NiV2O6 thin films",
+      "porous microstructure",
+      "absorption coefficient",
+      "energy gap",
+      "photodetector"
+    ]
   },
   "added_at": "2026-11-14T07:53:54.2480529Z",
-  "updated_at": "2026-11-14T07:53:54.2480529Z",
+  "updated_at": "2026-11-14T23:29:21.6982349Z",
   "queue": {
-    "state": "queued",
+    "state": "read",
     "query": "ABSTRACT:\"band gap\" AND ABSTRACT:eV AND ABSTRACT:\"thin films\" AND LICENSE:\"cc by\" AND PUB_YEAR:[2019 TO 2024]",
     "note": null,
     "added_at": "2026-11-14T07:53:54.2480529Z",
-    "updated_at": "2026-11-14T07:53:54.2480529Z"
+    "updated_at": "2026-11-14T23:37:04.2922484Z"
   },
-  "retrievals": [],
-  "texts": [],
+  "retrievals": [
+    {
+      "role": "full_text",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11279273.1/PMC11279273.1.xml",
+      "media_type": "application/xml",
+      "sha256": "7e092eca2c94d79f431f5ef9064b9ff3761c5792f40be33ebe2ada1d8c06e071",
+      "bytes": 103339,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T23:29:21.6982349Z"
+    },
+    {
+      "role": "pdf",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11279273.1/PMC11279273.1.pdf",
+      "media_type": "application/pdf",
+      "sha256": "9dacd270fa37a350dc4bcc53c802f4ed2e95b9fbf58326d88b3f7c81fc266bf4",
+      "bytes": 4871489,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-14T23:29:21.6982349Z"
+    }
+  ],
+  "texts": [
+    {
+      "sha256": "f1327e1f93d4077fa7fbe45df894fa4bd6e39b5daae7800d1236ca94264609a9",
+      "parser": "arity-jats 0.1.0",
+      "source": "7e092eca2c94d79f431f5ef9064b9ff3761c5792f40be33ebe2ada1d8c06e071"
+    }
+  ],
   "notices": [],
-  "runs": []
+  "runs": [
+    {
+      "sequence": 20,
+      "sha256": "fe6166a692e0ef8f91caf8233e942bc22004565591d4dd6f05f2482d1bb793b0",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-14T23:37:04.2922484Z",
+      "checks": []
+    }
+  ]
 }
