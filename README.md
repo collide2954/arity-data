@@ -44,6 +44,15 @@ or rejects it. The checks of each run are in the `work.json` of its work.
 A run does not change. To correct a report, record a check that rejects it,
 and add a new submission.
 
+## Notices
+
+Each Monday, the workflow `.github/workflows/notices.yml` rebuilds the database
+from this repository and reads the notices of each work again from Crossref,
+Europe PMC, and PubMed Central. When a source states a new notice, for example
+a retraction, the workflow commits it here. Each notice keeps its source, the
+type name that its source uses, and the time that arity read it. The website
+of arity shows new notices after its next daily build.
+
 ## License
 
 The records in this repository are under CC0 1.0. See [LICENSE](LICENSE).

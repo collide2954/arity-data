@@ -1,0 +1,57 @@
+name: Notices
+
+on:
+  schedule:
+    - cron: "40 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: notices
+  cancel-in-progress: false
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  notices:
+    name: Read the notices again
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: arity-data
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: collide2954/arity
+          path: arity
+          persist-credentials: false
+      - run: rustup toolchain install
+        working-directory: arity
+      - uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2.9.3
+        with:
+          workspaces: arity
+      - run: cargo build --release --locked --package arity-cli
+        working-directory: arity
+      - name: Rebuild the database from the archive
+        run: arity/target/release/arity --data data rebuild arity-data
+      - name: Read the notices again
+        run: arity/target/release/arity --data data notices
+      - name: Write the archive
+        run: arity/target/release/arity --data data archive arity-data
+      - name: Commit the new notices
+        working-directory: arity-data
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "The sources state no new notices."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add works
+          git commit --message "notices: record the new notices of $(date --utc +%F)"
+          git pull --rebase
+          git push
