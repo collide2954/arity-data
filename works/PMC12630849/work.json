@@ -73,7 +73,7 @@
     "query": "doxorubicin AND \"MCF-7\" AND PUB_TYPE:\"Retracted Publication\"",
     "note": null,
     "added_at": "2026-11-14T07:55:34.2917486Z",
-    "updated_at": "2026-11-14T08:01:39.8080046Z"
+    "updated_at": "2026-11-14T19:15:28.2769153Z"
   },
   "retrievals": [
     {
@@ -126,6 +126,13 @@
       "sha256": "5dbc6a6216f049d6b3a5067f54260be334716729cd18cba2a72b20680e0cb194",
       "software": "arity 0.1.0",
       "submitted_at": "2026-11-14T08:01:39.8080046Z",
+      "checks": []
+    },
+    {
+      "sequence": 12,
+      "sha256": "f86c99b46a1a487486ecd41c19313320339de4389316913212b2488fc1d2001a",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-14T19:15:28.2769153Z",
       "checks": []
     }
   ]
