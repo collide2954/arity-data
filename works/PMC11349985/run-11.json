@@ -1,0 +1,3502 @@
+{
+  "format": "arity-submission/1",
+  "work": "PMC11349985",
+  "text": "5edb2c38df33086b001b822809edb8e447efd26f5b91c5a1d4049c628866ad0f",
+  "reader": {
+    "kind": "software",
+    "name": "Claude (Anthropic)",
+    "version": "claude-opus-5-5"
+  },
+  "responsible": {
+    "name": "Brett Gilio"
+  },
+  "note": "A complete reading: the lattice parameters of Table 2 and the sheet resistances of Table 3, with the conditions of deposition, implantation, annealing, and measurement. The DFT and SRIM values are computed; this reading skips them.",
+  "entities": [
+    {
+      "id": "cuo_film",
+      "kind": "material",
+      "label": "cupric oxide (CuO) thin film",
+      "note": "Deposited by reactive magnetron sputtering on silicon and glass.",
+      "mentions": [
+        {
+          "block": "abstract/p1",
+          "quote": "cupric oxide (CuO) thin films"
+        }
+      ]
+    },
+    {
+      "id": "annealing",
+      "kind": "procedure",
+      "label": "annealing in air",
+      "mentions": [
+        {
+          "block": "s2/p1",
+          "quote": "Chosen samples were annealed in air for 6 h at 400 °C temperature"
+        }
+      ]
+    },
+    {
+      "id": "implantation",
+      "kind": "procedure",
+      "label": "Cr+ ion implantation",
+      "mentions": [
+        {
+          "block": "abstract/p1",
+          "quote": "Chromium was introduced via ion implantation"
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "id": "lattice_parameter_a",
+      "label": "lattice parameter a",
+      "value_type": "quantity",
+      "unit": "Ao",
+      "description": "The length of the a edge of the unit cell of a crystal."
+    },
+    {
+      "id": "lattice_parameter_b",
+      "label": "lattice parameter b",
+      "value_type": "quantity",
+      "unit": "Ao",
+      "description": "The length of the b edge of the unit cell of a crystal."
+    },
+    {
+      "id": "lattice_parameter_c",
+      "label": "lattice parameter c",
+      "value_type": "quantity",
+      "unit": "Ao",
+      "description": "The length of the c edge of the unit cell of a crystal."
+    },
+    {
+      "id": "lattice_angle_beta",
+      "label": "lattice angle β",
+      "value_type": "quantity",
+      "unit": "deg",
+      "description": "The angle β between the a and c edges of the unit cell of a crystal."
+    },
+    {
+      "id": "sheet_resistance",
+      "label": "sheet resistance",
+      "value_type": "quantity",
+      "unit": "Ohm",
+      "description": "The resistance of a thin film for a square area, in ohms per square."
+    },
+    {
+      "id": "measurement_current",
+      "label": "measurement current",
+      "value_type": "quantity",
+      "unit": "nA",
+      "description": "The electric current that a resistance measurement uses."
+    },
+    {
+      "id": "deposition_power",
+      "label": "deposition power",
+      "value_type": "quantity",
+      "unit": "W",
+      "description": "The electric power of a sputtering or deposition source."
+    },
+    {
+      "id": "discharge_current",
+      "label": "discharge current",
+      "value_type": "quantity",
+      "unit": "mA",
+      "description": "The electric current of the discharge of a sputtering source."
+    },
+    {
+      "id": "working_pressure",
+      "label": "working pressure",
+      "value_type": "quantity",
+      "unit": "mbar",
+      "description": "The pressure of the working gas during deposition."
+    },
+    {
+      "id": "substrate_temperature",
+      "label": "substrate temperature",
+      "value_type": "quantity",
+      "unit": "Cel",
+      "description": "The temperature of the substrate during deposition."
+    },
+    {
+      "id": "film_thickness",
+      "label": "film thickness",
+      "value_type": "quantity",
+      "unit": "nm",
+      "description": "The thickness of a thin film."
+    },
+    {
+      "id": "annealing_time",
+      "label": "annealing time",
+      "value_type": "quantity",
+      "unit": "h",
+      "description": "The time for which a sample is annealed."
+    },
+    {
+      "id": "annealing_temperature",
+      "label": "annealing temperature",
+      "value_type": "quantity",
+      "unit": "Cel",
+      "description": "The temperature at which a sample is annealed."
+    },
+    {
+      "id": "ion_energy",
+      "label": "ion energy",
+      "value_type": "quantity",
+      "unit": "keV",
+      "description": "The kinetic energy of the ions of an implantation."
+    },
+    {
+      "id": "ion_fluence",
+      "label": "ion fluence",
+      "value_type": "quantity",
+      "unit": "cm-2",
+      "description": "The number of implanted ions for each unit area, also called the dose."
+    },
+    {
+      "id": "xray_wavelength",
+      "label": "X-ray wavelength",
+      "value_type": "quantity",
+      "unit": "nm",
+      "description": "The wavelength of the X-rays of a diffraction measurement."
+    }
+  ],
+  "reports": [
+    {
+      "type": "value",
+      "id": "deposited_lattice_parameter_a",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "lattice_parameter_a",
+      "value": {
+        "number": "4.67",
+        "unit": "Ao",
+        "unit_text": "Å"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "silicon"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "0.154",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The film is on a silicon substrate.",
+      "evidence": [
+        {
+          "block": "t2/r2c2",
+          "quote": "4.67"
+        },
+        {
+          "block": "t2/r1c2",
+          "quote": "a [Å]"
+        },
+        {
+          "block": "t2/r2c1",
+          "quote": "CuO"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Results of lattice parameters calculation are presented in Table 2"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "X-ray diffraction (XRD) using PANalytical X’Pert PRO diffractometer (Malvern Panalytical, Malvern, UK) with Cu anode (0.154 nm radiation wavelength). The measurement step was 0.05° with time per step of 8000 s"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "XRD measurements were done for films deposited on silicon"
+        },
+        {
+          "block": "s3/p1",
+          "quote": "the last one is not visible in Fig. 2 to assure the clearance of the data presentation and avoid strong Si peak around 70°"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "deposited_lattice_parameter_b",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "lattice_parameter_b",
+      "value": {
+        "number": "3.47",
+        "unit": "Ao",
+        "unit_text": "Å"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "silicon"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "0.154",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The film is on a silicon substrate.",
+      "evidence": [
+        {
+          "block": "t2/r2c3",
+          "quote": "3.47"
+        },
+        {
+          "block": "t2/r1c3",
+          "quote": "b [Å]"
+        },
+        {
+          "block": "t2/r2c1",
+          "quote": "CuO"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Results of lattice parameters calculation are presented in Table 2"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "X-ray diffraction (XRD) using PANalytical X’Pert PRO diffractometer (Malvern Panalytical, Malvern, UK) with Cu anode (0.154 nm radiation wavelength). The measurement step was 0.05° with time per step of 8000 s"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "XRD measurements were done for films deposited on silicon"
+        },
+        {
+          "block": "s3/p1",
+          "quote": "the last one is not visible in Fig. 2 to assure the clearance of the data presentation and avoid strong Si peak around 70°"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "deposited_lattice_parameter_c",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "lattice_parameter_c",
+      "value": {
+        "number": "5.15",
+        "unit": "Ao",
+        "unit_text": "Å"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "silicon"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "0.154",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The film is on a silicon substrate.",
+      "evidence": [
+        {
+          "block": "t2/r2c4",
+          "quote": "5.15"
+        },
+        {
+          "block": "t2/r1c4",
+          "quote": "c [Å]"
+        },
+        {
+          "block": "t2/r2c1",
+          "quote": "CuO"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Results of lattice parameters calculation are presented in Table 2"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "X-ray diffraction (XRD) using PANalytical X’Pert PRO diffractometer (Malvern Panalytical, Malvern, UK) with Cu anode (0.154 nm radiation wavelength). The measurement step was 0.05° with time per step of 8000 s"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "XRD measurements were done for films deposited on silicon"
+        },
+        {
+          "block": "s3/p1",
+          "quote": "the last one is not visible in Fig. 2 to assure the clearance of the data presentation and avoid strong Si peak around 70°"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "deposited_lattice_angle_beta",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "lattice_angle_beta",
+      "value": {
+        "number": "98.61",
+        "unit": "deg",
+        "unit_text": "°"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "silicon"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "0.154",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The film is on a silicon substrate.",
+      "evidence": [
+        {
+          "block": "t2/r2c5",
+          "quote": "98.61"
+        },
+        {
+          "block": "t2/r1c5",
+          "quote": "β [°]"
+        },
+        {
+          "block": "t2/r2c1",
+          "quote": "CuO"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Results of lattice parameters calculation are presented in Table 2"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "X-ray diffraction (XRD) using PANalytical X’Pert PRO diffractometer (Malvern Panalytical, Malvern, UK) with Cu anode (0.154 nm radiation wavelength). The measurement step was 0.05° with time per step of 8000 s"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "XRD measurements were done for films deposited on silicon"
+        },
+        {
+          "block": "s3/p1",
+          "quote": "the last one is not visible in Fig. 2 to assure the clearance of the data presentation and avoid strong Si peak around 70°"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "annealed_lattice_parameter_a",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "lattice_parameter_a",
+      "value": {
+        "number": "4.66",
+        "unit": "Ao",
+        "unit_text": "Å"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "silicon"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "annealing"
+        },
+        {
+          "property": "annealing_time",
+          "value": {
+            "number": "6",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "annealing_temperature",
+          "value": {
+            "number": "400",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "0.154",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The film is on a silicon substrate.",
+      "evidence": [
+        {
+          "block": "t2/r3c2",
+          "quote": "4.66"
+        },
+        {
+          "block": "t2/r1c2",
+          "quote": "a [Å]"
+        },
+        {
+          "block": "t2/r3c1",
+          "quote": "CuO annealed"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Results of lattice parameters calculation are presented in Table 2"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Chosen samples were annealed in air for 6 h at 400 °C temperature"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "X-ray diffraction (XRD) using PANalytical X’Pert PRO diffractometer (Malvern Panalytical, Malvern, UK) with Cu anode (0.154 nm radiation wavelength). The measurement step was 0.05° with time per step of 8000 s"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "XRD measurements were done for films deposited on silicon"
+        },
+        {
+          "block": "s3/p1",
+          "quote": "the last one is not visible in Fig. 2 to assure the clearance of the data presentation and avoid strong Si peak around 70°"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "annealed_lattice_parameter_b",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "lattice_parameter_b",
+      "value": {
+        "number": "3.49",
+        "unit": "Ao",
+        "unit_text": "Å"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "silicon"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "annealing"
+        },
+        {
+          "property": "annealing_time",
+          "value": {
+            "number": "6",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "annealing_temperature",
+          "value": {
+            "number": "400",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "0.154",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The film is on a silicon substrate.",
+      "evidence": [
+        {
+          "block": "t2/r3c3",
+          "quote": "3.49"
+        },
+        {
+          "block": "t2/r1c3",
+          "quote": "b [Å]"
+        },
+        {
+          "block": "t2/r3c1",
+          "quote": "CuO annealed"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Results of lattice parameters calculation are presented in Table 2"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Chosen samples were annealed in air for 6 h at 400 °C temperature"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "X-ray diffraction (XRD) using PANalytical X’Pert PRO diffractometer (Malvern Panalytical, Malvern, UK) with Cu anode (0.154 nm radiation wavelength). The measurement step was 0.05° with time per step of 8000 s"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "XRD measurements were done for films deposited on silicon"
+        },
+        {
+          "block": "s3/p1",
+          "quote": "the last one is not visible in Fig. 2 to assure the clearance of the data presentation and avoid strong Si peak around 70°"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "annealed_lattice_parameter_c",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "lattice_parameter_c",
+      "value": {
+        "number": "5.13",
+        "unit": "Ao",
+        "unit_text": "Å"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "silicon"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "annealing"
+        },
+        {
+          "property": "annealing_time",
+          "value": {
+            "number": "6",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "annealing_temperature",
+          "value": {
+            "number": "400",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "0.154",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The film is on a silicon substrate.",
+      "evidence": [
+        {
+          "block": "t2/r3c4",
+          "quote": "5.13"
+        },
+        {
+          "block": "t2/r1c4",
+          "quote": "c [Å]"
+        },
+        {
+          "block": "t2/r3c1",
+          "quote": "CuO annealed"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Results of lattice parameters calculation are presented in Table 2"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Chosen samples were annealed in air for 6 h at 400 °C temperature"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "X-ray diffraction (XRD) using PANalytical X’Pert PRO diffractometer (Malvern Panalytical, Malvern, UK) with Cu anode (0.154 nm radiation wavelength). The measurement step was 0.05° with time per step of 8000 s"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "XRD measurements were done for films deposited on silicon"
+        },
+        {
+          "block": "s3/p1",
+          "quote": "the last one is not visible in Fig. 2 to assure the clearance of the data presentation and avoid strong Si peak around 70°"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "annealed_lattice_angle_beta",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "lattice_angle_beta",
+      "value": {
+        "number": "98.71",
+        "unit": "deg",
+        "unit_text": "°"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "silicon"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "annealing"
+        },
+        {
+          "property": "annealing_time",
+          "value": {
+            "number": "6",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "annealing_temperature",
+          "value": {
+            "number": "400",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "0.154",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The film is on a silicon substrate.",
+      "evidence": [
+        {
+          "block": "t2/r3c5",
+          "quote": "98.71"
+        },
+        {
+          "block": "t2/r1c5",
+          "quote": "β [°]"
+        },
+        {
+          "block": "t2/r3c1",
+          "quote": "CuO annealed"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Results of lattice parameters calculation are presented in Table 2"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Chosen samples were annealed in air for 6 h at 400 °C temperature"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "X-ray diffraction (XRD) using PANalytical X’Pert PRO diffractometer (Malvern Panalytical, Malvern, UK) with Cu anode (0.154 nm radiation wavelength). The measurement step was 0.05° with time per step of 8000 s"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "XRD measurements were done for films deposited on silicon"
+        },
+        {
+          "block": "s3/p1",
+          "quote": "the last one is not visible in Fig. 2 to assure the clearance of the data presentation and avoid strong Si peak around 70°"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "implanted_lattice_parameter_a",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "lattice_parameter_a",
+      "value": {
+        "number": "4.68",
+        "unit": "Ao",
+        "unit_text": "Å"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "silicon"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "implantation"
+        },
+        {
+          "property": "ion_energy",
+          "value": {
+            "number": "15",
+            "unit": "keV",
+            "unit_text": "keV"
+          }
+        },
+        {
+          "property": "ion_fluence",
+          "value": {
+            "number": "5e16",
+            "unit": "cm-2",
+            "unit_text": "cm−2"
+          }
+        },
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "0.154",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The film is on a silicon substrate.",
+      "evidence": [
+        {
+          "block": "t2/r4c2",
+          "quote": "4.68"
+        },
+        {
+          "block": "t2/r1c2",
+          "quote": "a [Å]"
+        },
+        {
+          "block": "t2/r4c1",
+          "quote": "CuO implanted 15 keV"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Results of lattice parameters calculation are presented in Table 2"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "with doses 1 × 1014 cm−2, 5 × 1014 cm−2, 1 × 1015 cm−2, and 5 × 1016 cm−2 and energy 10 keV and 15 keV"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "implantation of these samples was done at 15 keV energy and 5 × 1016 cm−2 dose of Cr+ ions"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "X-ray diffraction (XRD) using PANalytical X’Pert PRO diffractometer (Malvern Panalytical, Malvern, UK) with Cu anode (0.154 nm radiation wavelength). The measurement step was 0.05° with time per step of 8000 s"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "XRD measurements were done for films deposited on silicon"
+        },
+        {
+          "block": "s3/p1",
+          "quote": "the last one is not visible in Fig. 2 to assure the clearance of the data presentation and avoid strong Si peak around 70°"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "implanted_lattice_parameter_b",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "lattice_parameter_b",
+      "value": {
+        "number": "3.42",
+        "unit": "Ao",
+        "unit_text": "Å"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "silicon"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "implantation"
+        },
+        {
+          "property": "ion_energy",
+          "value": {
+            "number": "15",
+            "unit": "keV",
+            "unit_text": "keV"
+          }
+        },
+        {
+          "property": "ion_fluence",
+          "value": {
+            "number": "5e16",
+            "unit": "cm-2",
+            "unit_text": "cm−2"
+          }
+        },
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "0.154",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The film is on a silicon substrate.",
+      "evidence": [
+        {
+          "block": "t2/r4c3",
+          "quote": "3.42"
+        },
+        {
+          "block": "t2/r1c3",
+          "quote": "b [Å]"
+        },
+        {
+          "block": "t2/r4c1",
+          "quote": "CuO implanted 15 keV"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Results of lattice parameters calculation are presented in Table 2"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "with doses 1 × 1014 cm−2, 5 × 1014 cm−2, 1 × 1015 cm−2, and 5 × 1016 cm−2 and energy 10 keV and 15 keV"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "implantation of these samples was done at 15 keV energy and 5 × 1016 cm−2 dose of Cr+ ions"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "X-ray diffraction (XRD) using PANalytical X’Pert PRO diffractometer (Malvern Panalytical, Malvern, UK) with Cu anode (0.154 nm radiation wavelength). The measurement step was 0.05° with time per step of 8000 s"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "XRD measurements were done for films deposited on silicon"
+        },
+        {
+          "block": "s3/p1",
+          "quote": "the last one is not visible in Fig. 2 to assure the clearance of the data presentation and avoid strong Si peak around 70°"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "implanted_lattice_parameter_c",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "lattice_parameter_c",
+      "value": {
+        "number": "5.12",
+        "unit": "Ao",
+        "unit_text": "Å"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "silicon"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "implantation"
+        },
+        {
+          "property": "ion_energy",
+          "value": {
+            "number": "15",
+            "unit": "keV",
+            "unit_text": "keV"
+          }
+        },
+        {
+          "property": "ion_fluence",
+          "value": {
+            "number": "5e16",
+            "unit": "cm-2",
+            "unit_text": "cm−2"
+          }
+        },
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "0.154",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The film is on a silicon substrate.",
+      "evidence": [
+        {
+          "block": "t2/r4c4",
+          "quote": "5.12"
+        },
+        {
+          "block": "t2/r1c4",
+          "quote": "c [Å]"
+        },
+        {
+          "block": "t2/r4c1",
+          "quote": "CuO implanted 15 keV"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Results of lattice parameters calculation are presented in Table 2"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "with doses 1 × 1014 cm−2, 5 × 1014 cm−2, 1 × 1015 cm−2, and 5 × 1016 cm−2 and energy 10 keV and 15 keV"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "implantation of these samples was done at 15 keV energy and 5 × 1016 cm−2 dose of Cr+ ions"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "X-ray diffraction (XRD) using PANalytical X’Pert PRO diffractometer (Malvern Panalytical, Malvern, UK) with Cu anode (0.154 nm radiation wavelength). The measurement step was 0.05° with time per step of 8000 s"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "XRD measurements were done for films deposited on silicon"
+        },
+        {
+          "block": "s3/p1",
+          "quote": "the last one is not visible in Fig. 2 to assure the clearance of the data presentation and avoid strong Si peak around 70°"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "implanted_lattice_angle_beta",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "lattice_angle_beta",
+      "value": {
+        "number": "99.02",
+        "unit": "deg",
+        "unit_text": "°"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "silicon"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "implantation"
+        },
+        {
+          "property": "ion_energy",
+          "value": {
+            "number": "15",
+            "unit": "keV",
+            "unit_text": "keV"
+          }
+        },
+        {
+          "property": "ion_fluence",
+          "value": {
+            "number": "5e16",
+            "unit": "cm-2",
+            "unit_text": "cm−2"
+          }
+        },
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "0.154",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The film is on a silicon substrate.",
+      "evidence": [
+        {
+          "block": "t2/r4c5",
+          "quote": "99.02"
+        },
+        {
+          "block": "t2/r1c5",
+          "quote": "β [°]"
+        },
+        {
+          "block": "t2/r4c1",
+          "quote": "CuO implanted 15 keV"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Results of lattice parameters calculation are presented in Table 2"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "with doses 1 × 1014 cm−2, 5 × 1014 cm−2, 1 × 1015 cm−2, and 5 × 1016 cm−2 and energy 10 keV and 15 keV"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "implantation of these samples was done at 15 keV energy and 5 × 1016 cm−2 dose of Cr+ ions"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "X-ray diffraction (XRD) using PANalytical X’Pert PRO diffractometer (Malvern Panalytical, Malvern, UK) with Cu anode (0.154 nm radiation wavelength). The measurement step was 0.05° with time per step of 8000 s"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "XRD measurements were done for films deposited on silicon"
+        },
+        {
+          "block": "s3/p1",
+          "quote": "the last one is not visible in Fig. 2 to assure the clearance of the data presentation and avoid strong Si peak around 70°"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "implanted_annealed_lattice_parameter_a",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "lattice_parameter_a",
+      "value": {
+        "number": "4.69",
+        "unit": "Ao",
+        "unit_text": "Å"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "silicon"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "implantation"
+        },
+        {
+          "property": "ion_energy",
+          "value": {
+            "number": "15",
+            "unit": "keV",
+            "unit_text": "keV"
+          }
+        },
+        {
+          "property": "ion_fluence",
+          "value": {
+            "number": "5e16",
+            "unit": "cm-2",
+            "unit_text": "cm−2"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "annealing"
+        },
+        {
+          "property": "annealing_time",
+          "value": {
+            "number": "6",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "annealing_temperature",
+          "value": {
+            "number": "400",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "0.154",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The film is on a silicon substrate.",
+      "evidence": [
+        {
+          "block": "t2/r5c2",
+          "quote": "4.69"
+        },
+        {
+          "block": "t2/r1c2",
+          "quote": "a [Å]"
+        },
+        {
+          "block": "t2/r5c1",
+          "quote": "CuO implanted 15 keV annealed"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Results of lattice parameters calculation are presented in Table 2"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "with doses 1 × 1014 cm−2, 5 × 1014 cm−2, 1 × 1015 cm−2, and 5 × 1016 cm−2 and energy 10 keV and 15 keV"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Chosen samples were annealed in air for 6 h at 400 °C temperature"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "implantation of these samples was done at 15 keV energy and 5 × 1016 cm−2 dose of Cr+ ions"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "X-ray diffraction (XRD) using PANalytical X’Pert PRO diffractometer (Malvern Panalytical, Malvern, UK) with Cu anode (0.154 nm radiation wavelength). The measurement step was 0.05° with time per step of 8000 s"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "XRD measurements were done for films deposited on silicon"
+        },
+        {
+          "block": "s3/p1",
+          "quote": "the last one is not visible in Fig. 2 to assure the clearance of the data presentation and avoid strong Si peak around 70°"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "implanted_annealed_lattice_parameter_b",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "lattice_parameter_b",
+      "value": {
+        "number": "3.43",
+        "unit": "Ao",
+        "unit_text": "Å"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "silicon"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "implantation"
+        },
+        {
+          "property": "ion_energy",
+          "value": {
+            "number": "15",
+            "unit": "keV",
+            "unit_text": "keV"
+          }
+        },
+        {
+          "property": "ion_fluence",
+          "value": {
+            "number": "5e16",
+            "unit": "cm-2",
+            "unit_text": "cm−2"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "annealing"
+        },
+        {
+          "property": "annealing_time",
+          "value": {
+            "number": "6",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "annealing_temperature",
+          "value": {
+            "number": "400",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "0.154",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The film is on a silicon substrate.",
+      "evidence": [
+        {
+          "block": "t2/r5c3",
+          "quote": "3.43"
+        },
+        {
+          "block": "t2/r1c3",
+          "quote": "b [Å]"
+        },
+        {
+          "block": "t2/r5c1",
+          "quote": "CuO implanted 15 keV annealed"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Results of lattice parameters calculation are presented in Table 2"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "with doses 1 × 1014 cm−2, 5 × 1014 cm−2, 1 × 1015 cm−2, and 5 × 1016 cm−2 and energy 10 keV and 15 keV"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Chosen samples were annealed in air for 6 h at 400 °C temperature"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "implantation of these samples was done at 15 keV energy and 5 × 1016 cm−2 dose of Cr+ ions"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "X-ray diffraction (XRD) using PANalytical X’Pert PRO diffractometer (Malvern Panalytical, Malvern, UK) with Cu anode (0.154 nm radiation wavelength). The measurement step was 0.05° with time per step of 8000 s"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "XRD measurements were done for films deposited on silicon"
+        },
+        {
+          "block": "s3/p1",
+          "quote": "the last one is not visible in Fig. 2 to assure the clearance of the data presentation and avoid strong Si peak around 70°"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "implanted_annealed_lattice_parameter_c",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "lattice_parameter_c",
+      "value": {
+        "number": "5.10",
+        "unit": "Ao",
+        "unit_text": "Å"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "silicon"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "implantation"
+        },
+        {
+          "property": "ion_energy",
+          "value": {
+            "number": "15",
+            "unit": "keV",
+            "unit_text": "keV"
+          }
+        },
+        {
+          "property": "ion_fluence",
+          "value": {
+            "number": "5e16",
+            "unit": "cm-2",
+            "unit_text": "cm−2"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "annealing"
+        },
+        {
+          "property": "annealing_time",
+          "value": {
+            "number": "6",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "annealing_temperature",
+          "value": {
+            "number": "400",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "0.154",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The film is on a silicon substrate.",
+      "evidence": [
+        {
+          "block": "t2/r5c4",
+          "quote": "5.10"
+        },
+        {
+          "block": "t2/r1c4",
+          "quote": "c [Å]"
+        },
+        {
+          "block": "t2/r5c1",
+          "quote": "CuO implanted 15 keV annealed"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Results of lattice parameters calculation are presented in Table 2"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "with doses 1 × 1014 cm−2, 5 × 1014 cm−2, 1 × 1015 cm−2, and 5 × 1016 cm−2 and energy 10 keV and 15 keV"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Chosen samples were annealed in air for 6 h at 400 °C temperature"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "implantation of these samples was done at 15 keV energy and 5 × 1016 cm−2 dose of Cr+ ions"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "X-ray diffraction (XRD) using PANalytical X’Pert PRO diffractometer (Malvern Panalytical, Malvern, UK) with Cu anode (0.154 nm radiation wavelength). The measurement step was 0.05° with time per step of 8000 s"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "XRD measurements were done for films deposited on silicon"
+        },
+        {
+          "block": "s3/p1",
+          "quote": "the last one is not visible in Fig. 2 to assure the clearance of the data presentation and avoid strong Si peak around 70°"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "implanted_annealed_lattice_angle_beta",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "lattice_angle_beta",
+      "value": {
+        "number": "98.91",
+        "unit": "deg",
+        "unit_text": "°"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "silicon"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "implantation"
+        },
+        {
+          "property": "ion_energy",
+          "value": {
+            "number": "15",
+            "unit": "keV",
+            "unit_text": "keV"
+          }
+        },
+        {
+          "property": "ion_fluence",
+          "value": {
+            "number": "5e16",
+            "unit": "cm-2",
+            "unit_text": "cm−2"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "annealing"
+        },
+        {
+          "property": "annealing_time",
+          "value": {
+            "number": "6",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "annealing_temperature",
+          "value": {
+            "number": "400",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "0.154",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The film is on a silicon substrate.",
+      "evidence": [
+        {
+          "block": "t2/r5c5",
+          "quote": "98.91"
+        },
+        {
+          "block": "t2/r1c5",
+          "quote": "β [°]"
+        },
+        {
+          "block": "t2/r5c1",
+          "quote": "CuO implanted 15 keV annealed"
+        },
+        {
+          "block": "s3/p3",
+          "quote": "Results of lattice parameters calculation are presented in Table 2"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "with doses 1 × 1014 cm−2, 5 × 1014 cm−2, 1 × 1015 cm−2, and 5 × 1016 cm−2 and energy 10 keV and 15 keV"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Chosen samples were annealed in air for 6 h at 400 °C temperature"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "implantation of these samples was done at 15 keV energy and 5 × 1016 cm−2 dose of Cr+ ions"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "X-ray diffraction (XRD) using PANalytical X’Pert PRO diffractometer (Malvern Panalytical, Malvern, UK) with Cu anode (0.154 nm radiation wavelength). The measurement step was 0.05° with time per step of 8000 s"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "XRD measurements were done for films deposited on silicon"
+        },
+        {
+          "block": "s3/p1",
+          "quote": "the last one is not visible in Fig. 2 to assure the clearance of the data presentation and avoid strong Si peak around 70°"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "deposited_sheet_resistance",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "sheet_resistance",
+      "value": {
+        "number": "820000",
+        "unit": "Ohm",
+        "unit_text": "Ω/sq",
+        "uncertainty": {
+          "kind": "other",
+          "number": "530"
+        }
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "glass"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "property": "measurement_current",
+          "value": {
+            "number": "100",
+            "unit": "nA",
+            "unit_text": "nA"
+          }
+        }
+      ],
+      "method": {
+        "label": "4-point probe method"
+      },
+      "evidence": [
+        {
+          "block": "t3/r2c2",
+          "quote": "8.2 × 105 ± 5.3 × 102"
+        },
+        {
+          "block": "t3/r1c2",
+          "quote": "Sheet resistance [Ω/sq] at 100 nA"
+        },
+        {
+          "block": "t3/r2c1",
+          "quote": "CuO"
+        },
+        {
+          "block": "t3/caption",
+          "quote": "Sheet resistance of CuO thin films measured with 4 point probe method"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "Sheet resistance was measured with RM3000 + Test Unit from Jandel employing 4-point probe method"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "Optical and electrical properties were measured for films deposited on glass"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "annealed_sheet_resistance",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "sheet_resistance",
+      "value": {
+        "number": "1700000",
+        "unit": "Ohm",
+        "unit_text": "Ω/sq",
+        "uncertainty": {
+          "kind": "other",
+          "number": "360"
+        }
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "glass"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "annealing"
+        },
+        {
+          "property": "annealing_time",
+          "value": {
+            "number": "6",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "annealing_temperature",
+          "value": {
+            "number": "400",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "measurement_current",
+          "value": {
+            "number": "100",
+            "unit": "nA",
+            "unit_text": "nA"
+          }
+        }
+      ],
+      "method": {
+        "label": "4-point probe method"
+      },
+      "evidence": [
+        {
+          "block": "t3/r3c2",
+          "quote": "1.7 × 106 ± 3.6 × 102"
+        },
+        {
+          "block": "t3/r1c2",
+          "quote": "Sheet resistance [Ω/sq] at 100 nA"
+        },
+        {
+          "block": "t3/r3c1",
+          "quote": "CuO annealed"
+        },
+        {
+          "block": "t3/caption",
+          "quote": "Sheet resistance of CuO thin films measured with 4 point probe method"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Chosen samples were annealed in air for 6 h at 400 °C temperature"
+        },
+        {
+          "block": "abstract/p1",
+          "quote": "compared to 1.7 × 106 Ω/sq for non implanted and annealed CuO"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "Sheet resistance was measured with RM3000 + Test Unit from Jandel employing 4-point probe method"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "Optical and electrical properties were measured for films deposited on glass"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "implanted_1e14_sheet_resistance",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "sheet_resistance",
+      "value": {
+        "number": "8000000",
+        "unit": "Ohm",
+        "unit_text": "Ω/sq",
+        "uncertainty": {
+          "kind": "other",
+          "number": "2000"
+        }
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "glass"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "implantation"
+        },
+        {
+          "property": "ion_energy",
+          "value": {
+            "number": "10",
+            "unit": "keV",
+            "unit_text": "keV"
+          }
+        },
+        {
+          "property": "ion_fluence",
+          "value": {
+            "number": "1e14",
+            "unit": "cm-2",
+            "unit_text": "cm−2"
+          }
+        },
+        {
+          "property": "measurement_current",
+          "value": {
+            "number": "100",
+            "unit": "nA",
+            "unit_text": "nA"
+          }
+        }
+      ],
+      "method": {
+        "label": "4-point probe method"
+      },
+      "note": "The table gives the dose. The energy of 10 keV comes from the abstract and from the caption of Figure 5.",
+      "evidence": [
+        {
+          "block": "t3/r4c2",
+          "quote": "8.0 × 106 ± 2.0 × 103"
+        },
+        {
+          "block": "t3/r1c2",
+          "quote": "Sheet resistance [Ω/sq] at 100 nA"
+        },
+        {
+          "block": "t3/r4c1",
+          "quote": "CuO implanted dose 1 × 1014 cm−2"
+        },
+        {
+          "block": "t3/caption",
+          "quote": "Sheet resistance of CuO thin films measured with 4 point probe method"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "with doses 1 × 1014 cm−2, 5 × 1014 cm−2, 1 × 1015 cm−2, and 5 × 1016 cm−2 and energy 10 keV and 15 keV"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "Sheet resistance was measured with RM3000 + Test Unit from Jandel employing 4-point probe method"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "Optical and electrical properties were measured for films deposited on glass"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "implanted_1e14_annealed_sheet_resistance",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "sheet_resistance",
+      "value": {
+        "number": "1100000",
+        "unit": "Ohm",
+        "unit_text": "Ω/sq",
+        "uncertainty": {
+          "kind": "other",
+          "number": "650"
+        }
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "glass"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "implantation"
+        },
+        {
+          "property": "ion_energy",
+          "value": {
+            "number": "10",
+            "unit": "keV",
+            "unit_text": "keV"
+          }
+        },
+        {
+          "property": "ion_fluence",
+          "value": {
+            "number": "1e14",
+            "unit": "cm-2",
+            "unit_text": "cm−2"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "annealing"
+        },
+        {
+          "property": "annealing_time",
+          "value": {
+            "number": "6",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "annealing_temperature",
+          "value": {
+            "number": "400",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "measurement_current",
+          "value": {
+            "number": "100",
+            "unit": "nA",
+            "unit_text": "nA"
+          }
+        }
+      ],
+      "method": {
+        "label": "4-point probe method"
+      },
+      "evidence": [
+        {
+          "block": "t3/r6c2",
+          "quote": "1.1 × 106 ± 6.5 × 102"
+        },
+        {
+          "block": "t3/r1c2",
+          "quote": "Sheet resistance [Ω/sq] at 100 nA"
+        },
+        {
+          "block": "t3/r6c1",
+          "quote": "CuO implanted dose 1 × 1014 cm−2 annealed"
+        },
+        {
+          "block": "t3/caption",
+          "quote": "Sheet resistance of CuO thin films measured with 4 point probe method"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "with doses 1 × 1014 cm−2, 5 × 1014 cm−2, 1 × 1015 cm−2, and 5 × 1016 cm−2 and energy 10 keV and 15 keV"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Chosen samples were annealed in air for 6 h at 400 °C temperature"
+        },
+        {
+          "block": "abstract/p1",
+          "quote": "Sample implanted with 10 keV energy and 1 × 1014 cm−2 dose of Cr ions, after annealing had sheet resistance of 1.1 × 106 Ω/sq"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "Sheet resistance was measured with RM3000 + Test Unit from Jandel employing 4-point probe method"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "Optical and electrical properties were measured for films deposited on glass"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "implanted_1e15_annealed_sheet_resistance",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "sheet_resistance",
+      "value": {
+        "number": "6300000",
+        "unit": "Ohm",
+        "unit_text": "Ω/sq",
+        "uncertainty": {
+          "kind": "other",
+          "number": "7700"
+        }
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "glass"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "implantation"
+        },
+        {
+          "property": "ion_energy",
+          "value": {
+            "number": "10",
+            "unit": "keV",
+            "unit_text": "keV"
+          }
+        },
+        {
+          "property": "ion_fluence",
+          "value": {
+            "number": "1e15",
+            "unit": "cm-2",
+            "unit_text": "cm−2"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "annealing"
+        },
+        {
+          "property": "annealing_time",
+          "value": {
+            "number": "6",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "annealing_temperature",
+          "value": {
+            "number": "400",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "measurement_current",
+          "value": {
+            "number": "100",
+            "unit": "nA",
+            "unit_text": "nA"
+          }
+        }
+      ],
+      "method": {
+        "label": "4-point probe method"
+      },
+      "evidence": [
+        {
+          "block": "t3/r7c2",
+          "quote": "6.3 × 106 ± 7.7 × 103"
+        },
+        {
+          "block": "t3/r1c2",
+          "quote": "Sheet resistance [Ω/sq] at 100 nA"
+        },
+        {
+          "block": "t3/r7c1",
+          "quote": "CuO implanted dose 1 × 1015 cm−2 annealed"
+        },
+        {
+          "block": "t3/caption",
+          "quote": "Sheet resistance of CuO thin films measured with 4 point probe method"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "with doses 1 × 1014 cm−2, 5 × 1014 cm−2, 1 × 1015 cm−2, and 5 × 1016 cm−2 and energy 10 keV and 15 keV"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Chosen samples were annealed in air for 6 h at 400 °C temperature"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "implanted with Cr+ ions of 10 keV energy and 1 × 1015 cm−2 dose"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "Sheet resistance was measured with RM3000 + Test Unit from Jandel employing 4-point probe method"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "Optical and electrical properties were measured for films deposited on glass"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "immersed in alcohol for 20 min of ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O2 with pressure equal to 1.5 × 10–2 mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "block": "t1/r4c1",
+      "quote": "5",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r4c2",
+      "quote": "0.06",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r4c3",
+      "quote": "0.28",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r4c4",
+      "quote": "0.56",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r4c5",
+      "quote": "14.07",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r5c1",
+      "quote": "10",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r5c2",
+      "quote": "0.07",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r5c3",
+      "quote": "0.36",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r5c4",
+      "quote": "0.72",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r5c5",
+      "quote": "27.35",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r6c1",
+      "quote": "30",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r6c2",
+      "quote": "0.03",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r6c3",
+      "quote": "0.17",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r6c4",
+      "quote": "0.34",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r6c5",
+      "quote": "3.57",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r7c1",
+      "quote": "130",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r7c2",
+      "quote": "0.01",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r7c3",
+      "quote": "0.04",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r7c4",
+      "quote": "0.08",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t1/r7c5",
+      "quote": "3.80",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "s1/p1",
+      "quote": "energy conversion efficiencies of up to 30%, based on the Shockley-Quisser limit18 and the energy band gap of the oxide, which ranges from 1 to 1.9 eV19–22",
+      "reason": "cited"
+    },
+    {
+      "block": "s1/p1",
+      "quote": "struggle to surpass 10% efficiency23",
+      "reason": "cited"
+    },
+    {
+      "block": "s2/p1",
+      "quote": "The results say what is the Cr atomic concentration at the first 5, 10, and 30 nm in depth of the films, and in the whole film of 130 nm thickness",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "s2/p3",
+      "quote": "calculations of electron structure in the ground state (at 0 K)",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "s2/p4",
+      "quote": "lattice parameters a = 4.66 Å, b = 3.49 Å, c = 5.13 Å, α, γ = 90°, β = 98.71°",
+      "reason": "restated"
+    },
+    {
+      "block": "s2/p4",
+      "quote": "This structure was extended 2 × 2 × 2 times",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "s2/p4",
+      "quote": "a = 5.11 Å, b = 6.82 Å, c = 9.31 Å α, γ = 90°, β = 99.48°",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "s2/p4",
+      "quote": "a = 9.85 Å, b = 9.31 Å, c = 6.82 Å α, β = 90°, γ = 149.24°",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "s2/p4",
+      "quote": "The second system has Cr concentration similar to the atomic Cr concentration in sample implanted with dose 5 × 1016 cm−2 and energy 15 keV",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "s2/p2",
+      "quote": "at angle of 70° for 11 × 11 data points with a step of 0.5 mm, where the spot size is around 100 μm",
+      "reason": "other",
+      "note": "A setting of the ellipsometry maps. The source gives their results only in Figure 5."
+    },
+    {
+      "block": "s3/p4",
+      "quote": "an energy gap of 1.75 eV (Fig. 3a) for CuO",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "s3/p4",
+      "quote": "this calculated value corresponds to ground state (T = 0 K)",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "s3/p4",
+      "quote": "an energy gap of 1.6 eV for the spin up and 1.9 eV for the spin down",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "s3/p5",
+      "quote": "absorption begins for photons with energy above 1.7 eV (Fig. 3d)",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "s3/p5",
+      "quote": "it increases significantly from 1.6 eV Fig. 3e)",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "s3/p6",
+      "quote": "Measurement of absorbance is possible only up to 3.5 eV energy of light",
+      "reason": "other",
+      "note": "The upper limit of the absorbance measurement, because the glass substrate absorbs above it."
+    },
+    {
+      "block": "s3/p8",
+      "quote": "The largest energy band gap was calculated for sample implanted with Cr + ions of 10 keV energy and 1 × 1014 cm−2 dose and then annealed in air",
+      "reason": "other",
+      "note": "Names the sample with the largest band gap. The source gives the values of this sample only in Figure 4b."
+    },
+    {
+      "block": "s4/p2",
+      "quote": "An energy gap Eg of 1.8 eV was found for CuO",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "s4/p2",
+      "quote": "the value measured using spectrophotometry is much lower than calculated (1.10 eV)",
+      "reason": "restated"
+    },
+    {
+      "block": "s4/p2",
+      "quote": "with an energy gap of 1.6 eV for the spin up and 1.9 eV for the spin down",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "s4/p2",
+      "quote": "Optical absorption in CuO begins for the photons energy above 1.8 eV",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "s4/p2",
+      "quote": "optical absorption increases significantly starting of 1.6 eV",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "abstract/p1",
+      "quote": "Calculations revealed an energy gap of 1.8 eV for undoped CuO",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "abstract/p1",
+      "quote": "Energy band gap determined using absorbance measurement and Tauc plot method had value of 1.10 eV for as deposited CuO",
+      "reason": "restated"
+    },
+    {
+      "block": "abstract/p1",
+      "quote": "Samples after implantation and annealing had energy band gap value increased to about 1.20 eV",
+      "reason": "restated"
+    },
+    {
+      "block": "f5/caption",
+      "quote": "implanted with Cr+ ions of 10 keV energy and 1 × 1014 cm−2 dose",
+      "reason": "other",
+      "note": "The implantation of a sample of Figure 5. The methods state these parameters."
+    },
+    {
+      "block": "ack/p1",
+      "quote": "Project no. 16.16.230.434",
+      "reason": "other",
+      "note": "A number of a funding project."
+    },
+    {
+      "block": "t1/caption",
+      "quote": "for the whole thickness of 130 nm film. Calculations are based on SRIM simulations results",
+      "reason": "other",
+      "note": "A value that the source computed (DFT or SRIM simulation). It is not a measurement."
+    },
+    {
+      "block": "t3/r5c1",
+      "quote": "CuO implanted dose 1 × 1015 cm−2",
+      "reason": "other",
+      "note": "The label of a sample for which the table gives no value (–)."
+    }
+  ]
+}
