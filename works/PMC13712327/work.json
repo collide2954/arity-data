@@ -2,7 +2,7 @@
   "format": "arity-archive/1",
   "position": 16,
   "metadata": {
-    "title": "Development of 7-hydroxy-4-methylcoumarin-cyanoacrylate hybrids with antiproliferative activity against breast cancer cells: from molecular design to &lt;i&gt;in vivo&lt;/i&gt; validation.",
+    "title": "Development of 7-hydroxy-4-methylcoumarin-cyanoacrylate hybrids with antiproliferative activity against breast cancer cells: from molecular design to in vivo validation.",
     "doi": "10.1039/d6ra06101j",
     "pmid": "42948722",
     "pmcid": "PMC13712327",
@@ -36,7 +36,7 @@
     "license": "CC-BY"
   },
   "added_at": "2026-11-15T11:31:23.2399116Z",
-  "updated_at": "2026-11-15T11:31:23.2399116Z",
+  "updated_at": "2026-11-15T12:11:33.3832123Z",
   "queue": {
     "state": "queued",
     "query": "doxorubicin AND \"MCF-7\" AND IC50 AND LICENSE:\"cc by\"",

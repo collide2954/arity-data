@@ -2,7 +2,7 @@
   "format": "arity-archive/1",
   "position": 20,
   "metadata": {
-    "title": "Comparative In Vitro and In Silico Biological Evaluation of &lt;i&gt;o&lt;/i&gt;-Phenylenediamine Conjugates Based on Isofunctional-Surfaced Polyanhydride and Citric Acid-Derived Carbon Quantum Nanodots.",
+    "title": "Comparative In Vitro and In Silico Biological Evaluation of o-Phenylenediamine Conjugates Based on Isofunctional-Surfaced Polyanhydride and Citric Acid-Derived Carbon Quantum Nanodots.",
     "doi": "10.3390/biom16101478",
     "pmid": "42939732",
     "pmcid": "PMC13702659",
@@ -25,7 +25,7 @@
     "license": "CC-BY"
   },
   "added_at": "2026-11-15T11:31:23.2399116Z",
-  "updated_at": "2026-11-15T11:31:23.2399116Z",
+  "updated_at": "2026-11-15T12:11:33.3832123Z",
   "queue": {
     "state": "queued",
     "query": "doxorubicin AND \"MCF-7\" AND IC50 AND LICENSE:\"cc by\"",
