@@ -1,0 +1,531 @@
+{
+  "format": "arity-submission/1",
+  "work": "PMC10538757",
+  "text": "8ed45eeff0eb104e2d6600f7d20bc044af2d80a59ebd55fd4037bae28381e6ca",
+  "reader": {
+    "kind": "software",
+    "name": "Claude (Anthropic)",
+    "version": "claude-opus-5-5"
+  },
+  "responsible": {
+    "name": "Brett Gilio"
+  },
+  "note": "This run moves run 1 to the text of arity-jats 0.2.0. Its reports are the reports of run 1, with the words of the new text in their quotes. The note of run 1: Pilot reading of the text and the figure captions. Values in figure tables (images) are not read.",
+  "replaces": 1,
+  "entities": [
+    {
+      "id": "dox",
+      "kind": "chemical",
+      "label": "doxorubicin",
+      "xrefs": [
+        "CHEBI:28748"
+      ],
+      "mentions": [
+        {
+          "block": "abstract/p1",
+          "quote": "doxorubicin (DOX)"
+        }
+      ]
+    },
+    {
+      "id": "dis",
+      "kind": "chemical",
+      "label": "disulfiram",
+      "xrefs": [
+        "CHEBI:4659"
+      ],
+      "mentions": [
+        {
+          "block": "abstract/p1",
+          "quote": "disulfiram (Dis)"
+        }
+      ]
+    },
+    {
+      "id": "hyd",
+      "kind": "chemical",
+      "label": "hydralazine",
+      "xrefs": [
+        "CHEBI:5775"
+      ],
+      "mentions": [
+        {
+          "block": "s1/p2",
+          "quote": "Hydralazine (1-Hydrazinophthalazine)"
+        }
+      ]
+    },
+    {
+      "id": "mcf7_wt",
+      "kind": "cell_line",
+      "label": "MCF-7",
+      "xrefs": [
+        "CELLOSAURUS:CVCL_0031"
+      ],
+      "mentions": [
+        {
+          "block": "abstract/p1",
+          "quote": "wild-type MCF-7 cell line (MCF-7_WT)"
+        }
+      ]
+    },
+    {
+      "id": "mcf7_doxr",
+      "kind": "cell_line",
+      "label": "MCF-7, doxorubicin-resistant (MCF-7_DoxR)",
+      "note": "The authors derived this line from MCF-7 at the Cell Therapy Center of The University of Jordan.",
+      "mentions": [
+        {
+          "block": "s1.1.1/p1",
+          "quote": "DOX resistance MCF-7 cell line (MCF-7_DoxR)"
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "id": "ic50",
+      "label": "half maximal inhibitory concentration",
+      "value_type": "quantity",
+      "unit": "umol/L",
+      "description": "The concentration of a substance that gives half of its maximal inhibition in an assay."
+    },
+    {
+      "id": "exposure_time",
+      "label": "exposure time",
+      "value_type": "quantity",
+      "unit": "h",
+      "description": "The time for which a culture or a subject is in contact with a treatment."
+    }
+  ],
+  "reports": [
+    {
+      "type": "value",
+      "id": "dox_wt",
+      "subject": [
+        "dox"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "0.24",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "statistic": "mean"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "s2.4/p3",
+          "quote": "IC₅₀ the concentration of DOX decreased from 0.24 to 0.012 μM in MCF-7_WT cells"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "incubator for 72 h"
+        },
+        {
+          "block": "f7/caption",
+          "quote": "All cytotoxicity values represent the average ± SD of three independent experiments."
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dox_wt_dis_hyd",
+      "subject": [
+        "dox"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "0.012",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "statistic": "mean"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "co_treatment",
+          "entity": "dis"
+        },
+        {
+          "role": "co_treatment",
+          "entity": "hyd"
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "Doxorubicin with disulfiram (0.03 μM) and hydralazine (20 μM).",
+      "evidence": [
+        {
+          "block": "s2.4/p3",
+          "quote": "treated with a combination of (Dis 0.03 μM and Hyd 20 μM) and different concentrations of doxorubicin"
+        },
+        {
+          "block": "s2.4/p3",
+          "quote": "IC₅₀ the concentration of DOX decreased from 0.24 to 0.012 μM in MCF-7_WT cells"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "incubator for 72 h"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dox_doxr",
+      "subject": [
+        "dox"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "1.13",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "statistic": "mean"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_doxr"
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "s2.4/p4",
+          "quote": "The IC₅₀ of DOX in the resistance cells decreased from 1.13 μM to 0.44 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "incubator for 72 h"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dox_doxr_dis_hyd",
+      "subject": [
+        "dox"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "0.44",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "statistic": "mean"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_doxr"
+        },
+        {
+          "role": "co_treatment",
+          "entity": "dis"
+        },
+        {
+          "role": "co_treatment",
+          "entity": "hyd"
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "Doxorubicin with disulfiram (0.03 μM) and hydralazine (20 μM).",
+      "evidence": [
+        {
+          "block": "s2.4/p4",
+          "quote": "The cytotoxic effect of DOX combined with Dis (0.03μM) and Hyd (20μM) was found to be higher than DOX alone in resistance cells"
+        },
+        {
+          "block": "s2.4/p4",
+          "quote": "The IC₅₀ of DOX in the resistance cells decreased from 1.13 μM to 0.44 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "incubator for 72 h"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "hyd_wt",
+      "subject": [
+        "hyd"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "165.1",
+        "unit": "umol/L",
+        "unit_text": "μM"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "s2.2/p2",
+          "quote": "The IC₅₀ of Hyd, Dis, and the combination was found to be 165.1, 0.73, and 20.03 μM, respectively"
+        },
+        {
+          "block": "s2.2/p2",
+          "quote": "Cell viability (MTT) assay was performed"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "IC₅₀ values were measured using MTT assay"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dis_wt",
+      "subject": [
+        "dis"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "0.73",
+        "unit": "umol/L",
+        "unit_text": "μM"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "s2.2/p2",
+          "quote": "The IC₅₀ of Hyd, Dis, and the combination was found to be 165.1, 0.73, and 20.03 μM, respectively"
+        },
+        {
+          "block": "s2.2/p2",
+          "quote": "Cell viability (MTT) assay was performed"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "IC₅₀ values were measured using MTT assay"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dis_hyd_wt",
+      "subject": [
+        "dis",
+        "hyd"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "20.03",
+        "unit": "umol/L",
+        "unit_text": "μM"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "The source states this value for the combination of disulfiram and hydralazine.",
+      "evidence": [
+        {
+          "block": "s2.2/p2",
+          "quote": "The IC₅₀ of Hyd, Dis, and the combination was found to be 165.1, 0.73, and 20.03 μM, respectively"
+        },
+        {
+          "block": "s2.2/p2",
+          "quote": "Cell viability (MTT) assay was performed"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "IC₅₀ values were measured using MTT assay"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "dis_hyd_on_dox_wt",
+      "agents": [
+        {
+          "entity": "dis",
+          "dose": {
+            "number": "0.03",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "entity": "hyd",
+          "dose": {
+            "number": "20",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "dox",
+        "property": "ic50"
+      },
+      "direction": "decrease",
+      "magnitude": {
+        "measure": "fold_change",
+        "number": "20"
+      },
+      "comparator": "DOX alone",
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        }
+      ],
+      "evidence": [
+        {
+          "block": "s2.4/p3",
+          "quote": "treated with a combination of (Dis 0.03 μM and Hyd 20 μM) and different concentrations of doxorubicin"
+        },
+        {
+          "block": "s2.4/p3",
+          "quote": "IC₅₀ the concentration of DOX decreased from 0.24 to 0.012 μM in MCF-7_WT cells"
+        },
+        {
+          "block": "s2.4/p4",
+          "quote": "The differences in the decrease in IC₅₀ of wild type compared to resistant cells (20-fold vs 2.7- fold)"
+        },
+        {
+          "block": "s2.4/p4",
+          "quote": "higher than DOX alone"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "dis_hyd_on_dox_doxr",
+      "agents": [
+        {
+          "entity": "dis",
+          "dose": {
+            "number": "0.03",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "entity": "hyd",
+          "dose": {
+            "number": "20",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "dox",
+        "property": "ic50"
+      },
+      "direction": "decrease",
+      "magnitude": {
+        "measure": "fold_change",
+        "number": "2.7"
+      },
+      "comparator": "DOX alone",
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_doxr"
+        }
+      ],
+      "evidence": [
+        {
+          "block": "s2.4/p4",
+          "quote": "The cytotoxic effect of DOX combined with Dis (0.03μM) and Hyd (20μM) was found to be higher than DOX alone in resistance cells"
+        },
+        {
+          "block": "s2.4/p4",
+          "quote": "The IC₅₀ of DOX in the resistance cells decreased from 1.13 μM to 0.44 μM"
+        },
+        {
+          "block": "s2.4/p4",
+          "quote": "(20-fold vs 2.7- fold)"
+        }
+      ]
+    }
+  ]
+}

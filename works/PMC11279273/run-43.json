@@ -1,0 +1,3782 @@
+{
+  "format": "arity-submission/1",
+  "work": "PMC11279273",
+  "text": "e9bdd12c8aa16d53bb573f1a62054ca1cd25213cc085cfeb777519d055cf74c9",
+  "reader": {
+    "kind": "software",
+    "name": "Claude (Anthropic)",
+    "version": "claude-opus-5-5"
+  },
+  "responsible": {
+    "name": "Brett Gilio"
+  },
+  "note": "This run moves run 20 to the text of arity-jats 0.2.0. Its reports are the reports of run 20, with the words of the new text in their quotes. It leaves out 15 skipped quotes that have no number in the new text, for example the subscripts of chemical formulas. The note of run 20: A complete reading: the thickness of each film, the range of the roughness and of the band gap of the films, their Raman bands and absorptance, and the sensitivity, rise time, and decay time of each photodetector, with the settings of the spray and of each measurement as conditions. The other materials of Tables 1 and 2 come from other works.",
+  "replaces": 20,
+  "entities": [
+    {
+      "id": "films",
+      "kind": "material",
+      "label": "NiV2O6 thin films made by nebulizer spray pyrolysis",
+      "note": "All three films of the source, S1, S2, and S3, which differ in spray time.",
+      "mentions": [
+        {
+          "block": "abstract/p1",
+          "quote": "NiV₂O₆ thin films"
+        }
+      ]
+    },
+    {
+      "id": "s1",
+      "kind": "material",
+      "label": "NiV2O6 film S1, sprayed for 4 min",
+      "mentions": [
+        {
+          "block": "t2/r2c1",
+          "quote": "S1"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "material",
+      "label": "NiV2O6 film S2, sprayed for 6 min",
+      "mentions": [
+        {
+          "block": "t2/r3c1",
+          "quote": "S2"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "kind": "material",
+      "label": "NiV2O6 film S3, sprayed for 9 min",
+      "mentions": [
+        {
+          "block": "t2/r4c1",
+          "quote": "S3"
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "id": "film_thickness"
+    },
+    {
+      "id": "substrate_temperature"
+    },
+    {
+      "id": "excitation_wavelength"
+    },
+    {
+      "id": "raman_band"
+    },
+    {
+      "id": "band_gap"
+    },
+    {
+      "id": "spray_time",
+      "label": "spray time",
+      "value_type": "quantity",
+      "unit": "min",
+      "description": "The time for which a spray deposits a film."
+    },
+    {
+      "id": "solution_flow_rate",
+      "label": "solution flow rate",
+      "value_type": "quantity",
+      "unit": "mL/min",
+      "description": "The rate of flow of the solution of a spray or a pump."
+    },
+    {
+      "id": "average_roughness",
+      "label": "average roughness (Ra)",
+      "value_type": "quantity",
+      "unit": "nm",
+      "description": "The arithmetic average roughness of a surface."
+    },
+    {
+      "id": "absorptance",
+      "label": "absorptance",
+      "value_type": "quantity",
+      "unit": "%",
+      "description": "The part of the incident light that a sample absorbs."
+    },
+    {
+      "id": "photo_sensitivity",
+      "label": "photo-sensitivity",
+      "value_type": "quantity",
+      "unit": "%",
+      "description": "The photocurrent of a photodetector as a percentage of its dark current."
+    },
+    {
+      "id": "rise_time",
+      "label": "rise time",
+      "value_type": "quantity",
+      "unit": "s",
+      "description": "The time that the response of a detector takes to rise when the light comes on."
+    },
+    {
+      "id": "decay_time",
+      "label": "decay time",
+      "value_type": "quantity",
+      "unit": "s",
+      "description": "The time that the response of a detector takes to decay when the light goes off."
+    },
+    {
+      "id": "irradiance",
+      "label": "irradiance",
+      "value_type": "quantity",
+      "unit": "mW/cm2",
+      "description": "The power of the light that falls on a surface, for each area."
+    },
+    {
+      "id": "illuminated_area",
+      "label": "illuminated area",
+      "value_type": "quantity",
+      "unit": "cm2",
+      "description": "The area of a device that the light reaches."
+    },
+    {
+      "id": "bias_voltage",
+      "label": "bias voltage",
+      "value_type": "quantity",
+      "unit": "V",
+      "description": "The voltage that is applied to a device during a measurement."
+    }
+  ],
+  "reports": [
+    {
+      "type": "value",
+      "id": "s1_thickness",
+      "subject": [
+        "s1"
+      ],
+      "property": "film_thickness",
+      "value": {
+        "number": "0.86",
+        "unit": "um",
+        "unit_text": "µm"
+      },
+      "conditions": [
+        {
+          "property": "spray_time",
+          "value": {
+            "number": "4",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ],
+      "method": {
+        "label": "Bruker–Dektak stylus profiler"
+      },
+      "evidence": [
+        {
+          "block": "s2/p1",
+          "quote": "Using the Bruker–Dektak stylus profiler, the thickness of the NiV₂O₆ layers was measured (S1 was 0.86 µm, S2 was 2.41 µm, and S3 was 2.94 µm)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "s2_thickness",
+      "subject": [
+        "s2"
+      ],
+      "property": "film_thickness",
+      "value": {
+        "number": "2.41",
+        "unit": "um",
+        "unit_text": "µm"
+      },
+      "conditions": [
+        {
+          "property": "spray_time",
+          "value": {
+            "number": "6",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ],
+      "method": {
+        "label": "Bruker–Dektak stylus profiler"
+      },
+      "evidence": [
+        {
+          "block": "s2/p1",
+          "quote": "Using the Bruker–Dektak stylus profiler, the thickness of the NiV₂O₆ layers was measured (S1 was 0.86 µm, S2 was 2.41 µm, and S3 was 2.94 µm)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "s3_thickness",
+      "subject": [
+        "s3"
+      ],
+      "property": "film_thickness",
+      "value": {
+        "number": "2.94",
+        "unit": "um",
+        "unit_text": "µm"
+      },
+      "conditions": [
+        {
+          "property": "spray_time",
+          "value": {
+            "number": "9",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ],
+      "method": {
+        "label": "Bruker–Dektak stylus profiler"
+      },
+      "evidence": [
+        {
+          "block": "s2/p1",
+          "quote": "Using the Bruker–Dektak stylus profiler, the thickness of the NiV₂O₆ layers was measured (S1 was 0.86 µm, S2 was 2.41 µm, and S3 was 2.94 µm)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "films_roughness",
+      "subject": [
+        "films"
+      ],
+      "property": "average_roughness",
+      "value": {
+        "low": "0.26",
+        "high": "0.49",
+        "unit": "um",
+        "unit_text": "µm"
+      },
+      "conditions": [
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "role": "other",
+          "text": "(0.5 × 0.5) mm2"
+        },
+        {
+          "role": "device",
+          "text": "Bruker profilometer (model: Dektak XT)"
+        }
+      ],
+      "method": {
+        "label": "profilometer"
+      },
+      "note": "The source states that the average roughness increases from 0.26 µm to 0.49 µm as the thickness of the film increases.",
+      "evidence": [
+        {
+          "block": "s3.1/p3",
+          "quote": "On the other hand, the roughness and surface morphology of the NiV₂O₆ films were assessed through mapping using a profilometer"
+        },
+        {
+          "block": "s3.1/p3",
+          "quote": "Figure 3a–c present 3D micrographs of NiV₂O₆ thin films captured in a scanning area of (0.5 × 0.5) mm²"
+        },
+        {
+          "block": "s3.1/p3",
+          "quote": "It is noted that the surface roughness escalates as the film thickness increases"
+        },
+        {
+          "block": "s3.1/p3",
+          "quote": "Specifically, the average film roughness increases from 0.26 µm to 0.49 µm as the film thickness increases"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The thickness and roughness of the films were determined using a Bruker profilometer (model: Dektak XT)"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "Profilometer mapping of thin layers of NiV₂O_{6:} (a) S1 sample; (b) S2 sample and (c) S3 sample."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "films_raman_816",
+      "subject": [
+        "films"
+      ],
+      "property": "raman_band",
+      "value": {
+        "number": "816",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "property": "excitation_wavelength",
+          "value": {
+            "number": "532",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "micro-Raman Renishaw spectrometer"
+        }
+      ],
+      "method": {
+        "label": "micro-Raman"
+      },
+      "note": "The source assigns the band to the shorter symmetric V–O stretching mode (Ag).",
+      "evidence": [
+        {
+          "block": "s3.2/p4",
+          "quote": "The prominent band at 816 cm⁻¹ corresponds to the shorter symmetric V–O stretching mode (Ag), while the weaker band at 647 cm⁻¹ is associated with the short (Bg) asymmetric V–O stretching modes [25]"
+        },
+        {
+          "block": "s3.2/p4",
+          "quote": "Consistent Raman bands at 327, 367, 647, and 816 cm⁻¹ were observed across all samples, indicative of the distinctive vibrational bands of the triclinic NiV₂O₆ system"
+        },
+        {
+          "block": "t1/r34c3",
+          "quote": "816 (This work)"
+        },
+        {
+          "block": "t1/r34c2",
+          "quote": "ν_{s} (V-O)"
+        },
+        {
+          "block": "t1/r30c1",
+          "quote": "NiV₂O₆"
+        },
+        {
+          "block": "s3.2/p3",
+          "quote": "Raman spectroscopy is an effective tool for investigating structural and bonding characteristics, providing valuable insights into materials’ local structure, crystallization and electronic properties"
+        },
+        {
+          "block": "s3.2/p3",
+          "quote": "The Raman bands of NiV₂O₆ in the 100–900 cm⁻¹ range were obtained with varying spray times, as depicted in Figure 5"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The vibrational analyses were recorded with a micro-Raman Renishaw spectrometer using a green laser excitation source (532 nm)"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "Raman spectra of the investigated NiV₂O₆ films."
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Vibrational modes observed in Raman spectrum for different materials like NiV₂O₆."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "films_raman_647",
+      "subject": [
+        "films"
+      ],
+      "property": "raman_band",
+      "value": {
+        "number": "647",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "property": "excitation_wavelength",
+          "value": {
+            "number": "532",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "micro-Raman Renishaw spectrometer"
+        }
+      ],
+      "method": {
+        "label": "micro-Raman"
+      },
+      "note": "The source assigns the band to the short asymmetric V–O stretching modes (Bg).",
+      "evidence": [
+        {
+          "block": "s3.2/p4",
+          "quote": "The prominent band at 816 cm⁻¹ corresponds to the shorter symmetric V–O stretching mode (Ag), while the weaker band at 647 cm⁻¹ is associated with the short (Bg) asymmetric V–O stretching modes [25]"
+        },
+        {
+          "block": "s3.2/p4",
+          "quote": "Consistent Raman bands at 327, 367, 647, and 816 cm⁻¹ were observed across all samples, indicative of the distinctive vibrational bands of the triclinic NiV₂O₆ system"
+        },
+        {
+          "block": "t1/r33c3",
+          "quote": "647 (This work)"
+        },
+        {
+          "block": "t1/r33c2",
+          "quote": "ν′_{as} (V-O)"
+        },
+        {
+          "block": "t1/r30c1",
+          "quote": "NiV₂O₆"
+        },
+        {
+          "block": "s3.2/p3",
+          "quote": "Raman spectroscopy is an effective tool for investigating structural and bonding characteristics, providing valuable insights into materials’ local structure, crystallization and electronic properties"
+        },
+        {
+          "block": "s3.2/p3",
+          "quote": "The Raman bands of NiV₂O₆ in the 100–900 cm⁻¹ range were obtained with varying spray times, as depicted in Figure 5"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The vibrational analyses were recorded with a micro-Raman Renishaw spectrometer using a green laser excitation source (532 nm)"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "Raman spectra of the investigated NiV₂O₆ films."
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Vibrational modes observed in Raman spectrum for different materials like NiV₂O₆."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "films_raman_327",
+      "subject": [
+        "films"
+      ],
+      "property": "raman_band",
+      "value": {
+        "number": "327",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "property": "excitation_wavelength",
+          "value": {
+            "number": "532",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "micro-Raman Renishaw spectrometer"
+        }
+      ],
+      "method": {
+        "label": "micro-Raman"
+      },
+      "note": "The source assigns the band to the asymmetric bending of the VO4 tetrahedron.",
+      "evidence": [
+        {
+          "block": "s3.2/p4",
+          "quote": "Additionally, the asymmetric and symmetric bending vibrations of the VO₄ tetrahedron were identified at 327 and 367 cm⁻¹, respectively [26]"
+        },
+        {
+          "block": "s3.2/p4",
+          "quote": "Consistent Raman bands at 327, 367, 647, and 816 cm⁻¹ were observed across all samples, indicative of the distinctive vibrational bands of the triclinic NiV₂O₆ system"
+        },
+        {
+          "block": "t1/r31c3",
+          "quote": "327 (This work)"
+        },
+        {
+          "block": "t1/r31c2",
+          "quote": "δ_{as} (VO₄)"
+        },
+        {
+          "block": "t1/r30c1",
+          "quote": "NiV₂O₆"
+        },
+        {
+          "block": "s3.2/p3",
+          "quote": "Raman spectroscopy is an effective tool for investigating structural and bonding characteristics, providing valuable insights into materials’ local structure, crystallization and electronic properties"
+        },
+        {
+          "block": "s3.2/p3",
+          "quote": "The Raman bands of NiV₂O₆ in the 100–900 cm⁻¹ range were obtained with varying spray times, as depicted in Figure 5"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The vibrational analyses were recorded with a micro-Raman Renishaw spectrometer using a green laser excitation source (532 nm)"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "Raman spectra of the investigated NiV₂O₆ films."
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Vibrational modes observed in Raman spectrum for different materials like NiV₂O₆."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "films_raman_367",
+      "subject": [
+        "films"
+      ],
+      "property": "raman_band",
+      "value": {
+        "number": "367",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "property": "excitation_wavelength",
+          "value": {
+            "number": "532",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "micro-Raman Renishaw spectrometer"
+        }
+      ],
+      "method": {
+        "label": "micro-Raman"
+      },
+      "note": "The source assigns the band to the symmetric bending of the VO4 tetrahedron.",
+      "evidence": [
+        {
+          "block": "s3.2/p4",
+          "quote": "Additionally, the asymmetric and symmetric bending vibrations of the VO₄ tetrahedron were identified at 327 and 367 cm⁻¹, respectively [26]"
+        },
+        {
+          "block": "s3.2/p4",
+          "quote": "Consistent Raman bands at 327, 367, 647, and 816 cm⁻¹ were observed across all samples, indicative of the distinctive vibrational bands of the triclinic NiV₂O₆ system"
+        },
+        {
+          "block": "t1/r32c3",
+          "quote": "367 (This work)"
+        },
+        {
+          "block": "t1/r32c2",
+          "quote": "δ_{s} (VO₄)"
+        },
+        {
+          "block": "t1/r30c1",
+          "quote": "NiV₂O₆"
+        },
+        {
+          "block": "s3.2/p3",
+          "quote": "Raman spectroscopy is an effective tool for investigating structural and bonding characteristics, providing valuable insights into materials’ local structure, crystallization and electronic properties"
+        },
+        {
+          "block": "s3.2/p3",
+          "quote": "The Raman bands of NiV₂O₆ in the 100–900 cm⁻¹ range were obtained with varying spray times, as depicted in Figure 5"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The vibrational analyses were recorded with a micro-Raman Renishaw spectrometer using a green laser excitation source (532 nm)"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "Raman spectra of the investigated NiV₂O₆ films."
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Vibrational modes observed in Raman spectrum for different materials like NiV₂O₆."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "films_raman_138",
+      "subject": [
+        "films"
+      ],
+      "property": "raman_band",
+      "value": {
+        "number": "138",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "property": "excitation_wavelength",
+          "value": {
+            "number": "532",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "micro-Raman Renishaw spectrometer"
+        }
+      ],
+      "method": {
+        "label": "micro-Raman"
+      },
+      "note": "The source assigns the peak to an external mode, a vibration of the crystal lattice.",
+      "evidence": [
+        {
+          "block": "s3.2/p4",
+          "quote": "The vibrations of the crystal lattice (external modes) are responsible for the peaks observed at 138 and 205 cm⁻¹ [28]"
+        },
+        {
+          "block": "t1/r30c3",
+          "quote": "138, 205 (This work)"
+        },
+        {
+          "block": "t1/r30c2",
+          "quote": "External modes"
+        },
+        {
+          "block": "t1/r30c1",
+          "quote": "NiV₂O₆"
+        },
+        {
+          "block": "s3.2/p3",
+          "quote": "Raman spectroscopy is an effective tool for investigating structural and bonding characteristics, providing valuable insights into materials’ local structure, crystallization and electronic properties"
+        },
+        {
+          "block": "s3.2/p3",
+          "quote": "The Raman bands of NiV₂O₆ in the 100–900 cm⁻¹ range were obtained with varying spray times, as depicted in Figure 5"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The vibrational analyses were recorded with a micro-Raman Renishaw spectrometer using a green laser excitation source (532 nm)"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "Raman spectra of the investigated NiV₂O₆ films."
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Vibrational modes observed in Raman spectrum for different materials like NiV₂O₆."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "films_raman_205",
+      "subject": [
+        "films"
+      ],
+      "property": "raman_band",
+      "value": {
+        "number": "205",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "property": "excitation_wavelength",
+          "value": {
+            "number": "532",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "micro-Raman Renishaw spectrometer"
+        }
+      ],
+      "method": {
+        "label": "micro-Raman"
+      },
+      "note": "The source assigns the peak to an external mode, a vibration of the crystal lattice.",
+      "evidence": [
+        {
+          "block": "s3.2/p4",
+          "quote": "The vibrations of the crystal lattice (external modes) are responsible for the peaks observed at 138 and 205 cm⁻¹ [28]"
+        },
+        {
+          "block": "t1/r30c3",
+          "quote": "138, 205 (This work)"
+        },
+        {
+          "block": "t1/r30c2",
+          "quote": "External modes"
+        },
+        {
+          "block": "t1/r30c1",
+          "quote": "NiV₂O₆"
+        },
+        {
+          "block": "s3.2/p3",
+          "quote": "Raman spectroscopy is an effective tool for investigating structural and bonding characteristics, providing valuable insights into materials’ local structure, crystallization and electronic properties"
+        },
+        {
+          "block": "s3.2/p3",
+          "quote": "The Raman bands of NiV₂O₆ in the 100–900 cm⁻¹ range were obtained with varying spray times, as depicted in Figure 5"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The vibrational analyses were recorded with a micro-Raman Renishaw spectrometer using a green laser excitation source (532 nm)"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "Raman spectra of the investigated NiV₂O₆ films."
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Vibrational modes observed in Raman spectrum for different materials like NiV₂O₆."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "s3_raman_846",
+      "subject": [
+        "s3"
+      ],
+      "property": "raman_band",
+      "value": {
+        "number": "846",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "property": "spray_time",
+          "value": {
+            "number": "9",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "property": "excitation_wavelength",
+          "value": {
+            "number": "532",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "micro-Raman Renishaw spectrometer"
+        }
+      ],
+      "method": {
+        "label": "micro-Raman"
+      },
+      "note": "A shoulder, which the source ascribes to a division from the lower symmetry of the monoclinic structure.",
+      "evidence": [
+        {
+          "block": "s3.2/p4",
+          "quote": "Alternatively, within our sample S3, we detected a shoulder at 846 cm⁻¹, which can be ascribed to a division arising from the lower symmetry of the monoclinic structure [27]"
+        },
+        {
+          "block": "s3.2/p3",
+          "quote": "Raman spectroscopy is an effective tool for investigating structural and bonding characteristics, providing valuable insights into materials’ local structure, crystallization and electronic properties"
+        },
+        {
+          "block": "s3.2/p3",
+          "quote": "The Raman bands of NiV₂O₆ in the 100–900 cm⁻¹ range were obtained with varying spray times, as depicted in Figure 5"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The vibrational analyses were recorded with a micro-Raman Renishaw spectrometer using a green laser excitation source (532 nm)"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "Raman spectra of the investigated NiV₂O₆ films."
+        },
+        {
+          "block": "t1/caption",
+          "quote": "Vibrational modes observed in Raman spectrum for different materials like NiV₂O₆."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "films_band_gap",
+      "subject": [
+        "films"
+      ],
+      "property": "band_gap",
+      "value": {
+        "low": "1.58",
+        "high": "2.02",
+        "unit": "eV",
+        "unit_text": "eV"
+      },
+      "conditions": [
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "role": "device",
+          "text": "JASCO V-670"
+        }
+      ],
+      "method": {
+        "label": "Tauc model"
+      },
+      "note": "The source states that the effective band gap decreases from 2.02 eV to 1.58 eV as the thickness of the film increases, and relates the lower band gaps to the more porous microstructure.",
+      "evidence": [
+        {
+          "block": "abstract/p1",
+          "quote": "The optical energy gap of the as-deposited NiV₂O₆ films decreased from 2.02 eV to 1.58 eV with increased layer thickness"
+        },
+        {
+          "block": "s4/p1",
+          "quote": "With increased film thickness, the effective band gap value decreased from 2.02 eV to 1.58 eV"
+        },
+        {
+          "block": "s3.3/p1",
+          "quote": "The optical bandgap energy (E_{g}) was derived from the absorption coefficient (α) through the application of the Tauc model [32,33] shown below: (2) αhϑ=A(hϑ−E_{g})^{m} where hϑ represents the photon energy, A is a constant, E_{g} is the optical band gap, and m is an exponent indicating the nature of optical absorption"
+        },
+        {
+          "block": "s3.3/p1",
+          "quote": "For a direct authorized transition, m = 1/2; for a direct authorized transition, m = 2; for an allowed indirect transition, m = 3/2; and for a direct forbidden transition, m = 3"
+        },
+        {
+          "block": "s3.3/p1",
+          "quote": "The bandgap energy (E_{g}) of the developed NiV₂O₆ was obtained by plotting (αhν)^{1/2} versus photon energy considering the indirect band gap reported for this material [34] (Figure 6b)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The optical properties were analyzed using a JASCO V-670 UV–vis–near-IR spectrometer with a PIN-757 Horizontal sampling integrating sphere in transmittance and reflectance modes"
+        },
+        {
+          "block": "f6/caption",
+          "quote": "(a) Absorptance spectra of NiV₂O₆ films synthesized at different thicknesses. (b) A Tauc plot for a NiV₂O₆ fabricated thin film."
+        },
+        {
+          "block": "s3.3/p3",
+          "quote": "As sample S1 exhibits a higher density and a less spongy structure than the other two samples, its band gap is near to that expected for NiV₂SO₆, while for S2 and S3, the lower bandgaps reflect their more porous microstructure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "films_absorptance",
+      "subject": [
+        "films"
+      ],
+      "property": "absorptance",
+      "value": {
+        "number": "40",
+        "bound": "gt",
+        "unit": "%",
+        "unit_text": "%"
+      },
+      "conditions": [
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "role": "device",
+          "text": "JASCO V-670"
+        }
+      ],
+      "method": {
+        "label": "UV–vis–near-IR spectrometer"
+      },
+      "note": "For the longer wavelengths. The source relates the high absorption below the band gap to the porous structure.",
+      "evidence": [
+        {
+          "block": "s3.3/p3",
+          "quote": "It is well known that NiV₂O₆ is a semi-conductor and one therefore expects very low absorption for energies below the bandgap, in contrast to what can be observed in our samples where the absorbed energy is higher than 40% for the longer wavelengths"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The optical properties were analyzed using a JASCO V-670 UV–vis–near-IR spectrometer with a PIN-757 Horizontal sampling integrating sphere in transmittance and reflectance modes"
+        },
+        {
+          "block": "f6/caption",
+          "quote": "(a) Absorptance spectra of NiV₂O₆ films synthesized at different thicknesses. (b) A Tauc plot for a NiV₂O₆ fabricated thin film."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "s1_sensitivity",
+      "subject": [
+        "s1"
+      ],
+      "property": "photo_sensitivity",
+      "value": {
+        "number": "328",
+        "bound": "approx",
+        "unit": "%",
+        "unit_text": "%"
+      },
+      "conditions": [
+        {
+          "property": "spray_time",
+          "value": {
+            "number": "4",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "property": "irradiance",
+          "value": {
+            "number": "100",
+            "unit": "mW/cm2",
+            "unit_text": "mW/cm2"
+          }
+        },
+        {
+          "property": "illuminated_area",
+          "value": {
+            "number": "0.1",
+            "unit": "cm2",
+            "unit_text": "cm2"
+          }
+        },
+        {
+          "property": "bias_voltage",
+          "value": {
+            "number": "3",
+            "unit": "V",
+            "unit_text": "V"
+          }
+        },
+        {
+          "role": "other",
+          "text": "1.5 G AM spectrum"
+        },
+        {
+          "role": "device",
+          "text": "Ossila solar simulator (model No. G2009A1)"
+        },
+        {
+          "role": "other",
+          "text": "two-probe method"
+        }
+      ],
+      "method": {
+        "label": "photo-response"
+      },
+      "evidence": [
+        {
+          "block": "t2/r2c4",
+          "quote": "328"
+        },
+        {
+          "block": "t2/r2c1",
+          "quote": "S1"
+        },
+        {
+          "block": "t2/r1c4",
+          "quote": "Sensitivity (%)"
+        },
+        {
+          "block": "t2/caption",
+          "quote": "Photodetector performance compared with those reported by others."
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "At a bias voltage of 3 V, the sensitivity values for samples S1, S2, and S3 were computed and found to be around 328, 511, and 433, respectively, as presented in Table 2"
+        },
+        {
+          "block": "abstract/p1",
+          "quote": "The sensitivity values obtained for visible irradiation were 328, 511, and 433 for samples S1, S2, and S3, respectively"
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "In this work, sensitivity was studied with different film thicknesses at a constant light source intensity (100 mW/cm²) and effective illumination area (0.1 cm²) (Figure 8)"
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "The photodetector’s performance was evaluated by a key parameter known as sensitivity (S), which can be defined as follows [37]: (4) S(%)=(I_{ph})/(I_{dark})×100 where I_{ph} is the photocurrent, and it is equal to I_{light} − I_{dark}; moreover, I_{dark} is the dark current, and I_{light} is the light current"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The photo-response of the deposited samples was characterized under a 1.5 G AM spectrum of an Ossila solar simulator (model No. G2009A1) at a constant applied bias of 3V using a Palmsens 4 electrical measurements station using the two-probe method at room temperature"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "J-t characteristics of NiV₂O₆ films below chopped AM 1.5 (100 mW·cm⁻²) lighting."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "s1_rise",
+      "subject": [
+        "s1"
+      ],
+      "property": "rise_time",
+      "value": {
+        "number": "0.62",
+        "bound": "approx",
+        "unit": "s",
+        "unit_text": "s"
+      },
+      "conditions": [
+        {
+          "property": "spray_time",
+          "value": {
+            "number": "4",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "property": "irradiance",
+          "value": {
+            "number": "100",
+            "unit": "mW/cm2",
+            "unit_text": "mW/cm2"
+          }
+        },
+        {
+          "property": "illuminated_area",
+          "value": {
+            "number": "0.1",
+            "unit": "cm2",
+            "unit_text": "cm2"
+          }
+        },
+        {
+          "property": "bias_voltage",
+          "value": {
+            "number": "3",
+            "unit": "V",
+            "unit_text": "V"
+          }
+        },
+        {
+          "role": "other",
+          "text": "1.5 G AM spectrum"
+        },
+        {
+          "role": "device",
+          "text": "Ossila solar simulator (model No. G2009A1)"
+        },
+        {
+          "role": "other",
+          "text": "two-probe method"
+        }
+      ],
+      "method": {
+        "label": "photo-response"
+      },
+      "evidence": [
+        {
+          "block": "t2/r2c2",
+          "quote": "0.62"
+        },
+        {
+          "block": "t2/r2c1",
+          "quote": "S1"
+        },
+        {
+          "block": "t2/r1c2",
+          "quote": "Rise Time (s)"
+        },
+        {
+          "block": "t2/caption",
+          "quote": "Photodetector performance compared with those reported by others."
+        },
+        {
+          "block": "s3.4/p2",
+          "quote": "For a single on/off cycle, the rise times were determined to be approximately 0.62, 0.29, and 0.43 s"
+        },
+        {
+          "block": "s3.4/p2",
+          "quote": "In contrast, decay times were found to be 1.19, 0.52, and 0.69 s at a bias voltage of 3 V for samples S1, S2, and S3, respectively (Figure 9)"
+        },
+        {
+          "block": "f9/caption",
+          "quote": "Rise and decay time under 3 V bias voltage for the investigated samples (a) S1, (b) S2 and (c) S3."
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "In this work, sensitivity was studied with different film thicknesses at a constant light source intensity (100 mW/cm²) and effective illumination area (0.1 cm²) (Figure 8)"
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "The photodetector’s performance was evaluated by a key parameter known as sensitivity (S), which can be defined as follows [37]: (4) S(%)=(I_{ph})/(I_{dark})×100 where I_{ph} is the photocurrent, and it is equal to I_{light} − I_{dark}; moreover, I_{dark} is the dark current, and I_{light} is the light current"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The photo-response of the deposited samples was characterized under a 1.5 G AM spectrum of an Ossila solar simulator (model No. G2009A1) at a constant applied bias of 3V using a Palmsens 4 electrical measurements station using the two-probe method at room temperature"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "J-t characteristics of NiV₂O₆ films below chopped AM 1.5 (100 mW·cm⁻²) lighting."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "s1_decay",
+      "subject": [
+        "s1"
+      ],
+      "property": "decay_time",
+      "value": {
+        "number": "1.19",
+        "unit": "s",
+        "unit_text": "s"
+      },
+      "conditions": [
+        {
+          "property": "spray_time",
+          "value": {
+            "number": "4",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "property": "irradiance",
+          "value": {
+            "number": "100",
+            "unit": "mW/cm2",
+            "unit_text": "mW/cm2"
+          }
+        },
+        {
+          "property": "illuminated_area",
+          "value": {
+            "number": "0.1",
+            "unit": "cm2",
+            "unit_text": "cm2"
+          }
+        },
+        {
+          "property": "bias_voltage",
+          "value": {
+            "number": "3",
+            "unit": "V",
+            "unit_text": "V"
+          }
+        },
+        {
+          "role": "other",
+          "text": "1.5 G AM spectrum"
+        },
+        {
+          "role": "device",
+          "text": "Ossila solar simulator (model No. G2009A1)"
+        },
+        {
+          "role": "other",
+          "text": "two-probe method"
+        }
+      ],
+      "method": {
+        "label": "photo-response"
+      },
+      "evidence": [
+        {
+          "block": "t2/r2c3",
+          "quote": "1.19"
+        },
+        {
+          "block": "t2/r2c1",
+          "quote": "S1"
+        },
+        {
+          "block": "t2/r1c3",
+          "quote": "Decay Time (s)"
+        },
+        {
+          "block": "t2/caption",
+          "quote": "Photodetector performance compared with those reported by others."
+        },
+        {
+          "block": "s3.4/p2",
+          "quote": "For a single on/off cycle, the rise times were determined to be approximately 0.62, 0.29, and 0.43 s"
+        },
+        {
+          "block": "s3.4/p2",
+          "quote": "In contrast, decay times were found to be 1.19, 0.52, and 0.69 s at a bias voltage of 3 V for samples S1, S2, and S3, respectively (Figure 9)"
+        },
+        {
+          "block": "f9/caption",
+          "quote": "Rise and decay time under 3 V bias voltage for the investigated samples (a) S1, (b) S2 and (c) S3."
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "In this work, sensitivity was studied with different film thicknesses at a constant light source intensity (100 mW/cm²) and effective illumination area (0.1 cm²) (Figure 8)"
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "The photodetector’s performance was evaluated by a key parameter known as sensitivity (S), which can be defined as follows [37]: (4) S(%)=(I_{ph})/(I_{dark})×100 where I_{ph} is the photocurrent, and it is equal to I_{light} − I_{dark}; moreover, I_{dark} is the dark current, and I_{light} is the light current"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The photo-response of the deposited samples was characterized under a 1.5 G AM spectrum of an Ossila solar simulator (model No. G2009A1) at a constant applied bias of 3V using a Palmsens 4 electrical measurements station using the two-probe method at room temperature"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "J-t characteristics of NiV₂O₆ films below chopped AM 1.5 (100 mW·cm⁻²) lighting."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "s2_sensitivity",
+      "subject": [
+        "s2"
+      ],
+      "property": "photo_sensitivity",
+      "value": {
+        "number": "511",
+        "bound": "approx",
+        "unit": "%",
+        "unit_text": "%"
+      },
+      "conditions": [
+        {
+          "property": "spray_time",
+          "value": {
+            "number": "6",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "property": "irradiance",
+          "value": {
+            "number": "100",
+            "unit": "mW/cm2",
+            "unit_text": "mW/cm2"
+          }
+        },
+        {
+          "property": "illuminated_area",
+          "value": {
+            "number": "0.1",
+            "unit": "cm2",
+            "unit_text": "cm2"
+          }
+        },
+        {
+          "property": "bias_voltage",
+          "value": {
+            "number": "3",
+            "unit": "V",
+            "unit_text": "V"
+          }
+        },
+        {
+          "role": "other",
+          "text": "1.5 G AM spectrum"
+        },
+        {
+          "role": "device",
+          "text": "Ossila solar simulator (model No. G2009A1)"
+        },
+        {
+          "role": "other",
+          "text": "two-probe method"
+        }
+      ],
+      "method": {
+        "label": "photo-response"
+      },
+      "evidence": [
+        {
+          "block": "t2/r3c4",
+          "quote": "511"
+        },
+        {
+          "block": "t2/r3c1",
+          "quote": "S2"
+        },
+        {
+          "block": "t2/r1c4",
+          "quote": "Sensitivity (%)"
+        },
+        {
+          "block": "t2/caption",
+          "quote": "Photodetector performance compared with those reported by others."
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "At a bias voltage of 3 V, the sensitivity values for samples S1, S2, and S3 were computed and found to be around 328, 511, and 433, respectively, as presented in Table 2"
+        },
+        {
+          "block": "abstract/p1",
+          "quote": "The sensitivity values obtained for visible irradiation were 328, 511, and 433 for samples S1, S2, and S3, respectively"
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "In this work, sensitivity was studied with different film thicknesses at a constant light source intensity (100 mW/cm²) and effective illumination area (0.1 cm²) (Figure 8)"
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "The photodetector’s performance was evaluated by a key parameter known as sensitivity (S), which can be defined as follows [37]: (4) S(%)=(I_{ph})/(I_{dark})×100 where I_{ph} is the photocurrent, and it is equal to I_{light} − I_{dark}; moreover, I_{dark} is the dark current, and I_{light} is the light current"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The photo-response of the deposited samples was characterized under a 1.5 G AM spectrum of an Ossila solar simulator (model No. G2009A1) at a constant applied bias of 3V using a Palmsens 4 electrical measurements station using the two-probe method at room temperature"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "J-t characteristics of NiV₂O₆ films below chopped AM 1.5 (100 mW·cm⁻²) lighting."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "s2_rise",
+      "subject": [
+        "s2"
+      ],
+      "property": "rise_time",
+      "value": {
+        "number": "0.29",
+        "bound": "approx",
+        "unit": "s",
+        "unit_text": "s"
+      },
+      "conditions": [
+        {
+          "property": "spray_time",
+          "value": {
+            "number": "6",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "property": "irradiance",
+          "value": {
+            "number": "100",
+            "unit": "mW/cm2",
+            "unit_text": "mW/cm2"
+          }
+        },
+        {
+          "property": "illuminated_area",
+          "value": {
+            "number": "0.1",
+            "unit": "cm2",
+            "unit_text": "cm2"
+          }
+        },
+        {
+          "property": "bias_voltage",
+          "value": {
+            "number": "3",
+            "unit": "V",
+            "unit_text": "V"
+          }
+        },
+        {
+          "role": "other",
+          "text": "1.5 G AM spectrum"
+        },
+        {
+          "role": "device",
+          "text": "Ossila solar simulator (model No. G2009A1)"
+        },
+        {
+          "role": "other",
+          "text": "two-probe method"
+        }
+      ],
+      "method": {
+        "label": "photo-response"
+      },
+      "evidence": [
+        {
+          "block": "t2/r3c2",
+          "quote": "0.29"
+        },
+        {
+          "block": "t2/r3c1",
+          "quote": "S2"
+        },
+        {
+          "block": "t2/r1c2",
+          "quote": "Rise Time (s)"
+        },
+        {
+          "block": "t2/caption",
+          "quote": "Photodetector performance compared with those reported by others."
+        },
+        {
+          "block": "s3.4/p2",
+          "quote": "For a single on/off cycle, the rise times were determined to be approximately 0.62, 0.29, and 0.43 s"
+        },
+        {
+          "block": "s3.4/p2",
+          "quote": "In contrast, decay times were found to be 1.19, 0.52, and 0.69 s at a bias voltage of 3 V for samples S1, S2, and S3, respectively (Figure 9)"
+        },
+        {
+          "block": "f9/caption",
+          "quote": "Rise and decay time under 3 V bias voltage for the investigated samples (a) S1, (b) S2 and (c) S3."
+        },
+        {
+          "block": "s4/p1",
+          "quote": "The fastest rise and fall times of 0.29 s and 0.52 s were obtained for sample S2"
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "In this work, sensitivity was studied with different film thicknesses at a constant light source intensity (100 mW/cm²) and effective illumination area (0.1 cm²) (Figure 8)"
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "The photodetector’s performance was evaluated by a key parameter known as sensitivity (S), which can be defined as follows [37]: (4) S(%)=(I_{ph})/(I_{dark})×100 where I_{ph} is the photocurrent, and it is equal to I_{light} − I_{dark}; moreover, I_{dark} is the dark current, and I_{light} is the light current"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The photo-response of the deposited samples was characterized under a 1.5 G AM spectrum of an Ossila solar simulator (model No. G2009A1) at a constant applied bias of 3V using a Palmsens 4 electrical measurements station using the two-probe method at room temperature"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "J-t characteristics of NiV₂O₆ films below chopped AM 1.5 (100 mW·cm⁻²) lighting."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "s2_decay",
+      "subject": [
+        "s2"
+      ],
+      "property": "decay_time",
+      "value": {
+        "number": "0.52",
+        "unit": "s",
+        "unit_text": "s"
+      },
+      "conditions": [
+        {
+          "property": "spray_time",
+          "value": {
+            "number": "6",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "property": "irradiance",
+          "value": {
+            "number": "100",
+            "unit": "mW/cm2",
+            "unit_text": "mW/cm2"
+          }
+        },
+        {
+          "property": "illuminated_area",
+          "value": {
+            "number": "0.1",
+            "unit": "cm2",
+            "unit_text": "cm2"
+          }
+        },
+        {
+          "property": "bias_voltage",
+          "value": {
+            "number": "3",
+            "unit": "V",
+            "unit_text": "V"
+          }
+        },
+        {
+          "role": "other",
+          "text": "1.5 G AM spectrum"
+        },
+        {
+          "role": "device",
+          "text": "Ossila solar simulator (model No. G2009A1)"
+        },
+        {
+          "role": "other",
+          "text": "two-probe method"
+        }
+      ],
+      "method": {
+        "label": "photo-response"
+      },
+      "evidence": [
+        {
+          "block": "t2/r3c3",
+          "quote": "0.52"
+        },
+        {
+          "block": "t2/r3c1",
+          "quote": "S2"
+        },
+        {
+          "block": "t2/r1c3",
+          "quote": "Decay Time (s)"
+        },
+        {
+          "block": "t2/caption",
+          "quote": "Photodetector performance compared with those reported by others."
+        },
+        {
+          "block": "s3.4/p2",
+          "quote": "For a single on/off cycle, the rise times were determined to be approximately 0.62, 0.29, and 0.43 s"
+        },
+        {
+          "block": "s3.4/p2",
+          "quote": "In contrast, decay times were found to be 1.19, 0.52, and 0.69 s at a bias voltage of 3 V for samples S1, S2, and S3, respectively (Figure 9)"
+        },
+        {
+          "block": "f9/caption",
+          "quote": "Rise and decay time under 3 V bias voltage for the investigated samples (a) S1, (b) S2 and (c) S3."
+        },
+        {
+          "block": "s4/p1",
+          "quote": "The fastest rise and fall times of 0.29 s and 0.52 s were obtained for sample S2"
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "In this work, sensitivity was studied with different film thicknesses at a constant light source intensity (100 mW/cm²) and effective illumination area (0.1 cm²) (Figure 8)"
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "The photodetector’s performance was evaluated by a key parameter known as sensitivity (S), which can be defined as follows [37]: (4) S(%)=(I_{ph})/(I_{dark})×100 where I_{ph} is the photocurrent, and it is equal to I_{light} − I_{dark}; moreover, I_{dark} is the dark current, and I_{light} is the light current"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The photo-response of the deposited samples was characterized under a 1.5 G AM spectrum of an Ossila solar simulator (model No. G2009A1) at a constant applied bias of 3V using a Palmsens 4 electrical measurements station using the two-probe method at room temperature"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "J-t characteristics of NiV₂O₆ films below chopped AM 1.5 (100 mW·cm⁻²) lighting."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "s3_sensitivity",
+      "subject": [
+        "s3"
+      ],
+      "property": "photo_sensitivity",
+      "value": {
+        "number": "433",
+        "bound": "approx",
+        "unit": "%",
+        "unit_text": "%"
+      },
+      "conditions": [
+        {
+          "property": "spray_time",
+          "value": {
+            "number": "9",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "property": "irradiance",
+          "value": {
+            "number": "100",
+            "unit": "mW/cm2",
+            "unit_text": "mW/cm2"
+          }
+        },
+        {
+          "property": "illuminated_area",
+          "value": {
+            "number": "0.1",
+            "unit": "cm2",
+            "unit_text": "cm2"
+          }
+        },
+        {
+          "property": "bias_voltage",
+          "value": {
+            "number": "3",
+            "unit": "V",
+            "unit_text": "V"
+          }
+        },
+        {
+          "role": "other",
+          "text": "1.5 G AM spectrum"
+        },
+        {
+          "role": "device",
+          "text": "Ossila solar simulator (model No. G2009A1)"
+        },
+        {
+          "role": "other",
+          "text": "two-probe method"
+        }
+      ],
+      "method": {
+        "label": "photo-response"
+      },
+      "note": "The text states that the sensitivity of the layers increases with their thickness. S3 is the thickest film.",
+      "evidence": [
+        {
+          "block": "t2/r4c4",
+          "quote": "433"
+        },
+        {
+          "block": "t2/r4c1",
+          "quote": "S3"
+        },
+        {
+          "block": "t2/r1c4",
+          "quote": "Sensitivity (%)"
+        },
+        {
+          "block": "t2/caption",
+          "quote": "Photodetector performance compared with those reported by others."
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "At a bias voltage of 3 V, the sensitivity values for samples S1, S2, and S3 were computed and found to be around 328, 511, and 433, respectively, as presented in Table 2"
+        },
+        {
+          "block": "abstract/p1",
+          "quote": "The sensitivity values obtained for visible irradiation were 328, 511, and 433 for samples S1, S2, and S3, respectively"
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "In this work, sensitivity was studied with different film thicknesses at a constant light source intensity (100 mW/cm²) and effective illumination area (0.1 cm²) (Figure 8)"
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "The photodetector’s performance was evaluated by a key parameter known as sensitivity (S), which can be defined as follows [37]: (4) S(%)=(I_{ph})/(I_{dark})×100 where I_{ph} is the photocurrent, and it is equal to I_{light} − I_{dark}; moreover, I_{dark} is the dark current, and I_{light} is the light current"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The photo-response of the deposited samples was characterized under a 1.5 G AM spectrum of an Ossila solar simulator (model No. G2009A1) at a constant applied bias of 3V using a Palmsens 4 electrical measurements station using the two-probe method at room temperature"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "J-t characteristics of NiV₂O₆ films below chopped AM 1.5 (100 mW·cm⁻²) lighting."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "s3_rise",
+      "subject": [
+        "s3"
+      ],
+      "property": "rise_time",
+      "value": {
+        "number": "0.43",
+        "bound": "approx",
+        "unit": "s",
+        "unit_text": "s"
+      },
+      "conditions": [
+        {
+          "property": "spray_time",
+          "value": {
+            "number": "9",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "property": "irradiance",
+          "value": {
+            "number": "100",
+            "unit": "mW/cm2",
+            "unit_text": "mW/cm2"
+          }
+        },
+        {
+          "property": "illuminated_area",
+          "value": {
+            "number": "0.1",
+            "unit": "cm2",
+            "unit_text": "cm2"
+          }
+        },
+        {
+          "property": "bias_voltage",
+          "value": {
+            "number": "3",
+            "unit": "V",
+            "unit_text": "V"
+          }
+        },
+        {
+          "role": "other",
+          "text": "1.5 G AM spectrum"
+        },
+        {
+          "role": "device",
+          "text": "Ossila solar simulator (model No. G2009A1)"
+        },
+        {
+          "role": "other",
+          "text": "two-probe method"
+        }
+      ],
+      "method": {
+        "label": "photo-response"
+      },
+      "evidence": [
+        {
+          "block": "t2/r4c2",
+          "quote": "0.43"
+        },
+        {
+          "block": "t2/r4c1",
+          "quote": "S3"
+        },
+        {
+          "block": "t2/r1c2",
+          "quote": "Rise Time (s)"
+        },
+        {
+          "block": "t2/caption",
+          "quote": "Photodetector performance compared with those reported by others."
+        },
+        {
+          "block": "s3.4/p2",
+          "quote": "For a single on/off cycle, the rise times were determined to be approximately 0.62, 0.29, and 0.43 s"
+        },
+        {
+          "block": "s3.4/p2",
+          "quote": "In contrast, decay times were found to be 1.19, 0.52, and 0.69 s at a bias voltage of 3 V for samples S1, S2, and S3, respectively (Figure 9)"
+        },
+        {
+          "block": "f9/caption",
+          "quote": "Rise and decay time under 3 V bias voltage for the investigated samples (a) S1, (b) S2 and (c) S3."
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "In this work, sensitivity was studied with different film thicknesses at a constant light source intensity (100 mW/cm²) and effective illumination area (0.1 cm²) (Figure 8)"
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "The photodetector’s performance was evaluated by a key parameter known as sensitivity (S), which can be defined as follows [37]: (4) S(%)=(I_{ph})/(I_{dark})×100 where I_{ph} is the photocurrent, and it is equal to I_{light} − I_{dark}; moreover, I_{dark} is the dark current, and I_{light} is the light current"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The photo-response of the deposited samples was characterized under a 1.5 G AM spectrum of an Ossila solar simulator (model No. G2009A1) at a constant applied bias of 3V using a Palmsens 4 electrical measurements station using the two-probe method at room temperature"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "J-t characteristics of NiV₂O₆ films below chopped AM 1.5 (100 mW·cm⁻²) lighting."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "s3_decay",
+      "subject": [
+        "s3"
+      ],
+      "property": "decay_time",
+      "value": {
+        "number": "0.69",
+        "unit": "s",
+        "unit_text": "s"
+      },
+      "conditions": [
+        {
+          "property": "spray_time",
+          "value": {
+            "number": "9",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "250",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "solution_flow_rate",
+          "value": {
+            "number": "5",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "other",
+          "text": "3 atm for the air pressure"
+        },
+        {
+          "role": "other",
+          "text": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "role": "sample",
+          "text": "soda lime glass substrate"
+        },
+        {
+          "role": "device",
+          "text": "HOLMARK spray pyrolysis Model HO-TH-04"
+        },
+        {
+          "property": "irradiance",
+          "value": {
+            "number": "100",
+            "unit": "mW/cm2",
+            "unit_text": "mW/cm2"
+          }
+        },
+        {
+          "property": "illuminated_area",
+          "value": {
+            "number": "0.1",
+            "unit": "cm2",
+            "unit_text": "cm2"
+          }
+        },
+        {
+          "property": "bias_voltage",
+          "value": {
+            "number": "3",
+            "unit": "V",
+            "unit_text": "V"
+          }
+        },
+        {
+          "role": "other",
+          "text": "1.5 G AM spectrum"
+        },
+        {
+          "role": "device",
+          "text": "Ossila solar simulator (model No. G2009A1)"
+        },
+        {
+          "role": "other",
+          "text": "two-probe method"
+        }
+      ],
+      "method": {
+        "label": "photo-response"
+      },
+      "evidence": [
+        {
+          "block": "t2/r4c3",
+          "quote": "0.69"
+        },
+        {
+          "block": "t2/r4c1",
+          "quote": "S3"
+        },
+        {
+          "block": "t2/r1c3",
+          "quote": "Decay Time (s)"
+        },
+        {
+          "block": "t2/caption",
+          "quote": "Photodetector performance compared with those reported by others."
+        },
+        {
+          "block": "s3.4/p2",
+          "quote": "For a single on/off cycle, the rise times were determined to be approximately 0.62, 0.29, and 0.43 s"
+        },
+        {
+          "block": "s3.4/p2",
+          "quote": "In contrast, decay times were found to be 1.19, 0.52, and 0.69 s at a bias voltage of 3 V for samples S1, S2, and S3, respectively (Figure 9)"
+        },
+        {
+          "block": "f9/caption",
+          "quote": "Rise and decay time under 3 V bias voltage for the investigated samples (a) S1, (b) S2 and (c) S3."
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "In this work, sensitivity was studied with different film thicknesses at a constant light source intensity (100 mW/cm²) and effective illumination area (0.1 cm²) (Figure 8)"
+        },
+        {
+          "block": "s3.4/p1",
+          "quote": "The photodetector’s performance was evaluated by a key parameter known as sensitivity (S), which can be defined as follows [37]: (4) S(%)=(I_{ph})/(I_{dark})×100 where I_{ph} is the photocurrent, and it is equal to I_{light} − I_{dark}; moreover, I_{dark} is the dark current, and I_{light} is the light current"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The photo-response of the deposited samples was characterized under a 1.5 G AM spectrum of an Ossila solar simulator (model No. G2009A1) at a constant applied bias of 3V using a Palmsens 4 electrical measurements station using the two-probe method at room temperature"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "J-t characteristics of NiV₂O₆ films below chopped AM 1.5 (100 mW·cm⁻²) lighting."
+        },
+        {
+          "block": "s2/p1",
+          "quote": "This work used a spray pyrolysis process to fabricate NiV₂O₆ layers"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The glass substrates were cleaned by subjecting them to sonication at a temperature of 60 °C in an ultrasonic bath"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Acetone, isopropanol, and deionized water were used sequentially for a duration of 10 min each"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "We added 40 mL of 0.1 M nickel nitrate Ni (NO3)₂ (Sigma Aldrich (Burlington, VT, USA) 99.99%) to 60 mL of 0.2 M of ammonium vanadate NH₄VO₃ (Sigma Aldrich 99.99%)"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "All of these chemicals were dissolved in ethanol"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The mixture was stirred for 15 min at a temperature of 60 °C"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The type of substrate used in this work is a soda lime glass substrate"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The heated glass slides were sprayed with the NiV₂O₆ solution for 4, 6, and 9 min for the S1, S2 and S3 sample, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray pyrolysis settings were adjusted to a substrate temperature of 250 °C, 5 mL/min for the flow rate, and 3 atm for the air pressure"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The distance between the nozzle and the substrate was adjusted to 30 cm"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "The spray system used in this work was the HOLMARK spray pyrolysis Model HO-TH-04"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "block": "s1/p2",
+      "quote": "a high-speed bandwidth of up to 40 GHz [5,6,7]",
+      "reason": "cited"
+    },
+    {
+      "block": "s1/p3",
+      "quote": "its wide band gap of 2.4 eV [15,16], sensitive optical responses, high absorption coefficient exceeding 10⁴ cm⁻¹",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.3/p3",
+      "quote": "suitable optical bandgap energy of 2.02 eV",
+      "reason": "restated"
+    },
+    {
+      "block": "s3.3/p3",
+      "quote": "high optical absorption coefficient > 10⁴ cm⁻¹ [16,32]",
+      "reason": "cited"
+    },
+    {
+      "block": "s2/p1",
+      "quote": "The structural analysis of the phase formation was detected by an X-ray diffraction (XRD)-type four-circle Bruker Discover D8 diffractometer with CuKα = 1.5406 Å (D8 Advance, Bruker, Germany)",
+      "reason": "other",
+      "note": "A setting of the X-ray diffraction, whose results the source gives as indexed planes and not as values."
+    },
+    {
+      "block": "t1/r2c3",
+      "quote": "775 [25]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r3c3",
+      "quote": "851 [25]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r4c3",
+      "quote": "913 [25]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r5c3",
+      "quote": "946 [25]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r6c3",
+      "quote": "332 [29]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r7c3",
+      "quote": "795 [29]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r8c3",
+      "quote": "825 [29]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r9c3",
+      "quote": "210 [27]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r10c3",
+      "quote": "327 [27]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r11c3",
+      "quote": "367 [27]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r12c3",
+      "quote": "637 [27]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r13c3",
+      "quote": "710 [27]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r14c3",
+      "quote": "819 [27]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r15c3",
+      "quote": "324 [26]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r16c3",
+      "quote": "367 [26]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r17c3",
+      "quote": "710 [26]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r18c3",
+      "quote": "811 [26]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r19c3",
+      "quote": "213 [30]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r20c3",
+      "quote": "327 [30]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r21c3",
+      "quote": "367 [30]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r22c3",
+      "quote": "642 [30]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r23c3",
+      "quote": "710 [30]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r24c3",
+      "quote": "831 [30]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r25c3",
+      "quote": "27, 211 [28]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r26c3",
+      "quote": "324 [28]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r27c3",
+      "quote": "368 [28]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r28c3",
+      "quote": "703 [28]",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r29c3",
+      "quote": "828 [28]",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r5c2",
+      "quote": "0.17",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r5c4",
+      "quote": "2900",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r5c5",
+      "quote": "[38]",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r6c2",
+      "quote": "0.44",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r6c3",
+      "quote": "0.50",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r6c4",
+      "quote": "697",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r6c5",
+      "quote": "[39]",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r7c2",
+      "quote": "0.045",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r7c3",
+      "quote": "0.045",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r7c4",
+      "quote": "788",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r7c5",
+      "quote": "[40]",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r8c2",
+      "quote": "0.4",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r8c3",
+      "quote": "0.2",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r8c4",
+      "quote": "1626",
+      "reason": "cited"
+    },
+    {
+      "block": "t2/r8c5",
+      "quote": "[41]",
+      "reason": "cited"
+    }
+  ]
+}

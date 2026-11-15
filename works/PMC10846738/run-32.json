@@ -1,0 +1,270 @@
+{
+  "format": "arity-submission/1",
+  "work": "PMC10846738",
+  "text": "a9b8fb260fc2e3ce152bf73f970859b9f12e8ff5d7846221d94458c845a29166",
+  "reader": {
+    "kind": "software",
+    "name": "Claude (Anthropic)",
+    "version": "claude-opus-5-5"
+  },
+  "responsible": {
+    "name": "Brett Gilio"
+  },
+  "note": "This run moves run 3 to the text of arity-jats 0.2.0. Its reports are the reports of run 3, with the words of the new text in their quotes. The note of run 3: Pilot reading: the positive control doxorubicin in Table 2.",
+  "replaces": 3,
+  "entities": [
+    {
+      "id": "dox",
+      "kind": "chemical",
+      "label": "doxorubicin",
+      "xrefs": [
+        "CHEBI:28748"
+      ],
+      "mentions": [
+        {
+          "block": "s2.5/p1",
+          "quote": "doxorubicin as a positive control"
+        }
+      ]
+    },
+    {
+      "id": "mcf7",
+      "kind": "cell_line",
+      "label": "MCF-7",
+      "xrefs": [
+        "CELLOSAURUS:CVCL_0031"
+      ],
+      "mentions": [
+        {
+          "block": "s2.5/p1",
+          "quote": "human breast cancer (MCF-7)"
+        }
+      ]
+    },
+    {
+      "id": "hepg2",
+      "kind": "cell_line",
+      "label": "Hep-G2",
+      "xrefs": [
+        "CELLOSAURUS:CVCL_0027"
+      ],
+      "mentions": [
+        {
+          "block": "s2.5/p1",
+          "quote": "hepatocellular carcinoma (HepG-2)"
+        }
+      ]
+    },
+    {
+      "id": "caco2",
+      "kind": "cell_line",
+      "label": "Caco-2",
+      "xrefs": [
+        "CELLOSAURUS:CVCL_0025"
+      ],
+      "mentions": [
+        {
+          "block": "s2.5/p1",
+          "quote": "human colon carcinoma (Caco-2)"
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "id": "ic50_mass",
+      "label": "half maximal inhibitory concentration (mass concentration)",
+      "value_type": "quantity",
+      "unit": "ug/mL",
+      "description": "The IC50 as a mass concentration. arity keeps it apart from the molar IC50, because the conversion needs a molar mass that the source does not state."
+    },
+    {
+      "id": "exposure_time"
+    }
+  ],
+  "reports": [
+    {
+      "type": "value",
+      "id": "dox_mcf7",
+      "subject": [
+        "dox"
+      ],
+      "property": "ic50_mass",
+      "value": {
+        "number": "1.72",
+        "unit": "ug/mL",
+        "unit_text": "μg/mL",
+        "uncertainty": {
+          "kind": "sem",
+          "number": "0.03"
+        },
+        "statistic": "mean"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7"
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "t2/r9c3",
+          "quote": "1.72 ± 0.03"
+        },
+        {
+          "block": "t2/r2c3",
+          "quote": "MCF-7"
+        },
+        {
+          "block": "t2/r9c1",
+          "quote": "Doxorubicin"
+        },
+        {
+          "block": "t2/r1c2",
+          "quote": "IC₅₀ values (mean ± S.E.M; μg/mL)"
+        },
+        {
+          "block": "s2.5/p1",
+          "quote": "the cells were incubated for 72 h"
+        },
+        {
+          "block": "s2.5/p1",
+          "quote": "using MTT assay"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dox_hepg2",
+      "subject": [
+        "dox"
+      ],
+      "property": "ic50_mass",
+      "value": {
+        "number": "1.32",
+        "unit": "ug/mL",
+        "unit_text": "μg/mL",
+        "uncertainty": {
+          "kind": "sem",
+          "number": "0.06"
+        },
+        "statistic": "mean"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "hepg2"
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "t2/r9c2",
+          "quote": "1.32 ± 0.06"
+        },
+        {
+          "block": "t2/r2c2",
+          "quote": "HepG-2"
+        },
+        {
+          "block": "t2/r9c1",
+          "quote": "Doxorubicin"
+        },
+        {
+          "block": "t2/r1c2",
+          "quote": "IC₅₀ values (mean ± S.E.M; μg/mL)"
+        },
+        {
+          "block": "s2.5/p1",
+          "quote": "the cells were incubated for 72 h"
+        },
+        {
+          "block": "s2.5/p1",
+          "quote": "using MTT assay"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dox_caco2",
+      "subject": [
+        "dox"
+      ],
+      "property": "ic50_mass",
+      "value": {
+        "number": "2.12",
+        "unit": "ug/mL",
+        "unit_text": "μg/mL",
+        "uncertainty": {
+          "kind": "sem",
+          "number": "0.04"
+        },
+        "statistic": "mean"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "caco2"
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "t2/r9c4",
+          "quote": "2.12 ± 0.04"
+        },
+        {
+          "block": "t2/r2c4",
+          "quote": "Caco-2"
+        },
+        {
+          "block": "t2/r9c1",
+          "quote": "Doxorubicin"
+        },
+        {
+          "block": "t2/r1c2",
+          "quote": "IC₅₀ values (mean ± S.E.M; μg/mL)"
+        },
+        {
+          "block": "s2.5/p1",
+          "quote": "the cells were incubated for 72 h"
+        },
+        {
+          "block": "s2.5/p1",
+          "quote": "using MTT assay"
+        }
+      ]
+    }
+  ]
+}

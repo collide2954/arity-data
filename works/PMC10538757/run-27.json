@@ -1,0 +1,4815 @@
+{
+  "format": "arity-submission/1",
+  "work": "PMC10538757",
+  "text": "8ed45eeff0eb104e2d6600f7d20bc044af2d80a59ebd55fd4037bae28381e6ca",
+  "reader": {
+    "kind": "software",
+    "name": "Claude (Anthropic)",
+    "version": "claude-opus-5-5"
+  },
+  "responsible": {
+    "name": "Brett Gilio"
+  },
+  "note": "This run moves run 14 to the text of arity-jats 0.2.0. Its reports are the reports of run 14, with the words of the new text in their quotes. The note of run 14: A complete reading, together with run 1. This run adds the IC50 values of Dis and Hyd in their combination, the values in the tables of Figs 3D, 5B, and 6B and in the legends of Fig 7 (transcribed from the images), the combination index, and the apoptosis results, each with the settings of its assay as conditions. It does not report again the values that run 1 reports. It does not read values from the plots of Figs 3 to 8.",
+  "replaces": 14,
+  "entities": [
+    {
+      "id": "dox",
+      "kind": "chemical",
+      "label": "doxorubicin",
+      "xrefs": [
+        "CHEBI:28748"
+      ],
+      "mentions": [
+        {
+          "block": "abstract/p1",
+          "quote": "doxorubicin (DOX)"
+        }
+      ]
+    },
+    {
+      "id": "dis",
+      "kind": "chemical",
+      "label": "disulfiram",
+      "xrefs": [
+        "CHEBI:4659"
+      ],
+      "mentions": [
+        {
+          "block": "abstract/p1",
+          "quote": "disulfiram (Dis)"
+        }
+      ]
+    },
+    {
+      "id": "hyd",
+      "kind": "chemical",
+      "label": "hydralazine",
+      "xrefs": [
+        "CHEBI:5775"
+      ],
+      "mentions": [
+        {
+          "block": "s1/p2",
+          "quote": "Hydralazine (1-Hydrazinophthalazine)"
+        }
+      ]
+    },
+    {
+      "id": "mcf7_wt",
+      "kind": "cell_line",
+      "label": "MCF-7",
+      "xrefs": [
+        "CELLOSAURUS:CVCL_0031"
+      ],
+      "mentions": [
+        {
+          "block": "abstract/p1",
+          "quote": "wild-type MCF-7 cell line (MCF-7_WT)"
+        }
+      ]
+    },
+    {
+      "id": "mcf7_doxr",
+      "kind": "cell_line",
+      "label": "MCF-7, doxorubicin-resistant (MCF-7_DoxR)",
+      "note": "The authors derived this line from MCF-7 at the Cell Therapy Center of The University of Jordan.",
+      "mentions": [
+        {
+          "block": "s1.1.1/p1",
+          "quote": "DOX resistance MCF-7 cell line (MCF-7_DoxR)"
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "id": "ic50"
+    },
+    {
+      "id": "exposure_time"
+    },
+    {
+      "id": "culture_temperature"
+    },
+    {
+      "id": "co2_fraction"
+    },
+    {
+      "id": "seeding_density"
+    },
+    {
+      "id": "absorbance_wavelength"
+    },
+    {
+      "id": "tested_concentration",
+      "label": "tested concentration",
+      "value_type": "quantity",
+      "unit": "umol/L",
+      "description": "A concentration, or the range of concentrations, of an agent that an assay tests."
+    },
+    {
+      "id": "median_effect_r",
+      "label": "r of the median-effect plot",
+      "value_type": "quantity",
+      "unit": "1",
+      "description": "The linear correlation coefficient (r) of the median-effect plot of a dose-effect curve. It tells how well the data follow the median-effect equation."
+    },
+    {
+      "id": "combination_index",
+      "label": "combination index (CI)",
+      "value_type": "quantity",
+      "unit": "1",
+      "description": "The combination index of the Chou–Talalay method for a combination of drugs at one fraction affected."
+    },
+    {
+      "id": "fraction_affected",
+      "label": "fraction affected (Fa)",
+      "value_type": "quantity",
+      "unit": "1",
+      "description": "The fraction of the cells that a treatment affects, from 0 to 1."
+    },
+    {
+      "id": "apoptotic_cells",
+      "label": "apoptotic cells",
+      "value_type": "quantity",
+      "unit": "%",
+      "description": "The percentage of the cells that an apoptosis assay counts as apoptotic."
+    },
+    {
+      "id": "counted_events",
+      "label": "events counted",
+      "value_type": "quantity",
+      "unit": "{events}",
+      "description": "The number of events that a flow cytometer counts for each sample."
+    }
+  ],
+  "reports": [
+    {
+      "type": "value",
+      "id": "dis_in_combination_wt",
+      "subject": [
+        "dis"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "0.03",
+        "unit": "umol/L",
+        "unit_text": "μM"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        },
+        {
+          "role": "co_treatment",
+          "entity": "hyd"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "The IC50 of Dis in its combination with Hyd. The source states 20.03 μM for the IC50 of the combination.",
+      "evidence": [
+        {
+          "block": "s2.2/p2",
+          "quote": "Findings from this study showed a synergistic cytotoxic effect of Dis and Hyd on MCF-7 wild type cells and a reduction of IC₅₀ of Dis from 0.73 μM to 0.03 μM and Hyd from 165.1 to 20 μM (Fig 3B)"
+        },
+        {
+          "block": "s2.2/p2",
+          "quote": "The effect of Dis/Hyd combination was investigated to confirm their anti-cancer activity and synergism toward wild-type MCF-7 breast cancer"
+        },
+        {
+          "block": "s2.2/p2",
+          "quote": "Cell viability (MTT) assay was performed to explore the effect of Dis and Hyd on cell growth"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "hyd_in_combination_wt",
+      "subject": [
+        "hyd"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "20",
+        "unit": "umol/L",
+        "unit_text": "μM"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        },
+        {
+          "role": "co_treatment",
+          "entity": "dis"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "The IC50 of Hyd in its combination with Dis. The source states 20.03 μM for the IC50 of the combination.",
+      "evidence": [
+        {
+          "block": "s2.2/p2",
+          "quote": "Findings from this study showed a synergistic cytotoxic effect of Dis and Hyd on MCF-7 wild type cells and a reduction of IC₅₀ of Dis from 0.73 μM to 0.03 μM and Hyd from 165.1 to 20 μM (Fig 3B)"
+        },
+        {
+          "block": "s2.2/p2",
+          "quote": "The effect of Dis/Hyd combination was investigated to confirm their anti-cancer activity and synergism toward wild-type MCF-7 breast cancer"
+        },
+        {
+          "block": "s2.2/p2",
+          "quote": "Cell viability (MTT) assay was performed to explore the effect of Dis and Hyd on cell growth"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "hyd_on_dis_ic50_wt",
+      "agents": [
+        {
+          "entity": "hyd"
+        }
+      ],
+      "target": {
+        "entity": "dis",
+        "property": "ic50"
+      },
+      "direction": "decrease",
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "s2.2/p2",
+          "quote": "Findings from this study showed a synergistic cytotoxic effect of Dis and Hyd on MCF-7 wild type cells and a reduction of IC₅₀ of Dis from 0.73 μM to 0.03 μM and Hyd from 165.1 to 20 μM (Fig 3B)"
+        },
+        {
+          "block": "s2.2/p2",
+          "quote": "The effect of Dis/Hyd combination was investigated to confirm their anti-cancer activity and synergism toward wild-type MCF-7 breast cancer"
+        },
+        {
+          "block": "s2.2/p2",
+          "quote": "Cell viability (MTT) assay was performed to explore the effect of Dis and Hyd on cell growth"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "dis_on_hyd_ic50_wt",
+      "agents": [
+        {
+          "entity": "dis"
+        }
+      ],
+      "target": {
+        "entity": "hyd",
+        "property": "ic50"
+      },
+      "direction": "decrease",
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "s2.2/p2",
+          "quote": "Findings from this study showed a synergistic cytotoxic effect of Dis and Hyd on MCF-7 wild type cells and a reduction of IC₅₀ of Dis from 0.73 μM to 0.03 μM and Hyd from 165.1 to 20 μM (Fig 3B)"
+        },
+        {
+          "block": "s2.2/p2",
+          "quote": "The effect of Dis/Hyd combination was investigated to confirm their anti-cancer activity and synergism toward wild-type MCF-7 breast cancer"
+        },
+        {
+          "block": "s2.2/p2",
+          "quote": "Cell viability (MTT) assay was performed to explore the effect of Dis and Hyd on cell growth"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "hyd_doxr_dm",
+      "subject": [
+        "hyd"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "100",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "read_from_figure": {
+          "figure": "f6/caption",
+          "method": "transcribed from the table of Fig 6B, which the work gives only as an image",
+          "resolution": "1"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_doxr"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "The table of Fig 6B gives this value as Dm. Fig 7A gives 100 ± 10.08 μM from the dose-response curve.",
+      "evidence": [
+        {
+          "block": "f6/caption",
+          "quote": "Diagnostic graphics produced for synergistic effect quantification of DOX/Dis/Hyd combination against MCF-7_DoxR cells"
+        },
+        {
+          "block": "f6/caption",
+          "quote": "(B) Table of IC50 of DOX, Dis, Hyd alone and combination"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dis_doxr_dm",
+      "subject": [
+        "dis"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "58.09",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "read_from_figure": {
+          "figure": "f6/caption",
+          "method": "transcribed from the table of Fig 6B, which the work gives only as an image",
+          "resolution": "0.01"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_doxr"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "The table of Fig 6B gives this value as Dm. Fig 7B gives 58.1 ± 11.0 μM from the dose-response curve.",
+      "evidence": [
+        {
+          "block": "f6/caption",
+          "quote": "Diagnostic graphics produced for synergistic effect quantification of DOX/Dis/Hyd combination against MCF-7_DoxR cells"
+        },
+        {
+          "block": "f6/caption",
+          "quote": "(B) Table of IC50 of DOX, Dis, Hyd alone and combination"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "hyd_wt_r",
+      "subject": [
+        "hyd"
+      ],
+      "property": "median_effect_r",
+      "value": {
+        "number": "0.981",
+        "unit": "1",
+        "read_from_figure": {
+          "figure": "f3/caption",
+          "method": "transcribed from the table of Fig 3D, which the work gives only as an image",
+          "resolution": "0.001"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        }
+      ],
+      "method": {
+        "label": "Compusyn software"
+      },
+      "note": "The tables of Fig 3D and Fig 5B give the same value.",
+      "evidence": [
+        {
+          "block": "f3/caption",
+          "quote": "(D) Table of IC₅₀ of Dis, Hyd and Dis/Hyd combination"
+        },
+        {
+          "block": "s2.2/p2",
+          "quote": "The IC₅₀ of Hyd, Dis, and the combination was found to be 165.1, 0.73, and 20.03 μM, respectively (Fig 3D)"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "Diagnostic graphics produced for synergistic effect quantification of DOX/Dis/Hyd combination against MCF-7_WT cells"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "(B) Table of IC₅₀ of DOX, Dis, Hyd alone and combination"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "To determine the effect of using combinations of DOX, Dis, and Hyd on MCF-7_ DoxR and their control cells MCF-7_WT, the combination index was calculated using Compusyn software (Version 1.0, Compusyn, Inc., and Paramus, NJ, USA)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dis_wt_r",
+      "subject": [
+        "dis"
+      ],
+      "property": "median_effect_r",
+      "value": {
+        "number": "0.995",
+        "unit": "1",
+        "read_from_figure": {
+          "figure": "f3/caption",
+          "method": "transcribed from the table of Fig 3D, which the work gives only as an image",
+          "resolution": "0.001"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        }
+      ],
+      "method": {
+        "label": "Compusyn software"
+      },
+      "note": "The tables of Fig 3D and Fig 5B give the same value.",
+      "evidence": [
+        {
+          "block": "f3/caption",
+          "quote": "(D) Table of IC₅₀ of Dis, Hyd and Dis/Hyd combination"
+        },
+        {
+          "block": "s2.2/p2",
+          "quote": "The IC₅₀ of Hyd, Dis, and the combination was found to be 165.1, 0.73, and 20.03 μM, respectively (Fig 3D)"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "Diagnostic graphics produced for synergistic effect quantification of DOX/Dis/Hyd combination against MCF-7_WT cells"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "(B) Table of IC₅₀ of DOX, Dis, Hyd alone and combination"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "To determine the effect of using combinations of DOX, Dis, and Hyd on MCF-7_ DoxR and their control cells MCF-7_WT, the combination index was calculated using Compusyn software (Version 1.0, Compusyn, Inc., and Paramus, NJ, USA)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dis_hyd_wt_r",
+      "subject": [
+        "dis",
+        "hyd"
+      ],
+      "property": "median_effect_r",
+      "value": {
+        "number": "0.995",
+        "unit": "1",
+        "read_from_figure": {
+          "figure": "f3/caption",
+          "method": "transcribed from the table of Fig 3D, which the work gives only as an image",
+          "resolution": "0.001"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        }
+      ],
+      "method": {
+        "label": "Compusyn software"
+      },
+      "evidence": [
+        {
+          "block": "f3/caption",
+          "quote": "(D) Table of IC₅₀ of Dis, Hyd and Dis/Hyd combination"
+        },
+        {
+          "block": "s2.2/p2",
+          "quote": "The IC₅₀ of Hyd, Dis, and the combination was found to be 165.1, 0.73, and 20.03 μM, respectively (Fig 3D)"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "To determine the effect of using combinations of DOX, Dis, and Hyd on MCF-7_ DoxR and their control cells MCF-7_WT, the combination index was calculated using Compusyn software (Version 1.0, Compusyn, Inc., and Paramus, NJ, USA)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dox_wt_r",
+      "subject": [
+        "dox"
+      ],
+      "property": "median_effect_r",
+      "value": {
+        "number": "0.962",
+        "unit": "1",
+        "read_from_figure": {
+          "figure": "f5/caption",
+          "method": "transcribed from the table of Fig 5B, which the work gives only as an image",
+          "resolution": "0.001"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        }
+      ],
+      "method": {
+        "label": "Compusyn software"
+      },
+      "evidence": [
+        {
+          "block": "f5/caption",
+          "quote": "Diagnostic graphics produced for synergistic effect quantification of DOX/Dis/Hyd combination against MCF-7_WT cells"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "(B) Table of IC₅₀ of DOX, Dis, Hyd alone and combination"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "To determine the effect of using combinations of DOX, Dis, and Hyd on MCF-7_ DoxR and their control cells MCF-7_WT, the combination index was calculated using Compusyn software (Version 1.0, Compusyn, Inc., and Paramus, NJ, USA)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dox_with_dis_hyd_wt_r",
+      "subject": [
+        "dox"
+      ],
+      "property": "median_effect_r",
+      "value": {
+        "number": "0.989",
+        "unit": "1",
+        "read_from_figure": {
+          "figure": "f5/caption",
+          "method": "transcribed from the table of Fig 5B, which the work gives only as an image",
+          "resolution": "0.001"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        },
+        {
+          "role": "co_treatment",
+          "entity": "dis"
+        },
+        {
+          "role": "co_treatment",
+          "entity": "hyd"
+        }
+      ],
+      "method": {
+        "label": "Compusyn software"
+      },
+      "note": "DOX with Dis 0.03 μM and Hyd 20 μM.",
+      "evidence": [
+        {
+          "block": "f5/caption",
+          "quote": "Diagnostic graphics produced for synergistic effect quantification of DOX/Dis/Hyd combination against MCF-7_WT cells"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "(B) Table of IC₅₀ of DOX, Dis, Hyd alone and combination"
+        },
+        {
+          "block": "s2.4/p3",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells were treated with a combination of (Dis 0.03 μM and Hyd 20 μM) and different concentrations of doxorubicin, and the results of the three drugs are shown in Figs 5 and 6"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "To determine the effect of using combinations of DOX, Dis, and Hyd on MCF-7_ DoxR and their control cells MCF-7_WT, the combination index was calculated using Compusyn software (Version 1.0, Compusyn, Inc., and Paramus, NJ, USA)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dox_doxr_r",
+      "subject": [
+        "dox"
+      ],
+      "property": "median_effect_r",
+      "value": {
+        "number": "0.9529",
+        "unit": "1",
+        "read_from_figure": {
+          "figure": "f6/caption",
+          "method": "transcribed from the table of Fig 6B, which the work gives only as an image",
+          "resolution": "0.0001"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_doxr"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        }
+      ],
+      "method": {
+        "label": "Compusyn software"
+      },
+      "evidence": [
+        {
+          "block": "f6/caption",
+          "quote": "Diagnostic graphics produced for synergistic effect quantification of DOX/Dis/Hyd combination against MCF-7_DoxR cells"
+        },
+        {
+          "block": "f6/caption",
+          "quote": "(B) Table of IC50 of DOX, Dis, Hyd alone and combination"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "To determine the effect of using combinations of DOX, Dis, and Hyd on MCF-7_ DoxR and their control cells MCF-7_WT, the combination index was calculated using Compusyn software (Version 1.0, Compusyn, Inc., and Paramus, NJ, USA)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "hyd_doxr_r",
+      "subject": [
+        "hyd"
+      ],
+      "property": "median_effect_r",
+      "value": {
+        "number": "0.9243",
+        "unit": "1",
+        "read_from_figure": {
+          "figure": "f6/caption",
+          "method": "transcribed from the table of Fig 6B, which the work gives only as an image",
+          "resolution": "0.0001"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_doxr"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        }
+      ],
+      "method": {
+        "label": "Compusyn software"
+      },
+      "evidence": [
+        {
+          "block": "f6/caption",
+          "quote": "Diagnostic graphics produced for synergistic effect quantification of DOX/Dis/Hyd combination against MCF-7_DoxR cells"
+        },
+        {
+          "block": "f6/caption",
+          "quote": "(B) Table of IC50 of DOX, Dis, Hyd alone and combination"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "To determine the effect of using combinations of DOX, Dis, and Hyd on MCF-7_ DoxR and their control cells MCF-7_WT, the combination index was calculated using Compusyn software (Version 1.0, Compusyn, Inc., and Paramus, NJ, USA)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dis_doxr_r",
+      "subject": [
+        "dis"
+      ],
+      "property": "median_effect_r",
+      "value": {
+        "number": "0.9088",
+        "unit": "1",
+        "read_from_figure": {
+          "figure": "f6/caption",
+          "method": "transcribed from the table of Fig 6B, which the work gives only as an image",
+          "resolution": "0.0001"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_doxr"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        }
+      ],
+      "method": {
+        "label": "Compusyn software"
+      },
+      "evidence": [
+        {
+          "block": "f6/caption",
+          "quote": "Diagnostic graphics produced for synergistic effect quantification of DOX/Dis/Hyd combination against MCF-7_DoxR cells"
+        },
+        {
+          "block": "f6/caption",
+          "quote": "(B) Table of IC50 of DOX, Dis, Hyd alone and combination"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "To determine the effect of using combinations of DOX, Dis, and Hyd on MCF-7_ DoxR and their control cells MCF-7_WT, the combination index was calculated using Compusyn software (Version 1.0, Compusyn, Inc., and Paramus, NJ, USA)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dox_with_dis_hyd_doxr_r",
+      "subject": [
+        "dox"
+      ],
+      "property": "median_effect_r",
+      "value": {
+        "number": "0.997",
+        "unit": "1",
+        "read_from_figure": {
+          "figure": "f6/caption",
+          "method": "transcribed from the table of Fig 6B, which the work gives only as an image",
+          "resolution": "0.001"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_doxr"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        },
+        {
+          "role": "co_treatment",
+          "entity": "dis"
+        },
+        {
+          "role": "co_treatment",
+          "entity": "hyd"
+        }
+      ],
+      "method": {
+        "label": "Compusyn software"
+      },
+      "note": "DOX with Dis 0.03 μM and Hyd 20 μM.",
+      "evidence": [
+        {
+          "block": "f6/caption",
+          "quote": "Diagnostic graphics produced for synergistic effect quantification of DOX/Dis/Hyd combination against MCF-7_DoxR cells"
+        },
+        {
+          "block": "f6/caption",
+          "quote": "(B) Table of IC50 of DOX, Dis, Hyd alone and combination"
+        },
+        {
+          "block": "s2.4/p3",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells were treated with a combination of (Dis 0.03 μM and Hyd 20 μM) and different concentrations of doxorubicin, and the results of the three drugs are shown in Figs 5 and 6"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "To determine the effect of using combinations of DOX, Dis, and Hyd on MCF-7_ DoxR and their control cells MCF-7_WT, the combination index was calculated using Compusyn software (Version 1.0, Compusyn, Inc., and Paramus, NJ, USA)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "hyd_wt_fig7",
+      "subject": [
+        "hyd"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "165.2",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "statistic": "mean",
+        "uncertainty": {
+          "kind": "sd",
+          "number": "13.5"
+        },
+        "n": 3,
+        "read_from_figure": {
+          "figure": "f7/caption",
+          "method": "transcribed from the legend of Fig 7A, which the work gives only as an image",
+          "resolution": "0.1"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "Fig 7A gives this value with its dose-response curve. The text and the tables of Fig 3D and Fig 5B give 165.1 μM, as Dm.",
+      "evidence": [
+        {
+          "block": "f7/caption",
+          "quote": "(A) The dose-response curve for cells treated with Hyd"
+        },
+        {
+          "block": "f7/caption",
+          "quote": "All cytotoxicity values represent the average ± SD of three independent experiments"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "hyd_doxr_fig7",
+      "subject": [
+        "hyd"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "100",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "statistic": "mean",
+        "uncertainty": {
+          "kind": "sd",
+          "number": "10.08"
+        },
+        "n": 3,
+        "read_from_figure": {
+          "figure": "f7/caption",
+          "method": "transcribed from the legend of Fig 7A, which the work gives only as an image",
+          "resolution": "1"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_doxr"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "Fig 7A gives this value with its dose-response curve. The table of Fig 6B gives 100 μM, as Dm.",
+      "evidence": [
+        {
+          "block": "f7/caption",
+          "quote": "(A) The dose-response curve for cells treated with Hyd"
+        },
+        {
+          "block": "f7/caption",
+          "quote": "All cytotoxicity values represent the average ± SD of three independent experiments"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dis_wt_fig7",
+      "subject": [
+        "dis"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "0.71",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "statistic": "mean",
+        "uncertainty": {
+          "kind": "sd",
+          "number": "0.08"
+        },
+        "n": 3,
+        "read_from_figure": {
+          "figure": "f7/caption",
+          "method": "transcribed from the legend of Fig 7B, which the work gives only as an image",
+          "resolution": "0.01"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "Fig 7B gives this value with its dose-response curve. The text and the tables of Fig 3D and Fig 5B give 0.73 μM, as Dm.",
+      "evidence": [
+        {
+          "block": "f7/caption",
+          "quote": "(B) The dose-response curve for cells treated with Dis"
+        },
+        {
+          "block": "f7/caption",
+          "quote": "All cytotoxicity values represent the average ± SD of three independent experiments"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dis_doxr_fig7",
+      "subject": [
+        "dis"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "58.1",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "statistic": "mean",
+        "uncertainty": {
+          "kind": "sd",
+          "number": "11.0"
+        },
+        "n": 3,
+        "read_from_figure": {
+          "figure": "f7/caption",
+          "method": "transcribed from the legend of Fig 7B, which the work gives only as an image",
+          "resolution": "0.1"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_doxr"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "Fig 7B gives this value with its dose-response curve. The table of Fig 6B gives 58.09 μM, as Dm.",
+      "evidence": [
+        {
+          "block": "f7/caption",
+          "quote": "(B) The dose-response curve for cells treated with Dis"
+        },
+        {
+          "block": "f7/caption",
+          "quote": "All cytotoxicity values represent the average ± SD of three independent experiments"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dox_wt_fig7",
+      "subject": [
+        "dox"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "0.25",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "statistic": "mean",
+        "uncertainty": {
+          "kind": "sd",
+          "number": "0.03"
+        },
+        "n": 3,
+        "read_from_figure": {
+          "figure": "f7/caption",
+          "method": "transcribed from the legend of Fig 7C, which the work gives only as an image",
+          "resolution": "0.01"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "Fig 7C gives this value with its dose-response curve. The text and the table of Fig 5B give 0.24 μM, as Dm.",
+      "evidence": [
+        {
+          "block": "f7/caption",
+          "quote": "(C)The dose-response curve for cells treated with DOX"
+        },
+        {
+          "block": "f7/caption",
+          "quote": "All cytotoxicity values represent the average ± SD of three independent experiments"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dox_doxr_fig7",
+      "subject": [
+        "dox"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "1.13",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "statistic": "mean",
+        "uncertainty": {
+          "kind": "sd",
+          "number": "0.07"
+        },
+        "n": 3,
+        "read_from_figure": {
+          "figure": "f7/caption",
+          "method": "transcribed from the legend of Fig 7C, which the work gives only as an image",
+          "resolution": "0.01"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_doxr"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "Fig 7C gives this value with its dose-response curve. The text and the table of Fig 6B give 1.13 μM, as Dm.",
+      "evidence": [
+        {
+          "block": "f7/caption",
+          "quote": "(C)The dose-response curve for cells treated with DOX"
+        },
+        {
+          "block": "f7/caption",
+          "quote": "All cytotoxicity values represent the average ± SD of three independent experiments"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dox_with_dis_hyd_wt_fig7",
+      "subject": [
+        "dox"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "0.012",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "statistic": "mean",
+        "uncertainty": {
+          "kind": "sd",
+          "number": "0.001"
+        },
+        "n": 3,
+        "read_from_figure": {
+          "figure": "f7/caption",
+          "method": "transcribed from the legend of Fig 7D, which the work gives only as an image",
+          "resolution": "0.001"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        },
+        {
+          "role": "co_treatment",
+          "entity": "dis"
+        },
+        {
+          "role": "co_treatment",
+          "entity": "hyd"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "DOX with Dis 0.03 μM and Hyd 20 μM. Fig 7D gives this value with its dose-response curve. The text and the table of Fig 5B give 0.012 μM, as Dm.",
+      "evidence": [
+        {
+          "block": "f7/caption",
+          "quote": "(D) The dose-response curve for cells treated with DOX/Dis/Hyd in combination, the curve showing DOX IC₅₀ with and without combination with Dis/Hyd (0.03/20 μM)"
+        },
+        {
+          "block": "f7/caption",
+          "quote": "All cytotoxicity values represent the average ± SD of three independent experiments"
+        },
+        {
+          "block": "s2.4/p3",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells were treated with a combination of (Dis 0.03 μM and Hyd 20 μM) and different concentrations of doxorubicin, and the results of the three drugs are shown in Figs 5 and 6"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dox_with_dis_hyd_doxr_fig7",
+      "subject": [
+        "dox"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "0.44",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "statistic": "mean",
+        "uncertainty": {
+          "kind": "sd",
+          "number": "0.01"
+        },
+        "n": 3,
+        "read_from_figure": {
+          "figure": "f7/caption",
+          "method": "transcribed from the legend of Fig 7D, which the work gives only as an image",
+          "resolution": "0.01"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_doxr"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "9000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "0.001",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "560",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "Glomax plate reader"
+        },
+        {
+          "role": "co_treatment",
+          "entity": "dis"
+        },
+        {
+          "role": "co_treatment",
+          "entity": "hyd"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "DOX with Dis 0.03 μM and Hyd 20 μM. Fig 7D gives this value with its dose-response curve. The text and the table of Fig 6B give 0.44 μM, as Dm.",
+      "evidence": [
+        {
+          "block": "f7/caption",
+          "quote": "(D) The dose-response curve for cells treated with DOX/Dis/Hyd in combination, the curve showing DOX IC₅₀ with and without combination with Dis/Hyd (0.03/20 μM)"
+        },
+        {
+          "block": "f7/caption",
+          "quote": "All cytotoxicity values represent the average ± SD of three independent experiments"
+        },
+        {
+          "block": "s2.4/p3",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells were treated with a combination of (Dis 0.03 μM and Hyd 20 μM) and different concentrations of doxorubicin, and the results of the three drugs are shown in Figs 5 and 6"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "To determine the anti-proliferative effect of single and combinations of Doxorubicin, Disulfiram (Fisher Scientific Lab, USA), and Hydralazine (TCI, Japan) on both cell lines, IC₅₀ values were measured using MTT assay"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Firstly, MCF-7_WT and MCF-7_DoxR cells (9 × 10³ cells/well) were seeded into a 96-well plate (Corning, USA) and treated with different concentrations of DOX, Dis, and Hyd ranging from 0.001 to 100 μM"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "Then, cells were incubated at 37°C in a 5% CO₂ incubator for 72 h, after which the old media was aspirated, and 10 μl of MTT salt (Bioworld, USA) in 100 μl of fresh media was added to each well"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "After that, plates were incubated at 37°C for 3 h, followed by adding 50 μl of solubilization solution (DMSO)"
+        },
+        {
+          "block": "s1.2/p1",
+          "quote": "The absorbance of the solution was measured at 560 nm using a Glomax plate reader (Promega, USA)"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dis_hyd_ci_wt",
+      "subject": [
+        "dis",
+        "hyd"
+      ],
+      "property": "combination_index",
+      "value": {
+        "number": "1",
+        "unit": "1",
+        "bound": "lt"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "fraction_affected",
+          "value": {
+            "low": "0.4",
+            "high": "0.95",
+            "unit": "1"
+          }
+        }
+      ],
+      "method": {
+        "label": "Compusyn software"
+      },
+      "note": "The text writes the range of Fa as 0.4% to 0.95%, and the caption of Fig 3 writes 0.4–0.95. The caption states that most of the CI values in this range are below 1.",
+      "evidence": [
+        {
+          "block": "s2.2/p3",
+          "quote": "The combination of Dis and Hyd showed synergism with a combination index (CI) < 1 at Fa ranging from 0.4% to 0.95% (Fig 3C)"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "(C) The fraction affected (Fa) versus combination index (CI) plot after treatment with Dis/Hyd combination, that most of CI values are <1 in the range 0.4–0.95"
+        },
+        {
+          "block": "s2.2/p3",
+          "quote": "Also, it was observed from the isobologram (Fig 3A), and drug-reducing index curve (Fig 3B) of the non-constant combination experiment of the two drugs that there is a synergism between them"
+        },
+        {
+          "block": "s2.2/p2",
+          "quote": "The effect of Dis/Hyd combination was investigated to confirm their anti-cancer activity and synergism toward wild-type MCF-7 breast cancer"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "To determine the effect of using combinations of DOX, Dis, and Hyd on MCF-7_ DoxR and their control cells MCF-7_WT, the combination index was calculated using Compusyn software (Version 1.0, Compusyn, Inc., and Paramus, NJ, USA)"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "Briefly, an isobologram analysis was performed using the Compusyn software program"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "Cells were treated with different combinations of DOX, Dis, and Hyd either individually or in combinations of a 0.03:20.00:0.25 molar ratio, respectively, for 72 h followed by MTT assay analysis to determine the cell viability and combination index (CI)"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "A CI of <1.0 indicates synergism, a CI of 1 indicates additive activity, and a CI > 1.0 indicates antagonism"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dox_dis_hyd_ci_wt",
+      "subject": [
+        "dox",
+        "dis",
+        "hyd"
+      ],
+      "property": "combination_index",
+      "value": {
+        "number": "1",
+        "unit": "1",
+        "bound": "lt"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "fraction_affected",
+          "value": {
+            "low": "0.5",
+            "high": "0.95",
+            "unit": "1"
+          }
+        }
+      ],
+      "method": {
+        "label": "Compusyn software"
+      },
+      "note": "DOX with Dis 0.03 μM and Hyd 20 μM. The methods give the molar ratio of DOX, Dis, and Hyd as 0.03:20.00:0.25, respectively. The caption of Fig 5 states that most of the CI values in this range of Fa are below 1.",
+      "evidence": [
+        {
+          "block": "f5/caption",
+          "quote": "(C) The fraction affected (Fa) versus combination index (CI) plot after treatment with DOX/Dis/Hyd combination, that most of CI values are <1 for the range of 0.5–0.95"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "Diagnostic graphics produced for synergistic effect quantification of DOX/Dis/Hyd combination against MCF-7_WT cells"
+        },
+        {
+          "block": "s2.4/p3",
+          "quote": "The results showed good synergism between the three drugs (CI<1)"
+        },
+        {
+          "block": "s2.4/p3",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells were treated with a combination of (Dis 0.03 μM and Hyd 20 μM) and different concentrations of doxorubicin, and the results of the three drugs are shown in Figs 5 and 6"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "To determine the effect of using combinations of DOX, Dis, and Hyd on MCF-7_ DoxR and their control cells MCF-7_WT, the combination index was calculated using Compusyn software (Version 1.0, Compusyn, Inc., and Paramus, NJ, USA)"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "Briefly, an isobologram analysis was performed using the Compusyn software program"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "Cells were treated with different combinations of DOX, Dis, and Hyd either individually or in combinations of a 0.03:20.00:0.25 molar ratio, respectively, for 72 h followed by MTT assay analysis to determine the cell viability and combination index (CI)"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "A CI of <1.0 indicates synergism, a CI of 1 indicates additive activity, and a CI > 1.0 indicates antagonism"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dox_dis_hyd_ci_doxr",
+      "subject": [
+        "dox",
+        "dis",
+        "hyd"
+      ],
+      "property": "combination_index",
+      "value": {
+        "number": "1",
+        "unit": "1",
+        "bound": "lt"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_doxr"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "fraction_affected",
+          "value": {
+            "low": "0.25",
+            "high": "0.8",
+            "unit": "1"
+          }
+        }
+      ],
+      "method": {
+        "label": "Compusyn software"
+      },
+      "note": "DOX with Dis 0.03 μM and Hyd 20 μM. The methods give the molar ratio of DOX, Dis, and Hyd as 0.03:20.00:0.25, respectively. The caption of Fig 6 states that most of the CI values in this range of Fa are below 1.",
+      "evidence": [
+        {
+          "block": "f6/caption",
+          "quote": "(C) The fraction affected (Fa) versus combination index (CI) plot after treatment with DOX/Dis/Hyd combination, that most of CI values are < 1 for the range of 0.25–0.8"
+        },
+        {
+          "block": "f6/caption",
+          "quote": "Diagnostic graphics produced for synergistic effect quantification of DOX/Dis/Hyd combination against MCF-7_DoxR cells"
+        },
+        {
+          "block": "s2.4/p3",
+          "quote": "The results showed good synergism between the three drugs (CI<1)"
+        },
+        {
+          "block": "s2.4/p3",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells were treated with a combination of (Dis 0.03 μM and Hyd 20 μM) and different concentrations of doxorubicin, and the results of the three drugs are shown in Figs 5 and 6"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "To determine the effect of using combinations of DOX, Dis, and Hyd on MCF-7_ DoxR and their control cells MCF-7_WT, the combination index was calculated using Compusyn software (Version 1.0, Compusyn, Inc., and Paramus, NJ, USA)"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "Briefly, an isobologram analysis was performed using the Compusyn software program"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "Cells were treated with different combinations of DOX, Dis, and Hyd either individually or in combinations of a 0.03:20.00:0.25 molar ratio, respectively, for 72 h followed by MTT assay analysis to determine the cell viability and combination index (CI)"
+        },
+        {
+          "block": "s1.3/p1",
+          "quote": "A CI of <1.0 indicates synergism, a CI of 1 indicates additive activity, and a CI > 1.0 indicates antagonism"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "apoptosis_dis_hyd_doxr",
+      "subject": [
+        "dis",
+        "hyd"
+      ],
+      "property": "apoptotic_cells",
+      "value": {
+        "number": "70.3",
+        "unit": "%",
+        "unit_text": "%"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_doxr"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "100000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "24",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACS CANTO II"
+        }
+      ],
+      "method": {
+        "label": "Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+      },
+      "note": "The methods give these doses for the apoptosis assay: Dis 0.5 μM, Hyd 50 μM.",
+      "evidence": [
+        {
+          "block": "s2.3/p1",
+          "quote": "There was a statistically significant difference between the apoptotic cell percentage of Dis/Hyd combination in MCF-7_DoxR cells (70.3% vs 32.4%) with p values < 0.001, (Fig 4)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "To investigate the growth inhibition of all cell lines treated with disulfiram, hydralazine, and doxorubicin, the mechanism of cell death was determined by Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells (1 × 10⁵ cells/well) were seeded into 12-well plates and exposed to 0.5 μM DOX, 0.5 μM Dis, and 50 μM Hyd"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After 24 h, the cells were trypsinized using StemPro™ Accutase™ Cell Dissociation Reagent (Gibco™, UK)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After that, an Annexin V/PI apoptosis kit (R&D systems, USA) was used to stain the cell pellets following the kit’s instructions"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "10,000 events were counted by BD FACS CANTO II and analyzed using BD FACS Diva™ software version 7.0"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "apoptosis_dox_dis_hyd_wt",
+      "subject": [
+        "dox",
+        "dis",
+        "hyd"
+      ],
+      "property": "apoptotic_cells",
+      "value": {
+        "number": "79.5",
+        "unit": "%",
+        "unit_text": "%"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "100000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "24",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACS CANTO II"
+        }
+      ],
+      "method": {
+        "label": "Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+      },
+      "note": "The methods give these doses for the apoptosis assay: DOX 0.5 μM, Dis 0.5 μM, Hyd 50 μM.",
+      "evidence": [
+        {
+          "block": "s2.5/p1",
+          "quote": "The triplet combination DOX/Hyd/Dis induced statistically significant apoptosis in both wild type and resistance compared to DOX alone, 79.5% compared to 63.05% in the wild type and 71.6% compared to 61.35% in the resistant cells, p-value = 0.002 and 0.03, respectively (Fig 8)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "To investigate the growth inhibition of all cell lines treated with disulfiram, hydralazine, and doxorubicin, the mechanism of cell death was determined by Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells (1 × 10⁵ cells/well) were seeded into 12-well plates and exposed to 0.5 μM DOX, 0.5 μM Dis, and 50 μM Hyd"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After 24 h, the cells were trypsinized using StemPro™ Accutase™ Cell Dissociation Reagent (Gibco™, UK)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After that, an Annexin V/PI apoptosis kit (R&D systems, USA) was used to stain the cell pellets following the kit’s instructions"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "10,000 events were counted by BD FACS CANTO II and analyzed using BD FACS Diva™ software version 7.0"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "apoptosis_dox_wt",
+      "subject": [
+        "dox"
+      ],
+      "property": "apoptotic_cells",
+      "value": {
+        "number": "63.05",
+        "unit": "%",
+        "unit_text": "%"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_wt"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "100000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "24",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACS CANTO II"
+        }
+      ],
+      "method": {
+        "label": "Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+      },
+      "note": "The methods give these doses for the apoptosis assay: DOX 0.5 μM.",
+      "evidence": [
+        {
+          "block": "s2.5/p1",
+          "quote": "The triplet combination DOX/Hyd/Dis induced statistically significant apoptosis in both wild type and resistance compared to DOX alone, 79.5% compared to 63.05% in the wild type and 71.6% compared to 61.35% in the resistant cells, p-value = 0.002 and 0.03, respectively (Fig 8)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "To investigate the growth inhibition of all cell lines treated with disulfiram, hydralazine, and doxorubicin, the mechanism of cell death was determined by Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells (1 × 10⁵ cells/well) were seeded into 12-well plates and exposed to 0.5 μM DOX, 0.5 μM Dis, and 50 μM Hyd"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After 24 h, the cells were trypsinized using StemPro™ Accutase™ Cell Dissociation Reagent (Gibco™, UK)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After that, an Annexin V/PI apoptosis kit (R&D systems, USA) was used to stain the cell pellets following the kit’s instructions"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "10,000 events were counted by BD FACS CANTO II and analyzed using BD FACS Diva™ software version 7.0"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "apoptosis_dox_dis_hyd_doxr",
+      "subject": [
+        "dox",
+        "dis",
+        "hyd"
+      ],
+      "property": "apoptotic_cells",
+      "value": {
+        "number": "71.6",
+        "unit": "%",
+        "unit_text": "%"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_doxr"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "100000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "24",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACS CANTO II"
+        }
+      ],
+      "method": {
+        "label": "Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+      },
+      "note": "The methods give these doses for the apoptosis assay: DOX 0.5 μM, Dis 0.5 μM, Hyd 50 μM.",
+      "evidence": [
+        {
+          "block": "s2.5/p1",
+          "quote": "The triplet combination DOX/Hyd/Dis induced statistically significant apoptosis in both wild type and resistance compared to DOX alone, 79.5% compared to 63.05% in the wild type and 71.6% compared to 61.35% in the resistant cells, p-value = 0.002 and 0.03, respectively (Fig 8)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "To investigate the growth inhibition of all cell lines treated with disulfiram, hydralazine, and doxorubicin, the mechanism of cell death was determined by Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells (1 × 10⁵ cells/well) were seeded into 12-well plates and exposed to 0.5 μM DOX, 0.5 μM Dis, and 50 μM Hyd"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After 24 h, the cells were trypsinized using StemPro™ Accutase™ Cell Dissociation Reagent (Gibco™, UK)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After that, an Annexin V/PI apoptosis kit (R&D systems, USA) was used to stain the cell pellets following the kit’s instructions"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "10,000 events were counted by BD FACS CANTO II and analyzed using BD FACS Diva™ software version 7.0"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "apoptosis_dox_doxr",
+      "subject": [
+        "dox"
+      ],
+      "property": "apoptotic_cells",
+      "value": {
+        "number": "61.35",
+        "unit": "%",
+        "unit_text": "%"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7_doxr"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "100000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "24",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACS CANTO II"
+        }
+      ],
+      "method": {
+        "label": "Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+      },
+      "note": "The methods give these doses for the apoptosis assay: DOX 0.5 μM.",
+      "evidence": [
+        {
+          "block": "s2.5/p1",
+          "quote": "The triplet combination DOX/Hyd/Dis induced statistically significant apoptosis in both wild type and resistance compared to DOX alone, 79.5% compared to 63.05% in the wild type and 71.6% compared to 61.35% in the resistant cells, p-value = 0.002 and 0.03, respectively (Fig 8)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "To investigate the growth inhibition of all cell lines treated with disulfiram, hydralazine, and doxorubicin, the mechanism of cell death was determined by Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells (1 × 10⁵ cells/well) were seeded into 12-well plates and exposed to 0.5 μM DOX, 0.5 μM Dis, and 50 μM Hyd"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After 24 h, the cells were trypsinized using StemPro™ Accutase™ Cell Dissociation Reagent (Gibco™, UK)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After that, an Annexin V/PI apoptosis kit (R&D systems, USA) was used to stain the cell pellets following the kit’s instructions"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "10,000 events were counted by BD FACS CANTO II and analyzed using BD FACS Diva™ software version 7.0"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "dox_dis_hyd_vs_dox_apoptosis_wt",
+      "agents": [
+        {
+          "entity": "dox",
+          "dose": {
+            "number": "0.5",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "entity": "dis",
+          "dose": {
+            "number": "0.5",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "entity": "hyd",
+          "dose": {
+            "number": "50",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mcf7_wt",
+        "property": "apoptotic_cells"
+      },
+      "direction": "increase",
+      "comparator": "DOX alone",
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "100000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "24",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACS CANTO II"
+        }
+      ],
+      "method": {
+        "label": "Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+      },
+      "significance": {
+        "comparison": "eq",
+        "p": "0.002",
+        "statement": "significant"
+      },
+      "evidence": [
+        {
+          "block": "s2.5/p1",
+          "quote": "The triplet combination DOX/Hyd/Dis induced statistically significant apoptosis in both wild type and resistance compared to DOX alone, 79.5% compared to 63.05% in the wild type and 71.6% compared to 61.35% in the resistant cells, p-value = 0.002 and 0.03, respectively (Fig 8)"
+        },
+        {
+          "block": "abstract/p1",
+          "quote": "Moreover, The triple combination DOX/Hyd/Dis induced significant apoptosis in both MCF-7_WT and MCF-7_DoxR cells compared to DOX alone"
+        },
+        {
+          "block": "s1.6/p1",
+          "quote": "One-way ANOVA tests were used to analyze data, and the significant difference was considered when the p-value < 0.05"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "To investigate the growth inhibition of all cell lines treated with disulfiram, hydralazine, and doxorubicin, the mechanism of cell death was determined by Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells (1 × 10⁵ cells/well) were seeded into 12-well plates and exposed to 0.5 μM DOX, 0.5 μM Dis, and 50 μM Hyd"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After 24 h, the cells were trypsinized using StemPro™ Accutase™ Cell Dissociation Reagent (Gibco™, UK)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After that, an Annexin V/PI apoptosis kit (R&D systems, USA) was used to stain the cell pellets following the kit’s instructions"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "10,000 events were counted by BD FACS CANTO II and analyzed using BD FACS Diva™ software version 7.0"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "dox_dis_hyd_vs_dox_apoptosis_doxr",
+      "agents": [
+        {
+          "entity": "dox",
+          "dose": {
+            "number": "0.5",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "entity": "dis",
+          "dose": {
+            "number": "0.5",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "entity": "hyd",
+          "dose": {
+            "number": "50",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mcf7_doxr",
+        "property": "apoptotic_cells"
+      },
+      "direction": "increase",
+      "comparator": "DOX alone",
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "100000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "24",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACS CANTO II"
+        }
+      ],
+      "method": {
+        "label": "Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+      },
+      "significance": {
+        "comparison": "eq",
+        "p": "0.03",
+        "statement": "significant"
+      },
+      "evidence": [
+        {
+          "block": "s2.5/p1",
+          "quote": "The triplet combination DOX/Hyd/Dis induced statistically significant apoptosis in both wild type and resistance compared to DOX alone, 79.5% compared to 63.05% in the wild type and 71.6% compared to 61.35% in the resistant cells, p-value = 0.002 and 0.03, respectively (Fig 8)"
+        },
+        {
+          "block": "abstract/p1",
+          "quote": "Moreover, The triple combination DOX/Hyd/Dis induced significant apoptosis in both MCF-7_WT and MCF-7_DoxR cells compared to DOX alone"
+        },
+        {
+          "block": "s1.6/p1",
+          "quote": "One-way ANOVA tests were used to analyze data, and the significant difference was considered when the p-value < 0.05"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "To investigate the growth inhibition of all cell lines treated with disulfiram, hydralazine, and doxorubicin, the mechanism of cell death was determined by Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells (1 × 10⁵ cells/well) were seeded into 12-well plates and exposed to 0.5 μM DOX, 0.5 μM Dis, and 50 μM Hyd"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After 24 h, the cells were trypsinized using StemPro™ Accutase™ Cell Dissociation Reagent (Gibco™, UK)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After that, an Annexin V/PI apoptosis kit (R&D systems, USA) was used to stain the cell pellets following the kit’s instructions"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "10,000 events were counted by BD FACS CANTO II and analyzed using BD FACS Diva™ software version 7.0"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "dis_hyd_vs_single_apoptosis_doxr",
+      "agents": [
+        {
+          "entity": "dis",
+          "dose": {
+            "number": "0.5",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "entity": "hyd",
+          "dose": {
+            "number": "50",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mcf7_doxr",
+        "property": "apoptotic_cells"
+      },
+      "direction": "increase",
+      "comparator": "either Hyd or Dis",
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "100000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "24",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACS CANTO II"
+        }
+      ],
+      "method": {
+        "label": "Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+      },
+      "evidence": [
+        {
+          "block": "s2.3/p1",
+          "quote": "Combining the two drugs enhanced apoptosis compared to either Hyd or Dis on MCF-7_DoxR cells but not on MCF-7_WT cells (Fig 4)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "To investigate the growth inhibition of all cell lines treated with disulfiram, hydralazine, and doxorubicin, the mechanism of cell death was determined by Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells (1 × 10⁵ cells/well) were seeded into 12-well plates and exposed to 0.5 μM DOX, 0.5 μM Dis, and 50 μM Hyd"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After 24 h, the cells were trypsinized using StemPro™ Accutase™ Cell Dissociation Reagent (Gibco™, UK)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After that, an Annexin V/PI apoptosis kit (R&D systems, USA) was used to stain the cell pellets following the kit’s instructions"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "10,000 events were counted by BD FACS CANTO II and analyzed using BD FACS Diva™ software version 7.0"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "dis_hyd_vs_single_apoptosis_wt",
+      "agents": [
+        {
+          "entity": "dis",
+          "dose": {
+            "number": "0.5",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "entity": "hyd",
+          "dose": {
+            "number": "50",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mcf7_wt",
+        "property": "apoptotic_cells"
+      },
+      "direction": "no_change",
+      "comparator": "either Hyd or Dis",
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "100000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "24",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACS CANTO II"
+        }
+      ],
+      "method": {
+        "label": "Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+      },
+      "note": "The source states that the combination does not enhance apoptosis in MCF-7_WT cells, compared to either Hyd or Dis.",
+      "evidence": [
+        {
+          "block": "s2.3/p1",
+          "quote": "Combining the two drugs enhanced apoptosis compared to either Hyd or Dis on MCF-7_DoxR cells but not on MCF-7_WT cells (Fig 4)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "To investigate the growth inhibition of all cell lines treated with disulfiram, hydralazine, and doxorubicin, the mechanism of cell death was determined by Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells (1 × 10⁵ cells/well) were seeded into 12-well plates and exposed to 0.5 μM DOX, 0.5 μM Dis, and 50 μM Hyd"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After 24 h, the cells were trypsinized using StemPro™ Accutase™ Cell Dissociation Reagent (Gibco™, UK)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After that, an Annexin V/PI apoptosis kit (R&D systems, USA) was used to stain the cell pellets following the kit’s instructions"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "10,000 events were counted by BD FACS CANTO II and analyzed using BD FACS Diva™ software version 7.0"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "dis_hyd_apoptosis_difference_doxr",
+      "agents": [
+        {
+          "entity": "dis",
+          "dose": {
+            "number": "0.5",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "entity": "hyd",
+          "dose": {
+            "number": "50",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mcf7_doxr",
+        "property": "apoptotic_cells"
+      },
+      "direction": "increase",
+      "comparator": "32.4%",
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "100000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "24",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACS CANTO II"
+        }
+      ],
+      "method": {
+        "label": "Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+      },
+      "significance": {
+        "comparison": "lt",
+        "p": "0.001",
+        "statement": "significant"
+      },
+      "note": "The source compares 70.3% with 32.4% and does not state the group that has 32.4%.",
+      "evidence": [
+        {
+          "block": "s2.3/p1",
+          "quote": "There was a statistically significant difference between the apoptotic cell percentage of Dis/Hyd combination in MCF-7_DoxR cells (70.3% vs 32.4%) with p values < 0.001, (Fig 4)"
+        },
+        {
+          "block": "s1.6/p1",
+          "quote": "One-way ANOVA tests were used to analyze data, and the significant difference was considered when the p-value < 0.05"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "To investigate the growth inhibition of all cell lines treated with disulfiram, hydralazine, and doxorubicin, the mechanism of cell death was determined by Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells (1 × 10⁵ cells/well) were seeded into 12-well plates and exposed to 0.5 μM DOX, 0.5 μM Dis, and 50 μM Hyd"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After 24 h, the cells were trypsinized using StemPro™ Accutase™ Cell Dissociation Reagent (Gibco™, UK)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After that, an Annexin V/PI apoptosis kit (R&D systems, USA) was used to stain the cell pellets following the kit’s instructions"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "10,000 events were counted by BD FACS CANTO II and analyzed using BD FACS Diva™ software version 7.0"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "hyd_vs_dis_apoptosis_wt",
+      "agents": [
+        {
+          "entity": "hyd",
+          "dose": {
+            "number": "50",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mcf7_wt",
+        "property": "apoptotic_cells"
+      },
+      "direction": "increase",
+      "comparator": "that of Dis",
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "100000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "24",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACS CANTO II"
+        }
+      ],
+      "method": {
+        "label": "Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+      },
+      "evidence": [
+        {
+          "block": "s2.3/p1",
+          "quote": "The effect of Hyd on apoptosis was higher than that of Dis, in both MCF-7_WT and MCF-7_DoxR cells"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "To investigate the growth inhibition of all cell lines treated with disulfiram, hydralazine, and doxorubicin, the mechanism of cell death was determined by Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells (1 × 10⁵ cells/well) were seeded into 12-well plates and exposed to 0.5 μM DOX, 0.5 μM Dis, and 50 μM Hyd"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After 24 h, the cells were trypsinized using StemPro™ Accutase™ Cell Dissociation Reagent (Gibco™, UK)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After that, an Annexin V/PI apoptosis kit (R&D systems, USA) was used to stain the cell pellets following the kit’s instructions"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "10,000 events were counted by BD FACS CANTO II and analyzed using BD FACS Diva™ software version 7.0"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "hyd_vs_dis_apoptosis_doxr",
+      "agents": [
+        {
+          "entity": "hyd",
+          "dose": {
+            "number": "50",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mcf7_doxr",
+        "property": "apoptotic_cells"
+      },
+      "direction": "increase",
+      "comparator": "that of Dis",
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "100000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells/well"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "24",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACS CANTO II"
+        }
+      ],
+      "method": {
+        "label": "Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+      },
+      "evidence": [
+        {
+          "block": "s2.3/p1",
+          "quote": "The effect of Hyd on apoptosis was higher than that of Dis, in both MCF-7_WT and MCF-7_DoxR cells"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "To investigate the growth inhibition of all cell lines treated with disulfiram, hydralazine, and doxorubicin, the mechanism of cell death was determined by Annexin V/ Propidium iodide (PI) stain using flow cytometry"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "MCF-7_WT and MCF-7_DoxR cells (1 × 10⁵ cells/well) were seeded into 12-well plates and exposed to 0.5 μM DOX, 0.5 μM Dis, and 50 μM Hyd"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After 24 h, the cells were trypsinized using StemPro™ Accutase™ Cell Dissociation Reagent (Gibco™, UK)"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "After that, an Annexin V/PI apoptosis kit (R&D systems, USA) was used to stain the cell pellets following the kit’s instructions"
+        },
+        {
+          "block": "s1.5/p1",
+          "quote": "10,000 events were counted by BD FACS CANTO II and analyzed using BD FACS Diva™ software version 7.0"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were cultured as an attached monolayer and maintained in RPMI 1640 medium (EuroClone, Italy) supplemented with10% (v/v) heat-inactivated fetal bovine serum (FBS) (EuroClone, Italy), 1% penicillin-streptomycin (EuroClone, Italy), and 2 mM L-glutamine"
+        },
+        {
+          "block": "s1.1.1/p1",
+          "quote": "Cells were incubated at 37°C in a 5% CO₂ tissue culture incubator (Memmert, Schwabach, Germany)"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "block": "abstract/p1",
+      "quote": "The results showed a reduction in the IC₅₀ values of DOX in MCF-7_WT cells (from 0.24 μM to 0.012 μM) and MCF-7_DoxR cells (from 1.13 μM to 0.44 μM) when treated with Dis (0.03μM), and Hyd (20μM) combination",
+      "reason": "restated"
+    },
+    {
+      "block": "s1/p3",
+      "quote": "has been used for alcohol abuse for more than 60 years [28]",
+      "reason": "cited"
+    },
+    {
+      "block": "s2.4/p4",
+      "quote": "The three combined drugs were investigated on (180 nM) MCF-7_DoxR cell line",
+      "reason": "other",
+      "note": "The source gives this concentration with the name of the resistant cell line and does not state what it is."
+    }
+  ]
+}

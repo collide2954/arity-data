@@ -1,0 +1,2342 @@
+{
+  "format": "arity-submission/1",
+  "work": "PMC12630849",
+  "text": "998925bbb4ef2eb2c9e59d7eba5d29d2d118039744fa5a72e4a6272359e289aa",
+  "reader": {
+    "kind": "software",
+    "name": "Claude (Anthropic)",
+    "version": "claude-opus-5-5"
+  },
+  "responsible": {
+    "name": "Brett Gilio"
+  },
+  "note": "This run moves run 12 to the text of arity-jats 0.2.0. Its reports are the reports of run 12, with the words of the new text in their quotes. It leaves out 10 skipped quotes that have no number in the new text, for example the subscripts of chemical formulas. The note of run 12: A complete reading of the values in the text: the XRD, FTIR, Raman, TGA, and EDX results of the graphene oxide, the cell death at the IC50 dose, and the dye degradation, with their conditions. Table 1 cites other works. The staining assays give their results only in figures, which this reading does not read.",
+  "replaces": 12,
+  "entities": [
+    {
+      "id": "go",
+      "kind": "material",
+      "label": "graphene oxide (GO)",
+      "note": "Made by a modified Hummers method.",
+      "mentions": [
+        {
+          "block": "s3.1/p1",
+          "quote": "synthesized graphene oxide"
+        }
+      ]
+    },
+    {
+      "id": "mcf7",
+      "kind": "cell_line",
+      "label": "MCF-7",
+      "xrefs": [
+        "CELLOSAURUS:CVCL_0031"
+      ],
+      "mentions": [
+        {
+          "block": "s3.2/p1",
+          "quote": "MCF-7 breast cancer cells",
+          "occurrence": 1
+        }
+      ]
+    },
+    {
+      "id": "rhb",
+      "kind": "chemical",
+      "label": "rhodamine B (Rh-B)",
+      "mentions": [
+        {
+          "block": "abstract/p1",
+          "quote": "Rhodamine-B dye"
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "id": "ir_band"
+    },
+    {
+      "id": "xray_wavelength"
+    },
+    {
+      "id": "exposure_time"
+    },
+    {
+      "id": "culture_temperature"
+    },
+    {
+      "id": "co2_fraction"
+    },
+    {
+      "id": "seeding_density"
+    },
+    {
+      "id": "absorbance_wavelength"
+    },
+    {
+      "id": "d_spacing",
+      "label": "interlayer spacing",
+      "value_type": "quantity",
+      "unit": "Ao",
+      "description": "The distance between the layers of a layered crystal, from X-ray diffraction."
+    },
+    {
+      "id": "xrd_peak_position",
+      "label": "XRD peak position (2θ)",
+      "value_type": "quantity",
+      "unit": "deg",
+      "description": "The diffraction angle 2θ of a peak in an X-ray diffraction pattern."
+    },
+    {
+      "id": "raman_band",
+      "label": "Raman band",
+      "value_type": "quantity",
+      "unit": "cm-1",
+      "description": "The Raman shift of a band in a Raman spectrum."
+    },
+    {
+      "id": "excitation_wavelength",
+      "label": "excitation wavelength",
+      "value_type": "quantity",
+      "unit": "nm",
+      "description": "The wavelength of the laser that excites a Raman or fluorescence spectrum."
+    },
+    {
+      "id": "mass_loss",
+      "label": "mass loss",
+      "value_type": "quantity",
+      "unit": "%",
+      "description": "The part of the mass of a sample that a thermogravimetric analysis finds lost in a range of temperature."
+    },
+    {
+      "id": "temperature",
+      "label": "temperature",
+      "value_type": "quantity",
+      "unit": "Cel",
+      "description": "A temperature at which, or above or below which, a measurement applies."
+    },
+    {
+      "id": "dtga_peak_temperature",
+      "label": "DTGA peak temperature",
+      "value_type": "quantity",
+      "unit": "Cel",
+      "description": "The temperature of a peak of the derivative of a thermogravimetric curve."
+    },
+    {
+      "id": "heating_rate",
+      "label": "heating rate",
+      "value_type": "quantity",
+      "unit": "K/min",
+      "description": "The rate at which a thermal analysis heats a sample."
+    },
+    {
+      "id": "sample_mass",
+      "label": "sample mass",
+      "value_type": "quantity",
+      "unit": "mg",
+      "description": "The mass of the sample that a measurement uses."
+    },
+    {
+      "id": "gas_flow_rate",
+      "label": "gas flow rate",
+      "value_type": "quantity",
+      "unit": "mL/min",
+      "description": "The rate of flow of the gas during a thermal analysis."
+    },
+    {
+      "id": "carbon_atomic_fraction",
+      "label": "carbon atomic fraction",
+      "value_type": "quantity",
+      "unit": "%",
+      "description": "The atomic percentage of carbon in a material, as EDX finds it."
+    },
+    {
+      "id": "oxygen_atomic_fraction",
+      "label": "oxygen atomic fraction",
+      "value_type": "quantity",
+      "unit": "%",
+      "description": "The atomic percentage of oxygen in a material, as EDX finds it."
+    },
+    {
+      "id": "cell_death",
+      "label": "cell death",
+      "value_type": "quantity",
+      "unit": "%",
+      "description": "The percentage of the cells that die in a treatment."
+    },
+    {
+      "id": "treatment_concentration",
+      "label": "treatment concentration",
+      "value_type": "quantity",
+      "unit": "ug/mL",
+      "description": "The concentration of an agent in a treatment."
+    },
+    {
+      "id": "inhibition_onset_concentration",
+      "label": "concentration at the onset of inhibition",
+      "value_type": "quantity",
+      "unit": "ug/mL",
+      "description": "The lowest concentration at which the source states that inhibition starts."
+    },
+    {
+      "id": "dye_degradation",
+      "label": "dye degradation",
+      "value_type": "quantity",
+      "unit": "%",
+      "description": "The part of a dye that a photocatalytic treatment breaks down."
+    },
+    {
+      "id": "irradiation_time",
+      "label": "irradiation time",
+      "value_type": "quantity",
+      "unit": "min",
+      "description": "The time for which light irradiates a sample."
+    },
+    {
+      "id": "catalyst_mass",
+      "label": "catalyst mass",
+      "value_type": "quantity",
+      "unit": "mg",
+      "description": "The mass of the catalyst in a reaction."
+    },
+    {
+      "id": "solution_volume",
+      "label": "solution volume",
+      "value_type": "quantity",
+      "unit": "mL",
+      "description": "The volume of a solution that an experiment uses."
+    },
+    {
+      "id": "dye_concentration",
+      "label": "dye concentration",
+      "value_type": "quantity",
+      "unit": "mol/L",
+      "description": "The concentration of a dye in a solution."
+    }
+  ],
+  "reports": [
+    {
+      "type": "value",
+      "id": "go_d_spacing",
+      "subject": [
+        "go"
+      ],
+      "property": "d_spacing",
+      "value": {
+        "number": "10.23",
+        "unit": "Ao",
+        "unit_text": "Å"
+      },
+      "conditions": [
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "1.54178",
+            "unit": "Ao",
+            "unit_text": "Å"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "evidence": [
+        {
+          "block": "abstract/p1",
+          "quote": "XRD (d-spacing of 10.23 Å)"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "X-ray diffraction (XRD) using (X-pert PRO diffractometer - Shimadzu, 8201PC) was employed to study the phase purity, structural analysis, and crystallinity of the GO with Cu K_{α} radiation (λ = 1.54178 Å)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_xrd_10_3",
+      "subject": [
+        "go"
+      ],
+      "property": "xrd_peak_position",
+      "value": {
+        "number": "10.3",
+        "unit": "deg",
+        "unit_text": "°"
+      },
+      "conditions": [
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "1.54178",
+            "unit": "Ao",
+            "unit_text": "Å"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "evidence": [
+        {
+          "block": "s3.1/p1",
+          "quote": "The XRD peaks were observed at 10.3° and 42.5° for the synthesized GO"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "X-ray diffraction (XRD) using (X-pert PRO diffractometer - Shimadzu, 8201PC) was employed to study the phase purity, structural analysis, and crystallinity of the GO with Cu K_{α} radiation (λ = 1.54178 Å)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_xrd_42_5",
+      "subject": [
+        "go"
+      ],
+      "property": "xrd_peak_position",
+      "value": {
+        "number": "42.5",
+        "unit": "deg",
+        "unit_text": "°"
+      },
+      "conditions": [
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "1.54178",
+            "unit": "Ao",
+            "unit_text": "Å"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "evidence": [
+        {
+          "block": "s3.1/p1",
+          "quote": "The XRD peaks were observed at 10.3° and 42.5° for the synthesized GO"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "X-ray diffraction (XRD) using (X-pert PRO diffractometer - Shimadzu, 8201PC) was employed to study the phase purity, structural analysis, and crystallinity of the GO with Cu K_{α} radiation (λ = 1.54178 Å)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_xrd_21_4",
+      "subject": [
+        "go"
+      ],
+      "property": "xrd_peak_position",
+      "value": {
+        "number": "21.4",
+        "unit": "deg",
+        "unit_text": "°"
+      },
+      "conditions": [
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "1.54178",
+            "unit": "Ao",
+            "unit_text": "Å"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The source relates this peak to partly unoxidized graphitic domains.",
+      "evidence": [
+        {
+          "block": "s3.1/p1",
+          "quote": "The additional peaks were observed at 2θ = 21.4° and 26.6°"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "X-ray diffraction (XRD) using (X-pert PRO diffractometer - Shimadzu, 8201PC) was employed to study the phase purity, structural analysis, and crystallinity of the GO with Cu K_{α} radiation (λ = 1.54178 Å)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_xrd_26_6",
+      "subject": [
+        "go"
+      ],
+      "property": "xrd_peak_position",
+      "value": {
+        "number": "26.6",
+        "unit": "deg",
+        "unit_text": "°"
+      },
+      "conditions": [
+        {
+          "property": "xray_wavelength",
+          "value": {
+            "number": "1.54178",
+            "unit": "Ao",
+            "unit_text": "Å"
+          }
+        }
+      ],
+      "method": {
+        "label": "X-ray diffraction (XRD)"
+      },
+      "note": "The source relates this peak to partly unoxidized graphitic domains.",
+      "evidence": [
+        {
+          "block": "s3.1/p1",
+          "quote": "The additional peaks were observed at 2θ = 21.4° and 26.6°"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "X-ray diffraction (XRD) using (X-pert PRO diffractometer - Shimadzu, 8201PC) was employed to study the phase purity, structural analysis, and crystallinity of the GO with Cu K_{α} radiation (λ = 1.54178 Å)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_ir_3518",
+      "subject": [
+        "go"
+      ],
+      "property": "ir_band",
+      "value": {
+        "number": "3518",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "ATR"
+        }
+      ],
+      "method": {
+        "label": "FTIR spectrometer"
+      },
+      "note": "The source assigns the band to O–H stretching.",
+      "evidence": [
+        {
+          "block": "s3.1/p2",
+          "quote": "The O–H stretching vibration observed at 3518 cm⁻¹"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "The FTIR spectrometer (Quickton, China) was utilized with ATR to quantify the existence of distinct functional groups in the GO"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_ir_2805",
+      "subject": [
+        "go"
+      ],
+      "property": "ir_band",
+      "value": {
+        "number": "2805",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "ATR"
+        }
+      ],
+      "method": {
+        "label": "FTIR spectrometer"
+      },
+      "note": "The source assigns the band to symmetric C–H stretching.",
+      "evidence": [
+        {
+          "block": "s3.1/p2",
+          "quote": "Symmetric stretching vibration of the C–H bond (2805 cm⁻¹)"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "The FTIR spectrometer (Quickton, China) was utilized with ATR to quantify the existence of distinct functional groups in the GO"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_ir_2907",
+      "subject": [
+        "go"
+      ],
+      "property": "ir_band",
+      "value": {
+        "number": "2907",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "ATR"
+        }
+      ],
+      "method": {
+        "label": "FTIR spectrometer"
+      },
+      "note": "The source assigns the band to asymmetric C–H stretching.",
+      "evidence": [
+        {
+          "block": "s3.1/p2",
+          "quote": "the asymmetric stretching vibrations of the C–H bond (2907 cm⁻¹)"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "The FTIR spectrometer (Quickton, China) was utilized with ATR to quantify the existence of distinct functional groups in the GO"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_ir_1720",
+      "subject": [
+        "go"
+      ],
+      "property": "ir_band",
+      "value": {
+        "number": "1720",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "ATR"
+        }
+      ],
+      "method": {
+        "label": "FTIR spectrometer"
+      },
+      "note": "The source assigns the band to carbonyl C–O stretching.",
+      "evidence": [
+        {
+          "block": "s3.1/p2",
+          "quote": "The carbonyl C–O stretching vibration was observed at 1720 cm⁻¹"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "The FTIR spectrometer (Quickton, China) was utilized with ATR to quantify the existence of distinct functional groups in the GO"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_ir_2391",
+      "subject": [
+        "go"
+      ],
+      "property": "ir_band",
+      "value": {
+        "number": "2391",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "ATR"
+        }
+      ],
+      "method": {
+        "label": "FTIR spectrometer"
+      },
+      "note": "The source assigns the band to CO2.",
+      "evidence": [
+        {
+          "block": "s3.1/p2",
+          "quote": "The CO₂ and C=C and stretching vibration at 2391 and 1752 cm⁻¹"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "The FTIR spectrometer (Quickton, China) was utilized with ATR to quantify the existence of distinct functional groups in the GO"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_ir_1752",
+      "subject": [
+        "go"
+      ],
+      "property": "ir_band",
+      "value": {
+        "number": "1752",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "ATR"
+        }
+      ],
+      "method": {
+        "label": "FTIR spectrometer"
+      },
+      "note": "The source assigns the band to C=C stretching.",
+      "evidence": [
+        {
+          "block": "s3.1/p2",
+          "quote": "The CO₂ and C=C and stretching vibration at 2391 and 1752 cm⁻¹"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "The FTIR spectrometer (Quickton, China) was utilized with ATR to quantify the existence of distinct functional groups in the GO"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_ir_1561",
+      "subject": [
+        "go"
+      ],
+      "property": "ir_band",
+      "value": {
+        "number": "1561",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "ATR"
+        }
+      ],
+      "method": {
+        "label": "FTIR spectrometer"
+      },
+      "note": "The source assigns the band to C=O stretching.",
+      "evidence": [
+        {
+          "block": "s3.1/p2",
+          "quote": "The C=O stretching vibration, characteristic of sp² hybridization, is observed at 1561 cm⁻¹"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "The FTIR spectrometer (Quickton, China) was utilized with ATR to quantify the existence of distinct functional groups in the GO"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_ir_1105",
+      "subject": [
+        "go"
+      ],
+      "property": "ir_band",
+      "value": {
+        "number": "1105",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "ATR"
+        }
+      ],
+      "method": {
+        "label": "FTIR spectrometer"
+      },
+      "note": "The source assigns the band to C–O–C stretching of the epoxy group.",
+      "evidence": [
+        {
+          "block": "s3.1/p2",
+          "quote": "The C–O–C stretching of the epoxy group was found at 1105 cm⁻¹"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "The FTIR spectrometer (Quickton, China) was utilized with ATR to quantify the existence of distinct functional groups in the GO"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_raman_d",
+      "subject": [
+        "go"
+      ],
+      "property": "raman_band",
+      "value": {
+        "number": "1352",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "property": "excitation_wavelength",
+          "value": {
+            "number": "514",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "Raman spectrometer"
+      },
+      "note": "The D band.",
+      "evidence": [
+        {
+          "block": "s3.1/p4",
+          "quote": "The Raman spectrum of GO has two bands identified at 1352 cm⁻¹ (D band) and 1592 cm⁻¹ (G band)"
+        },
+        {
+          "block": "s3.1/p4",
+          "quote": "The D band at 1352 cm⁻¹ with A_{1g} mode"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "Using a 514 nm laser as the excitation source, a Raman spectrometer (Olympus, Germany) was used to record the Raman spectra of GO"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_raman_g",
+      "subject": [
+        "go"
+      ],
+      "property": "raman_band",
+      "value": {
+        "number": "1592",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "property": "excitation_wavelength",
+          "value": {
+            "number": "514",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "Raman spectrometer"
+      },
+      "note": "The G band. The same paragraph also states 1576 cm−1 for the G band.",
+      "evidence": [
+        {
+          "block": "s3.1/p4",
+          "quote": "The Raman spectrum of GO has two bands identified at 1352 cm⁻¹ (D band) and 1592 cm⁻¹ (G band)"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "Using a 514 nm laser as the excitation source, a Raman spectrometer (Olympus, Germany) was used to record the Raman spectra of GO"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_raman_g_second",
+      "subject": [
+        "go"
+      ],
+      "property": "raman_band",
+      "value": {
+        "number": "1576",
+        "unit": "cm-1",
+        "unit_text": "cm−1"
+      },
+      "conditions": [
+        {
+          "property": "excitation_wavelength",
+          "value": {
+            "number": "514",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "Raman spectrometer"
+      },
+      "note": "The G band. The same paragraph also states 1592 cm−1 for the G band.",
+      "evidence": [
+        {
+          "block": "s3.1/p4",
+          "quote": "whereas the G band at 1576 cm⁻¹ represents E_{2g} mode"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "Using a 514 nm laser as the excitation source, a Raman spectrometer (Olympus, Germany) was used to record the Raman spectra of GO"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_tga_water",
+      "subject": [
+        "go"
+      ],
+      "property": "mass_loss",
+      "value": {
+        "number": "8.4",
+        "unit": "%",
+        "unit_text": "%",
+        "bound": "approx"
+      },
+      "conditions": [
+        {
+          "property": "sample_mass",
+          "value": {
+            "number": "8",
+            "bound": "approx",
+            "unit": "mg",
+            "unit_text": "mg"
+          }
+        },
+        {
+          "property": "heating_rate",
+          "value": {
+            "number": "20",
+            "unit": "K/min",
+            "unit_text": "°C/min"
+          }
+        },
+        {
+          "property": "gas_flow_rate",
+          "value": {
+            "number": "40",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "environment",
+          "text": "air atmosphere"
+        },
+        {
+          "property": "temperature",
+          "value": {
+            "number": "100",
+            "bound": "lt",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        }
+      ],
+      "method": {
+        "label": "thermogravimetric analysis"
+      },
+      "note": "The source relates the loss to adsorbed water.",
+      "evidence": [
+        {
+          "block": "s3.1/p5",
+          "quote": "An initial weight loss of about 8.4% below 100 °C"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "The thermal stability of GO was assessed by thermogravimetric analysis (TA, Q20, USA). A sample of about 8 mg was heated at a rate of 20 °C/min from 30 to 795 °C while being analyzed at 40 mL/min in an air atmosphere"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_tga_intercalated",
+      "subject": [
+        "go"
+      ],
+      "property": "mass_loss",
+      "value": {
+        "number": "14.1",
+        "unit": "%",
+        "unit_text": "%"
+      },
+      "conditions": [
+        {
+          "property": "sample_mass",
+          "value": {
+            "number": "8",
+            "bound": "approx",
+            "unit": "mg",
+            "unit_text": "mg"
+          }
+        },
+        {
+          "property": "heating_rate",
+          "value": {
+            "number": "20",
+            "unit": "K/min",
+            "unit_text": "°C/min"
+          }
+        },
+        {
+          "property": "gas_flow_rate",
+          "value": {
+            "number": "40",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "environment",
+          "text": "air atmosphere"
+        },
+        {
+          "property": "temperature",
+          "value": {
+            "number": "198",
+            "bound": "ge",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        }
+      ],
+      "method": {
+        "label": "thermogravimetric analysis"
+      },
+      "note": "The source relates the loss to intercalated or adsorbed water.",
+      "evidence": [
+        {
+          "block": "s3.1/p5",
+          "quote": "A further weight loss of 14.1% from 198 °C"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "The thermal stability of GO was assessed by thermogravimetric analysis (TA, Q20, USA). A sample of about 8 mg was heated at a rate of 20 °C/min from 30 to 795 °C while being analyzed at 40 mL/min in an air atmosphere"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_tga_oxygen",
+      "subject": [
+        "go"
+      ],
+      "property": "mass_loss",
+      "value": {
+        "number": "25.8",
+        "unit": "%",
+        "unit_text": "%",
+        "bound": "approx"
+      },
+      "conditions": [
+        {
+          "property": "sample_mass",
+          "value": {
+            "number": "8",
+            "bound": "approx",
+            "unit": "mg",
+            "unit_text": "mg"
+          }
+        },
+        {
+          "property": "heating_rate",
+          "value": {
+            "number": "20",
+            "unit": "K/min",
+            "unit_text": "°C/min"
+          }
+        },
+        {
+          "property": "gas_flow_rate",
+          "value": {
+            "number": "40",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "environment",
+          "text": "air atmosphere"
+        },
+        {
+          "property": "temperature",
+          "value": {
+            "number": "618",
+            "bound": "gt",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        }
+      ],
+      "method": {
+        "label": "thermogravimetric analysis"
+      },
+      "note": "The source relates the loss to labile oxygen groups.",
+      "evidence": [
+        {
+          "block": "s3.1/p5",
+          "quote": "A major weight loss of approximately 25.8% above 618 °C"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "The thermal stability of GO was assessed by thermogravimetric analysis (TA, Q20, USA). A sample of about 8 mg was heated at a rate of 20 °C/min from 30 to 795 °C while being analyzed at 40 mL/min in an air atmosphere"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_tga_backbone",
+      "subject": [
+        "go"
+      ],
+      "property": "mass_loss",
+      "value": {
+        "number": "3.16",
+        "unit": "%",
+        "unit_text": "%",
+        "bound": "approx"
+      },
+      "conditions": [
+        {
+          "property": "sample_mass",
+          "value": {
+            "number": "8",
+            "bound": "approx",
+            "unit": "mg",
+            "unit_text": "mg"
+          }
+        },
+        {
+          "property": "heating_rate",
+          "value": {
+            "number": "20",
+            "unit": "K/min",
+            "unit_text": "°C/min"
+          }
+        },
+        {
+          "property": "gas_flow_rate",
+          "value": {
+            "number": "40",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "environment",
+          "text": "air atmosphere"
+        }
+      ],
+      "method": {
+        "label": "thermogravimetric analysis"
+      },
+      "note": "The source relates the loss to the degradation of the carbon backbone at higher temperatures.",
+      "evidence": [
+        {
+          "block": "s3.1/p5",
+          "quote": "At higher temperatures, a smaller weight loss of about 3.16%"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "The thermal stability of GO was assessed by thermogravimetric analysis (TA, Q20, USA). A sample of about 8 mg was heated at a rate of 20 °C/min from 30 to 795 °C while being analyzed at 40 mL/min in an air atmosphere"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_dtga_peak",
+      "subject": [
+        "go"
+      ],
+      "property": "dtga_peak_temperature",
+      "value": {
+        "number": "219",
+        "unit": "Cel",
+        "unit_text": "°C",
+        "bound": "approx"
+      },
+      "conditions": [
+        {
+          "property": "sample_mass",
+          "value": {
+            "number": "8",
+            "bound": "approx",
+            "unit": "mg",
+            "unit_text": "mg"
+          }
+        },
+        {
+          "property": "heating_rate",
+          "value": {
+            "number": "20",
+            "unit": "K/min",
+            "unit_text": "°C/min"
+          }
+        },
+        {
+          "property": "gas_flow_rate",
+          "value": {
+            "number": "40",
+            "unit": "mL/min",
+            "unit_text": "mL/min"
+          }
+        },
+        {
+          "role": "environment",
+          "text": "air atmosphere"
+        }
+      ],
+      "method": {
+        "label": "thermogravimetric analysis"
+      },
+      "evidence": [
+        {
+          "block": "s3.1/p5",
+          "quote": "The prominent endothermic peak in the DTGA curve around 219 °C"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "The thermal stability of GO was assessed by thermogravimetric analysis (TA, Q20, USA). A sample of about 8 mg was heated at a rate of 20 °C/min from 30 to 795 °C while being analyzed at 40 mL/min in an air atmosphere"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_carbon_atomic_fraction",
+      "subject": [
+        "go"
+      ],
+      "property": "carbon_atomic_fraction",
+      "value": {
+        "number": "65.55",
+        "unit": "%",
+        "unit_text": "%"
+      },
+      "method": {
+        "label": "energy dispersive X-ray spectroscopy"
+      },
+      "evidence": [
+        {
+          "block": "s3.1/p7",
+          "quote": "The EDX spectrum (Fig. 2e) showed only carbon and oxygen, with atomic percentages of 65.55% and 34.45%, respectively"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "coupled with energy dispersive X-ray spectroscopy (EDX, Ametax, Z1 analyzer Z230)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_oxygen_atomic_fraction",
+      "subject": [
+        "go"
+      ],
+      "property": "oxygen_atomic_fraction",
+      "value": {
+        "number": "34.45",
+        "unit": "%",
+        "unit_text": "%"
+      },
+      "method": {
+        "label": "energy dispersive X-ray spectroscopy"
+      },
+      "evidence": [
+        {
+          "block": "s3.1/p7",
+          "quote": "The EDX spectrum (Fig. 2e) showed only carbon and oxygen, with atomic percentages of 65.55% and 34.45%, respectively"
+        },
+        {
+          "block": "s2.1.1/p1",
+          "quote": "coupled with energy dispersive X-ray spectroscopy (EDX, Ametax, Z1 analyzer Z230)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "hydrogen peroxide (H₂O₂) (30%), and Potassium permanganate (99%)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "Initially, 95% H₂SO₄ and 5% H₂O were mixed, and later graphite flakes were added. The above mixture was allowed to stir for 30 min. Following the KMnO₄ (18 g), it was added in small portions"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the ice bath was replaced with an oil bath that was maintained at 35 °C overnight. After overnight stirring, 100 ml of water was progressively added, and the mixture was stirred for an additional 30 min"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the precipitate was dried in an oven at 70 °C overnight to obtain GO powders"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_mcf7_cell_death",
+      "subject": [
+        "go"
+      ],
+      "property": "cell_death",
+      "value": {
+        "number": "52",
+        "unit": "%",
+        "unit_text": "%"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7"
+        },
+        {
+          "role": "medium",
+          "text": "Dulbecco’s Modified Eagle Medium"
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "10000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells"
+          }
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "24",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "590",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "property": "treatment_concentration",
+          "value": {
+            "number": "175",
+            "unit": "ug/mL",
+            "unit_text": "µg/mL"
+          }
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "s3.2/p1",
+          "quote": "At a concentration of 175 µg/mL, 52% of the cells were dead in triplicate mode"
+        },
+        {
+          "block": "s3.2/p1",
+          "quote": "The MTT assay result of GO-treated cytotoxicity effect in MCF-7 breast cancer cells"
+        },
+        {
+          "block": "s2.2.2/p1",
+          "quote": "Approximately 1 × 10⁴ cells of monolayer MCF-7 breast cancer cell culture were seeded into a 96-well plate and incubated at 37 °C for 24 h with 5% CO₂. Cancer cells were treated with a series of 25–175 µg/mL concentrations of GO"
+        },
+        {
+          "block": "s2.2.2/p1",
+          "quote": "After 24 h, 20 µL of MTT solution was carefully mixed into all the GO-treated wells and further maintained for 4 h. After incubation, MTT was aspirated, and 200 µL of DMSO was mixed to dissolve the formazan crystals within the samples. Finally, the absorbance of the culture was read at 590 nm (Measurement) and 600 nm using a microplate reader"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "seeded 96-well plate and incubated at 37 °C for 24 h with 5% CO₂"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "Data are mean ± standard error of means and n = 3 for each group. **p < 0.001; ****p < 0.0001 compared to the vehicle control group"
+        },
+        {
+          "block": "s2.2.1/p1",
+          "quote": "Dulbecco’s Modified Eagle Medium was used in the entire experiment"
+        },
+        {
+          "block": "s2.2.1/p1",
+          "quote": "sodium bicarbonate (0.2%), trypsin, fetal bovine serum albumin (10%)"
+        },
+        {
+          "block": "s2.10/p1",
+          "quote": "Data are mean ± standard error of the mean and n = 3. The P-values < 0.05 of the result were indicated as statistically significant"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_mcf7_inhibition_onset",
+      "subject": [
+        "go"
+      ],
+      "property": "inhibition_onset_concentration",
+      "value": {
+        "number": "25",
+        "unit": "ug/mL",
+        "unit_text": "µg/mL"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7"
+        },
+        {
+          "role": "medium",
+          "text": "Dulbecco’s Modified Eagle Medium"
+        },
+        {
+          "property": "seeding_density",
+          "value": {
+            "number": "10000",
+            "unit": "{cells}/{well}",
+            "unit_text": "cells"
+          }
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "24",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "590",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "s3.2/p1",
+          "quote": "As a result, inhibition was started at 25 µg/mL concentration, and substantially increased inhibition, as well as half inhibition range, was shown at increasing concentration of 175 µg/mL (Fig. 3a)"
+        },
+        {
+          "block": "s3.2/p1",
+          "quote": "The MTT assay result of GO-treated cytotoxicity effect in MCF-7 breast cancer cells"
+        },
+        {
+          "block": "s2.2.2/p1",
+          "quote": "Approximately 1 × 10⁴ cells of monolayer MCF-7 breast cancer cell culture were seeded into a 96-well plate and incubated at 37 °C for 24 h with 5% CO₂. Cancer cells were treated with a series of 25–175 µg/mL concentrations of GO"
+        },
+        {
+          "block": "s2.2.2/p1",
+          "quote": "After 24 h, 20 µL of MTT solution was carefully mixed into all the GO-treated wells and further maintained for 4 h. After incubation, MTT was aspirated, and 200 µL of DMSO was mixed to dissolve the formazan crystals within the samples. Finally, the absorbance of the culture was read at 590 nm (Measurement) and 600 nm using a microplate reader"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "seeded 96-well plate and incubated at 37 °C for 24 h with 5% CO₂"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "Data are mean ± standard error of means and n = 3 for each group. **p < 0.001; ****p < 0.0001 compared to the vehicle control group"
+        },
+        {
+          "block": "s2.2.1/p1",
+          "quote": "Dulbecco’s Modified Eagle Medium was used in the entire experiment"
+        },
+        {
+          "block": "s2.2.1/p1",
+          "quote": "sodium bicarbonate (0.2%), trypsin, fetal bovine serum albumin (10%)"
+        },
+        {
+          "block": "s2.10/p1",
+          "quote": "Data are mean ± standard error of the mean and n = 3. The P-values < 0.05 of the result were indicated as statistically significant"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "go_mcf7_ros_death_versus_dox",
+      "agents": [
+        {
+          "entity": "go",
+          "dose": {
+            "number": "175",
+            "unit": "ug/mL",
+            "unit_text": "µg/mL"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mcf7",
+        "property": "cell_death"
+      },
+      "direction": "increase",
+      "comparator": "doxorubicin",
+      "note": "The source gives the values only in Fig. 5d.",
+      "evidence": [
+        {
+          "block": "s3.5/p3",
+          "quote": "it indicated that the 175 µg/mL concentration of GO produced more cell death after ROS generation than doxorubicin"
+        },
+        {
+          "block": "s3.5/p3",
+          "quote": "The ROS-based cell death quantity after being compared with doxorubicin, an anti-cancer drug, was discussed in Fig. 5d"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_rhb_degradation_9a",
+      "subject": [
+        "go"
+      ],
+      "property": "dye_degradation",
+      "value": {
+        "number": "46.9",
+        "unit": "%",
+        "unit_text": "%"
+      },
+      "conditions": [
+        {
+          "role": "target",
+          "entity": "rhb"
+        },
+        {
+          "role": "environment",
+          "text": "visible light"
+        },
+        {
+          "property": "irradiation_time",
+          "value": {
+            "number": "120",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "catalyst_mass",
+          "value": {
+            "number": "50",
+            "bound": "approx",
+            "unit": "mg",
+            "unit_text": "mg"
+          }
+        },
+        {
+          "property": "solution_volume",
+          "value": {
+            "number": "100",
+            "unit": "mL",
+            "unit_text": "mL"
+          }
+        },
+        {
+          "property": "dye_concentration",
+          "value": {
+            "number": "0.00001",
+            "unit": "mol/L",
+            "unit_text": "M"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "550",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "UV–visible spectrophotometer"
+      },
+      "note": "The value of Fig. 9a. The same paragraph states 44.9% for Fig. 9c.",
+      "evidence": [
+        {
+          "block": "s3.8/p1",
+          "quote": "When exposed to visible light at a wavelength of 550 nm, 46.9% of the Rh-B dye molecules broke down in 120 min for GO (Fig. 9a)"
+        },
+        {
+          "block": "abstract/p1",
+          "quote": "GO achieved 46.9% degradation of Rhodamine-B dye under visible light within 120 min"
+        },
+        {
+          "block": "s2.9/p1",
+          "quote": "Each experiment involved mixing approximately 50 mg of manufactured photocatalyst samples with 100 mL of Rh-B aqueous solutions (1 × 10⁻⁵ M), magnetically spinning the suspension for 30 min in the dark, and then exposing the solution to visible light radiation at 20 min intervals"
+        },
+        {
+          "block": "s2.9/p1",
+          "quote": "at a wavelength of 550 nm, which corresponds to the maximum absorption peaks of Rh-B"
+        },
+        {
+          "block": "s2.9/p1",
+          "quote": "A UV–visible spectrophotometer (Perkin Elmer, Lambda 11) was used to measure the photocatalytic activity of GO NSs against Rh-B dye molecules"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "go_rhb_degradation_9c",
+      "subject": [
+        "go"
+      ],
+      "property": "dye_degradation",
+      "value": {
+        "number": "44.9",
+        "unit": "%",
+        "unit_text": "%"
+      },
+      "conditions": [
+        {
+          "role": "target",
+          "entity": "rhb"
+        },
+        {
+          "role": "environment",
+          "text": "visible light"
+        },
+        {
+          "property": "irradiation_time",
+          "value": {
+            "number": "120",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "catalyst_mass",
+          "value": {
+            "number": "50",
+            "bound": "approx",
+            "unit": "mg",
+            "unit_text": "mg"
+          }
+        },
+        {
+          "property": "solution_volume",
+          "value": {
+            "number": "100",
+            "unit": "mL",
+            "unit_text": "mL"
+          }
+        },
+        {
+          "property": "dye_concentration",
+          "value": {
+            "number": "0.00001",
+            "unit": "mol/L",
+            "unit_text": "M"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "550",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "UV–visible spectrophotometer"
+      },
+      "note": "The value of Fig. 9c. The same paragraph states 46.9% for Fig. 9a.",
+      "evidence": [
+        {
+          "block": "s3.8/p1",
+          "quote": "44.9% of the Rh-B dye molecules were eliminated by GO NSs following 120 min of visible light degradation (Fig. 9c)"
+        },
+        {
+          "block": "s2.9/p1",
+          "quote": "Each experiment involved mixing approximately 50 mg of manufactured photocatalyst samples with 100 mL of Rh-B aqueous solutions (1 × 10⁻⁵ M), magnetically spinning the suspension for 30 min in the dark, and then exposing the solution to visible light radiation at 20 min intervals"
+        },
+        {
+          "block": "s2.9/p1",
+          "quote": "at a wavelength of 550 nm, which corresponds to the maximum absorption peaks of Rh-B"
+        },
+        {
+          "block": "s2.9/p1",
+          "quote": "A UV–visible spectrophotometer (Perkin Elmer, Lambda 11) was used to measure the photocatalytic activity of GO NSs against Rh-B dye molecules"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "block": "s2.3/p1",
+      "quote": "Initial morphological damages of MCF-7 breast cancer cells after exposure to an IC₅₀ dose of the GO were observed by a phase contrast microscope¹⁴.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.3/p1",
+      "quote": "This morphological damage assay was performed in GO-treated MCF-7 breast cancer cell culture, containing a 6-well plate-soaked cover slip.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.3/p1",
+      "quote": "After exposure, the cover slip culture was allowed to grow at 37 °C for 24 h with 5% CO₂.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.3/p1",
+      "quote": "After, the treated wells were fixed with 4% formaldehyde for 10 min.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.3/p1",
+      "quote": "Afterward, the coverslip was mounted carefully onto the glass slide, and morphologically varied breast cancer cells were observed by a phase contrast microscope at 40×g (Olympus, USA).",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.4/p1",
+      "quote": "Morphologically damaged MCF-7 breast cancer cells due to exposure to the IC₅₀ concentration of the GO were confirmed by the AO/EB staining method¹⁵.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.4/p1",
+      "quote": "Briefly, 1 × 10⁵ cells were seeded on a coverslip containing a 6-well plate with medium and maintained at 37 °C for 24 h to attach the cells on the coverslips along with the IC₅₀ dose of the GO.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.4/p1",
+      "quote": "After treatment, the cells were harvested and stained with 25 µg/mL of the AO/EB combination and incubated for 10 min.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.4/p1",
+      "quote": "Then, the unbound stains were removed by PBS, and the cells were fixed with methanol and glacial acetic acid for 30 min.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.5/p1",
+      "quote": "The floating and adherent MCF-7 cells were collected separately after being treated with an IC₅₀ dose of GO for 24 h.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.5/p1",
+      "quote": "Subsequently, the cells were washed with ice-cold 1 × PBS and then fixed with 4% paraformaldehyde for 15 min.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.5/p1",
+      "quote": "Then, the cells were repeatedly thrice using ice-cold 1 × PBS.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.5/p1",
+      "quote": "Afterward, cells were stained with 2 µg/mL DAPI stain and incubated at 37 °C for 45 min.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.5/p1",
+      "quote": "Excess stains were removed by PBS, and fixed cells were observed under a fluorescence microscope at 40× magnification¹².",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.6/p1",
+      "quote": "The intracellular ROS-producing ability of synthesized GO with their IC₅₀ dose against MCF-7 breast cancer cells was confirmed by a fluorescence microscope using dichlorofluorescein, which is a green color dye used to interact with internal reactive oxygen.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.6/p1",
+      "quote": "Based on the IC₅₀ dose-based cytotoxicity experiment, the culture was stained by DCFH-DA after completing the treatment incubation in a 6-well plate.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.6/p1",
+      "quote": "Then, the excess stains of the cells were washed thrice with PBS and incubated at a 1 h time interval.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.6/p1",
+      "quote": "Subsequently, the ROS-mediated damages of MCF-7 breast cancer cells were observed under a fluorescence microscope.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.6/p1",
+      "quote": "The control and treated images of the ROS-based cells were interpreted to confirm the GO efficiency against MCF-7 breast cancer cells¹⁶.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.7/p1",
+      "quote": "The mitochondrial membrane potential (Δψm) of the MCF-7 breast cancer cells was determined by the fluorescent dye rhodamine 123¹⁷.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.7/p1",
+      "quote": "Here, the cytotoxicity procedure was performed on a range of MCF-7 breast cancer culture quantities (5 × 10³ cells per well) treated with an IC₅₀ dose of GO in a 6-well plate, using DMEM medium, and allowed to incubate at 37 °C for 24 h.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.7/p1",
+      "quote": "Then, the culture was stained with 5 µg/mL of rhodamine 123 in PBS and maintained at 37 °C for 15 min in the dark.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.7/p1",
+      "quote": "The fluorescence intensity was calculated using a Microplate Fluorescence Reader (FLx800, BioTek).",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.7/p1",
+      "quote": "In living cells, Rhodamine 123 can penetrate through the plasma membrane and is sequestered by mitochondria.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.8/p1",
+      "quote": "The protease activity of caspase-3 and caspase-9 of MCF-7 breast cancer cells was quantified by colorimetric assay with the modified procedure of Doghish et al.¹⁸.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.8/p1",
+      "quote": "Approximately 2 × 10⁴ well-matured MCF-7 breast cancer cells were aliquoted in fresh media containing a 6-well plate along with an IC₅₀ dose of the GO for treatment and incubated the plates at 37 °C for 24 h.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.8/p1",
+      "quote": "After 24 h, all the cells of the 6-well plates were centrifuged at 10,000 rpm for 15 min and then washed with 10 PBS.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.8/p1",
+      "quote": "Afterward, cells were lysed with 100 µL cold lysis buffer and incubated on ice for 45 min.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.8/p1",
+      "quote": "Subsequently, 100 µL supernatant having 250 µg of protein-containing samples was diluted with 2 × 10 reaction buffer (100 µL).",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.8/p1",
+      "quote": "Then, caspase substrate was added carefully, and the samples were incubated at 37 °C for 4 h in dark conditions.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "s2.8/p1",
+      "quote": "Finally, the functionalized samples were quantified at 450 nm at a microplate reader (Quanta Microplate reader, FEI, Micro, UK).",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "f5/caption",
+      "quote": "Intracellular ROS production after exposure of GO against MCF-7 breast cancer cells at IC₅₀ concentration: (a) Matured growth of MCF-7 breast morphology with the normal green color of untreated, (b) intracellular ROS-mediated damages, (c) increased apoptotic and necrotic cells of the MCF-7 breast cancer cells morphology after treatment with GO by fluorescence microscope.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "f5/caption",
+      "quote": "(d) Quantification of ROS production after treatment with GO against MCF-7 breast cancer cells by spectrophotometer.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "f5/caption",
+      "quote": "Data are mean ± standard error of means and n = 3 for each group.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "f5/caption",
+      "quote": "****p < 0.0001 compared to the vehicle control group.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "f7/caption",
+      "quote": "Mitochondrial damages and up-regulating caspases activity of MCF-7 breast cancer cells through apoptosis process: (a) untreated control cells with green color matured cells, (b, c) mitochondrial damages of red color cells, (d) Quantitative measurement of fluorescent intensity on mitochondrial membrane, and (e) Up-regulating caspases enzyme activity at IC₅₀ concentration of GO NSs treated.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "f7/caption",
+      "quote": "Data are mean ± standard error of means and n = 3 for each group.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "f7/caption",
+      "quote": "***p < 0.0005 compared to the vehicle control group.",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "t1/r2c2",
+      "quote": "MCF-7 Breast cancer cells",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r2c3",
+      "quote": "250",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r3c2",
+      "quote": "MCF-7 Breast cancer cells",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r3c3",
+      "quote": "800",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r4c2",
+      "quote": "MDA-MB 231 Breast cancer cells",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r4c3",
+      "quote": "300",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r5c2",
+      "quote": "FM3A-Luc Breast cancer cells",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r5c3",
+      "quote": "500",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r6c2",
+      "quote": "FM3A-Luc, OV 2944-HM-1, NFSAY83 and KM-Luc/GFP",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r6c3",
+      "quote": "500",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r7c2",
+      "quote": "COLO 205 and 293T cells",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r7c3",
+      "quote": "200",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r8c2",
+      "quote": "MCF, MDA-MB 231 and SK-BR-3",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r8c3",
+      "quote": "250",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r9c3",
+      "quote": "300",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r10c2",
+      "quote": "MCF-7 Breast cancer and A549 lung cancer cells",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r10c3",
+      "quote": "200",
+      "reason": "cited"
+    },
+    {
+      "block": "t1/r11c2",
+      "quote": "MCF-7 Breast cancer cells",
+      "reason": "restated"
+    },
+    {
+      "block": "t1/r11c3",
+      "quote": "175",
+      "reason": "restated"
+    },
+    {
+      "block": "s3.2/p1",
+      "quote": "The result exhibited with decreased cell quantity and increased cytotoxicity was observed after treatment with a 175 µg/mL concentration of GO",
+      "reason": "restated"
+    },
+    {
+      "block": "s3.2/p5",
+      "quote": "due to the influence of 175 µg/mL of GO",
+      "reason": "restated"
+    },
+    {
+      "block": "s3.3/p1",
+      "quote": "the apoptogenic activity of 175 µg/mL of GO",
+      "reason": "restated"
+    },
+    {
+      "block": "s3.3/p1",
+      "quote": "apoptosis-related modification happened in 175 µg/mL of GO-treated MCF-7 breast cancer cell growth",
+      "reason": "restated"
+    },
+    {
+      "block": "s3.4/p1",
+      "quote": "The differentiation of nuclear damages of 175 µg/mL of GO-treated (Fig. 4f,g)",
+      "reason": "restated"
+    },
+    {
+      "block": "s3.5/p1",
+      "quote": "indicating more dead cells in 175 µg/mL of IC₅₀ dose-treated cells",
+      "reason": "restated"
+    },
+    {
+      "block": "s3.5/p3",
+      "quote": "it entirely disrupted the cancer cells quantity at 175 µg/mL",
+      "reason": "restated"
+    },
+    {
+      "block": "s3.6/p1",
+      "quote": "the fluorescent signal significantly reduced after treatment with an IC₅₀ of 175 µg/mL GO (Fig. 7b,c)",
+      "reason": "restated"
+    },
+    {
+      "block": "s3.7/p1",
+      "quote": "At 175 µg/mL concentration, a continuous decrease of MCF-7 breast cancer cells",
+      "reason": "restated"
+    },
+    {
+      "block": "s3.7/p1",
+      "quote": "more precipitation was observed at 175 µg/mL treated cells",
+      "reason": "restated"
+    },
+    {
+      "block": "s3.4/p1",
+      "quote": "the internal nucleus damages of MCF-7 cancer cells were confirmed by DAPI stain at their IC₅₀ dose treatment of 175 µg/mL",
+      "reason": "cited"
+    },
+    {
+      "block": "s3.5/p3",
+      "quote": "In both, 50 µg/mL, 100 µg/mL, 150 µg/mL, and 175 µg/mL concentrations were performed randomly based on the MTT assay result",
+      "reason": "other",
+      "note": "A setting of an assay whose results the source gives only in figures. This reading does not read the figures."
+    },
+    {
+      "block": "fn3",
+      "quote": "Change history 4/10/2026",
+      "reason": "other",
+      "note": "The date of a note of the publisher about this work."
+    },
+    {
+      "block": "fn4",
+      "quote": "Change history 9/9/2026",
+      "reason": "other",
+      "note": "The date of a note of the publisher about this work."
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "format": "arity-submission/1",
+  "work": "PMC4839274",
+  "text": "eba00869321fed63ba79555fe32cc53eb86b1e993e88c4985cda4c3d0a10e0ae",
+  "reader": {
+    "kind": "software",
+    "name": "Claude (Anthropic)",
+    "version": "claude-opus-5-5"
+  },
+  "responsible": {
+    "name": "Brett Gilio"
+  },
+  "note": "This run moves run 4 to the text of arity-jats 0.2.0. Its reports are the reports of run 4, with the words of the new text in their quotes. The note of run 4: Pilot reading of the abstract and the results. Table 1 is an image and is not read. For doxorubicin, the abstract and the results section state different values; both are reported.",
+  "replaces": 4,
+  "entities": [
+    {
+      "id": "dox",
+      "kind": "chemical",
+      "label": "doxorubicin",
+      "xrefs": [
+        "CHEBI:28748"
+      ],
+      "mentions": [
+        {
+          "block": "s2.2.1/p1",
+          "quote": "doxorubicin as a reference drug"
+        }
+      ]
+    },
+    {
+      "id": "mcf7",
+      "kind": "cell_line",
+      "label": "MCF-7",
+      "xrefs": [
+        "CELLOSAURUS:CVCL_0031"
+      ],
+      "mentions": [
+        {
+          "block": "s2.2.1/p1",
+          "quote": "breast MCF-7"
+        }
+      ]
+    },
+    {
+      "id": "c4d",
+      "kind": "chemical",
+      "label": "compound 4d (benzimidazole sulfide derivative)",
+      "mentions": [
+        {
+          "block": "s2.2.1/p3",
+          "quote": "compounds 4d and 4g"
+        }
+      ]
+    },
+    {
+      "id": "c4g",
+      "kind": "chemical",
+      "label": "compound 4g (benzimidazole sulfide derivative)",
+      "mentions": [
+        {
+          "block": "s2.2.1/p3",
+          "quote": "compounds 4d and 4g"
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "id": "ic50_mass"
+    },
+    {
+      "id": "exposure_time"
+    }
+  ],
+  "reports": [
+    {
+      "type": "value",
+      "id": "dox_mcf7_results",
+      "subject": [
+        "dox"
+      ],
+      "property": "ic50_mass",
+      "value": {
+        "number": "4.7",
+        "unit": "ug/mL",
+        "unit_text": "µg/mL",
+        "uncertainty": {
+          "kind": "other",
+          "number": "0.5"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7"
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        }
+      ],
+      "method": {
+        "label": "SRB assay"
+      },
+      "note": "The value that the results section states.",
+      "evidence": [
+        {
+          "block": "s2.2.1/p3",
+          "quote": "4.1 ± 0.5 µg/mL versus 4.7 ± 0.5 µg/mL for doxorubicin against MCF-7"
+        },
+        {
+          "block": "s4.5/p1",
+          "quote": "Monolayer cells were incubated with the compounds for 48 h"
+        },
+        {
+          "block": "s4.5/p1",
+          "quote": "using the SRB assay"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "dox_mcf7_abstract",
+      "subject": [
+        "dox"
+      ],
+      "property": "ic50_mass",
+      "value": {
+        "number": "4.9",
+        "unit": "ug/mL",
+        "unit_text": "µg/mL",
+        "uncertainty": {
+          "kind": "other",
+          "number": "0.6"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7"
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        }
+      ],
+      "method": {
+        "label": "SRB assay"
+      },
+      "note": "The value that the abstract states.",
+      "evidence": [
+        {
+          "block": "abstract/p1",
+          "quote": "versus 4.2 ± 0.5, 4.9 ± 0.6, and 6.1 ± 0.6 µg/mL against HepG2, MCF-7, and A549 cell lines, respectively"
+        },
+        {
+          "block": "s4.5/p1",
+          "quote": "Monolayer cells were incubated with the compounds for 48 h"
+        },
+        {
+          "block": "s4.5/p1",
+          "quote": "using the SRB assay"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "c4d_on_mcf7",
+      "agents": [
+        {
+          "entity": "c4d"
+        }
+      ],
+      "target": {
+        "entity": "mcf7"
+      },
+      "direction": "no_change",
+      "method": {
+        "label": "SRB assay"
+      },
+      "evidence": [
+        {
+          "block": "s2.2.1/p3",
+          "quote": "For HepG2, MCF-7, and A549 cancer cells, while compounds 4d and 4g had no effect on all cancer cells"
+        },
+        {
+          "block": "s4.5/p1",
+          "quote": "using the SRB assay"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "c4g_on_mcf7",
+      "agents": [
+        {
+          "entity": "c4g"
+        }
+      ],
+      "target": {
+        "entity": "mcf7"
+      },
+      "direction": "no_change",
+      "method": {
+        "label": "SRB assay"
+      },
+      "evidence": [
+        {
+          "block": "s2.2.1/p3",
+          "quote": "For HepG2, MCF-7, and A549 cancer cells, while compounds 4d and 4g had no effect on all cancer cells"
+        },
+        {
+          "block": "s4.5/p1",
+          "quote": "using the SRB assay"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "format": "arity-submission/1",
+  "work": "PMC6274071",
+  "text": "e2b517366ddfb2041dedb69a8daa9998521d1d175293a3b74f2469b968ae434f",
+  "reader": {
+    "kind": "software",
+    "name": "Claude (Anthropic)",
+    "version": "claude-opus-5-5"
+  },
+  "responsible": {
+    "name": "Brett Gilio"
+  },
+  "note": "This run moves run 6 to the text of arity-jats 0.2.0. Its reports are the reports of run 6, with the words of the new text in their quotes. The note of run 6: Pilot reading of the experimental section: melting points and yields of two compounds.",
+  "replaces": 6,
+  "entities": [
+    {
+      "id": "c5n",
+      "kind": "chemical",
+      "label": "1-(3-chlorophenyl)-3-(4-(5-methoxy-2-oxoindolin-3-ylideneamino)phenyl)urea (5n)",
+      "mentions": [
+        {
+          "block": "s3.2.3/p3",
+          "quote": "1-(3-Chlorophenyl)-3-(4-(5-methoxy-2-oxoindolin-3-ylideneamino)phenyl)urea (5n)"
+        }
+      ]
+    },
+    {
+      "id": "c5s",
+      "kind": "chemical",
+      "label": "1-(4-chlorophenyl)-3-(4-(5-methoxy-2-oxoindolin-3-ylideneamino)phenyl)urea (5s)",
+      "mentions": [
+        {
+          "block": "s3.2.3/p5",
+          "quote": "1-(4-Chlorophenyl)-3-(4-(5-methoxy-2-oxoindolin-3-ylideneamino)phenyl)urea (5s)"
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "id": "melting_point",
+      "label": "melting point",
+      "value_type": "quantity",
+      "unit": "Cel",
+      "description": "The temperature at which a solid melts, as the source states it."
+    },
+    {
+      "id": "reaction_yield",
+      "label": "reaction yield",
+      "value_type": "quantity",
+      "unit": "%",
+      "description": "The amount of product as a percent of the theoretical amount."
+    }
+  ],
+  "reports": [
+    {
+      "type": "value",
+      "id": "c5n_melting",
+      "subject": [
+        "c5n"
+      ],
+      "property": "melting_point",
+      "value": {
+        "number": "300",
+        "bound": "gt",
+        "unit": "Cel",
+        "unit_text": "°C"
+      },
+      "evidence": [
+        {
+          "block": "s3.2.3/p3",
+          "quote": "(5n): Red powder (yield 78%); m.p. > 300 °C"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "c5n_yield",
+      "subject": [
+        "c5n"
+      ],
+      "property": "reaction_yield",
+      "value": {
+        "number": "78",
+        "unit": "%",
+        "unit_text": "%"
+      },
+      "evidence": [
+        {
+          "block": "s3.2.3/p3",
+          "quote": "(5n): Red powder (yield 78%)"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "c5s_melting",
+      "subject": [
+        "c5s"
+      ],
+      "property": "melting_point",
+      "value": {
+        "number": "300",
+        "bound": "gt",
+        "unit": "Cel",
+        "unit_text": "°C"
+      },
+      "evidence": [
+        {
+          "block": "s3.2.3/p5",
+          "quote": "(5s): Red powder (yield 76%); m.p. > 300 °C"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "c5s_yield",
+      "subject": [
+        "c5s"
+      ],
+      "property": "reaction_yield",
+      "value": {
+        "number": "76",
+        "unit": "%",
+        "unit_text": "%"
+      },
+      "evidence": [
+        {
+          "block": "s3.2.3/p5",
+          "quote": "(5s): Red powder (yield 76%)"
+        }
+      ]
+    }
+  ]
+}

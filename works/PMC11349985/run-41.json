@@ -1,0 +1,414 @@
+{
+  "format": "arity-submission/1",
+  "work": "PMC11349985",
+  "text": "7a86fe0576082fefcb4a1a7c76d7ac15d3b3fb3639a31b2153c51cc8f0886834",
+  "reader": {
+    "kind": "software",
+    "name": "Claude (Anthropic)",
+    "version": "claude-opus-5-5"
+  },
+  "responsible": {
+    "name": "Brett Gilio"
+  },
+  "note": "This run moves run 23 to the text of arity-jats 0.2.0. Its reports are the reports of run 23, with the words of the new text in their quotes. The note of run 23: This run corrects run 5. Each report of the band gap now gives the conditions that run 11 gives for this work: the glass substrate of the optical measurements and the settings of the deposition. For the implanted and annealed films, it also gives the annealing in air for 6 h at 400 °C. The implantation and the annealing are now the two entities of run 11, so the effect has two agents. The source does not give the dose and the energy of the implantation for the band gap.",
+  "replaces": 23,
+  "entities": [
+    {
+      "id": "cuo_film",
+      "kind": "material",
+      "label": "cupric oxide (CuO) thin film",
+      "note": "Deposited by reactive magnetron sputtering on silicon and glass.",
+      "mentions": [
+        {
+          "block": "abstract/p1",
+          "quote": "cupric oxide (CuO) thin films"
+        }
+      ]
+    },
+    {
+      "id": "implantation",
+      "kind": "procedure",
+      "label": "Cr+ ion implantation",
+      "mentions": [
+        {
+          "block": "abstract/p1",
+          "quote": "Chromium was introduced via ion implantation"
+        }
+      ]
+    },
+    {
+      "id": "annealing",
+      "kind": "procedure",
+      "label": "annealing in air",
+      "mentions": [
+        {
+          "block": "s2/p1",
+          "quote": "Chosen samples were annealed in air for 6 h at 400 °C temperature"
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "id": "band_gap"
+    },
+    {
+      "id": "deposition_power"
+    },
+    {
+      "id": "discharge_current"
+    },
+    {
+      "id": "working_pressure"
+    },
+    {
+      "id": "substrate_temperature"
+    },
+    {
+      "id": "film_thickness"
+    },
+    {
+      "id": "annealing_time"
+    },
+    {
+      "id": "annealing_temperature"
+    }
+  ],
+  "reports": [
+    {
+      "type": "value",
+      "id": "cuo_gap",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "band_gap",
+      "value": {
+        "number": "1.10",
+        "unit": "eV",
+        "unit_text": "eV"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "glass"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        }
+      ],
+      "method": {
+        "label": "Tauc's plot method"
+      },
+      "note": "The band gap of the films as deposited.",
+      "evidence": [
+        {
+          "block": "s4/p3",
+          "quote": "increase the band gap of CuO from 1.10 eV to about 1.20 eV for implanted and annealed samples"
+        },
+        {
+          "block": "s4/p3",
+          "quote": "optical energy band gap estimated using Tauc’s plot method"
+        },
+        {
+          "block": "abstract/p1",
+          "quote": "Energy band gap determined using absorbance measurement and Tauc plot method had value of 1.10 eV for as deposited CuO"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O₂ with pressure equal to 1.5 × 10⁻² mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "Optical and electrical properties were measured for films deposited on glass"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "cuo_gap_modified",
+      "subject": [
+        "cuo_film"
+      ],
+      "property": "band_gap",
+      "value": {
+        "number": "1.20",
+        "bound": "approx",
+        "unit": "eV",
+        "unit_text": "eV"
+      },
+      "conditions": [
+        {
+          "role": "other",
+          "text": "glass"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "other",
+          "entity": "implantation"
+        },
+        {
+          "role": "other",
+          "entity": "annealing"
+        },
+        {
+          "property": "annealing_time",
+          "value": {
+            "number": "6",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "annealing_temperature",
+          "value": {
+            "number": "400",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        }
+      ],
+      "method": {
+        "label": "Tauc's plot method"
+      },
+      "note": "The source does not give the dose and the energy of the implantation for this value.",
+      "evidence": [
+        {
+          "block": "s4/p3",
+          "quote": "increase the band gap of CuO from 1.10 eV to about 1.20 eV for implanted and annealed samples"
+        },
+        {
+          "block": "s4/p3",
+          "quote": "optical energy band gap estimated using Tauc’s plot method"
+        },
+        {
+          "block": "abstract/p1",
+          "quote": "Samples after implantation and annealing had energy band gap value increased to about 1.20 eV"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Chosen samples were annealed in air for 6 h at 400 °C temperature"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O₂ with pressure equal to 1.5 × 10⁻² mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "Optical and electrical properties were measured for films deposited on glass"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "modification_on_gap",
+      "agents": [
+        {
+          "entity": "implantation"
+        },
+        {
+          "entity": "annealing"
+        }
+      ],
+      "target": {
+        "entity": "cuo_film",
+        "property": "band_gap"
+      },
+      "direction": "increase",
+      "comparator": "as deposited CuO",
+      "conditions": [
+        {
+          "role": "other",
+          "text": "glass"
+        },
+        {
+          "property": "deposition_power",
+          "value": {
+            "number": "50",
+            "unit": "W",
+            "unit_text": "W"
+          }
+        },
+        {
+          "property": "discharge_current",
+          "value": {
+            "low": "80",
+            "high": "130",
+            "unit": "mA",
+            "unit_text": "mA"
+          }
+        },
+        {
+          "property": "working_pressure",
+          "value": {
+            "number": "0.015",
+            "unit": "mbar",
+            "unit_text": "mbar"
+          }
+        },
+        {
+          "property": "substrate_temperature",
+          "value": {
+            "number": "150",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "film_thickness",
+          "value": {
+            "number": "130",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "property": "annealing_time",
+          "value": {
+            "number": "6",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "annealing_temperature",
+          "value": {
+            "number": "400",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        }
+      ],
+      "method": {
+        "label": "Tauc's plot method"
+      },
+      "evidence": [
+        {
+          "block": "s4/p3",
+          "quote": "used modifications increase the band gap of CuO from 1.10 eV to about 1.20 eV for implanted and annealed samples"
+        },
+        {
+          "block": "s4/p3",
+          "quote": "optical energy band gap estimated using Tauc’s plot method"
+        },
+        {
+          "block": "abstract/p1",
+          "quote": "Energy band gap determined using absorbance measurement and Tauc plot method had value of 1.10 eV for as deposited CuO"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Chosen samples were annealed in air for 6 h at 400 °C temperature"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Thin films of CuO were deposited using reactive magnetron sputtering on silicon and glass substrates"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "A 99.95% purity copper target was used during the sputtering. The power and discharge current were 50 W and 80–130 mA, respectively"
+        },
+        {
+          "block": "s2/p1",
+          "quote": "Deposition process was carried out with working gas of 100% O₂ with pressure equal to 1.5 × 10⁻² mbar. The substrates were heated to 150 °C during the process. The deposition time was chosen as to reach thickness of 130 nm"
+        },
+        {
+          "block": "s2/p2",
+          "quote": "Optical and electrical properties were measured for films deposited on glass"
+        }
+      ]
+    }
+  ]
+}

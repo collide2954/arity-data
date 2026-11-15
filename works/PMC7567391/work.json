@@ -218,6 +218,11 @@
       "sha256": "b451545f6eef13a2c1a3b682ddeaa2a54b6797ee80989beb0f7589db40a49082",
       "parser": "arity-jats 0.1.0",
       "source": "cfb33d58df810a320154380d6127064ba310e78f45b399fbcf17db1922a6c3d2"
+    },
+    {
+      "sha256": "1abe784f5efa3f8a3d346db01f8a08d8aaa1ff206905638c0e1f27ff1563a1d1",
+      "parser": "arity-jats 0.2.0",
+      "source": "cfb33d58df810a320154380d6127064ba310e78f45b399fbcf17db1922a6c3d2"
     }
   ],
   "notices": [],
@@ -227,6 +232,13 @@
       "sha256": "93a07ea9e6387b77f0020dec3fca478759d3b1069647efb02bd77797fc5753d9",
       "software": "arity 0.1.0",
       "submitted_at": "2026-11-14T23:04:37.5079952Z",
+      "checks": []
+    },
+    {
+      "sequence": 36,
+      "sha256": "aa5709ec2b28653ed07931f1e9fe7cb6247299dba95a907d29e596afb13455d3",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-15T10:19:13.7089498Z",
       "checks": []
     }
   ]
