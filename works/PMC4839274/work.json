@@ -49,7 +49,7 @@
     "query": null,
     "note": null,
     "added_at": "2026-11-14T07:51:22.2164038Z",
-    "updated_at": "2026-11-14T20:45:31.4747752Z"
+    "updated_at": "2026-11-15T07:59:10.8195651Z"
   },
   "retrievals": [
     {
@@ -94,6 +94,13 @@
       "sha256": "f93aba04df6a8e0ca6375ccfbdea468756f430e22ec11f86fd281317108ddbfb",
       "software": "arity 0.1.0",
       "submitted_at": "2026-11-14T20:45:31.4747752Z",
+      "checks": []
+    },
+    {
+      "sequence": 24,
+      "sha256": "1c584f17c2b6a34f15757cbcd73b15d254c52c60e1971cc11607e422757b3e3c",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-15T07:59:10.8195651Z",
       "checks": []
     }
   ]
