@@ -3,9 +3,14 @@
   "position": 15,
   "metadata": {
     "title": "Signaling Pathways Mediating the Cytotoxicity of (E)-4-(1-Epoxy-7,8-propenyl)phenyl Benzoate, a Phenylpropanoid from Croton velutinus, in MCF‑7 Cells",
+    "doi": "10.1021/acsomega.6c04220",
+    "pmid": "42890088",
     "pmcid": "PMC13670846",
-    "journal": "ACS omega",
-    "published": "2026-10-19",
+    "article_type": "research-article",
+    "journal": "ACS Omega",
+    "publisher": "American Chemical Society",
+    "published": "2026-10-02",
+    "year": 2026,
     "authors": [
       {
         "name": "Renata A. de Abrantes"
@@ -26,7 +31,8 @@
         "name": "Paulo B. A. Loureiro"
       },
       {
-        "name": "Ramon R. M. de Souza"
+        "name": "Ramon R. M. de Souza",
+        "orcid": "0009-0002-0651-163X"
       },
       {
         "name": "Valgrícia M. de Sousa"
@@ -38,37 +44,88 @@
         "name": "Isabela C. F. Silva"
       },
       {
-        "name": "Lucas S. Abreu"
+        "name": "Lucas S. Abreu",
+        "orcid": "0000-0001-5620-8095"
       },
       {
         "name": "Eudes da S. Velozo"
       },
       {
-        "name": "Juan C. R. Gonçalves"
+        "name": "Juan C. R. Gonçalves",
+        "orcid": "0000-0002-1702-1102"
       },
       {
         "name": "Marcelo S. da Silva"
       },
       {
-        "name": "Josean F. Tavares"
+        "name": "Josean F. Tavares",
+        "orcid": "0000-0003-0293-2605"
       },
       {
-        "name": "Marianna V. Sobral"
+        "name": "Marianna V. Sobral",
+        "orcid": "0000-0002-7740-034X"
       }
     ],
-    "license": "CC-BY"
+    "license": "CC-BY-4.0",
+    "license_statement": "This article is licensed under CC-BY 4.0",
+    "copyright": "© 2026 The Authors. Published by American Chemical Society"
   },
   "added_at": "2026-11-15T11:31:23.2399116Z",
-  "updated_at": "2026-11-15T11:31:23.2399116Z",
+  "updated_at": "2026-11-15T12:14:32.7510225Z",
   "queue": {
-    "state": "queued",
+    "state": "read",
     "query": "doxorubicin AND \"MCF-7\" AND IC50 AND LICENSE:\"cc by\"",
     "note": null,
     "added_at": "2026-11-15T11:31:23.2399116Z",
-    "updated_at": "2026-11-15T11:31:23.2399116Z"
+    "updated_at": "2026-11-15T12:38:55.1354361Z"
   },
-  "retrievals": [],
-  "texts": [],
+  "retrievals": [
+    {
+      "role": "full_text",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13670846.1/PMC13670846.1.xml",
+      "media_type": "application/xml",
+      "sha256": "71c75b7329efc99af979db37b4a6fc43c27597492ffaf1cbb3ceab829f2847d0",
+      "bytes": 237637,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-15T12:14:32.7510225Z"
+    },
+    {
+      "role": "pdf",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13670846.1/PMC13670846.1.pdf",
+      "media_type": "application/pdf",
+      "sha256": "94c9d7848d9fbef3bd9f3b93bb00b6e6f7361f0c70ef19d54dde282e138a2996",
+      "bytes": 7479408,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-15T12:14:32.7510225Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp1",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13670846.1/ao6c04220_si_001.pdf",
+      "media_type": "binary/octet-stream",
+      "sha256": "e3543b087e678f40f283246cd087f6fe02678e3ea4b2d6b21a49484a73eb7cc6",
+      "bytes": 96062,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-15T12:14:32.7510225Z"
+    }
+  ],
+  "texts": [
+    {
+      "sha256": "c2ffdfd153e47bd73a99997ae145b903905f4b7ba252212912f07124797f3d79",
+      "parser": "arity-jats 0.2.0",
+      "source": "71c75b7329efc99af979db37b4a6fc43c27597492ffaf1cbb3ceab829f2847d0"
+    }
+  ],
   "notices": [],
-  "runs": []
+  "runs": [
+    {
+      "sequence": 49,
+      "sha256": "70269ad1c47903138f07a6285d43ff5f5eb4513932fd92730a2c66e4469b058d",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-15T12:38:55.1354361Z",
+      "checks": []
+    }
+  ]
 }
