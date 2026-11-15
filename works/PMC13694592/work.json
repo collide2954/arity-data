@@ -2,11 +2,13 @@
   "format": "arity-archive/1",
   "position": 22,
   "metadata": {
-    "title": "Investigation of the molecular mechanisms of action of sophorolipids in MCF-7 cells: therapeutic potential against breast cancer.",
+    "title": "Investigation of the molecular mechanisms of action of sophorolipids in MCF-7 cells: therapeutic potential against breast cancer",
     "doi": "10.1007/s13205-026-05096-0",
     "pmid": "42926778",
     "pmcid": "PMC13694592",
+    "article_type": "research-article",
     "journal": "3 Biotech",
+    "publisher": "Springer",
     "published": "2026-10-23",
     "year": 2026,
     "authors": [
@@ -57,19 +59,113 @@
         "orcid": "0000-0001-5268-6508"
       }
     ],
-    "license": "CC-BY"
+    "license": "CC-BY-4.0",
+    "license_statement": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.",
+    "copyright": "© The Author(s) 2026",
+    "keywords": [
+      "Antiproliferative",
+      "Breast adenocarcinoma",
+      "Biosurfactants",
+      "Cytotoxicity",
+      "Glycolipids"
+    ]
   },
   "added_at": "2026-11-15T11:31:23.2399116Z",
-  "updated_at": "2026-11-15T11:31:23.2399116Z",
+  "updated_at": "2026-11-15T13:23:55.9011051Z",
   "queue": {
-    "state": "queued",
+    "state": "read",
     "query": "doxorubicin AND \"MCF-7\" AND IC50 AND LICENSE:\"cc by\"",
     "note": null,
     "added_at": "2026-11-15T11:31:23.2399116Z",
-    "updated_at": "2026-11-15T11:31:23.2399116Z"
+    "updated_at": "2026-11-15T13:32:37.8242525Z"
   },
-  "retrievals": [],
-  "texts": [],
+  "retrievals": [
+    {
+      "role": "full_text",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13694592.1/PMC13694592.1.xml",
+      "media_type": "application/xml",
+      "sha256": "b17de25a164387fb748f82c83ff4128e143cab2a192b8740d4ad17457f9ab561",
+      "bytes": 114404,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-15T13:23:55.9011051Z"
+    },
+    {
+      "role": "pdf",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13694592.1/PMC13694592.1.pdf",
+      "media_type": "application/pdf",
+      "sha256": "c65498bf6e2119dda8083bbfab28705f5f7da07faebe13eea079eca266a9eab5",
+      "bytes": 4181457,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-15T13:23:55.9011051Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp1",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13694592.1/13205_2026_5096_MOESM1_ESM.tif",
+      "media_type": "binary/octet-stream",
+      "sha256": "96426473c42daa9c3756cda22080d31ab8bf7d829bbe6683b754f0d6db690a56",
+      "bytes": 5477068,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-15T13:23:55.9011051Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp2",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13694592.1/13205_2026_5096_MOESM2_ESM.tif",
+      "media_type": "binary/octet-stream",
+      "sha256": "b0f3497227492738a8592c002329a51aa3d05e56d8c807cc368237c723ef6c56",
+      "bytes": 8761266,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-15T13:23:55.9011051Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp3",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13694592.1/13205_2026_5096_MOESM3_ESM.tif",
+      "media_type": "binary/octet-stream",
+      "sha256": "67f2463d1391d7fb511631799d47afa6899d30baf5f81249f847352b8fd0ad65",
+      "bytes": 2245140,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-15T13:23:55.9011051Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp4",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13694592.1/13205_2026_5096_MOESM4_ESM.tif",
+      "media_type": "binary/octet-stream",
+      "sha256": "59dc89549771ab81b67ce15183aa66f021cf9d681e5ff202fd37c7815be2bfbe",
+      "bytes": 1641356,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-15T13:23:55.9011051Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp5",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13694592.1/13205_2026_5096_MOESM5_ESM.docx",
+      "media_type": "binary/octet-stream",
+      "sha256": "66e8982c748cb01406285abd1d615c907f4bc3abda831c8f943d7cfba24c50bb",
+      "bytes": 19660,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-15T13:23:55.9011051Z"
+    }
+  ],
+  "texts": [
+    {
+      "sha256": "dd425299cca7c1f396279997ffb6bc6aee05a98177c0b7ccf6db39d816e9edbe",
+      "parser": "arity-jats 0.2.0",
+      "source": "b17de25a164387fb748f82c83ff4128e143cab2a192b8740d4ad17457f9ab561"
+    }
+  ],
   "notices": [],
-  "runs": []
+  "runs": [
+    {
+      "sequence": 50,
+      "sha256": "a3a1c190918163b95ee11bb9f3c49a18138ec3d0579b8f5803ca2df0c5ac2243",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-15T13:32:37.8242525Z",
+      "checks": []
+    }
+  ]
 }
