@@ -52,7 +52,7 @@
     "query": "ABSTRACT:\"band gap\" AND ABSTRACT:eV AND ABSTRACT:\"thin films\" AND LICENSE:\"cc by\" AND PUB_YEAR:[2019 TO 2024]",
     "note": null,
     "added_at": "2026-11-14T07:53:54.2480529Z",
-    "updated_at": "2026-11-14T18:58:53.6014408Z"
+    "updated_at": "2026-11-15T07:59:08.6321931Z"
   },
   "retrievals": [
     {
@@ -97,6 +97,13 @@
       "sha256": "f16aced5b78fbc7452b3e3aa6c7f72088977d120a38128241787ea1fb2426541",
       "software": "arity 0.1.0",
       "submitted_at": "2026-11-14T18:58:53.6014408Z",
+      "checks": []
+    },
+    {
+      "sequence": 23,
+      "sha256": "a33192bcafa8762427fe2f37b8a0003dbfee6c32ae33a6959aa13d806b6ea336",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-15T07:59:08.6321931Z",
       "checks": []
     }
   ]
