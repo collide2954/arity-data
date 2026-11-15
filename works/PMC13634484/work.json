@@ -1,0 +1,73 @@
+{
+  "format": "arity-archive/1",
+  "position": 21,
+  "metadata": {
+    "title": "Orthogonal Light- and Enzyme-Triggered and-Gate Prodrugs for Senolytic Therapy.",
+    "doi": "10.1002/advs.78139",
+    "pmid": "42829921",
+    "pmcid": "PMC13634484",
+    "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+    "published": "2026-10-04",
+    "year": 2026,
+    "authors": [
+      {
+        "name": "Mengyang Chang"
+      },
+      {
+        "name": "Kaixue Zhang"
+      },
+      {
+        "name": "Junwei Wang",
+        "orcid": "0009-0001-9477-1206"
+      },
+      {
+        "name": "Fangchao Bi"
+      },
+      {
+        "name": "Zhuoxin Dai"
+      },
+      {
+        "name": "Miao Yang"
+      },
+      {
+        "name": "Ming Liu"
+      },
+      {
+        "name": "Huanzhi Peng"
+      },
+      {
+        "name": "Franklin Zhang"
+      },
+      {
+        "name": "Yuan Guo",
+        "orcid": "0000-0003-2081-7264"
+      },
+      {
+        "name": "Jigang Dai",
+        "orcid": "0000-0002-3699-8138"
+      },
+      {
+        "name": "Quanxing Liu",
+        "orcid": "0000-0002-6725-385X"
+      },
+      {
+        "name": "Wei Wang",
+        "orcid": "0000-0001-6043-0860"
+      }
+    ],
+    "license": "CC-BY"
+  },
+  "added_at": "2026-11-15T11:31:23.2399116Z",
+  "updated_at": "2026-11-15T11:31:23.2399116Z",
+  "queue": {
+    "state": "queued",
+    "query": "doxorubicin AND \"MCF-7\" AND IC50 AND LICENSE:\"cc by\"",
+    "note": null,
+    "added_at": "2026-11-15T11:31:23.2399116Z",
+    "updated_at": "2026-11-15T11:31:23.2399116Z"
+  },
+  "retrievals": [],
+  "texts": [],
+  "notices": [],
+  "runs": []
+}

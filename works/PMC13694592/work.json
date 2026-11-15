@@ -1,0 +1,75 @@
+{
+  "format": "arity-archive/1",
+  "position": 22,
+  "metadata": {
+    "title": "Investigation of the molecular mechanisms of action of sophorolipids in MCF-7 cells: therapeutic potential against breast cancer.",
+    "doi": "10.1007/s13205-026-05096-0",
+    "pmid": "42926778",
+    "pmcid": "PMC13694592",
+    "journal": "3 Biotech",
+    "published": "2026-10-23",
+    "year": 2026,
+    "authors": [
+      {
+        "name": "Luiz Henrique Santana Martins",
+        "orcid": "0009-0000-1375-9436"
+      },
+      {
+        "name": "Luan Vitor Alves de Lima",
+        "orcid": "0000-0002-0360-2889"
+      },
+      {
+        "name": "Matheus Felipe da Silva"
+      },
+      {
+        "name": "Niumaique Gonçalves da Silva",
+        "orcid": "0000-0001-8068-9466"
+      },
+      {
+        "name": "Maria Claudia Terkelli de Assis",
+        "orcid": "0009-0005-8353-6832"
+      },
+      {
+        "name": "Isabella Cristina Oliveira Carvalho"
+      },
+      {
+        "name": "Isaura Maria Fuzzinato",
+        "orcid": "0009-0001-6422-7912"
+      },
+      {
+        "name": "Beatriz Braga Silva",
+        "orcid": "0009-0007-1420-1929"
+      },
+      {
+        "name": "Dimitri Alves da Costa",
+        "orcid": "0009-0001-4653-2892"
+      },
+      {
+        "name": "Mattheus Pizane de Azevedo Silva",
+        "orcid": "0009-0001-4820-8236"
+      },
+      {
+        "name": "Maria Antonia Pedrine Colabone Celligoi",
+        "orcid": "0000-0003-2217-8937"
+      },
+      {
+        "name": "Mario Sérgio Mantovani",
+        "orcid": "0000-0001-5268-6508"
+      }
+    ],
+    "license": "CC-BY"
+  },
+  "added_at": "2026-11-15T11:31:23.2399116Z",
+  "updated_at": "2026-11-15T11:31:23.2399116Z",
+  "queue": {
+    "state": "queued",
+    "query": "doxorubicin AND \"MCF-7\" AND IC50 AND LICENSE:\"cc by\"",
+    "note": null,
+    "added_at": "2026-11-15T11:31:23.2399116Z",
+    "updated_at": "2026-11-15T11:31:23.2399116Z"
+  },
+  "retrievals": [],
+  "texts": [],
+  "notices": [],
+  "runs": []
+}

@@ -1,0 +1,171 @@
+{
+  "format": "arity-archive/1",
+  "position": 18,
+  "metadata": {
+    "title": "Synergistic Cytotoxicity of Cafestol and Kahweol With Doxorubicin in Breast Cancer Cells Involves TNF‑α Targeting and NF‑κB Downregulation",
+    "doi": "10.1002/ardp.70359",
+    "pmid": "42844983",
+    "pmcid": "PMC13646870",
+    "article_type": "research-article",
+    "journal": "Archiv Der Pharmazie",
+    "published": "2026-10-07",
+    "year": 2026,
+    "authors": [
+      {
+        "name": "Layane D. Souza",
+        "orcid": "0000-0003-2117-3448"
+      },
+      {
+        "name": "Fábio Junior M. Novaes",
+        "orcid": "0000-0003-2849-7875"
+      },
+      {
+        "name": "Carlos Luan A. Passos",
+        "orcid": "0000-0002-9882-8222"
+      },
+      {
+        "name": "Ísis S. S. de Amorim",
+        "orcid": "0000-0002-2762-1400"
+      },
+      {
+        "name": "Pedro Nicolau‐Neto",
+        "orcid": "0000-0003-3322-2120"
+      },
+      {
+        "name": "Juliana A. Rodrigues",
+        "orcid": "0000-0002-4139-4080"
+      },
+      {
+        "name": "Adilson F. Teixeira",
+        "orcid": "0000-0001-7770-1778"
+      },
+      {
+        "name": "Christian Ferreira",
+        "orcid": "0000-0003-0504-0354"
+      },
+      {
+        "name": "Nathalia Alexia N. dos Santos"
+      },
+      {
+        "name": "Priscila G. Camargo",
+        "orcid": "0000-0003-4483-2119"
+      },
+      {
+        "name": "Marcelle L. F. Bispo",
+        "orcid": "0000-0002-6001-360X"
+      },
+      {
+        "name": "Camilo Henrique S. Lima",
+        "orcid": "0000-0002-5579-7809"
+      },
+      {
+        "name": "Bruno Ricardo B. Pires",
+        "orcid": "0000-0002-0429-7871"
+      },
+      {
+        "name": "Adenilson de Sousa da Fonseca",
+        "orcid": "0000-0002-4441-4008"
+      },
+      {
+        "name": "Claudia M. Rezende",
+        "orcid": "0000-0003-2710-5702"
+      },
+      {
+        "name": "Eliane Fialho",
+        "orcid": "0000-0001-7272-0021"
+      },
+      {
+        "name": "Andre Luiz Mencalha",
+        "orcid": "0000-0003-3229-8094"
+      }
+    ],
+    "license": "CC-BY-4.0",
+    "license_statement": "This is an open access article under the terms of the http://creativecommons.org/licenses/by/4.0/ License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.",
+    "copyright": "© 2026 The Author(s). Archiv der Pharmazie published by Wiley‐VCH GmbH on behalf of Deutsche Pharmazeutische Gesellschaft.",
+    "keywords": [
+      "breast cancer",
+      "coffee",
+      "diterpenes",
+      "NF‐κB",
+      "TNF‐α"
+    ]
+  },
+  "added_at": "2026-11-15T11:31:23.2399116Z",
+  "updated_at": "2026-11-15T11:32:00.3678988Z",
+  "queue": {
+    "state": "read",
+    "query": "doxorubicin AND \"MCF-7\" AND IC50 AND LICENSE:\"cc by\"",
+    "note": null,
+    "added_at": "2026-11-15T11:31:23.2399116Z",
+    "updated_at": "2026-11-15T11:56:31.4695586Z"
+  },
+  "retrievals": [
+    {
+      "role": "full_text",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13646870.1/PMC13646870.1.xml",
+      "media_type": "application/xml",
+      "sha256": "b9281a831b9a96f3e082f6820a515d6689fc8e96a679a5a850d15fe5437e08d8",
+      "bytes": 114644,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-15T11:32:00.3678988Z"
+    },
+    {
+      "role": "pdf",
+      "supplement_key": null,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13646870.1/PMC13646870.1.pdf",
+      "media_type": "application/pdf",
+      "sha256": "b1af2476fb9e23347e9bedc32cb13734986409bb54fc6c9f90c4746b7326b4c0",
+      "bytes": 1703147,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-15T11:32:00.3678988Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp1",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13646870.1/ARDP-359-e70359-s003.docx",
+      "media_type": "binary/octet-stream",
+      "sha256": "7403c46e6229b3145e0fe8a4d40cfe7144b0803b3f9b2c1d4c6a46b14872fdcf",
+      "bytes": 58697,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-15T11:32:00.3678988Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp2",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13646870.1/ARDP-359-e70359-s002.docx",
+      "media_type": "binary/octet-stream",
+      "sha256": "7046446b0e018e1a890fb270872dd43355d4321452b21af97825e9dffe23ccbf",
+      "bytes": 13212,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-15T11:32:00.3678988Z"
+    },
+    {
+      "role": "supplement",
+      "supplement_key": "supp3",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13646870.1/ARDP-359-e70359-s001.doc",
+      "media_type": "binary/octet-stream",
+      "sha256": "f5fdee3df7df0b55e01e2c78df43c12aa5b2a1daf7724508517f3b6007bf8918",
+      "bytes": 60928,
+      "software": "arity 0.1.0",
+      "retrieved_at": "2026-11-15T11:32:00.3678988Z"
+    }
+  ],
+  "texts": [
+    {
+      "sha256": "e14201280407ab227ea22b7aea7b3a46b13e2ff7610f78cc20a350a01fc7d98c",
+      "parser": "arity-jats 0.2.0",
+      "source": "b9281a831b9a96f3e082f6820a515d6689fc8e96a679a5a850d15fe5437e08d8"
+    }
+  ],
+  "notices": [],
+  "runs": [
+    {
+      "sequence": 48,
+      "sha256": "36c0f1692a2f8d011944d89745604a2350cd11220c690faf7f1c75ccc0b8a845",
+      "software": "arity 0.1.0",
+      "submitted_at": "2026-11-15T11:56:31.4695586Z",
+      "checks": []
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "format": "arity-archive/1",
+  "position": 16,
+  "metadata": {
+    "title": "Development of 7-hydroxy-4-methylcoumarin-cyanoacrylate hybrids with antiproliferative activity against breast cancer cells: from molecular design to &lt;i&gt;in vivo&lt;/i&gt; validation.",
+    "doi": "10.1039/d6ra06101j",
+    "pmid": "42948722",
+    "pmcid": "PMC13712327",
+    "journal": "RSC advances",
+    "published": "2026-10-27",
+    "year": 2026,
+    "authors": [
+      {
+        "name": "Manar A El-Zend",
+        "orcid": "0000-0001-9957-2188"
+      },
+      {
+        "name": "Ibrahim M El-Deen"
+      },
+      {
+        "name": "Zeinab Abdelkarim"
+      },
+      {
+        "name": "Ibrahim M Alanazi",
+        "orcid": "0000-0003-4865-7215"
+      },
+      {
+        "name": "Samar Zuhair Alshawwa",
+        "orcid": "0000-0001-9232-7956"
+      },
+      {
+        "name": "Essa M Saied",
+        "orcid": "0000-0002-7342-6200"
+      }
+    ],
+    "license": "CC-BY"
+  },
+  "added_at": "2026-11-15T11:31:23.2399116Z",
+  "updated_at": "2026-11-15T11:31:23.2399116Z",
+  "queue": {
+    "state": "queued",
+    "query": "doxorubicin AND \"MCF-7\" AND IC50 AND LICENSE:\"cc by\"",
+    "note": null,
+    "added_at": "2026-11-15T11:31:23.2399116Z",
+    "updated_at": "2026-11-15T11:31:23.2399116Z"
+  },
+  "retrievals": [],
+  "texts": [],
+  "notices": [],
+  "runs": []
+}

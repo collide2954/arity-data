@@ -1,0 +1,40 @@
+{
+  "format": "arity-archive/1",
+  "position": 19,
+  "metadata": {
+    "title": "Triazole-based hybrid molecules in anticancer drug discovery: structural classes and mechanistic insights, 2014-2025.",
+    "doi": "10.3762/bjoc.22.94",
+    "pmid": "42712967",
+    "pmcid": "PMC13550846",
+    "journal": "Beilstein journal of organic chemistry",
+    "published": "2026-08-24",
+    "year": 2026,
+    "authors": [
+      {
+        "name": "Meena Bhandari",
+        "orcid": "0000-0002-9474-0645"
+      },
+      {
+        "name": "Akshi Goyal"
+      },
+      {
+        "name": "Deepak Yadav",
+        "orcid": "0000-0002-5528-697X"
+      }
+    ],
+    "license": "CC-BY"
+  },
+  "added_at": "2026-11-15T11:31:23.2399116Z",
+  "updated_at": "2026-11-15T11:31:23.2399116Z",
+  "queue": {
+    "state": "queued",
+    "query": "doxorubicin AND \"MCF-7\" AND IC50 AND LICENSE:\"cc by\"",
+    "note": null,
+    "added_at": "2026-11-15T11:31:23.2399116Z",
+    "updated_at": "2026-11-15T11:31:23.2399116Z"
+  },
+  "retrievals": [],
+  "texts": [],
+  "notices": [],
+  "runs": []
+}

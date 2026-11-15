@@ -1,0 +1,40 @@
+{
+  "format": "arity-archive/1",
+  "position": 20,
+  "metadata": {
+    "title": "Comparative In Vitro and In Silico Biological Evaluation of &lt;i&gt;o&lt;/i&gt;-Phenylenediamine Conjugates Based on Isofunctional-Surfaced Polyanhydride and Citric Acid-Derived Carbon Quantum Nanodots.",
+    "doi": "10.3390/biom16101478",
+    "pmid": "42939732",
+    "pmcid": "PMC13702659",
+    "journal": "Biomolecules",
+    "published": "2026-10-11",
+    "year": 2026,
+    "authors": [
+      {
+        "name": "Tutku Tunç",
+        "orcid": "0000-0002-8274-9386"
+      },
+      {
+        "name": "Gülderen Karakuş"
+      },
+      {
+        "name": "Işık Çakmak",
+        "orcid": "0000-0003-4758-4077"
+      }
+    ],
+    "license": "CC-BY"
+  },
+  "added_at": "2026-11-15T11:31:23.2399116Z",
+  "updated_at": "2026-11-15T11:31:23.2399116Z",
+  "queue": {
+    "state": "queued",
+    "query": "doxorubicin AND \"MCF-7\" AND IC50 AND LICENSE:\"cc by\"",
+    "note": null,
+    "added_at": "2026-11-15T11:31:23.2399116Z",
+    "updated_at": "2026-11-15T11:31:23.2399116Z"
+  },
+  "retrievals": [],
+  "texts": [],
+  "notices": [],
+  "runs": []
+}

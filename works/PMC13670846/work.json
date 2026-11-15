@@ -1,0 +1,74 @@
+{
+  "format": "arity-archive/1",
+  "position": 15,
+  "metadata": {
+    "title": "Signaling Pathways Mediating the Cytotoxicity of (E)-4-(1-Epoxy-7,8-propenyl)phenyl Benzoate, a Phenylpropanoid from Croton velutinus, in MCF‑7 Cells",
+    "pmcid": "PMC13670846",
+    "journal": "ACS omega",
+    "published": "2026-10-19",
+    "authors": [
+      {
+        "name": "Renata A. de Abrantes"
+      },
+      {
+        "name": "Sâmia S. Duarte"
+      },
+      {
+        "name": "Rafael C. Ferreira"
+      },
+      {
+        "name": "Ana Paula G. M. Farias"
+      },
+      {
+        "name": "Geraldo M. W. Amorim"
+      },
+      {
+        "name": "Paulo B. A. Loureiro"
+      },
+      {
+        "name": "Ramon R. M. de Souza"
+      },
+      {
+        "name": "Valgrícia M. de Sousa"
+      },
+      {
+        "name": "Gabriela B. de Lyra"
+      },
+      {
+        "name": "Isabela C. F. Silva"
+      },
+      {
+        "name": "Lucas S. Abreu"
+      },
+      {
+        "name": "Eudes da S. Velozo"
+      },
+      {
+        "name": "Juan C. R. Gonçalves"
+      },
+      {
+        "name": "Marcelo S. da Silva"
+      },
+      {
+        "name": "Josean F. Tavares"
+      },
+      {
+        "name": "Marianna V. Sobral"
+      }
+    ],
+    "license": "CC-BY"
+  },
+  "added_at": "2026-11-15T11:31:23.2399116Z",
+  "updated_at": "2026-11-15T11:31:23.2399116Z",
+  "queue": {
+    "state": "queued",
+    "query": "doxorubicin AND \"MCF-7\" AND IC50 AND LICENSE:\"cc by\"",
+    "note": null,
+    "added_at": "2026-11-15T11:31:23.2399116Z",
+    "updated_at": "2026-11-15T11:31:23.2399116Z"
+  },
+  "retrievals": [],
+  "texts": [],
+  "notices": [],
+  "runs": []
+}

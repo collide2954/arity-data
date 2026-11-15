@@ -1,0 +1,4032 @@
+{
+  "format": "arity-submission/1",
+  "work": "PMC13646870",
+  "text": "e14201280407ab227ea22b7aea7b3a46b13e2ff7610f78cc20a350a01fc7d98c",
+  "reader": {
+    "kind": "software",
+    "name": "Claude (Anthropic)",
+    "version": "claude-opus-5-5"
+  },
+  "responsible": {
+    "name": "Brett Gilio"
+  },
+  "note": "This reading reads the text and the captions. The supplementary files of the source, which hold Table 1 and Table 2 of Supporting Information S2, are Word files, and arity does not read them.",
+  "entities": [
+    {
+      "id": "ck",
+      "kind": "chemical",
+      "label": "cafestol and kahweol (C&K)",
+      "note": "A mixture of the diterpenes cafestol and kahweol from green Arabica coffee beans. The source states a ratio of 54.1:45.6 (cafestol:kahweol) and a purity of more than 99%.",
+      "mentions": [
+        {
+          "block": "abstract/p1",
+          "quote": "Cafestol and kahweol (C&K) are diterpenes from coffee lipid fraction"
+        }
+      ]
+    },
+    {
+      "id": "dox",
+      "kind": "chemical",
+      "label": "doxorubicin",
+      "xrefs": [
+        "CHEBI:28748"
+      ],
+      "mentions": [
+        {
+          "block": "s5.1/p1",
+          "quote": "doxorubicin (D1515, Sigma‐Aldrich, St. Louis, MO, USA)"
+        }
+      ]
+    },
+    {
+      "id": "dmso",
+      "kind": "chemical",
+      "label": "dimethyl sulfoxide (DMSO)",
+      "xrefs": [
+        "CHEBI:28262"
+      ],
+      "mentions": [
+        {
+          "block": "s5.1/p1",
+          "quote": "DMSO was used as a control in all assays"
+        }
+      ]
+    },
+    {
+      "id": "mcf7",
+      "kind": "cell_line",
+      "label": "MCF-7",
+      "xrefs": [
+        "CELLOSAURUS:CVCL_0031"
+      ],
+      "mentions": [
+        {
+          "block": "s5.2/p1",
+          "quote": "MCF‐7 (HTB22, ATCC)"
+        }
+      ]
+    },
+    {
+      "id": "mdamb231",
+      "kind": "cell_line",
+      "label": "MDA-MB-231",
+      "xrefs": [
+        "CELLOSAURUS:CVCL_0062"
+      ],
+      "mentions": [
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26)"
+        }
+      ]
+    },
+    {
+      "id": "mcf10a",
+      "kind": "cell_line",
+      "label": "MCF-10A",
+      "xrefs": [
+        "CELLOSAURUS:CVCL_0598"
+      ],
+      "mentions": [
+        {
+          "block": "s5.2/p1",
+          "quote": "The MCF‐10A non‐tumorigenic cell line"
+        }
+      ]
+    },
+    {
+      "id": "ros",
+      "kind": "chemical",
+      "label": "reactive oxygen species (ROS)",
+      "xrefs": [
+        "CHEBI:26523"
+      ],
+      "mentions": [
+        {
+          "block": "s5.5/p1",
+          "quote": "ROS levels were analyzed in the MDA‐MB‐231 cells"
+        }
+      ]
+    },
+    {
+      "id": "nfkb",
+      "kind": "protein",
+      "label": "NF-κB",
+      "note": "The source measures it with the primary antibody Sc-8008 (Santa Cruz).",
+      "mentions": [
+        {
+          "block": "s2.5/p1",
+          "quote": "assess the effect of C&K on NF‐κB protein levels"
+        }
+      ]
+    },
+    {
+      "id": "ck_signature",
+      "kind": "other",
+      "label": "C&K gene signature",
+      "note": "The source makes the signature from BLOC1S1, HIST1H4A, HIST1H2BB, NDUFB3, and ANKRD36B with a plus sign, and MALAT1, ARL17B, BIRC3, NFATC2, FOSB, and EGR1 with a minus sign.",
+      "mentions": [
+        {
+          "block": "s5.11/p1",
+          "quote": "The C&K gene signature is composed of the most altered genes"
+        }
+      ]
+    },
+    {
+      "id": "tnf_signature",
+      "kind": "other",
+      "label": "TNF/NF-κB gene signature",
+      "mentions": [
+        {
+          "block": "s5.11/p1",
+          "quote": "the TNF/NF‐κB [47] gene signature"
+        }
+      ]
+    },
+    {
+      "id": "tcga_basal",
+      "kind": "population",
+      "label": "TCGA-BRCA basal breast cancer cohort",
+      "mentions": [
+        {
+          "block": "s5.11/p1",
+          "quote": "TCGA‐BRCA basal breast cancer cohort"
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "id": "ic50"
+    },
+    {
+      "id": "exposure_time"
+    },
+    {
+      "id": "culture_temperature"
+    },
+    {
+      "id": "co2_fraction"
+    },
+    {
+      "id": "tested_concentration"
+    },
+    {
+      "id": "absorbance_wavelength"
+    },
+    {
+      "id": "reference_wavelength"
+    },
+    {
+      "id": "apoptotic_cells"
+    },
+    {
+      "id": "necrotic_cells"
+    },
+    {
+      "id": "intracellular_level"
+    },
+    {
+      "id": "protein_level"
+    },
+    {
+      "id": "incubation_time"
+    },
+    {
+      "id": "excitation_wavelength"
+    },
+    {
+      "id": "counted_events"
+    },
+    {
+      "id": "selectivity_index",
+      "label": "selectivity index (SI)",
+      "value_type": "quantity",
+      "unit": "1",
+      "description": "The IC₅₀ of a substance in normal cells divided by its IC₅₀ in the target cells, for example tumor cells. A higher ratio shows that the substance is more selective for the target cells."
+    },
+    {
+      "id": "fic_index",
+      "label": "fractional inhibitory concentration index (FIC)",
+      "value_type": "quantity",
+      "unit": "1",
+      "description": "An index of the interaction of the agents in a combination. A source calculates it from the fractional inhibitory concentration of each agent: the concentration of the agent in the combination divided by the concentration of the agent alone that has the same effect, for example the IC₅₀."
+    },
+    {
+      "id": "sub_g0g1_cells",
+      "label": "cells in the sub-G0/G1 population",
+      "value_type": "quantity",
+      "unit": "%",
+      "description": "The percentage of the cells with less DNA than the cells in the G0/G1 phase, in a flow cytometry analysis of the cell cycle."
+    },
+    {
+      "id": "g0g1_phase_cells",
+      "label": "cells in the G0/G1 phase",
+      "value_type": "quantity",
+      "unit": "%",
+      "description": "The percentage of the cells in the G0/G1 phase of the cell cycle."
+    },
+    {
+      "id": "emission_wavelength",
+      "label": "emission wavelength",
+      "value_type": "quantity",
+      "unit": "nm",
+      "description": "The wavelength at which an instrument measures the emission of a fluorescent dye."
+    },
+    {
+      "id": "upregulated_genes",
+      "label": "upregulated genes",
+      "value_type": "quantity",
+      "unit": "1",
+      "description": "The number of genes whose expression increases by more than a threshold, in a comparison of a treatment with a reference."
+    },
+    {
+      "id": "downregulated_genes",
+      "label": "downregulated genes",
+      "value_type": "quantity",
+      "unit": "1",
+      "description": "The number of genes whose expression decreases by more than a threshold, in a comparison of a treatment with a reference."
+    }
+  ],
+  "reports": [
+    {
+      "type": "value",
+      "id": "ck_mcf7_ic50_48h",
+      "subject": [
+        "ck"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "22.1",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "uncertainty": {
+          "kind": "other",
+          "number": "4.10"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "role": "solvent",
+          "entity": "dmso"
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "10",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "595",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "property": "reference_wavelength",
+          "value": {
+            "number": "630",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "LMR‐96i Loccus ELISA reader"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "The source does not tell the kind of the uncertainty.",
+      "evidence": [
+        {
+          "block": "s2.1/p1",
+          "quote": "The IC₅₀ values for C&K treatment were 22.1 μM ± 4.10 (48 h) and 18.1 μM ± 0.67 (72 h) in MCF‐7 cells"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the MCF‐7 and MDA‐MB‐231 breast cancer cells and the MCF‐10A non‐tumorigenic breast cell line were treated with varying concentrations of C&K (10, 25, 50, 75, and 100 μM) for 48 and 72 h, and cells viabilities were assessed by MTT assay"
+        },
+        {
+          "block": "s5.1/p1",
+          "quote": "C&K stock solution (10 mg/mL) was prepared in DMSO and stored in aliquots at −20°C"
+        },
+        {
+          "block": "s5.1/p1",
+          "quote": "C&K (10, 25, 50, 75, and 100 μM) and doxorubicin (D1515, Sigma‐Aldrich, St. Louis, MO, USA) were applied alone for 48 and 72 h and in combination for 48 h"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "MTT colorimetric assay (Sigma‐Aldrich, St. Louis, MO, USA) was used to evaluate the cytotoxic effect of the treatments"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "The absorbance was measured at 595, with 630 nm as the reference wavelength, using the LMR‐96i Loccus ELISA reader"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "The relative number of viable cells was expressed as a percentage of the untreated cells and the IC₅₀ values were obtained from dose–response curves, calculated using GraphPad Software 8.0 (GraphPad Inc., San Diego, CA, USA)"
+        },
+        {
+          "block": "f1/caption",
+          "quote": "Cell viability was analyzed via the MTT assay after treatment of MCF‐7 (A), MDA‐MB‐231 (B), and MCF‐10A (C) cells with C&K at concentrations ranging from 10 to 100 µM for 48 and 72 h"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "ck_mcf7_ic50_72h",
+      "subject": [
+        "ck"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "18.1",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "uncertainty": {
+          "kind": "other",
+          "number": "0.67"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "role": "solvent",
+          "entity": "dmso"
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "10",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "595",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "property": "reference_wavelength",
+          "value": {
+            "number": "630",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "LMR‐96i Loccus ELISA reader"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "The source does not tell the kind of the uncertainty.",
+      "evidence": [
+        {
+          "block": "s2.1/p1",
+          "quote": "The IC₅₀ values for C&K treatment were 22.1 μM ± 4.10 (48 h) and 18.1 μM ± 0.67 (72 h) in MCF‐7 cells"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the MCF‐7 and MDA‐MB‐231 breast cancer cells and the MCF‐10A non‐tumorigenic breast cell line were treated with varying concentrations of C&K (10, 25, 50, 75, and 100 μM) for 48 and 72 h, and cells viabilities were assessed by MTT assay"
+        },
+        {
+          "block": "s5.1/p1",
+          "quote": "C&K stock solution (10 mg/mL) was prepared in DMSO and stored in aliquots at −20°C"
+        },
+        {
+          "block": "s5.1/p1",
+          "quote": "C&K (10, 25, 50, 75, and 100 μM) and doxorubicin (D1515, Sigma‐Aldrich, St. Louis, MO, USA) were applied alone for 48 and 72 h and in combination for 48 h"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "MTT colorimetric assay (Sigma‐Aldrich, St. Louis, MO, USA) was used to evaluate the cytotoxic effect of the treatments"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "The absorbance was measured at 595, with 630 nm as the reference wavelength, using the LMR‐96i Loccus ELISA reader"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "The relative number of viable cells was expressed as a percentage of the untreated cells and the IC₅₀ values were obtained from dose–response curves, calculated using GraphPad Software 8.0 (GraphPad Inc., San Diego, CA, USA)"
+        },
+        {
+          "block": "f1/caption",
+          "quote": "Cell viability was analyzed via the MTT assay after treatment of MCF‐7 (A), MDA‐MB‐231 (B), and MCF‐10A (C) cells with C&K at concentrations ranging from 10 to 100 µM for 48 and 72 h"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "ck_mdamb231_ic50_48h",
+      "subject": [
+        "ck"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "30.4",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "uncertainty": {
+          "kind": "other",
+          "number": "3.80"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mdamb231"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "role": "solvent",
+          "entity": "dmso"
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "10",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "595",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "property": "reference_wavelength",
+          "value": {
+            "number": "630",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "LMR‐96i Loccus ELISA reader"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "The source does not tell the kind of the uncertainty.",
+      "evidence": [
+        {
+          "block": "s2.1/p1",
+          "quote": "while IC₅₀ values were 30.4 μM ± 3.80 (48 h) and 26.4 μM ± 1.62 (72 h) for MDA‐MB‐231 cells"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the MCF‐7 and MDA‐MB‐231 breast cancer cells and the MCF‐10A non‐tumorigenic breast cell line were treated with varying concentrations of C&K (10, 25, 50, 75, and 100 μM) for 48 and 72 h, and cells viabilities were assessed by MTT assay"
+        },
+        {
+          "block": "s5.1/p1",
+          "quote": "C&K stock solution (10 mg/mL) was prepared in DMSO and stored in aliquots at −20°C"
+        },
+        {
+          "block": "s5.1/p1",
+          "quote": "C&K (10, 25, 50, 75, and 100 μM) and doxorubicin (D1515, Sigma‐Aldrich, St. Louis, MO, USA) were applied alone for 48 and 72 h and in combination for 48 h"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "MTT colorimetric assay (Sigma‐Aldrich, St. Louis, MO, USA) was used to evaluate the cytotoxic effect of the treatments"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "The absorbance was measured at 595, with 630 nm as the reference wavelength, using the LMR‐96i Loccus ELISA reader"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "The relative number of viable cells was expressed as a percentage of the untreated cells and the IC₅₀ values were obtained from dose–response curves, calculated using GraphPad Software 8.0 (GraphPad Inc., San Diego, CA, USA)"
+        },
+        {
+          "block": "f1/caption",
+          "quote": "Cell viability was analyzed via the MTT assay after treatment of MCF‐7 (A), MDA‐MB‐231 (B), and MCF‐10A (C) cells with C&K at concentrations ranging from 10 to 100 µM for 48 and 72 h"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "ck_mdamb231_ic50_72h",
+      "subject": [
+        "ck"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "26.4",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "uncertainty": {
+          "kind": "other",
+          "number": "1.62"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mdamb231"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "role": "solvent",
+          "entity": "dmso"
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "10",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "595",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "property": "reference_wavelength",
+          "value": {
+            "number": "630",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "LMR‐96i Loccus ELISA reader"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "The source does not tell the kind of the uncertainty.",
+      "evidence": [
+        {
+          "block": "s2.1/p1",
+          "quote": "while IC₅₀ values were 30.4 μM ± 3.80 (48 h) and 26.4 μM ± 1.62 (72 h) for MDA‐MB‐231 cells"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the MCF‐7 and MDA‐MB‐231 breast cancer cells and the MCF‐10A non‐tumorigenic breast cell line were treated with varying concentrations of C&K (10, 25, 50, 75, and 100 μM) for 48 and 72 h, and cells viabilities were assessed by MTT assay"
+        },
+        {
+          "block": "s5.1/p1",
+          "quote": "C&K stock solution (10 mg/mL) was prepared in DMSO and stored in aliquots at −20°C"
+        },
+        {
+          "block": "s5.1/p1",
+          "quote": "C&K (10, 25, 50, 75, and 100 μM) and doxorubicin (D1515, Sigma‐Aldrich, St. Louis, MO, USA) were applied alone for 48 and 72 h and in combination for 48 h"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "MTT colorimetric assay (Sigma‐Aldrich, St. Louis, MO, USA) was used to evaluate the cytotoxic effect of the treatments"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "The absorbance was measured at 595, with 630 nm as the reference wavelength, using the LMR‐96i Loccus ELISA reader"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "The relative number of viable cells was expressed as a percentage of the untreated cells and the IC₅₀ values were obtained from dose–response curves, calculated using GraphPad Software 8.0 (GraphPad Inc., San Diego, CA, USA)"
+        },
+        {
+          "block": "f1/caption",
+          "quote": "Cell viability was analyzed via the MTT assay after treatment of MCF‐7 (A), MDA‐MB‐231 (B), and MCF‐10A (C) cells with C&K at concentrations ranging from 10 to 100 µM for 48 and 72 h"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "ck_mcf10a_ic50_48h",
+      "subject": [
+        "ck"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "33.1",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "uncertainty": {
+          "kind": "other",
+          "number": "0.21"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf10a"
+        },
+        {
+          "role": "medium",
+          "text": "DMEM/F12 medium supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA), 1 mg/mL EGF, 4 mg/mL insulin and 10 mg/mL hydrocortisone"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "role": "solvent",
+          "entity": "dmso"
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "10",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "595",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "property": "reference_wavelength",
+          "value": {
+            "number": "630",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "LMR‐96i Loccus ELISA reader"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "The source does not tell the kind of the uncertainty.",
+      "evidence": [
+        {
+          "block": "s2.1/p1",
+          "quote": "Additionally, IC₅₀ values were 33.1 μM ± 0.21 (48 h) and 30.3 μM ± 1.42 (72 h) in MCF‐10A cells (Supporting Information S2: Table 1)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The MCF‐10A non‐tumorigenic cell line was cultured in DMEM/F12 medium supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA), 1 mg/mL EGF, 4 mg/mL insulin and 10 mg/mL hydrocortisone (Sigma‐Aldrich, St. Louis, MO, USA)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the MCF‐7 and MDA‐MB‐231 breast cancer cells and the MCF‐10A non‐tumorigenic breast cell line were treated with varying concentrations of C&K (10, 25, 50, 75, and 100 μM) for 48 and 72 h, and cells viabilities were assessed by MTT assay"
+        },
+        {
+          "block": "s5.1/p1",
+          "quote": "C&K stock solution (10 mg/mL) was prepared in DMSO and stored in aliquots at −20°C"
+        },
+        {
+          "block": "s5.1/p1",
+          "quote": "C&K (10, 25, 50, 75, and 100 μM) and doxorubicin (D1515, Sigma‐Aldrich, St. Louis, MO, USA) were applied alone for 48 and 72 h and in combination for 48 h"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "MTT colorimetric assay (Sigma‐Aldrich, St. Louis, MO, USA) was used to evaluate the cytotoxic effect of the treatments"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "The absorbance was measured at 595, with 630 nm as the reference wavelength, using the LMR‐96i Loccus ELISA reader"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "The relative number of viable cells was expressed as a percentage of the untreated cells and the IC₅₀ values were obtained from dose–response curves, calculated using GraphPad Software 8.0 (GraphPad Inc., San Diego, CA, USA)"
+        },
+        {
+          "block": "f1/caption",
+          "quote": "Cell viability was analyzed via the MTT assay after treatment of MCF‐7 (A), MDA‐MB‐231 (B), and MCF‐10A (C) cells with C&K at concentrations ranging from 10 to 100 µM for 48 and 72 h"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "ck_mcf10a_ic50_72h",
+      "subject": [
+        "ck"
+      ],
+      "property": "ic50",
+      "value": {
+        "number": "30.3",
+        "unit": "umol/L",
+        "unit_text": "μM",
+        "uncertainty": {
+          "kind": "other",
+          "number": "1.42"
+        }
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf10a"
+        },
+        {
+          "role": "medium",
+          "text": "DMEM/F12 medium supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA), 1 mg/mL EGF, 4 mg/mL insulin and 10 mg/mL hydrocortisone"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "role": "solvent",
+          "entity": "dmso"
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "10",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "property": "absorbance_wavelength",
+          "value": {
+            "number": "595",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "property": "reference_wavelength",
+          "value": {
+            "number": "630",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "LMR‐96i Loccus ELISA reader"
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "note": "The source does not tell the kind of the uncertainty.",
+      "evidence": [
+        {
+          "block": "s2.1/p1",
+          "quote": "Additionally, IC₅₀ values were 33.1 μM ± 0.21 (48 h) and 30.3 μM ± 1.42 (72 h) in MCF‐10A cells (Supporting Information S2: Table 1)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The MCF‐10A non‐tumorigenic cell line was cultured in DMEM/F12 medium supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA), 1 mg/mL EGF, 4 mg/mL insulin and 10 mg/mL hydrocortisone (Sigma‐Aldrich, St. Louis, MO, USA)"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the MCF‐7 and MDA‐MB‐231 breast cancer cells and the MCF‐10A non‐tumorigenic breast cell line were treated with varying concentrations of C&K (10, 25, 50, 75, and 100 μM) for 48 and 72 h, and cells viabilities were assessed by MTT assay"
+        },
+        {
+          "block": "s5.1/p1",
+          "quote": "C&K stock solution (10 mg/mL) was prepared in DMSO and stored in aliquots at −20°C"
+        },
+        {
+          "block": "s5.1/p1",
+          "quote": "C&K (10, 25, 50, 75, and 100 μM) and doxorubicin (D1515, Sigma‐Aldrich, St. Louis, MO, USA) were applied alone for 48 and 72 h and in combination for 48 h"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "MTT colorimetric assay (Sigma‐Aldrich, St. Louis, MO, USA) was used to evaluate the cytotoxic effect of the treatments"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "The absorbance was measured at 595, with 630 nm as the reference wavelength, using the LMR‐96i Loccus ELISA reader"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "The relative number of viable cells was expressed as a percentage of the untreated cells and the IC₅₀ values were obtained from dose–response curves, calculated using GraphPad Software 8.0 (GraphPad Inc., San Diego, CA, USA)"
+        },
+        {
+          "block": "f1/caption",
+          "quote": "Cell viability was analyzed via the MTT assay after treatment of MCF‐7 (A), MDA‐MB‐231 (B), and MCF‐10A (C) cells with C&K at concentrations ranging from 10 to 100 µM for 48 and 72 h"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "ck_mcf7_si_48h",
+      "subject": [
+        "ck"
+      ],
+      "property": "selectivity_index",
+      "value": {
+        "number": "1.50",
+        "unit": "1"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7"
+        },
+        {
+          "role": "comparator",
+          "entity": "mcf10a"
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "10",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "s2.1/p2",
+          "quote": "The SIs for C&K treatment in MCF‐7 cells were 1.50 and 1.67 at 48 and 72 h, respectively"
+        },
+        {
+          "block": "s2.1/p2",
+          "quote": "The ratio between the IC₅₀ of the non‐tumorigenic cells and the IC₅₀ of the tumor cells represents the selectivity index (SI)"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "The selectivity index (SI) was calculated as the ratio of the MCF‐10A non‐tumorigenic cells' IC₅₀ to the IC₅₀ of the MCF‐7 or MDA‐MB‐231 breast cancer cell lines"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the MCF‐7 and MDA‐MB‐231 breast cancer cells and the MCF‐10A non‐tumorigenic breast cell line were treated with varying concentrations of C&K (10, 25, 50, 75, and 100 μM) for 48 and 72 h, and cells viabilities were assessed by MTT assay"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "ck_mcf7_si_72h",
+      "subject": [
+        "ck"
+      ],
+      "property": "selectivity_index",
+      "value": {
+        "number": "1.67",
+        "unit": "1"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mcf7"
+        },
+        {
+          "role": "comparator",
+          "entity": "mcf10a"
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "10",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "s2.1/p2",
+          "quote": "The SIs for C&K treatment in MCF‐7 cells were 1.50 and 1.67 at 48 and 72 h, respectively"
+        },
+        {
+          "block": "s2.1/p2",
+          "quote": "The ratio between the IC₅₀ of the non‐tumorigenic cells and the IC₅₀ of the tumor cells represents the selectivity index (SI)"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "The selectivity index (SI) was calculated as the ratio of the MCF‐10A non‐tumorigenic cells' IC₅₀ to the IC₅₀ of the MCF‐7 or MDA‐MB‐231 breast cancer cell lines"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the MCF‐7 and MDA‐MB‐231 breast cancer cells and the MCF‐10A non‐tumorigenic breast cell line were treated with varying concentrations of C&K (10, 25, 50, 75, and 100 μM) for 48 and 72 h, and cells viabilities were assessed by MTT assay"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "ck_mdamb231_si_48h",
+      "subject": [
+        "ck"
+      ],
+      "property": "selectivity_index",
+      "value": {
+        "number": "1.09",
+        "unit": "1"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mdamb231"
+        },
+        {
+          "role": "comparator",
+          "entity": "mcf10a"
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "10",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "s2.1/p2",
+          "quote": "For MDA‐MB‐231 cells, the SIs were 1.09 (48 h) and 1.15 (72 h) (Supporting Information S2: Table 1)"
+        },
+        {
+          "block": "s2.1/p2",
+          "quote": "The ratio between the IC₅₀ of the non‐tumorigenic cells and the IC₅₀ of the tumor cells represents the selectivity index (SI)"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "The selectivity index (SI) was calculated as the ratio of the MCF‐10A non‐tumorigenic cells' IC₅₀ to the IC₅₀ of the MCF‐7 or MDA‐MB‐231 breast cancer cell lines"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the MCF‐7 and MDA‐MB‐231 breast cancer cells and the MCF‐10A non‐tumorigenic breast cell line were treated with varying concentrations of C&K (10, 25, 50, 75, and 100 μM) for 48 and 72 h, and cells viabilities were assessed by MTT assay"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "ck_mdamb231_si_72h",
+      "subject": [
+        "ck"
+      ],
+      "property": "selectivity_index",
+      "value": {
+        "number": "1.15",
+        "unit": "1"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mdamb231"
+        },
+        {
+          "role": "comparator",
+          "entity": "mcf10a"
+        },
+        {
+          "property": "tested_concentration",
+          "value": {
+            "low": "10",
+            "high": "100",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "72",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "s2.1/p2",
+          "quote": "For MDA‐MB‐231 cells, the SIs were 1.09 (48 h) and 1.15 (72 h) (Supporting Information S2: Table 1)"
+        },
+        {
+          "block": "s2.1/p2",
+          "quote": "The ratio between the IC₅₀ of the non‐tumorigenic cells and the IC₅₀ of the tumor cells represents the selectivity index (SI)"
+        },
+        {
+          "block": "s5.3/p1",
+          "quote": "The selectivity index (SI) was calculated as the ratio of the MCF‐10A non‐tumorigenic cells' IC₅₀ to the IC₅₀ of the MCF‐7 or MDA‐MB‐231 breast cancer cell lines"
+        },
+        {
+          "block": "s2.1/p1",
+          "quote": "the MCF‐7 and MDA‐MB‐231 breast cancer cells and the MCF‐10A non‐tumorigenic breast cell line were treated with varying concentrations of C&K (10, 25, 50, 75, and 100 μM) for 48 and 72 h, and cells viabilities were assessed by MTT assay"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "ck_dox_fic_1",
+      "subject": [
+        "ck",
+        "dox"
+      ],
+      "property": "fic_index",
+      "value": {
+        "number": "0.63",
+        "unit": "1"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mdamb231"
+        },
+        {
+          "role": "other",
+          "text": "17.52 μM C&K + 0.15 μM doxorubicin"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "s2.2/p1",
+          "quote": "The association of 17.52 μM C&K + 0.15 μM doxorubicin, 13.25 μM C&K + 0.31 μM doxorubicin, 9.98 μM C&K + 0.62 μM doxorubicin, and 4.89 μM C&K + 1.25 μM doxorubicin showed a synergistic effect, with FIC values of 0.63, 0.55, 0.56, and 0.66, respectively (Supporting Information S2: Table 2)"
+        },
+        {
+          "block": "s2.2/p1",
+          "quote": "we used the fractional inhibitory concentration index and the isobologram method"
+        },
+        {
+          "block": "s5.4/p1",
+          "quote": "The fractional inhibitory concentration index (FIC) of C&K was calculated using the formula IC50 of C&K in association with IC₅₀ of C&K alone (IC₅₀, 50% inhibitory concentration) in MDA‐MB‐231 cells"
+        },
+        {
+          "block": "s5.4/p1",
+          "quote": "The same formula was applied to doxorubicin. The mean FIC was calculated for each combination"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "The cytotoxicity of co‐treatment of MDA‐MB‐231 cells with different concentrations of C&K and doxorubicin (0.15 µM (A), 0.31 µM (B), 0.62 µM, and 1.25 µM (D)) for 48 h was determined by the MTT assay"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "The diagonal line of the isobologram is the line of additivity and represents all the additive theoretical combinations that should inhibit survival by 50%"
+        },
+        {
+          "block": "s5.1/p1",
+          "quote": "C&K (10, 25, 50, 75, and 100 μM) and doxorubicin (D1515, Sigma‐Aldrich, St. Louis, MO, USA) were applied alone for 48 and 72 h and in combination for 48 h"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "ck_dox_fic_2",
+      "subject": [
+        "ck",
+        "dox"
+      ],
+      "property": "fic_index",
+      "value": {
+        "number": "0.55",
+        "unit": "1"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mdamb231"
+        },
+        {
+          "role": "other",
+          "text": "13.25 μM C&K + 0.31 μM doxorubicin"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "s2.2/p1",
+          "quote": "The association of 17.52 μM C&K + 0.15 μM doxorubicin, 13.25 μM C&K + 0.31 μM doxorubicin, 9.98 μM C&K + 0.62 μM doxorubicin, and 4.89 μM C&K + 1.25 μM doxorubicin showed a synergistic effect, with FIC values of 0.63, 0.55, 0.56, and 0.66, respectively (Supporting Information S2: Table 2)"
+        },
+        {
+          "block": "s2.2/p1",
+          "quote": "we used the fractional inhibitory concentration index and the isobologram method"
+        },
+        {
+          "block": "s5.4/p1",
+          "quote": "The fractional inhibitory concentration index (FIC) of C&K was calculated using the formula IC50 of C&K in association with IC₅₀ of C&K alone (IC₅₀, 50% inhibitory concentration) in MDA‐MB‐231 cells"
+        },
+        {
+          "block": "s5.4/p1",
+          "quote": "The same formula was applied to doxorubicin. The mean FIC was calculated for each combination"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "The cytotoxicity of co‐treatment of MDA‐MB‐231 cells with different concentrations of C&K and doxorubicin (0.15 µM (A), 0.31 µM (B), 0.62 µM, and 1.25 µM (D)) for 48 h was determined by the MTT assay"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "The diagonal line of the isobologram is the line of additivity and represents all the additive theoretical combinations that should inhibit survival by 50%"
+        },
+        {
+          "block": "s5.1/p1",
+          "quote": "C&K (10, 25, 50, 75, and 100 μM) and doxorubicin (D1515, Sigma‐Aldrich, St. Louis, MO, USA) were applied alone for 48 and 72 h and in combination for 48 h"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "ck_dox_fic_3",
+      "subject": [
+        "ck",
+        "dox"
+      ],
+      "property": "fic_index",
+      "value": {
+        "number": "0.56",
+        "unit": "1"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mdamb231"
+        },
+        {
+          "role": "other",
+          "text": "9.98 μM C&K + 0.62 μM doxorubicin"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "s2.2/p1",
+          "quote": "The association of 17.52 μM C&K + 0.15 μM doxorubicin, 13.25 μM C&K + 0.31 μM doxorubicin, 9.98 μM C&K + 0.62 μM doxorubicin, and 4.89 μM C&K + 1.25 μM doxorubicin showed a synergistic effect, with FIC values of 0.63, 0.55, 0.56, and 0.66, respectively (Supporting Information S2: Table 2)"
+        },
+        {
+          "block": "s2.2/p1",
+          "quote": "we used the fractional inhibitory concentration index and the isobologram method"
+        },
+        {
+          "block": "s5.4/p1",
+          "quote": "The fractional inhibitory concentration index (FIC) of C&K was calculated using the formula IC50 of C&K in association with IC₅₀ of C&K alone (IC₅₀, 50% inhibitory concentration) in MDA‐MB‐231 cells"
+        },
+        {
+          "block": "s5.4/p1",
+          "quote": "The same formula was applied to doxorubicin. The mean FIC was calculated for each combination"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "The cytotoxicity of co‐treatment of MDA‐MB‐231 cells with different concentrations of C&K and doxorubicin (0.15 µM (A), 0.31 µM (B), 0.62 µM, and 1.25 µM (D)) for 48 h was determined by the MTT assay"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "The diagonal line of the isobologram is the line of additivity and represents all the additive theoretical combinations that should inhibit survival by 50%"
+        },
+        {
+          "block": "s5.1/p1",
+          "quote": "C&K (10, 25, 50, 75, and 100 μM) and doxorubicin (D1515, Sigma‐Aldrich, St. Louis, MO, USA) were applied alone for 48 and 72 h and in combination for 48 h"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "ck_dox_fic_4",
+      "subject": [
+        "ck",
+        "dox"
+      ],
+      "property": "fic_index",
+      "value": {
+        "number": "0.66",
+        "unit": "1"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mdamb231"
+        },
+        {
+          "role": "other",
+          "text": "4.89 μM C&K + 1.25 μM doxorubicin"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        }
+      ],
+      "method": {
+        "label": "MTT assay"
+      },
+      "evidence": [
+        {
+          "block": "s2.2/p1",
+          "quote": "The association of 17.52 μM C&K + 0.15 μM doxorubicin, 13.25 μM C&K + 0.31 μM doxorubicin, 9.98 μM C&K + 0.62 μM doxorubicin, and 4.89 μM C&K + 1.25 μM doxorubicin showed a synergistic effect, with FIC values of 0.63, 0.55, 0.56, and 0.66, respectively (Supporting Information S2: Table 2)"
+        },
+        {
+          "block": "s2.2/p1",
+          "quote": "we used the fractional inhibitory concentration index and the isobologram method"
+        },
+        {
+          "block": "s5.4/p1",
+          "quote": "The fractional inhibitory concentration index (FIC) of C&K was calculated using the formula IC50 of C&K in association with IC₅₀ of C&K alone (IC₅₀, 50% inhibitory concentration) in MDA‐MB‐231 cells"
+        },
+        {
+          "block": "s5.4/p1",
+          "quote": "The same formula was applied to doxorubicin. The mean FIC was calculated for each combination"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "The cytotoxicity of co‐treatment of MDA‐MB‐231 cells with different concentrations of C&K and doxorubicin (0.15 µM (A), 0.31 µM (B), 0.62 µM, and 1.25 µM (D)) for 48 h was determined by the MTT assay"
+        },
+        {
+          "block": "f2/caption",
+          "quote": "The diagonal line of the isobologram is the line of additivity and represents all the additive theoretical combinations that should inhibit survival by 50%"
+        },
+        {
+          "block": "s5.1/p1",
+          "quote": "C&K (10, 25, 50, 75, and 100 μM) and doxorubicin (D1515, Sigma‐Aldrich, St. Louis, MO, USA) were applied alone for 48 and 72 h and in combination for 48 h"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "ck_dox_annexin",
+      "agents": [
+        {
+          "entity": "ck",
+          "dose": {
+            "number": "17.52",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "entity": "dox",
+          "dose": {
+            "number": "0.15",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mdamb231",
+        "property": "apoptotic_cells"
+      },
+      "direction": "increase",
+      "magnitude": {
+        "measure": "fold_change",
+        "number": "4.05"
+      },
+      "comparator": "control",
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACSCalibur"
+        }
+      ],
+      "method": {
+        "label": "flow cytometry"
+      },
+      "evidence": [
+        {
+          "block": "s2.3/p1",
+          "quote": "Our results demonstrate that C&K with doxorubicin increased the percentage of annexin‐V‐positive cells by 4.05‐fold, indicating cell death by apoptosis (Figure 3F)"
+        },
+        {
+          "block": "s2.3/p1",
+          "quote": "MDA‐MB‐231 cells were labeled with annexin‐V‐FITC and propidium iodide (PI) to determine the type of cell death in response to treatment with 30.40 μM C&K, 2.50 μM doxorubicin, and association of 17.52 μM C&K with 0.15 μM doxorubicin (Figure 3A–H)"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "Double staining for annexin V‐fluorescein isothiocyanate (FITC) and PI was performed with the Annexin‐V apoptosis detection kit (Molecular Probes, Eugene, OR, USA)"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "MDA‐MB‐231 cells were treated with C&K and the association of C&K with doxorubicin for 48 h"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "Cells were then washed twice in cold annexin V‐buffer and centrifuged at 2000 rpm for 5 min"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "Pellets were resuspended in 20 μL of annexin V FITC, and after 15 min of incubation in the dark, 480 μL of annexin V‐buffer containing 0.5 mg/mL PI was added according to the manufacturer's instructions"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "Annexin V‐FITC labeling was acquired on a BD FACSCalibur flowcytometer(Becton Dickinson) and analyzed using BD CellQuest Pro software"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "MDA‐MB‐231 cells were treated with 1% DMSO, the IC₅₀ of C&K, doxorubicin (DOX), or co‐treated with C&K and doxorrubicin for 48 h, stained with Annexin‐V‐FITC and propidium iodide (PI), and evaluated by flow cytometry (A–E)"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "The data represent the mean ± SEM of three independent experiments"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "in relation to control"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "ck_pi",
+      "agents": [
+        {
+          "entity": "ck",
+          "dose": {
+            "number": "30.40",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mdamb231",
+        "property": "necrotic_cells"
+      },
+      "direction": "increase",
+      "magnitude": {
+        "measure": "fold_change",
+        "number": "1.51"
+      },
+      "comparator": "control",
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACSCalibur"
+        }
+      ],
+      "method": {
+        "label": "flow cytometry"
+      },
+      "evidence": [
+        {
+          "block": "s2.3/p1",
+          "quote": "C&K, doxorubicin, and C&K with doxorubicin increased by 1.51‐, 1.31‐, and 1.32‐fold the percentage of PI‐positive cells, indicating cell death by necrosis (Figure 3G)"
+        },
+        {
+          "block": "s2.3/p1",
+          "quote": "MDA‐MB‐231 cells were labeled with annexin‐V‐FITC and propidium iodide (PI) to determine the type of cell death in response to treatment with 30.40 μM C&K, 2.50 μM doxorubicin, and association of 17.52 μM C&K with 0.15 μM doxorubicin (Figure 3A–H)"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "Double staining for annexin V‐fluorescein isothiocyanate (FITC) and PI was performed with the Annexin‐V apoptosis detection kit (Molecular Probes, Eugene, OR, USA)"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "MDA‐MB‐231 cells were treated with C&K and the association of C&K with doxorubicin for 48 h"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "Cells were then washed twice in cold annexin V‐buffer and centrifuged at 2000 rpm for 5 min"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "Pellets were resuspended in 20 μL of annexin V FITC, and after 15 min of incubation in the dark, 480 μL of annexin V‐buffer containing 0.5 mg/mL PI was added according to the manufacturer's instructions"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "Annexin V‐FITC labeling was acquired on a BD FACSCalibur flowcytometer(Becton Dickinson) and analyzed using BD CellQuest Pro software"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "MDA‐MB‐231 cells were treated with 1% DMSO, the IC₅₀ of C&K, doxorubicin (DOX), or co‐treated with C&K and doxorrubicin for 48 h, stained with Annexin‐V‐FITC and propidium iodide (PI), and evaluated by flow cytometry (A–E)"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "The data represent the mean ± SEM of three independent experiments"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "in relation to control"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "dox_pi",
+      "agents": [
+        {
+          "entity": "dox",
+          "dose": {
+            "number": "2.50",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mdamb231",
+        "property": "necrotic_cells"
+      },
+      "direction": "increase",
+      "magnitude": {
+        "measure": "fold_change",
+        "number": "1.31"
+      },
+      "comparator": "control",
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACSCalibur"
+        }
+      ],
+      "method": {
+        "label": "flow cytometry"
+      },
+      "evidence": [
+        {
+          "block": "s2.3/p1",
+          "quote": "C&K, doxorubicin, and C&K with doxorubicin increased by 1.51‐, 1.31‐, and 1.32‐fold the percentage of PI‐positive cells, indicating cell death by necrosis (Figure 3G)"
+        },
+        {
+          "block": "s2.3/p1",
+          "quote": "MDA‐MB‐231 cells were labeled with annexin‐V‐FITC and propidium iodide (PI) to determine the type of cell death in response to treatment with 30.40 μM C&K, 2.50 μM doxorubicin, and association of 17.52 μM C&K with 0.15 μM doxorubicin (Figure 3A–H)"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "Double staining for annexin V‐fluorescein isothiocyanate (FITC) and PI was performed with the Annexin‐V apoptosis detection kit (Molecular Probes, Eugene, OR, USA)"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "MDA‐MB‐231 cells were treated with C&K and the association of C&K with doxorubicin for 48 h"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "Cells were then washed twice in cold annexin V‐buffer and centrifuged at 2000 rpm for 5 min"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "Pellets were resuspended in 20 μL of annexin V FITC, and after 15 min of incubation in the dark, 480 μL of annexin V‐buffer containing 0.5 mg/mL PI was added according to the manufacturer's instructions"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "Annexin V‐FITC labeling was acquired on a BD FACSCalibur flowcytometer(Becton Dickinson) and analyzed using BD CellQuest Pro software"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "MDA‐MB‐231 cells were treated with 1% DMSO, the IC₅₀ of C&K, doxorubicin (DOX), or co‐treated with C&K and doxorrubicin for 48 h, stained with Annexin‐V‐FITC and propidium iodide (PI), and evaluated by flow cytometry (A–E)"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "The data represent the mean ± SEM of three independent experiments"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "in relation to control"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "ck_dox_pi",
+      "agents": [
+        {
+          "entity": "ck",
+          "dose": {
+            "number": "17.52",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "entity": "dox",
+          "dose": {
+            "number": "0.15",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mdamb231",
+        "property": "necrotic_cells"
+      },
+      "direction": "increase",
+      "magnitude": {
+        "measure": "fold_change",
+        "number": "1.32"
+      },
+      "comparator": "control",
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACSCalibur"
+        }
+      ],
+      "method": {
+        "label": "flow cytometry"
+      },
+      "evidence": [
+        {
+          "block": "s2.3/p1",
+          "quote": "C&K, doxorubicin, and C&K with doxorubicin increased by 1.51‐, 1.31‐, and 1.32‐fold the percentage of PI‐positive cells, indicating cell death by necrosis (Figure 3G)"
+        },
+        {
+          "block": "s2.3/p1",
+          "quote": "MDA‐MB‐231 cells were labeled with annexin‐V‐FITC and propidium iodide (PI) to determine the type of cell death in response to treatment with 30.40 μM C&K, 2.50 μM doxorubicin, and association of 17.52 μM C&K with 0.15 μM doxorubicin (Figure 3A–H)"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "Double staining for annexin V‐fluorescein isothiocyanate (FITC) and PI was performed with the Annexin‐V apoptosis detection kit (Molecular Probes, Eugene, OR, USA)"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "MDA‐MB‐231 cells were treated with C&K and the association of C&K with doxorubicin for 48 h"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "Cells were then washed twice in cold annexin V‐buffer and centrifuged at 2000 rpm for 5 min"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "Pellets were resuspended in 20 μL of annexin V FITC, and after 15 min of incubation in the dark, 480 μL of annexin V‐buffer containing 0.5 mg/mL PI was added according to the manufacturer's instructions"
+        },
+        {
+          "block": "s5.7/p1",
+          "quote": "Annexin V‐FITC labeling was acquired on a BD FACSCalibur flowcytometer(Becton Dickinson) and analyzed using BD CellQuest Pro software"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "MDA‐MB‐231 cells were treated with 1% DMSO, the IC₅₀ of C&K, doxorubicin (DOX), or co‐treated with C&K and doxorrubicin for 48 h, stained with Annexin‐V‐FITC and propidium iodide (PI), and evaluated by flow cytometry (A–E)"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "The data represent the mean ± SEM of three independent experiments"
+        },
+        {
+          "block": "f3/caption",
+          "quote": "in relation to control"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "ck_sub_g0g1",
+      "agents": [
+        {
+          "entity": "ck",
+          "dose": {
+            "number": "30.40",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mdamb231",
+        "property": "sub_g0g1_cells"
+      },
+      "direction": "increase",
+      "magnitude": {
+        "measure": "fold_change",
+        "number": "5.10"
+      },
+      "comparator": "control",
+      "significance": {
+        "statement": "significant"
+      },
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "role": "other",
+          "text": "10 μg/mL propidium iodide (PI) and 20 μg/mL RNAse"
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACSCalibur"
+        }
+      ],
+      "method": {
+        "label": "flow cytometry"
+      },
+      "evidence": [
+        {
+          "block": "s2.3/p2",
+          "quote": "Our results demonstrate that treatment with 30.40 μM C&K, 2.50 μM doxorubicin, or a combination of 17.52 μM C&K with 0.15 μM doxorubicin significantly increased the sub‐G0/G1 population by 5.10‐, 7.73‐, and 5.31‐fold, respectively, suggesting apoptosis"
+        },
+        {
+          "block": "s5.12/p1",
+          "quote": "p‐values < 0.05 (two‐sided) were considered statistically significant"
+        },
+        {
+          "block": "s2.3/p2",
+          "quote": "Additionally, MDA‐MB‐231 cells were labelled with a cell cycle staining solution and analyzed by flow cytometry"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "MDA‐MB‐231 cells were treated with C&K and the combination of C&K with doxorubicin for 48 h"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "After treatment, the cells (5 × 10⁵) were washed with PBS and fixed in 70% (v/v) ice‐cold methanol/PBS for at least 1 h at 4°C"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "The fixed cells were washed once with PBS and then incubated in PBS supplemented with 10 μg/mL propidium iodide (PI) and 20 μg/mL RNAse at 37°C for 30 min in the dark"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "For each sample, 10,000 events were acquired using the BD FACSCalibur (Becton Dickinson) flow cytometer and analyzed in BD CellQuest Pro software"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "MDA‐MB‐231 cells were treated with 1% DMSO, the IC₅₀ of C&K, doxorubicin (DOX), or co‐treated with C&K and doxorubicin for 48 h, stained with PI, and evaluated by flow cytometry"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "Histograms are representative of three independent experiments"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "in relation to control"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "dox_sub_g0g1",
+      "agents": [
+        {
+          "entity": "dox",
+          "dose": {
+            "number": "2.50",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mdamb231",
+        "property": "sub_g0g1_cells"
+      },
+      "direction": "increase",
+      "magnitude": {
+        "measure": "fold_change",
+        "number": "7.73"
+      },
+      "comparator": "control",
+      "significance": {
+        "statement": "significant"
+      },
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "role": "other",
+          "text": "10 μg/mL propidium iodide (PI) and 20 μg/mL RNAse"
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACSCalibur"
+        }
+      ],
+      "method": {
+        "label": "flow cytometry"
+      },
+      "evidence": [
+        {
+          "block": "s2.3/p2",
+          "quote": "Our results demonstrate that treatment with 30.40 μM C&K, 2.50 μM doxorubicin, or a combination of 17.52 μM C&K with 0.15 μM doxorubicin significantly increased the sub‐G0/G1 population by 5.10‐, 7.73‐, and 5.31‐fold, respectively, suggesting apoptosis"
+        },
+        {
+          "block": "s5.12/p1",
+          "quote": "p‐values < 0.05 (two‐sided) were considered statistically significant"
+        },
+        {
+          "block": "s2.3/p2",
+          "quote": "Additionally, MDA‐MB‐231 cells were labelled with a cell cycle staining solution and analyzed by flow cytometry"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "MDA‐MB‐231 cells were treated with C&K and the combination of C&K with doxorubicin for 48 h"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "After treatment, the cells (5 × 10⁵) were washed with PBS and fixed in 70% (v/v) ice‐cold methanol/PBS for at least 1 h at 4°C"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "The fixed cells were washed once with PBS and then incubated in PBS supplemented with 10 μg/mL propidium iodide (PI) and 20 μg/mL RNAse at 37°C for 30 min in the dark"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "For each sample, 10,000 events were acquired using the BD FACSCalibur (Becton Dickinson) flow cytometer and analyzed in BD CellQuest Pro software"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "MDA‐MB‐231 cells were treated with 1% DMSO, the IC₅₀ of C&K, doxorubicin (DOX), or co‐treated with C&K and doxorubicin for 48 h, stained with PI, and evaluated by flow cytometry"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "Histograms are representative of three independent experiments"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "in relation to control"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "ck_dox_sub_g0g1",
+      "agents": [
+        {
+          "entity": "ck",
+          "dose": {
+            "number": "17.52",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "entity": "dox",
+          "dose": {
+            "number": "0.15",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mdamb231",
+        "property": "sub_g0g1_cells"
+      },
+      "direction": "increase",
+      "magnitude": {
+        "measure": "fold_change",
+        "number": "5.31"
+      },
+      "comparator": "control",
+      "significance": {
+        "statement": "significant"
+      },
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "role": "other",
+          "text": "10 μg/mL propidium iodide (PI) and 20 μg/mL RNAse"
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACSCalibur"
+        }
+      ],
+      "method": {
+        "label": "flow cytometry"
+      },
+      "evidence": [
+        {
+          "block": "s2.3/p2",
+          "quote": "Our results demonstrate that treatment with 30.40 μM C&K, 2.50 μM doxorubicin, or a combination of 17.52 μM C&K with 0.15 μM doxorubicin significantly increased the sub‐G0/G1 population by 5.10‐, 7.73‐, and 5.31‐fold, respectively, suggesting apoptosis"
+        },
+        {
+          "block": "s5.12/p1",
+          "quote": "p‐values < 0.05 (two‐sided) were considered statistically significant"
+        },
+        {
+          "block": "s2.3/p2",
+          "quote": "Additionally, MDA‐MB‐231 cells were labelled with a cell cycle staining solution and analyzed by flow cytometry"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "MDA‐MB‐231 cells were treated with C&K and the combination of C&K with doxorubicin for 48 h"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "After treatment, the cells (5 × 10⁵) were washed with PBS and fixed in 70% (v/v) ice‐cold methanol/PBS for at least 1 h at 4°C"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "The fixed cells were washed once with PBS and then incubated in PBS supplemented with 10 μg/mL propidium iodide (PI) and 20 μg/mL RNAse at 37°C for 30 min in the dark"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "For each sample, 10,000 events were acquired using the BD FACSCalibur (Becton Dickinson) flow cytometer and analyzed in BD CellQuest Pro software"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "MDA‐MB‐231 cells were treated with 1% DMSO, the IC₅₀ of C&K, doxorubicin (DOX), or co‐treated with C&K and doxorubicin for 48 h, stained with PI, and evaluated by flow cytometry"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "Histograms are representative of three independent experiments"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "in relation to control"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "ck_g0g1",
+      "agents": [
+        {
+          "entity": "ck",
+          "dose": {
+            "number": "30.40",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mdamb231",
+        "property": "g0g1_phase_cells"
+      },
+      "direction": "decrease",
+      "magnitude": {
+        "measure": "fold_change",
+        "number": "1.52"
+      },
+      "comparator": "control",
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "role": "other",
+          "text": "10 μg/mL propidium iodide (PI) and 20 μg/mL RNAse"
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACSCalibur"
+        }
+      ],
+      "method": {
+        "label": "flow cytometry"
+      },
+      "evidence": [
+        {
+          "block": "s2.3/p2",
+          "quote": "Concurrently, the G0/G1 phase was decreased by 1.52‐, 1.59‐, and 2.14‐fold, respectively (Figure 4C–E,F)"
+        },
+        {
+          "block": "s2.3/p2",
+          "quote": "Our results demonstrate that treatment with 30.40 μM C&K, 2.50 μM doxorubicin, or a combination of 17.52 μM C&K with 0.15 μM doxorubicin significantly increased the sub‐G0/G1 population by 5.10‐, 7.73‐, and 5.31‐fold, respectively, suggesting apoptosis"
+        },
+        {
+          "block": "s2.3/p2",
+          "quote": "Additionally, MDA‐MB‐231 cells were labelled with a cell cycle staining solution and analyzed by flow cytometry"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "MDA‐MB‐231 cells were treated with C&K and the combination of C&K with doxorubicin for 48 h"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "After treatment, the cells (5 × 10⁵) were washed with PBS and fixed in 70% (v/v) ice‐cold methanol/PBS for at least 1 h at 4°C"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "The fixed cells were washed once with PBS and then incubated in PBS supplemented with 10 μg/mL propidium iodide (PI) and 20 μg/mL RNAse at 37°C for 30 min in the dark"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "For each sample, 10,000 events were acquired using the BD FACSCalibur (Becton Dickinson) flow cytometer and analyzed in BD CellQuest Pro software"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "MDA‐MB‐231 cells were treated with 1% DMSO, the IC₅₀ of C&K, doxorubicin (DOX), or co‐treated with C&K and doxorubicin for 48 h, stained with PI, and evaluated by flow cytometry"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "Histograms are representative of three independent experiments"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "in relation to control"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "dox_g0g1",
+      "agents": [
+        {
+          "entity": "dox",
+          "dose": {
+            "number": "2.50",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mdamb231",
+        "property": "g0g1_phase_cells"
+      },
+      "direction": "decrease",
+      "magnitude": {
+        "measure": "fold_change",
+        "number": "1.59"
+      },
+      "comparator": "control",
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "role": "other",
+          "text": "10 μg/mL propidium iodide (PI) and 20 μg/mL RNAse"
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACSCalibur"
+        }
+      ],
+      "method": {
+        "label": "flow cytometry"
+      },
+      "evidence": [
+        {
+          "block": "s2.3/p2",
+          "quote": "Concurrently, the G0/G1 phase was decreased by 1.52‐, 1.59‐, and 2.14‐fold, respectively (Figure 4C–E,F)"
+        },
+        {
+          "block": "s2.3/p2",
+          "quote": "Our results demonstrate that treatment with 30.40 μM C&K, 2.50 μM doxorubicin, or a combination of 17.52 μM C&K with 0.15 μM doxorubicin significantly increased the sub‐G0/G1 population by 5.10‐, 7.73‐, and 5.31‐fold, respectively, suggesting apoptosis"
+        },
+        {
+          "block": "s2.3/p2",
+          "quote": "Additionally, MDA‐MB‐231 cells were labelled with a cell cycle staining solution and analyzed by flow cytometry"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "MDA‐MB‐231 cells were treated with C&K and the combination of C&K with doxorubicin for 48 h"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "After treatment, the cells (5 × 10⁵) were washed with PBS and fixed in 70% (v/v) ice‐cold methanol/PBS for at least 1 h at 4°C"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "The fixed cells were washed once with PBS and then incubated in PBS supplemented with 10 μg/mL propidium iodide (PI) and 20 μg/mL RNAse at 37°C for 30 min in the dark"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "For each sample, 10,000 events were acquired using the BD FACSCalibur (Becton Dickinson) flow cytometer and analyzed in BD CellQuest Pro software"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "MDA‐MB‐231 cells were treated with 1% DMSO, the IC₅₀ of C&K, doxorubicin (DOX), or co‐treated with C&K and doxorubicin for 48 h, stained with PI, and evaluated by flow cytometry"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "Histograms are representative of three independent experiments"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "in relation to control"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "ck_dox_g0g1",
+      "agents": [
+        {
+          "entity": "ck",
+          "dose": {
+            "number": "17.52",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        },
+        {
+          "entity": "dox",
+          "dose": {
+            "number": "0.15",
+            "unit": "umol/L",
+            "unit_text": "μM"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mdamb231",
+        "property": "g0g1_phase_cells"
+      },
+      "direction": "decrease",
+      "magnitude": {
+        "measure": "fold_change",
+        "number": "2.14"
+      },
+      "comparator": "control",
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "role": "other",
+          "text": "10 μg/mL propidium iodide (PI) and 20 μg/mL RNAse"
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACSCalibur"
+        }
+      ],
+      "method": {
+        "label": "flow cytometry"
+      },
+      "evidence": [
+        {
+          "block": "s2.3/p2",
+          "quote": "Concurrently, the G0/G1 phase was decreased by 1.52‐, 1.59‐, and 2.14‐fold, respectively (Figure 4C–E,F)"
+        },
+        {
+          "block": "s2.3/p2",
+          "quote": "Our results demonstrate that treatment with 30.40 μM C&K, 2.50 μM doxorubicin, or a combination of 17.52 μM C&K with 0.15 μM doxorubicin significantly increased the sub‐G0/G1 population by 5.10‐, 7.73‐, and 5.31‐fold, respectively, suggesting apoptosis"
+        },
+        {
+          "block": "s2.3/p2",
+          "quote": "Additionally, MDA‐MB‐231 cells were labelled with a cell cycle staining solution and analyzed by flow cytometry"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "MDA‐MB‐231 cells were treated with C&K and the combination of C&K with doxorubicin for 48 h"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "After treatment, the cells (5 × 10⁵) were washed with PBS and fixed in 70% (v/v) ice‐cold methanol/PBS for at least 1 h at 4°C"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "The fixed cells were washed once with PBS and then incubated in PBS supplemented with 10 μg/mL propidium iodide (PI) and 20 μg/mL RNAse at 37°C for 30 min in the dark"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "For each sample, 10,000 events were acquired using the BD FACSCalibur (Becton Dickinson) flow cytometer and analyzed in BD CellQuest Pro software"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "MDA‐MB‐231 cells were treated with 1% DMSO, the IC₅₀ of C&K, doxorubicin (DOX), or co‐treated with C&K and doxorubicin for 48 h, stained with PI, and evaluated by flow cytometry"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "Histograms are representative of three independent experiments"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "in relation to control"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "dmso_cell_cycle",
+      "agents": [
+        {
+          "entity": "dmso",
+          "dose": {
+            "number": "1",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        }
+      ],
+      "target": {
+        "entity": "mdamb231"
+      },
+      "direction": "no_change",
+      "comparator": "the untreated control",
+      "conditions": [
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "role": "other",
+          "text": "10 μg/mL propidium iodide (PI) and 20 μg/mL RNAse"
+        },
+        {
+          "property": "counted_events",
+          "value": {
+            "number": "10000",
+            "unit": "{events}",
+            "unit_text": "events"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACSCalibur"
+        }
+      ],
+      "method": {
+        "label": "flow cytometry"
+      },
+      "evidence": [
+        {
+          "block": "s2.3/p2",
+          "quote": "Cells treated with DMSO showed no alterations in the cell cycle compared to the untreated control (Figure 4A,B,F)"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "(B) Cells treated with 1% DMSO"
+        },
+        {
+          "block": "s2.3/p2",
+          "quote": "Additionally, MDA‐MB‐231 cells were labelled with a cell cycle staining solution and analyzed by flow cytometry"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "MDA‐MB‐231 cells were treated with C&K and the combination of C&K with doxorubicin for 48 h"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "After treatment, the cells (5 × 10⁵) were washed with PBS and fixed in 70% (v/v) ice‐cold methanol/PBS for at least 1 h at 4°C"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "The fixed cells were washed once with PBS and then incubated in PBS supplemented with 10 μg/mL propidium iodide (PI) and 20 μg/mL RNAse at 37°C for 30 min in the dark"
+        },
+        {
+          "block": "s5.6/p1",
+          "quote": "For each sample, 10,000 events were acquired using the BD FACSCalibur (Becton Dickinson) flow cytometer and analyzed in BD CellQuest Pro software"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "MDA‐MB‐231 cells were treated with 1% DMSO, the IC₅₀ of C&K, doxorubicin (DOX), or co‐treated with C&K and doxorubicin for 48 h, stained with PI, and evaluated by flow cytometry"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "Histograms are representative of three independent experiments"
+        },
+        {
+          "block": "f4/caption",
+          "quote": "in relation to control"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "dox_ros",
+      "agents": [
+        {
+          "entity": "dox"
+        }
+      ],
+      "target": {
+        "entity": "ros",
+        "property": "intracellular_level"
+      },
+      "direction": "increase",
+      "magnitude": {
+        "measure": "fold_change",
+        "number": "5.09"
+      },
+      "comparator": "control",
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mdamb231"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "3",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "role": "other",
+          "text": "10 μM 2′‐7′‐dichlorodihydrofluorescein diacetate (DCFH‐DA, Sigma‐Aldrich)"
+        },
+        {
+          "property": "incubation_time",
+          "value": {
+            "number": "30",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "excitation_wavelength",
+          "value": {
+            "number": "500",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "property": "emission_wavelength",
+          "value": {
+            "number": "526",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACSCalibur"
+        }
+      ],
+      "method": {
+        "label": "flow cytometry"
+      },
+      "note": "The text does not give the concentrations of the treatments in this assay. The caption of Figure 5 states that the cells had the IC₅₀ of C&K or of doxorubicin, or C&K and doxorubicin together.",
+      "evidence": [
+        {
+          "block": "s2.3/p3",
+          "quote": "Doxorubicin and the association of C&K with doxorubicin increased 5.09‐ and 1.58‐fold the ROS levels compared to control, respectively (Figure 5)"
+        },
+        {
+          "block": "s2.3/p3",
+          "quote": "To interrogate the effect of the association of C&K with doxorubicin on ROS levels, MDA‐MB‐231 cells were labeled with DCFH‐DA and evaluated by flow cytometry"
+        },
+        {
+          "block": "s5.5/p1",
+          "quote": "ROS levels were analyzed in the MDA‐MB‐231 cells treated with C&K and the association of C&K with doxorubicin for 3 h"
+        },
+        {
+          "block": "s5.5/p1",
+          "quote": "The cells were then stained with 10 μM 2′‐7′‐dichlorodihydrofluorescein diacetate (DCFH‐DA, Sigma‐Aldrich) for 30 min in the dark"
+        },
+        {
+          "block": "s5.5/p1",
+          "quote": "ROS levels were measured immediately at 500/526 nm excitation/emission wavelengths using a BD FACSCalibur flow cytometer (Becton Dickinson, Franklin Lakes, NJ, USA)"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "MDA‐MB‐231 Cells were treated with 1% DMSO, the IC₅₀ of C&K, doxorubicin (DOX), or co‐treated with C&K and doxorubicin for 3 h"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "Data are presented as mean ± SEM from three independent experiments"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "ck_dox_ros",
+      "agents": [
+        {
+          "entity": "ck"
+        },
+        {
+          "entity": "dox"
+        }
+      ],
+      "target": {
+        "entity": "ros",
+        "property": "intracellular_level"
+      },
+      "direction": "increase",
+      "magnitude": {
+        "measure": "fold_change",
+        "number": "1.58"
+      },
+      "comparator": "control",
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mdamb231"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "3",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "role": "other",
+          "text": "10 μM 2′‐7′‐dichlorodihydrofluorescein diacetate (DCFH‐DA, Sigma‐Aldrich)"
+        },
+        {
+          "property": "incubation_time",
+          "value": {
+            "number": "30",
+            "unit": "min",
+            "unit_text": "min"
+          }
+        },
+        {
+          "property": "excitation_wavelength",
+          "value": {
+            "number": "500",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "property": "emission_wavelength",
+          "value": {
+            "number": "526",
+            "unit": "nm",
+            "unit_text": "nm"
+          }
+        },
+        {
+          "role": "device",
+          "text": "BD FACSCalibur"
+        }
+      ],
+      "method": {
+        "label": "flow cytometry"
+      },
+      "note": "The text does not give the concentrations of the treatments in this assay. The caption of Figure 5 states that the cells had the IC₅₀ of C&K or of doxorubicin, or C&K and doxorubicin together.",
+      "evidence": [
+        {
+          "block": "s2.3/p3",
+          "quote": "Doxorubicin and the association of C&K with doxorubicin increased 5.09‐ and 1.58‐fold the ROS levels compared to control, respectively (Figure 5)"
+        },
+        {
+          "block": "s2.3/p3",
+          "quote": "To interrogate the effect of the association of C&K with doxorubicin on ROS levels, MDA‐MB‐231 cells were labeled with DCFH‐DA and evaluated by flow cytometry"
+        },
+        {
+          "block": "s5.5/p1",
+          "quote": "ROS levels were analyzed in the MDA‐MB‐231 cells treated with C&K and the association of C&K with doxorubicin for 3 h"
+        },
+        {
+          "block": "s5.5/p1",
+          "quote": "The cells were then stained with 10 μM 2′‐7′‐dichlorodihydrofluorescein diacetate (DCFH‐DA, Sigma‐Aldrich) for 30 min in the dark"
+        },
+        {
+          "block": "s5.5/p1",
+          "quote": "ROS levels were measured immediately at 500/526 nm excitation/emission wavelengths using a BD FACSCalibur flow cytometer (Becton Dickinson, Franklin Lakes, NJ, USA)"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "MDA‐MB‐231 Cells were treated with 1% DMSO, the IC₅₀ of C&K, doxorubicin (DOX), or co‐treated with C&K and doxorubicin for 3 h"
+        },
+        {
+          "block": "f5/caption",
+          "quote": "Data are presented as mean ± SEM from three independent experiments"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "ck_nfkb",
+      "agents": [
+        {
+          "entity": "ck"
+        }
+      ],
+      "target": {
+        "entity": "nfkb",
+        "property": "protein_level"
+      },
+      "direction": "decrease",
+      "magnitude": {
+        "measure": "fold_change",
+        "number": "1.39"
+      },
+      "comparator": "the control",
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mdamb231"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "role": "other",
+          "text": "primary antibody for NF‐κB (1:500) (Sc‐8008, Santa Cruz, TX, USA)"
+        },
+        {
+          "role": "device",
+          "text": "BD FACSCalibur"
+        }
+      ],
+      "method": {
+        "label": "flow cytometry"
+      },
+      "note": "The text does not give the concentrations of the treatments in this assay. The caption of Figure 8 states that the cells had the IC₅₀ of C&K or of doxorubicin, or C&K and doxorubicin together.",
+      "evidence": [
+        {
+          "block": "s2.5/p1",
+          "quote": "Treatment with C&K reduced NF‐κB protein levels by 1.39‐fold, whereas doxorubicin and the combination of C&K with doxorubicin increased them by 2.50‐fold and 1.57‐fold, respectively (Figure 8)"
+        },
+        {
+          "block": "s2.5/p1",
+          "quote": "we sought to validate the microarray results and assess the effect of C&K on NF‐κB protein levels"
+        },
+        {
+          "block": "s5.8/p1",
+          "quote": "The cells were treated with C&K and the association of C&K with doxorubicin for 48 h"
+        },
+        {
+          "block": "s5.8/p1",
+          "quote": "Next, the cells were fixed with 4% paraformaldehyde, 0.3% bovine serum albumin (BSA), and 0.5% Triton X‐100 for 20 min and permeabilized with Triton X‐100 (0.5% in PBS) for 25 min"
+        },
+        {
+          "block": "s5.8/p1",
+          "quote": "incubated with primary antibody for NF‐κB (1:500) (Sc‐8008, Santa Cruz, TX, USA) in the dark for approximately 1 h"
+        },
+        {
+          "block": "s5.8/p1",
+          "quote": "incubated with the fluorescence secondary antibody (Alexa 647, ThermoFisher, Waltham, MA, USA) in the dark for approximately 1 h"
+        },
+        {
+          "block": "s5.8/p1",
+          "quote": "The cells were washed and the fluorescence collected by flow cytometry on a BD FACSCalibur platform (Becton Dickinson)"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "MDA‐MB‐231 cells were treated with 1% DMSO, the IC₅₀ of C&K, doxorubicin (DOX), or co‐treated with C&K and doxorubicin for 48 h, fixed, incubated with a primary antibody against NF‐κB, stained with a fluorescent secondary antibody, and evaluated by flow cytometry"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "Data are presented as mean ± SEM from three independent experiments"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "compared to the control"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "dox_nfkb",
+      "agents": [
+        {
+          "entity": "dox"
+        }
+      ],
+      "target": {
+        "entity": "nfkb",
+        "property": "protein_level"
+      },
+      "direction": "increase",
+      "magnitude": {
+        "measure": "fold_change",
+        "number": "2.50"
+      },
+      "comparator": "the control",
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mdamb231"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "role": "other",
+          "text": "primary antibody for NF‐κB (1:500) (Sc‐8008, Santa Cruz, TX, USA)"
+        },
+        {
+          "role": "device",
+          "text": "BD FACSCalibur"
+        }
+      ],
+      "method": {
+        "label": "flow cytometry"
+      },
+      "note": "The text does not give the concentrations of the treatments in this assay. The caption of Figure 8 states that the cells had the IC₅₀ of C&K or of doxorubicin, or C&K and doxorubicin together.",
+      "evidence": [
+        {
+          "block": "s2.5/p1",
+          "quote": "Treatment with C&K reduced NF‐κB protein levels by 1.39‐fold, whereas doxorubicin and the combination of C&K with doxorubicin increased them by 2.50‐fold and 1.57‐fold, respectively (Figure 8)"
+        },
+        {
+          "block": "s2.5/p1",
+          "quote": "we sought to validate the microarray results and assess the effect of C&K on NF‐κB protein levels"
+        },
+        {
+          "block": "s5.8/p1",
+          "quote": "The cells were treated with C&K and the association of C&K with doxorubicin for 48 h"
+        },
+        {
+          "block": "s5.8/p1",
+          "quote": "Next, the cells were fixed with 4% paraformaldehyde, 0.3% bovine serum albumin (BSA), and 0.5% Triton X‐100 for 20 min and permeabilized with Triton X‐100 (0.5% in PBS) for 25 min"
+        },
+        {
+          "block": "s5.8/p1",
+          "quote": "incubated with primary antibody for NF‐κB (1:500) (Sc‐8008, Santa Cruz, TX, USA) in the dark for approximately 1 h"
+        },
+        {
+          "block": "s5.8/p1",
+          "quote": "incubated with the fluorescence secondary antibody (Alexa 647, ThermoFisher, Waltham, MA, USA) in the dark for approximately 1 h"
+        },
+        {
+          "block": "s5.8/p1",
+          "quote": "The cells were washed and the fluorescence collected by flow cytometry on a BD FACSCalibur platform (Becton Dickinson)"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "MDA‐MB‐231 cells were treated with 1% DMSO, the IC₅₀ of C&K, doxorubicin (DOX), or co‐treated with C&K and doxorubicin for 48 h, fixed, incubated with a primary antibody against NF‐κB, stained with a fluorescent secondary antibody, and evaluated by flow cytometry"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "Data are presented as mean ± SEM from three independent experiments"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "compared to the control"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "ck_dox_nfkb",
+      "agents": [
+        {
+          "entity": "ck"
+        },
+        {
+          "entity": "dox"
+        }
+      ],
+      "target": {
+        "entity": "nfkb",
+        "property": "protein_level"
+      },
+      "direction": "increase",
+      "magnitude": {
+        "measure": "fold_change",
+        "number": "1.57"
+      },
+      "comparator": "the control",
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mdamb231"
+        },
+        {
+          "role": "medium",
+          "text": "RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine"
+        },
+        {
+          "property": "culture_temperature",
+          "value": {
+            "number": "37",
+            "unit": "Cel",
+            "unit_text": "°C"
+          }
+        },
+        {
+          "property": "co2_fraction",
+          "value": {
+            "number": "5",
+            "unit": "%",
+            "unit_text": "%"
+          }
+        },
+        {
+          "property": "exposure_time",
+          "value": {
+            "number": "48",
+            "unit": "h",
+            "unit_text": "h"
+          }
+        },
+        {
+          "role": "other",
+          "text": "primary antibody for NF‐κB (1:500) (Sc‐8008, Santa Cruz, TX, USA)"
+        },
+        {
+          "role": "device",
+          "text": "BD FACSCalibur"
+        }
+      ],
+      "method": {
+        "label": "flow cytometry"
+      },
+      "note": "The text does not give the concentrations of the treatments in this assay. The caption of Figure 8 states that the cells had the IC₅₀ of C&K or of doxorubicin, or C&K and doxorubicin together.",
+      "evidence": [
+        {
+          "block": "s2.5/p1",
+          "quote": "Treatment with C&K reduced NF‐κB protein levels by 1.39‐fold, whereas doxorubicin and the combination of C&K with doxorubicin increased them by 2.50‐fold and 1.57‐fold, respectively (Figure 8)"
+        },
+        {
+          "block": "s2.5/p1",
+          "quote": "we sought to validate the microarray results and assess the effect of C&K on NF‐κB protein levels"
+        },
+        {
+          "block": "s5.8/p1",
+          "quote": "The cells were treated with C&K and the association of C&K with doxorubicin for 48 h"
+        },
+        {
+          "block": "s5.8/p1",
+          "quote": "Next, the cells were fixed with 4% paraformaldehyde, 0.3% bovine serum albumin (BSA), and 0.5% Triton X‐100 for 20 min and permeabilized with Triton X‐100 (0.5% in PBS) for 25 min"
+        },
+        {
+          "block": "s5.8/p1",
+          "quote": "incubated with primary antibody for NF‐κB (1:500) (Sc‐8008, Santa Cruz, TX, USA) in the dark for approximately 1 h"
+        },
+        {
+          "block": "s5.8/p1",
+          "quote": "incubated with the fluorescence secondary antibody (Alexa 647, ThermoFisher, Waltham, MA, USA) in the dark for approximately 1 h"
+        },
+        {
+          "block": "s5.8/p1",
+          "quote": "The cells were washed and the fluorescence collected by flow cytometry on a BD FACSCalibur platform (Becton Dickinson)"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "MDA‐MB‐231 cells were treated with 1% DMSO, the IC₅₀ of C&K, doxorubicin (DOX), or co‐treated with C&K and doxorubicin for 48 h, fixed, incubated with a primary antibody against NF‐κB, stained with a fluorescent secondary antibody, and evaluated by flow cytometry"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "Data are presented as mean ± SEM from three independent experiments"
+        },
+        {
+          "block": "f8/caption",
+          "quote": "compared to the control"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "MDA‐MB‐231 (ATCC, HTB‐26) and MCF‐7 (HTB22, ATCC) breast cancer cell lines were cultured in RPMI1640 medium (Sigma‐Aldrich, St. Louis, MO, USA) supplemented with 10% FBS, 100 mg/mL penicillin G, 100 U/mL streptomycin, and 2 mM l‐glutamine (Invitrogen, Carlsbad, CA, USA)"
+        },
+        {
+          "block": "s5.2/p1",
+          "quote": "The cells were cultured in a humidified incubator at 37°C and 5% CO₂"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "ck_upregulated_genes",
+      "subject": [
+        "ck"
+      ],
+      "property": "upregulated_genes",
+      "value": {
+        "number": "762",
+        "unit": "1"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mdamb231"
+        },
+        {
+          "role": "comparator",
+          "text": "control"
+        },
+        {
+          "role": "other",
+          "text": "p‐value < 0.05, fold‐change cut off ≥ ±1.5 and a linear step‐up false discovery ratio of p ≤ 0.05"
+        }
+      ],
+      "method": {
+        "label": "microarray"
+      },
+      "evidence": [
+        {
+          "block": "s2.4/p1",
+          "quote": "We conducted a microarray assay to determine the Differential Gene Expression (DGE) profile, comparing C&K and control"
+        },
+        {
+          "block": "s2.4/p1",
+          "quote": "Our results revealed 762 upregulated and 573 downregulated genes (fold‐change: ±1.5)"
+        },
+        {
+          "block": "s2.4/title",
+          "quote": "Downregulate Pro‐Tumor Pathways in MDA‐MB‐231 Cells"
+        },
+        {
+          "block": "s5.9/p1",
+          "quote": "RNA was extracted from cell culture using the RNeasy Mini Kit (Qiagen, Inc.), and RNA purity was determined using an RNA Nano Chip Agilent 2100 Bioanalyzer (Agilent Technology, Inc.)"
+        },
+        {
+          "block": "s5.9/p1",
+          "quote": "The thresholds for a differentially expressed gene were p‐value < 0.05, fold‐change cut off ≥ ±1.5 and a linear step‐up false discovery ratio of p ≤ 0.05"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "ck_downregulated_genes",
+      "subject": [
+        "ck"
+      ],
+      "property": "downregulated_genes",
+      "value": {
+        "number": "573",
+        "unit": "1"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mdamb231"
+        },
+        {
+          "role": "comparator",
+          "text": "control"
+        },
+        {
+          "role": "other",
+          "text": "p‐value < 0.05, fold‐change cut off ≥ ±1.5 and a linear step‐up false discovery ratio of p ≤ 0.05"
+        }
+      ],
+      "method": {
+        "label": "microarray"
+      },
+      "evidence": [
+        {
+          "block": "s2.4/p1",
+          "quote": "We conducted a microarray assay to determine the Differential Gene Expression (DGE) profile, comparing C&K and control"
+        },
+        {
+          "block": "s2.4/p1",
+          "quote": "Our results revealed 762 upregulated and 573 downregulated genes (fold‐change: ±1.5)"
+        },
+        {
+          "block": "s2.4/title",
+          "quote": "Downregulate Pro‐Tumor Pathways in MDA‐MB‐231 Cells"
+        },
+        {
+          "block": "s5.9/p1",
+          "quote": "RNA was extracted from cell culture using the RNeasy Mini Kit (Qiagen, Inc.), and RNA purity was determined using an RNA Nano Chip Agilent 2100 Bioanalyzer (Agilent Technology, Inc.)"
+        },
+        {
+          "block": "s5.9/p1",
+          "quote": "The thresholds for a differentially expressed gene were p‐value < 0.05, fold‐change cut off ≥ ±1.5 and a linear step‐up false discovery ratio of p ≤ 0.05"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "ck_with_dox_upregulated_genes",
+      "subject": [
+        "ck"
+      ],
+      "property": "upregulated_genes",
+      "value": {
+        "number": "120",
+        "unit": "1"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mdamb231"
+        },
+        {
+          "role": "co_treatment",
+          "entity": "dox"
+        },
+        {
+          "role": "comparator",
+          "text": "those treated with doxorubicin"
+        },
+        {
+          "role": "other",
+          "text": "p‐value < 0.05, fold‐change cut off ≥ ±1.5 and a linear step‐up false discovery ratio of p ≤ 0.05"
+        }
+      ],
+      "method": {
+        "label": "microarray"
+      },
+      "evidence": [
+        {
+          "block": "s2.4/p3",
+          "quote": "We also performed microarray analysis to identify DEGs resulting from the association of C&K with a 10‐fold lower concentration of doxorubicin"
+        },
+        {
+          "block": "s2.4/p3",
+          "quote": "revealing 120 upregulated and 2203 downregulated genes (fold‐change: ±1.5) in cells co‐treated with C&K and doxorubicin when compared to those treated with doxorubicin"
+        },
+        {
+          "block": "s2.4/title",
+          "quote": "Downregulate Pro‐Tumor Pathways in MDA‐MB‐231 Cells"
+        },
+        {
+          "block": "s5.9/p1",
+          "quote": "RNA was extracted from cell culture using the RNeasy Mini Kit (Qiagen, Inc.), and RNA purity was determined using an RNA Nano Chip Agilent 2100 Bioanalyzer (Agilent Technology, Inc.)"
+        },
+        {
+          "block": "s5.9/p1",
+          "quote": "The thresholds for a differentially expressed gene were p‐value < 0.05, fold‐change cut off ≥ ±1.5 and a linear step‐up false discovery ratio of p ≤ 0.05"
+        }
+      ]
+    },
+    {
+      "type": "value",
+      "id": "ck_with_dox_downregulated_genes",
+      "subject": [
+        "ck"
+      ],
+      "property": "downregulated_genes",
+      "value": {
+        "number": "2203",
+        "unit": "1"
+      },
+      "conditions": [
+        {
+          "role": "cell_line",
+          "entity": "mdamb231"
+        },
+        {
+          "role": "co_treatment",
+          "entity": "dox"
+        },
+        {
+          "role": "comparator",
+          "text": "those treated with doxorubicin"
+        },
+        {
+          "role": "other",
+          "text": "p‐value < 0.05, fold‐change cut off ≥ ±1.5 and a linear step‐up false discovery ratio of p ≤ 0.05"
+        }
+      ],
+      "method": {
+        "label": "microarray"
+      },
+      "evidence": [
+        {
+          "block": "s2.4/p3",
+          "quote": "We also performed microarray analysis to identify DEGs resulting from the association of C&K with a 10‐fold lower concentration of doxorubicin"
+        },
+        {
+          "block": "s2.4/p3",
+          "quote": "revealing 120 upregulated and 2203 downregulated genes (fold‐change: ±1.5) in cells co‐treated with C&K and doxorubicin when compared to those treated with doxorubicin"
+        },
+        {
+          "block": "s2.4/title",
+          "quote": "Downregulate Pro‐Tumor Pathways in MDA‐MB‐231 Cells"
+        },
+        {
+          "block": "s5.9/p1",
+          "quote": "RNA was extracted from cell culture using the RNeasy Mini Kit (Qiagen, Inc.), and RNA purity was determined using an RNA Nano Chip Agilent 2100 Bioanalyzer (Agilent Technology, Inc.)"
+        },
+        {
+          "block": "s5.9/p1",
+          "quote": "The thresholds for a differentially expressed gene were p‐value < 0.05, fold‐change cut off ≥ ±1.5 and a linear step‐up false discovery ratio of p ≤ 0.05"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "id": "signature_correlation",
+      "relation": "association",
+      "agents": [
+        {
+          "entity": "ck_signature"
+        }
+      ],
+      "target": {
+        "entity": "tnf_signature"
+      },
+      "direction": "decrease",
+      "magnitude": {
+        "measure": "correlation",
+        "number": "-0.5028"
+      },
+      "significance": {
+        "statement": "significant",
+        "comparison": "eq",
+        "p": "4.946e-9",
+        "test": "Pearson's correlation analysis"
+      },
+      "n": 120,
+      "conditions": [
+        {
+          "role": "population",
+          "entity": "tcga_basal"
+        },
+        {
+          "role": "other",
+          "text": "RNA‐seq data (log2(expected_count‐deseq. 2 + 1))"
+        }
+      ],
+      "method": {
+        "label": "Pearson's correlation analysis"
+      },
+      "evidence": [
+        {
+          "block": "s2.7/p1",
+          "quote": "A statistically significant negative correlation (r = −0.5028; p = 4.946e‐9; n = 120) was observed between the tested signatures (Figure 10A)"
+        },
+        {
+          "block": "s2.7/p1",
+          "quote": "indicating that patients with increased expression of the C&K signature have decreased expression of the TNF/NF‐κB signature"
+        },
+        {
+          "block": "s2.7/p1",
+          "quote": "we performed a correlation analysis using RNA‐seq data from TCGA"
+        },
+        {
+          "block": "s5.11/p1",
+          "quote": "Public data from the TCGA‐BRCA basal breast cancer cohort (n = 120) were used for in silico gene expression assessments"
+        },
+        {
+          "block": "s5.11/p1",
+          "quote": "The analyses were performed on the UCSC Xena platform [46], from which the RNA‐seq data (log2(expected_count‐deseq. 2 + 1)) were obtained"
+        },
+        {
+          "block": "s5.11/p1",
+          "quote": "Pearson's correlation analysis was performed between the mRNA levels of C&K signature and the TNF/NF‐κB [47] gene signature to clinically evaluate the relationship between them [48]"
+        },
+        {
+          "block": "s5.11/p1",
+          "quote": "The C&K gene signature is composed of the most altered genes (cutoff > 5.0 or < −5.0) obtained from microarray analysis"
+        },
+        {
+          "block": "f10/caption",
+          "quote": "r = Pearson's rho, p = p‐value and n = 120."
+        },
+        {
+          "block": "s5.12/p1",
+          "quote": "p‐values < 0.05 (two‐sided) were considered statistically significant"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "block": "s5.1/p1",
+      "quote": "C&K [34] were obtained from green Arabica coffee beans (300g) at a ratio of 54.1:45.6 (cafestol:kahweol) and purity exceeding 99%",
+      "reason": "other",
+      "note": "The ratio and the purity of the mixture C&K, which the source states with a citation [34] of the procedure. The text does not tell whether this work measured them. The note of the entity C&K gives them."
+    },
+    {
+      "block": "s5.1/p1",
+      "quote": "In brief, it was used 0.8 L of 2.5 M KOH (Vetec, RJ, Brazil) in methanol (Tedia Company, Fairfield, OH, USA) to direct hot saponification",
+      "reason": "other",
+      "note": "A setting of the preparation of C&K, which follows the procedure of another work [34]."
+    },
+    {
+      "block": "s5.1/p1",
+      "quote": "The mixture was kept in a 3 L flat‐bottomed flask stirred at 800 rpm for 1 h at room temperature",
+      "reason": "other",
+      "note": "A setting of the preparation of C&K, which follows the procedure of another work [34]."
+    },
+    {
+      "block": "s5.1/p1",
+      "quote": "Adding 0.8 L of water afterward allowed recovery of the C&K mixture into equal volume (0.8 L) of Tert‐Butyl‐Methyl‐Ether (TBME)",
+      "reason": "other",
+      "note": "A setting of the preparation of C&K, which follows the procedure of another work [34]."
+    },
+    {
+      "block": "s5.1/p1",
+      "quote": "The resulting organic phase was evaporated, solubilized in 0.3 L of heptane, and partitioned with 0.3 L of aqueous methanol",
+      "reason": "other",
+      "note": "A setting of the preparation of C&K, which follows the procedure of another work [34]."
+    },
+    {
+      "block": "s5.1/p1",
+      "quote": "load onto a chromatography column (CC, 40 × 3 cm id) filled with 30 g of silica gel flash F60 (40–63 µm, Silicycle, Quebec, Canada)",
+      "reason": "other",
+      "note": "A setting of the preparation of C&K, which follows the procedure of another work [34]."
+    },
+    {
+      "block": "s5.1/p1",
+      "quote": "The ethyl acetate/hexane (1:1, v/v) also served as the mobile phase during CC purification (ran at 2.5 cm/min)",
+      "reason": "other",
+      "note": "A setting of the preparation of C&K, which follows the procedure of another work [34]."
+    },
+    {
+      "block": "s5.1/p1",
+      "quote": "C&K eluted between 14 and 23 fractions collected into 10 mL vials",
+      "reason": "other",
+      "note": "A setting of the preparation of C&K, which follows the procedure of another work [34]."
+    },
+    {
+      "block": "s2.4/p1",
+      "quote": "The upregulated genes were clustered by KEGG (FDR ≤ 0.05)",
+      "reason": "other",
+      "note": "The limit of the false discovery rate for the enrichment of pathways. The text gives no value for a pathway."
+    },
+    {
+      "block": "s2.4/p3",
+      "quote": "The downregulated genes were clustered in RNA transport by KEGG (FDR ≤ 0.05)",
+      "reason": "other",
+      "note": "The limit of the false discovery rate for the enrichment of pathways. The text gives no value for a pathway."
+    },
+    {
+      "block": "f6/caption",
+      "quote": "Bars with a more intense blue or orange color correspond to FDR ≤ 0.05.",
+      "reason": "other",
+      "note": "The limit of the false discovery rate for the enrichment of pathways. The text gives no value for a pathway."
+    },
+    {
+      "block": "f7/caption",
+      "quote": "Bars with more intense colors indicate FDR ≤ 0.05.",
+      "reason": "other",
+      "note": "The limit of the false discovery rate for the enrichment of pathways. The text gives no value for a pathway."
+    },
+    {
+      "block": "s2.6/p1",
+      "quote": "The redocking simulation of the complex TNF‐α and its co‐crystallized inhibitor (SPD304) exhibited an RMSD value of 0.3486 Å",
+      "reason": "other",
+      "note": "The root-mean-square deviation of a redocking that the source computed with software. It is not a measurement. The Discussion gives 0.3684 Å for the redocking."
+    },
+    {
+      "block": "s3/p6",
+      "quote": "The docking results were validated by redocking, showing an RMSD value of 0.3684 Å",
+      "reason": "other",
+      "note": "The root-mean-square deviation of a redocking that the source computed with software. It is not a measurement. The Results give 0.3486 Å for the redocking."
+    },
+    {
+      "block": "s3/p6",
+      "quote": "C&K interacted similarly in the catalytic site pocket with an RMSD value between poses of 0.134 Å",
+      "reason": "other",
+      "note": "The root-mean-square deviation between the docked poses of cafestol and kahweol, which the source computed with software. It is not a measurement."
+    },
+    {
+      "block": "s5.10/p1",
+      "quote": "(PDB ID: 2AZ5, resolution: 2.10 Å)",
+      "reason": "cited"
+    },
+    {
+      "block": "s5.10/p1",
+      "quote": "The active site was centered at the following coordinates: x: ‐19.1629, y: 73.2356, z: 37.2471, within 12 Å",
+      "reason": "other",
+      "note": "A setting of the docking software. It is not a measurement."
+    },
+    {
+      "block": "s5.10/p1",
+      "quote": "the protocol validation was made by redocking considering RMSD < 2.00 Å",
+      "reason": "other",
+      "note": "A limit that the source applies to validate the docking. It is not a measurement."
+    },
+    {
+      "block": "s5.4/p1",
+      "quote": "reported as very strong synergism (< 0.1), strong synergism (0.1–0.3), synergism (0.3–0.7), moderate synergism (0.7–0.85), slight synergism (0.85–0.90), nearly additive (0.90–1.10), slight antagonism (1.10–1.20), moderate antagonism (1.20–1.45), antagonism (1.45–3.3), strong antagonism (3.3–10) and very strong antagonism (> 10)",
+      "reason": "other",
+      "note": "The limits of the levels of synergy and of antagonism that the source applies to the FIC values. They are not measurements."
+    },
+    {
+      "block": "s5.12/p1",
+      "quote": "(* = p < 0.05; ** = p < 0.01; *** = p < 0.001)",
+      "reason": "other",
+      "note": "The key of the marks of significance in the figures. The text does not tell which result has which mark."
+    },
+    {
+      "block": "f2/caption",
+      "quote": "**p < 0.001, ***p < 0.0001, in relation to control.",
+      "reason": "other",
+      "note": "The key of the marks of significance in the figures. The text does not tell which result has which mark."
+    },
+    {
+      "block": "f3/caption",
+      "quote": "*p < 0.05, **p < 0.001, ***p < 0.0001",
+      "reason": "other",
+      "note": "The key of the marks of significance in the figures. The text does not tell which result has which mark."
+    },
+    {
+      "block": "f4/caption",
+      "quote": "*p < 0.05, **p < 0.001, ***p < 0.0001",
+      "reason": "other",
+      "note": "The key of the marks of significance in the figures. The text does not tell which result has which mark."
+    },
+    {
+      "block": "f5/caption",
+      "quote": "***p < 0.0001",
+      "reason": "other",
+      "note": "The key of the marks of significance in the figures. The text does not tell which result has which mark."
+    },
+    {
+      "block": "f8/caption",
+      "quote": "*p < 0.05, *p < 0.001",
+      "reason": "other",
+      "note": "The key of the marks of significance in the figures. The text does not tell which result has which mark."
+    },
+    {
+      "block": "ack/p1",
+      "quote": "under grant E‐26/200.318/2023",
+      "reason": "other",
+      "note": "The number of a grant. It is not a value."
+    }
+  ]
+}
